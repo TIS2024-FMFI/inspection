@@ -1,7 +1,9 @@
 <?php
+session_start();
+$error = ""; // Default error message
+
 // If the form is submitted, process the registration
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Example of registration logic
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $password = isset($_POST['password']) ? $_POST['password'] : '';
 
@@ -11,11 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif (strlen($password) < 8) {
         $error = "Password must be at least 8 characters.";
     } else {
-        // Add your logic for saving the user to the database
-        $error = "Registration logic not implemented yet."; // Remove this after implementing the logic
+        // Placeholder for registration logic (e.g., database insertion)
+        $error = "Registration logic not implemented yet."; // Remove this after adding logic
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="divider">OR</div>
 
     <button class="google-auth-btn">
-        <img src="google-icon.png" alt="Google Icon">
+        <img src="images/google-icon.png" alt="Google Icon">
         Continue with Google
     </button>
 </div>
