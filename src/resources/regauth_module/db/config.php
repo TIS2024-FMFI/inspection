@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$dbname = 'safety_app'; // Имя базы данных
-$username = 'root'; // Имя пользователя MySQL
-$password = ''; // Пароль (по умолчанию пустой для XAMPP)
+$dbname = 'safety_app'; 
+$username = 'root'; 
+$password = ''; 
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
