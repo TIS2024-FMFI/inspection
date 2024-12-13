@@ -65,6 +65,5 @@ function searchProduct() {
 
 function startScan() {
     alert("Barcode scanning is not yet implemented!");
-    // Здесь можно интегрировать библиотеку для сканирования штрих-кодов, например Quagga.js.
 }
 
