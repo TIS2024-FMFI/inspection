@@ -2,2629 +2,6798 @@
 -- Inserted data from XML
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/00328/22', 'Passenger car', 'Motor vehicles', 'Opel', 'Insignia', 'Consumer', 
-            'Germany', 'Injuries', 'The rear track rods may break due to corrosion.
-This could impact the driving stability, increasing the risk of an accident. The product does not comply with the requirements laid down in the Regulation on the approval and market surveillance of Motor Vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'O4V - Opel / E212004351 (22-C-135)', '8.12.2007 to 26.7.2013'
+            'None', 'A12/0912/19', 'None', 
+            'United Kingdom', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Continental GT', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', 'The affected vehicles were manufactured between 22 January 2018 and 06 March 2019.', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01050/22', 'Passenger car', 'Motor vehicles', 'Land Rover', 'Range Rover Sport							', 'Consumer', 
-            'United Kingdom', 'Injuries', 'The top cover of the trunk spoiler may get loose due to assembly issues and adhesive failures. This can lead to the spoiler detaching from the main body of the trunk spoiler and fall onto the road, increasing the risk of an accident. The product does not comply with the requirements laid down in the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'N700							', '20.05.2009 - 28.03.2011'
+            'None', 'A12/00017/20', 'None', 
+            'United Kingdom', 'None', 'Fire, Injuries', 
+            'None', 'Passenger Car', 'Continental 24, Continental Supersports and Continental Supersports Convertible', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RE 19/27 (RB41)', 'The affected vehicles were manufactured from 02/10/2016 to 27/01/2018', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01172/22', 'Motorcycle', 'Motor vehicles', 'GASGAS', 'MC 250 MJ 22', 'Consumer', 
-            'Austria', 'Injuries', 'An incorrectly programmed ignition control can damage the engine and cause the rider to fall. The product does not comply with the Regulation on the type-approval and market surveillance of two- or three-wheel vehicles and quadricycles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 26/07/2022', 'Austria', 
-            '39_2039523', '2022'
+            'None', 'A12/00577/20', 'None', 
+            'United Kingdom', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Bentayga', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RE20/06 (RB48)', '09/09/2016 to 20/12/2019', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01255/22', 'Passenger car', 'Motor vehicles', 'Ferrari', ' Ferrari various models', 'Consumer', 
-            'Italy', 'Injuries', 'The cap on the brake-fluid reservoir may not be able to provide proper ventilation enabling atmospheric pressure to be maintained within the reservoir itself. This may cause the vehicle to lose some or all of its braking capacity, increasing the risk of an accident. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 01/09/2022', 'Italy', 
-            'Extension of recall campaign n° 78', '02/2005 - 07/2022'
+            'None', 'A12/00878/20', 'None', 
+            'United Kingdom', 'None', 'Fire', 
+            'None', 'Passenger car', 'Bentayga V8', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RE20/14 (RB56)', 'The affected vehicles were manufactured between 25 January 2018 and 22 January 2020', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01269/22', 'Agricultural tractor', 'Motor vehicles', 'CLAAS', 'Arion 400', 'Professional', 
-            'France', 'Injuries', 'The parking brake may not engage or may disengage, due to a technical fault. This can lead to that the tractor cannot be immobilised, increasing the risk for an accident.
- The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 15/08/2022', 'France', 
-            'CLAAS 2022-01', '07/2021 — 06/2022'
+            'None', 'A12/01873/20', 'None', 
+            'United Kingdom', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Continental GT Convertible', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RE20/39 (RB81)', 'The affected vehicles were manufactured between 31 August 2019 and 18 November 2020.', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01257/22', 'Passenger car', 'Motor vehicles', 'Jaguar', 'F-Type, F-Pace, XE, XF', 'Consumer', 
-            'United Kingdom', 'Injuries', 'The pretensioner tubes might have been damaged during assembly due to a manufacturing defect of certain front seat belt pretensioners  This can result in reduced or complete loss of pretension in the event of a crash and could increase the risk of injury to the occupant. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 04/08/2022', 'France', 
-            'H412', '19.01.2022 - 15.03.2022'
+            'None', 'A12/00730/21', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'CLA, GLA, A-Class, C-Class, S-Class, GLC, GLE', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '7790003, 7790004', 'The affected vehicles were manufactured between 2 July 2012 to 21 October 2020.', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01258/22', 'Passenger car', 'Motor vehicles', 'Land Rover', 'Defender, Discovery, Discovery Sport, Range Rover Sport, Range Rover Velar ', 'Consumer', 
-            'United Kingdom', 'Injuries', 'The pretensioner tubes might have been damaged during assembly due to a manufacturing defect of certain front seat belt pretensioners  This can result in reduced or complete loss of pretension in the event of a crash and could increase the risk of injury to the occupant. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 04/08/2022', 'France', 
-            'N720', '5.01.2022 - 24.05.2022'
+            'None', 'A12/01116/21', 'None', 
+            'United Kingdom', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Bentayga', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RE21/17', 'The affected vehicles were manufactured between 4 and 14 December 2020.', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01363/22', 'Passenger car', 'Motor vehicles', 'Land Rover', 'Range Rover', 'Consumer', 
-            'United Kingdom', 'Environment, Fire', 'Improperly tightened diesel particulate filter mounting frame fittings may lead to loosening or detachment of the fittings, which will cause stress to the exhaust joints and, over time, increase the possibility of unmeasured exhaust gas leaks. In the event of an exhaust leak, hot exhaust gases can leak under the vehicle or under the engine compartment, which can damage engine components  increasing the risk of a fire. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 12/09/2022', 'France', 
-            'N719', '23.09.2020 - 07.06.2022'
+            'None', 'A12/01422/21', 'None', 
+            'United Kingdom', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Bentayga', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RE21/29', '9.6.2021 - 29.9.2021', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01866/22', 'Motorcycle', 'Motor vehicles', 'KTM', 'KTM 300 EXC Sixdays ', 'Consumer', 
-            'Austria', 'Injuries', 'Due to a manufacturing defect, the clutch output cylinders may fail. This increases the risk of an accident. The product does not comply with the Regulation on the approval and market surveillance of two- or three wheels vehicles and quadricycles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 22/09/2022', 'Austria', 
-            'KTM: 32_2075164', '2022'
+            'None', 'A12/01451/22', 'None', 
+            'United Kingdom', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Bentayga', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RE22/10 (EC36), RE23/17 (RC82)					', '8.6.2020 - 12.3.2022', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01376/22', 'Passenger car', 'Motor vehicles', 'Jaguar Land Rover Limited', 'XF (X250)', 'Consumer', 
-            'United Kingdom', 'Injuries', 'The material of the passenger airbag inflator may degrade over time. If deployed, the airbag can be ruptured and metal fragments can pass through the airbag, causing injury to occupants. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 20/09/2022', 'France', 
-            'H361', '19.11.2007 - 16.03.2018'
+            'None', 'A12/00007/23', 'None', 
+            'Unknown', 'None', 'Chemical', 
+            'None', 'Perfume', 'Free Sky', 
+            'REAL TIME', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8715658002512', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01434/22', 'Passenger car', 'Motor vehicles', 'Land Rover', 'Defender', 'Consumer', 
-            'United Kingdom', 'Injuries', 'Defective welding involving the vehicle's axle may cause the weld to break which can lead to a loss of mechanical resistance and the axle flange becoming detached, increasing the risk of an accident.
- The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 25/07/2022', 'France', 
-            'N706', '1.09.2010 - 15.07.2013'
+            'None', 'A12/00269/23', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Bus', 'S 415 LE Business, S 416 LE Business, S 418 LE Business', 
+            'Setra', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '75.00U22237A', 'From 10 September 2022 to 21 September 2022', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01514/22', 'Passenger car', 'Motor vehicles', 'Land Rover', 'Range Rover', 'Consumer', 
-            'United Kingdom', 'Injuries', 'The front collision sensors may not have been fitted correctly. This can cause the safety belt restraint system to malfunction, 
-leading to serious injuries to the occupants. In the event of an accidental deployment of the front airbag, control of the vehicle may be lost, creating a  risk of an accident. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 20/05/2022', 'France', 
-            'N685', '25.09.2020 - 31.03.2022'
+            'None', 'A12/00428/23', 'None', 
+            'Hungary', 'None', 'Injuries', 
+            'None', 'Vehicle part', 'EB+ 4.0							', 
+            'Haldex', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RM_1778							', '30.05.2022 - 24.10.2022', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01447/22', 'Lorry', 'Motor vehicles', 'Volvo Trucks', 'FM, FH, FH16', 'Professional', 
-            'Belgium', 'Injuries', 'The current signal timing for the intermittent windshield wiper relay is shorter than 200 milliseconds. This can cause damage to the fuse and the relay as the signal cannot be processed. This may result in significant visibility impairment, depending on the weather conditions.  The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.							
-', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'C0242							', '01.03.2021 - 25.03.2022'
+            'None', 'A12/00788/23', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'A4, S4, A4 Cabriolet, S4 Cabriolet, RS4,  RS4 Cabriolet, A6, S6, A6 Allroad Quattro, RS6 ', 
+            'Audi', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '69EQ							', '12.05.2003 - 29.09.2011', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01453/22', 'Motorcycle', 'Motor vehicles', 'Husqvarna, KTM', 'KTM 450 XC-F; HQV FC 250; HQV FC 350', 'Consumer', 
-            'Austria', 'Injuries', 'Due to a manufacturing defect, the clutch output cylinders may fail. This increases the risk of a fall and/or injury. The product does not comply with the requirements of the General Product Safety Directive.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 22/09/2022', 'Austria', 
-            'HQV: 32_2075165
-KTM: 32_2075164', '2022'
+            'None', 'A12/01477/23', 'None', 
+            'France', 'None', 'Chemical', 
+            'None', 'Perfume', 'WEALTH', 
+            'OMERTA® & WEALTH', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '871565899960', 'B17061', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01673/22', 'All terrain vehicle', 'Motor vehicles', 'BRP', 'BRP Ryker', 'Consumer', 
-            'Mexico', 'Injuries', 'The position light and flasher electrical harnesses in the front fenders may be loose and rub on the tyre, leading over time to a short circuit. This can cause the engine to stop while driving, without the possibility of restarting it. This in turn will cause the stability system, which includes the anti-lock braking system not to function, creating a risk of an accident. The product does not meet the Regulation on the type-approval and market surveillance of two- or three-wheel vehicles and quadricycles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 07/11/2022', 'Belgium', 
-            'None', '2019 - 2023'
+            'None', 'A12/01064/23', 'None', 
+            'United Kingdom', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Continental GTC', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RE23/03 (RC68)							', '13.12.2018 - 11.12.2020', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01681/22', 'Motorcycle', 'Motor vehicles', 'KTM', '1290 Super Duke R', 'Consumer', 
-            'Austria', 'Fire', 'Short circuits in the wiring harness may occur, increasing the risk of fire. The product does not comply with the Regulation on the approval and market surveillance of two- or three wheel vehicles and quadricycles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 04/11/2022', 'Austria', 
-            '11_2009785', 'MY 2021
-MY 2022
-MY2020'
+            'None', 'A12/01239/23', 'None', 
+            'United Kingdom', 'None', 'Fire', 
+            'None', 'Passenger car', 'Continental GT, GT Convertible (GTC), Flying Spur', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RE23/02							', '15.06.2018 - 10.07.2020', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01048/24', 'Passenger car', 'Motor vehicles', 'CITROEN, DS', 'Berlingo, C3, C3 aircross, C4, C4 cactus , C4 picasso DS3', 'Consumer', 
-            'France', 'Injuries', 'The lubrication of the vacuum pump may be insufficient, which can cause it break.This can lead to reduced braking assistance, increasing the risk of an accident. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 08/12/2022', 'France', 
+            'None', 'A12/01341/23', 'None', 
+            'United Kingdom', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Flying Spur							', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RE23/06 (RC71)', '09.11.2020 – 03.11.2022', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01048/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Berlingo, C3, C3 aircross, C4, C4 cactus , C4 picasso DS3', 
+            'CITROEN, DS', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
             'HLX
-HUZ', '07/02/2017 - 13/11/2019'
+HUZ', '07/02/2017 - 13/11/2019', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01390/23', 'Soap bubble toy', 'Toys', 'Grafix', 'Fish bubble machine', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The product has excessive concentrations of methylisothiazolinone (MI), methylchloroisothiazolinone (MCI) and formaldehyde (measured values: 2.5 mg/kg, 7.3 mg/kg and 330 mg/kg, respectively).
-MI, MCI and formaldehyde are strong sensitisers and can provoke allergic contact dermatitis to sensitised persons. The product does not comply with the requirements of the Toy Safety Directive.', 'Type of economic operator to whom the measure(s) were ordered: Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 09/06/2023', 'Belgium', 
-            'None', 'None'
+            'None', 'A12/01558/23', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'G-Class', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '3594019', '26.2.2007 - 6.2.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01769/23', 'Passenger car', 'Motor vehicles', 'Land Rover', 'Range Rover', 'Consumer', 
-            'United Kingdom', 'Injuries', 'The tail lamp connecting cable may be damaged and cause the tail lamp to fail. As a result, other road users may not be aware of braking, increasing the risk of an accident. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Poland', 
-            'N784', 'None'
+            'None', 'A12/01699/23', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'Toy mouse with remote control', '', 
+            '', 'Gadgets', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5907451324745', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01770/23', 'Passenger car', 'Motor vehicles', 'Land Rover', 'Range Rover; Range Rover Sport', 'Consumer', 
-            'United Kingdom', 'Injuries', 'The headlamp assemblies could fail when the vehicle is started or switched off and will not recover on any subsequent ignition cycles. This results in the failure of functioning of the headlamp, front position lamp, daytime running light and turn signal indicator, increasing the risk of an accident. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Poland', 
-            'N810', '20.01.2023 - 30.05.2023'
+            'None', 'A12/01657/23', 'None', 
+            'Republic of Korea', 'None', 'Injuries', 
+            'None', 'Passenger car', 'KOLEOS II', 
+            'Renault', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0E4D', '3.5.2022 - 2.1.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02024/23', 'Passenger car', 'Motor vehicles', 'Bmw', '3 Series - M3', 'Consumer', 
-            'Germany', 'Injuries', 'The propellant in the passenger airbag can deteriorate due to high humidity and temperature variations. In the event of an accident in which the airbag deploys, this could result in fragments from the inflator casing coming loose and injuring the vehicle’s occupants.
-
-
- The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 07/05/2013', 'France', 
-            '0072330100', '2002'
+            'None', 'A12/01655/23', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'GLC-class (BR 254)', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '6490014							', '18.03.2022 - 19.04.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02593/23', 'LED power supply ', 'Electrical appliances and equipment', 'nextec', 'LED power supply', 'Consumer', 
-            'People's Republic of China', 'Electric shock', 'The electrical insulation and the creepage distance between the primary and accessible secondary circuits are not sufficient. A user could receive an electric shock from accessible live parts. The product does not comply with the requirements of the Low Voltage Directive nor with the European standards EN 61347-1 and EN 61347-2.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 22/08/2023
-
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 22/08/2023', 'Finland', 
-            'None', 'None'
+            'None', 'A12/01767/23', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'C-Class', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5491110, 5491109, 5491108', '30.06.2021 - 6.06.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/00073/24', 'Tool set', 'Hand tools', 'Prof', 'Alu tool box 141 pcs', 'Professional', 
-            'People's Republic of China', 'Chemical', 'The black shell material of the tape measure inside the tool box has an excessive concentration of lead (measured value: 0.078% by weight). Lead is harmful to human health, accumulates in the body, it can cause developmental neurotoxicity and may also affect breast-fed or unborn children.
-In addition, the black material of the tool box handle has an excessive concentration of DEHP (measured value: 2.8% by weight). This phthalate may harm the health of children, causing possible damage to their reproductive system.
-
- The product does not comply with the REACH  Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Importer
-Category of measure(s): Import rejected at border
-Date of entry into force: 02/01/2024', 'Finland', 
-            'None', 'None'
+            'None', 'A12/02219/23', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'AMG GT 4-Door (Coupé)-Class, CLS, E-Class, E-Class Coupé/Cabriolet', 
+            'Mercedes- Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5496333							', '8.02.2022 - 20.03.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/00480/24', 'Ballpoint pen', 'Stationery', 'Officeline, einhorn', 'Kugelschreiber', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'Some of the decorative elements of the pens have an excessive concentration of cadmium (measured value up to 36.5% by weight). Cadmium is harmful to human health because it accumulates in the body, can damage the kidneys and bones and it may cause cancer.  The product does not comply with the REACH Regulation.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Stop of sales
-Date of entry into force: 03/11/2023
-
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 12/01/2024', 'Germany', 
-            'None', 'None'
+            'None', 'A12/02320/23', 'None', 
+            'United Kingdom', 'None', 'Fire', 
+            'None', 'Passenger car', 'Bentayga', 
+            'Bentley', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RE23/19 (RC84)', '2.11.2015 - 9.07.2021', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/00359/24', 'Earrings', 'Jewellery', 'None', 'Earring 100% Metal', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The rate of nickel release is too high (measured value up to: 1.1µg/cm2/week).
-
-Nickel is a strong sensitiser and causes allergic reactions if present in articles that come into direct and prolonged contact with the skin.
- This product does not comply with the REACH Regulation.', '
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 06/02/2024', 'Germany', 
-            'None', 'None'
+            'None', 'A12/00012/24', 'None', 
+            'Italy', 'None', 'Fire', 
+            'None', 'Stairlift', 'Stairlift', 
+            'VIMEC', 'Machinery', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/00419/24', 'Soap', 'Cosmetics', 'FIORILLO', 'FIORILLO 24K ', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains butylphenyl methylpropional (BMHCA) which is forbidden in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Stop of sales
-Date of entry into force: 06/02/2024', 'Romania', 
-            'None', 'None'
+            'None', 'A12/03128/23', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car', 'C3, C4, DS3, DS4, DS5', 
+            'Citroen, DS', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'JGU (C4, DS4, DS5)
+NQ3 (C3, DS3)', 'C3: 24.9.2008 - 21.2.2017
+C4: 2.2.2010 - 20.5.2018
+DS3: 5.12.2008 - 30.5.2019
+DS4: 5.5.2010 - 3.2.2017
+DS5: 30.6.2010 - 9.2.2018', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/00470/24', 'Motorcycle', 'Motor vehicles', 'Honda', 'XL750P', 'Consumer', 
-            'United Kingdom', 'Injuries', 'The spring hook on the main stand lacks weld strength. It may break when the main stand is operated, causing the vehicle to fall over. In addition, the spring hook may come off while riding, causing the main stand to touch the ground and the vehicle to fall, increasing the risk of injury. The product does not comply with the Regulation on the approval and market surveillance of two- or three-wheel vehicles and quadricycles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Portugal', 
-            '3NG', '24.01.2023 - 01.12.2023'
+            'None', 'A12/00076/24', 'None', 
+            'Tunisia', 'None', 'Chemical', 
+            'None', 'Perfumed room spray', 'Spray dintérieur', 
+            'EL NABIL', 'Chemical products', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5060815001086', '0120221206', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/00431/24', 'Fabric shaver', 'Electrical appliances and equipment', 'Feile', 'None', 'Consumer', 
-            'People's Republic of China', 'Environment', 'The solders in the product have an excessive concentration of lead (measured value up to 72.3% by weight). Lead poses a risk to the environment. The product does not comply with the requirements of the Directive on the restriction of the use of certain hazardous substances in electrical and electronic equipment (RoHS 2 Directive).', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Stop of sales
-Date of entry into force: 28/11/2023', 'Sweden', 
-            'None', 'None'
+            'None', 'A12/00019/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Bus/coach', 'Citaro', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '91.40M23273A', '20.04.2004 - 23.06.2022', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/00491/24', 'Motorcycle', 'Motor vehicles', 'Honda', 'CBR600RA/RR, CBR1000RA/RR/S1/S2, GL1800/BD/B/DA', 'Consumer', 
-            'United Kingdom', 'Injuries', 'The fuel pump impeller may be faulty, which can prevent fuel from being delivered, risking a power cut or engine shutdown. If this happens during driving, it creates a risk of accidents and injuries. The product does not comply with the Regulation on the approval and market surveillance of two- or three-wheel vehicles and quadricycles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 20/02/2024', 'Portugal', 
-            '3NJ
-3NK', '14.11.2017 (CBR600RA/RR)
-14.12.2016 (CBR1000RA/RR/S1/S2)
-31.10.2017 (GL1800/BD/B/DA)'
+            'None', 'A12/00006/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Lorry', 'Actros, Arocs', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'RA-SCHRAUB', '29.09.2023 - 02.10.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/00719/24', 'Hair dye', 'Cosmetics', 'syoss', 'BARVA NA VLASY SYOSS 6-27', 'Consumer', 
-            'Germany', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA can damage the reproductive system, may harm the health of the unborn child and may cause skin sensitisation.
- The product does not comply with the Cosmetic Products Regulation.
-', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 06/03/2024', 'Czechia', 
-            'None', 'None'
+            'None', 'A12/00043/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Lorry', 'Actros, Arocs							', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'BLATTFE-VA', '01/03/2023 - 14/08/2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/00975/24', 'Plastic ball set', 'Toys', 'Frabar, Tedi', 'Softbälle, 3 Stück ', 'Consumer', 
-            'Italy', 'Chemical', 'The product has an excessive concentration of the aromatic amine 4-methyl-m-phenylenediamine (measured value: 0.0197 % by weight).
-
-4-methyl-m-phenylenediamine is a skin sensitiser, may cause cancer and might induce mutations and/or affect fertility. The product does not comply with the requirements of the Toy Safety Directive.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 02/02/2024', 'Germany', 
-            'None', 'None'
+            'None', 'A12/00027/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'G-Class', 
+            'Mercedes-AMG', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '3591005, 3591006', '17.4.2020 - 1.12.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01052/24', 'Shampoo', 'Cosmetics', 'Schwarzkopf, schauma', 'ANTI-DANDRUFF INTENSIVE SHAMPOO', 'Consumer', 
-            'Germany', 'Chemical', 'According to the list of ingredients the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is forbidden in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Stop of sales
-Date of entry into force: 12/04/2024', 'Czechia', 
-            'None', 'None'
+            'None', 'A12/00042/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Bus', 'Tourismo', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '65.00T23270B', '05.04.2022 - 18.12.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01226/24', 'Motorcycle/spare part', 'Motor vehicles', 'Yamaha', 'Engine protection low', 'Consumer', 
-            'Spain', 'Injuries', 'The protector can prevent the foot brake lever to be sufficiently activated when pressed, resulting in a loss of vehicle control, creating a risk of accident and injury. The product does not comply with the Regulation on the approval and market surveillance of two- or three-wheel vehicles and quadricycles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'ACY2401E0', '01.06.2014 - 30.03.2023'
+            'None', 'A12/00126/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Lorry', 'TGM, TGS, TGX', 
+            'Man', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '8365TR', '1.1.2023 - 24.11.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01400/24', 'Soother holder', 'Childcare articles and children's equipment', 'BamBam', 'Roze Hartje Speenkoord	', 'Consumer', 
-            'People's Republic of China', 'Choking', 'The wooden beads can break apart, releasing small parts. A small child may put them in the mouth and choke. The product does not comply with the requirements of the General Product Safety Directive nor with European standard EN 12586.
-', 'Type of economic operator to whom the measure(s) were ordered: Other
-Category of measure(s): Stop of sales
-Date of entry into force: 09/04/2024', 'The Netherlands', 
-            'None', 'None'
+            'None', 'A12/00144/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'GLE', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5496340', '4.4.2019 - 27.10.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01621/24', 'Baby cot', 'Childcare articles and children's equipment', 'NOUKIES', 'B&K GRIS VELOUDOUX GRIS', 'Consumer', 
-            'Unknown', 'Injuries', 'The carrying handles may break, creating a risk of the child falling, which can cause various injuries. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 1466.', '
-Type of economic operator taking notified measure(s): Retailer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: Unknown', 'France', 
-            'None', 'None'
+            'None', 'A12/00080/24', 'None', 
+            'France', 'None', 'Environment', 
+            'None', 'Passenger car', 'Citroen C3 V4', 
+            'CITROEN', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MB4', '24-10-2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01954/24', 'Soother', 'Childcare articles and children's equipment', 'LINEA INFANTIL', 'CHUPETE FORMATIVO + CLIP', 'Consumer', 
-            'People's Republic of China', 'Choking', 'The clip attaching the item to clothing can break easily, generating small parts. A small child may put them in the mouth and choke. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 12586.', 'Type of economic operator to whom the measure(s) were ordered: Importer
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 13/03/2024', 'Spain', 
-            'None', 'None'
+            'None', 'A12/00073/24', 'None', 
+            'Peoples Republic of China', 'None', 'Chemical', 
+            'None', 'Tool set', 'Alu tool box 141 pcs', 
+            'Prof', 'Hand tools', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6438313751182', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03581/24', 'Moisturising cream', 'Cosmetics', 'Nivea', 'Crema idratante intensiva', 'Consumer', 
-            'Germany', 'Chemical', 'According to the list of ingredients the product contains 2-(4-tert- butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. 
-
-  The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 11/12/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/00188/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'Arteon, Golf, Golf  Variant, Passat							', 
+            'VW – Volkswagen', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '47U4', '13.05.2019 - 20.11.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01904/24', 'Toy kitchen set', 'Toys', 'KITCHEN TOYS', 'BIO vařič', 'Consumer', 
-            'People's Republic of China', 'Environment', 'The solders in the product have an excessive concentration of lead and cadmium (measured values up to 78.8% and 0.14% by weight, respectively). Lead and cadmium pose a risk to the environment The product does not comply with the requirements of the Directive on the restriction of the use of certain hazardous substances in electrical and electronical equipment (RoHS 2 Directive).', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 09/01/2024', 'Czechia', 
-            'None', 'None'
+            'None', 'A12/00191/24', 'None', 
+            'Slovakia', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Touareg', 
+            'VW', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '69FY', '14.8.2023 - 4.11.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01979/24', 'Passenger car', 'Motor vehicles', 'Mercedes-Benz', 'E-Class, E-Class Coupe/Convertible, CLS, AMG GT 4-doors Coupe', 'Consumer', 
-            'Germany', 'Fire', 'The electrical connector of the transmission wiring harness may not have been correctly processed. This can lead to water entering the connector, which could cause short circuit and can create a thermal overload of the connector when the vehicle is parked, causing the risk of fire. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
+            'None', 'A12/00194/24', 'None', 
+            'Italy', 'None', 'Fire', 
+            'None', 'Light commercial vehicle', 'Movano', 
+            'Opel', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KJ1', '20.3.2023 - 5.6.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00242/24', 'None', 
+            'Poland', 'None', 'Fire', 
+            'None', 'Light commercial vehicle', 'Jumper', 
+            'CITROEN', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'JZP', '20.3.2023 - 2.9.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00243/24', 'None', 
+            'Poland', 'None', 'Fire', 
+            'None', 'Light commercial vehicle', 'Boxer', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MKZ', '20.3.2023 - 1.9.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00193/24', 'None', 
+            'Italy', 'None', 'Fire', 
+            'None', 'Light commercial vehicle', 'Ducato', 
+            'Fiat', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '6701', '20.3.2023 - 12.10.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00196/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'C-Class, GLC, GLE', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0790015', '16.01.2023 - 16.07.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00218/24', 'None', 
+            'Germany', 'None', 'Environment, Fire', 
+            'None', 'Passenger car', 'GLE', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5191001', '9.02.2021 – 29.12.2021', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01601/24', 'None', 
+            'Unknown', 'None', 'Suffocation', 
+            'None', 'Baby sleeping bag', '', 
+            'Ortorex', 'Clothing, textiles and fashion items', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00409/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Q7, Q8, RSQ8', 
+            'Audi', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '69GA', '11.8.2023 - 19.12.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00410/24', 'None', 
+            'Germany', 'None', 'Fire, Injuries', 
+            'None', 'Passenger car', 'C-Class AMG', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            ' 3590011', '27.09.2022 - 30.06.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00483/24', 'None', 
+            'Poland', 'None', 'Injuries', 
+            'None', 'Kitchen stool', 'Red kitchen helper', 
+            '', 'Furniture', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5907719419886', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00435/24', 'None', 
+            'Germany', 'None', 'Fire, Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Vito E-Cell', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5490605', '02.03.2011 - 19.06.2012', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00463/24', 'None', 
+            'Germany', 'None', 'Environment, Fire', 
+            'None', 'Passenger car', 'AMG GT 4-Door Coupé, CLS, E-Class', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5491318', '01.07.2021 - 06.04.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00485/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'S-Class', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '4092226', '17.11.2022 - 20.09.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00533/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Lorry', 'Actros, E-Actros, Arocs							', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'STABI-ACHS							', '20 July 2023 – 01 August 2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00575/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'GLE', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '2990005', '03.05.2023 - 17.05.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00604/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Pickup truck/light commercial vehicle', 'RAM Pickup: 1500, 2500, 3500. RAM Cab/Chassis: 3500, 4500, 5500', 
+            'Dodge', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'B2A', '21.06.2022 - 21.07.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00677/24', 'None', 
+            'Unknown', 'None', 'Injuries', 
+            'None', 'Attachment for brush cutters', '', 
+            '', 'Machinery', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5907580155364', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00618/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Wagoneer, Grand Wagoneer', 
+            'Jeep', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'A7A', '24.02.2021 - 11.09.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01314/24', 'None', 
+            'Spain', 'None', 'Chemical', 
+            'None', 'Perfume', 'Yuven  Beauty', 
+            'Yuven Beauty', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8424730003254', '4814', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00681/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'C-Class Plug-In-Hybrid', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '4790021			', '21.06.2023 - 25.08.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00763/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'i4, i5', 
+            'Bmw', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0061360800', '23.09.2023 - 05.02.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00684/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Bus', 'CC 500, TC 500							', 
+            'Setra', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '65.00T23270B', '5.04.2022 - 18.12.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00787/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Golf, Golf Sportsvan, Golf Variant, Phaeton', 
+            'VW', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '012J', '29.04.2014 - 25.07.2016', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00793/24', 'None', 
+            'Spain', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Passat Variant, Passat NMS, Polo', 
+            'VW', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '011J', '29.03.2016 - 07.08.2017', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00764/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'EQE 350, EQE 350+, Mercedes-AMG EQE 43 4MATIC', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5495504', '22.11.2021 - 23.02.2022', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00766/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'C-Class', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5490606', '19.09.2022 - 27.02.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00762/24', 'None', 
+            'Morocco', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Corsa', 
+            'Opel', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KK8', '13.01.2023 - 18.01.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00807/24', 'None', 
+            'Morocco', 'None', 'Injuries', 
+            'None', 'Passenger car', '208', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MLY', '18.1.2023 - 14.3.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00795/24', 'None', 
+            'Spain', 'None', 'Injuries', 
+            'None', 'Passenger car', 'C4, C4x', 
+            'CITROEN', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MF9', '26.01.2023 - 01.02.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00859/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Berlingo (Citroen) Partner (Peugeot) Proace city(Toyota) Combo(Opel)', 
+            'CITROEN, DANGEL, Opel, Peugeot, Toyota', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'CITROEN : ME2
+DANGEL : 738-37
+OPEL : KJW
+PEUGEOT: MLW
+TOYOTA: CI24-002', '04.2019 - 04.2021 (STELLANTIS)
+12.2019 - 04.2021 (Toyota Motor Europe)', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00858/24', 'None', 
+            'Spain', 'None', 'Fire', 
+            'None', 'Passenger car', 'LEÓN, FORMENTOR', 
+            'Cupra, Seat', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '47U6', '12/03/2020 - 04/04/2022', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00845/24', 'None', 
+            'France', 'None', 'Fire', 
+            'None', 'Commercial vehicle', 'GOUPIL / POLARIS G2, G4, G6', 
+            '', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'AP-0006-00', '2.2.2020 - 31.1.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00856/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', '5 series, i5							', 
+            'Bmw', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0052170200', '12.01.2024 - 29.01.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00939/24', 'None', 
+            'Germany', 'None', 'Fire, Injuries', 
+            'None', 'Passenger car', 'AMG GT, C-Class, E-Class, S-Class, SL, CLE, GLC, EQE SUV, EQE, EQS SUV, EQS', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '8297011', '25.01.2023 - 17.11.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00887/24', 'None', 
+            'United Kingdom', 'None', 'Chemical', 
+            'None', 'Essential oil blend', 'Essential oil blend Calm ', 
+            'I Love Wellness', 'Chemical products', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00951/24', 'None', 
+            'Republic of Korea', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Borrego, Mohave', 
+            'Kia', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '231107', '16.11.2007 - 29.05.2013', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00940/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'CLA, A-Class, EQA/EQB, B-Class/GLA/GLB right-hand drive							', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5499117', '08.03.2017 - 31.01.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00996/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'i5, 5, i7, 7, 2, iX1, X1, X5, X6, X7, XM, X5M, X6M, 1, iX2, X2, M5', 
+            'Bmw', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0034670200
+0034720200
+0034730200
+0034740200
+0034750200
+0034760200
+0034780200
+0034800200
+0034900200
+0034920200', '09.06.2022 - 27.01.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/00991/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'GLS, GLE', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '9190101', '16.03.2017 - 07.01.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01115/24', 'None', 
+            'The Netherlands', 'None', 'Environment', 
+            'None', 'Passenger car', 'OPEL MERIVA B', 
+            'Opel/Vauxhall', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KCP', '17/04/2013 - 23/03/2017', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01030/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Truck', 'Actros, Arocs', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'FHS-LACK-L', '08.08.2023 - 08.09.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01135/24', 'None', 
+            'Unknown', 'None', 'Injuries', 
+            'None', 'Bicycle helmet', 'Limar Torino', 
+            'LIMAR', 'Protective equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8055186669918
+8055186669925
+8055186669932
+8055186669949
+8055186669956
+8055186669963
+8055186669970
+8055186669987', '2022/04', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A11/00058/24', 'None', 
+            'France', 'None', 'Injuries, Security', 
+            'None', 'Passenger car', '208 II', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MQN', '11.12.2023 - 21.02.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A11/00057/24', 'None', 
+            'France', 'None', 'Injuries, Security', 
+            'None', 'Passenger car', 'Corsa', 
+            'Opel/Vauxhall', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KLN', '11.12.2023 - 21.02.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'EM/00004/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car', 'C3, DS3', 
+            'Citroen & DS', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MK7', 'C3: 09.04.2009 - 20.02.2017
+DS3: 26.06.2009 - 30.05.2019', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01214/24', 'None', 
+            'Peoples Republic of China', 'None', 'Injuries', 
+            'None', 'All-terrain vehicle', 'Pathcross: 650ATV, 800ATV, 1000ATV', 
+            'Odes', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'Brakepoint', '01.11.2022 - 31.03.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01196/24', 'None', 
+            'India', 'None', 'Strangulation', 
+            'None', 'Dress', 'believe IN YOURSELF', 
+            'Nickelodeon', 'Clothing, textiles and fashion items', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5904009163108', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01428/24', 'None', 
+            'Republic of Korea', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Kauai N (OS N) & Santa Fé PE (TM PE)', 
+            'Hyundai', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '21D155', 'Kauai N (OS N): 15.06.2020 - 03.05.2022
+Santa Fé PE (TM PE): 29.01.2020 - 03.06.2022', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01573/24', 'None', 
+            'Belgium', 'None', 'Injuries', 
+            'None', 'Passenger car/ Light commercial vehicle', 'Proace City, Proace City Verso', 
+            'Toyota', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'CI24-022', '11.09.2023 - 22.01.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01584/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Sprinter, eSprinter', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '3190102 (VS3VERSAU)', '23.05.2023 - 11.07.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01589/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'e-tron GT, RS e-tron GT							', 
+            'Audi', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '93VM', '27.11.2020 - 7.6.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01575/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'e-tron GT, RS e-tron GT', 
+            'Audi', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '93VN', '09.01.2020 - 16.02.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01592/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'ID.3, ID.4, ID.5, ID.7', 
+            'VW', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '45BR', '4.4.2024 - 26.4.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01583/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Q4 e-tron', 
+            'Audi', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '45BF', '25.03.2024 - 23.04.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01586/24', 'None', 
+            'Republic of Korea', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Elantra, Kona', 
+            'Hyundai', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '41D037', '19.04.2023 - 27.12.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01581/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Astra H, Astra J, Cascada, Meriva B, Mokka, Signum, Vectra C, Zafira C', 
+            'Opel/Vauxhall', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KBM', '03.01.2005 - 11.06.2014 (Astra H)
+04.07.2003 - 10.10.2008 (Vectra C)
+05.02.2009 - 24.03.2017 (Meriva B)
+08.05.2012 - 22.08.2018 (Cascada A)
+15.12.2011 - 06.06.2018 (Mokka A)
+16.02.2005 - 19.06.2008 (Signum A) 
+24.02.2009 - 23.08.2018 (Astra J)
+25.02.2011 - 26.07.2016 (Zafira C)', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01879/24', 'None', 
+            'Peoples Republic of China', 'None', 'Injuries', 
+            'None', 'Childrens car seat', 'I-CARE i-Size', 
+            'KINDERKRAFT', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5902533919246
+5902533919253
+5902533923069
+5902533923991
+5902533924011', '23W17 - 23W46', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01644/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Grand Cherokee', 
+            'Jeep', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '10B', '03.12.2020 - 30.05.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01705/24', 'None', 
+            'France', 'None', 'Fire', 
+            'None', 'Passenger car', '508, 3008', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MQE', '12.03.2019 - 28.04.2021', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01706/24', 'None', 
+            'France', 'None', 'Fire', 
+            'None', 'Passenger car', 'C5 Aircross', 
+            'CITROEN', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'ML6', '20.01.2020 - 14.04.2021', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01709/24', 'None', 
+            'France', 'None', 'Fire', 
+            'None', 'Passenger car', 'DS7 Crossback', 
+            'DS', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'ML6', '19.02.2019 - 16.12.2021', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01783/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'Grandland X', 
+            'Opel', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KLH', '02.07.2019 - 10.03.2021', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01790/24', 'None', 
+            'United Kingdom', 'None', 'Fire, Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Expert', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MQR', '10.02.2023 - 31.01.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03786/24', 'None', 
+            'France', 'None', 'Chemical', 
+            'None', 'Eau de toilette', 'LEau Couture', 
+            'ELIE SAAB', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '3423473985259', 'REF 3985250', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01789/24', 'None', 
+            'United Kingdom', 'None', 'Fire, Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Vivaro', 
+            'Opel', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KLP', '15.04.2023 - 17.01.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01787/24', 'None', 
+            'United Kingdom', 'None', 'Fire, Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Jumpy', 
+            'CITROEN', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MN2', '15.04.2023 - 29.01.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01782/24', 'None', 
+            'France', 'None', 'Fire, Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Scudo', 
+            'Fiat', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '6807', '28.04.2023 - 30.01.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01841/24', 'None', 
+            'Germany', 'None', 'Fire, Injuries', 
+            'None', 'Passenger car', 'C-class', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5497603', '22.02.2021 - 28.10.2022', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01844/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Truck', 'TGL, TGM, TGS, TGX', 
+            'Man', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '8505TR', '01.07.2017 - 01.07.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01915/24', 'None', 
+            'United Kingdom', 'None', 'Fire, Injuries', 
+            'None', 'Passenger car', 'F-PACE', 
+            'Jaguar', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'H506', '19.09.2023 - 17.01.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01932/24', 'None', 
+            'United Kingdom', 'None', 'Fire, Injuries', 
+            'None', 'Passenger car / Pickup truck', 'Defender, Discovery, Velar, Range Rover Sport, Range Rover', 
+            'Land Rover, Range Rover', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'N908', 'Defender N1: 06.12.2023 - 17.12.2023
+Others: 29.11.2023 - 12.03.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01960/24', 'None', 
+            'Italy', 'None', 'Fire', 
+            'None', 'Passenger car', 'Revuelto', 
+            'Lamborghini', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'L74X-R.01.24', '20.07.2023 - 12.04.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01957/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'A3, A3 Cabriolet, A4 Cabriolet', 
+            'Audi', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '69RR', '13.07.2004 - 22.04.2013', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/01979/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Passenger car', 'E-Class, E-Class Coupe/Convertible, CLS, AMG GT 4-doors Coupe', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
             '1595003
-1595004', '07.06.2017 - 20.04.2022'
+1595004', '07.06.2017 - 20.04.2022', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01981/24', 'Passenger car', 'Motor vehicles', 'Bmw', '3 series, 4 series, 5 series, 6 series, X3, X4, X5, X5M, M4, M5', 'Consumer', 
-            'Germany', 'Injuries', 'A seam on the inflator housing of the driver airbag may not have been correctly welded. In case of accident, when the airbag is deployed, the inflator can burst, releasing metal parts which could cause injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '0032490300
-0032590300', '07.09.2012 - 28.08.2014'
+            'None', 'A12/01985/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Mustang', 
+            'Ford', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '24S44', '15.09.2022 - 05.04.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01980/24', 'Passenger car', 'Motor vehicles', 'Mercedes-Benz', 'CLS', 'Consumer', 
-            'Germany', 'Injuries', 'The software of the airbag control module may be faulty. In the event of an accident, this can lead the active bonnet system not to be activated properly. This increases the risk of injury to other road users. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '5497604', '03.12.2020 - 02.08.2021'
+            'None', 'A12/01969/24', 'None', 
+            'Poland', 'None', 'Chemical', 
+            'None', 'Glue', 'Butapren', 
+            '', 'Chemical products', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5906197589043', '2023-06', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01976/24', 'Passenger car', 'Motor vehicles', 'Bmw', '2 series, iX1, X1, iX2, X2', 'Consumer', 
-            'Germany', 'Injuries', 'The seat recliner adjuster may not be correctly welded, which could cause the backrest not to lock. If it doesn't lock, the seatback might not stay secure in a collision, increasing the risk of injury. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '0052200200', '22.04.2024 - 13.05.2024'
+            'None', 'A12/01980/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'CLS', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5497604', '03.12.2020 - 02.08.2021', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01977/24', 'Passenger car', 'Motor vehicles', 'Mini', 'Countryman', 'Consumer', 
-            'Germany', 'Injuries', 'The seat recliner adjuster may not be correctly welded, which could cause the backrest not to lock. If it doesn't lock, the seatback might not stay secure in a collision, increasing the risk of injury. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '0052210200', '30.04.2024 - 07.05.2024'
+            'None', 'A12/01977/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Countryman', 
+            'Mini', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0052210200', '30.04.2024 - 07.05.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02415/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'Ford', 'Transit Connect', 'Consumer', 
-            'Spain', 'Injuries', 'Improper cleaning of the components during primer application can leave contaminants like silicone, which weakens the adhesion of the glass roof plate. This may cause wind noise, water leaks, and potential detachment of the roof from the vehicle, increasing the risk of accidents and injuries to other road users. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '24S29', '02.10.2016 - 13.06.2019'
+            'None', 'A12/01991/24', 'None', 
+            'Germany', 'None', 'Fire', 
+            'None', 'Lorry', 'eActros 983, eEconic 956', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'HV-BA-UESP', '15/09/2023 - 05/03/2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02023/24', 'Passenger car', 'Motor vehicles', 'Ford', 'Mustang', 'Consumer', 
-            'United States', 'Fire', 'An unsecured nut may cause the clutch pedal to fail, preventing the driver from changing gear and causing the engine to stall. If the clutch line is lowered, it may melt on hot components and brake fluid may leak and ignite. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '24S36', '15.11.2023 - 22.05.2024'
+            'None', 'A12/02080/24', 'None', 
+            'Czechia', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Citigo, Roomster, Praktik, Fabia II,  Fabia III,Rapid, Octavia III, Superb III, Karoq, Kodiaq', 
+            'Skoda', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '69KH', '24.09.2012 - 27.06.2014', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02024/24', 'Vehicle parts / Car tyres', 'Motor vehicles', 'Vredestein', 'Ultrac, Quatrac, Quatrac Pro+, Quatrac Pro EV', 'Consumer', 
-            'Hungary', 'Injuries', 'A contaminated rubber mixture may cause the rubber tread to separate from the steel belts. This can lead the tyres to lose their shape and result in a loss of vehicle control while driving, increasing the risk of accidents and injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'Not available', '04.03.2024 - 07.03.2024'
+            'None', 'A12/02389/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Sprinter', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '3594805', '11.05.2023 - 11.10.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/01991/24', 'Lorry', 'Motor vehicles', 'Mercedes-Benz', 'eActros 983, eEconic 956', 'Professional', 
-            'Germany', 'Fire', 'The electrical voltage stability of the high-voltage battery pack (CB400)  may not be sufficiently stable due to the presence of a metal foreign body. Repeated surge events during charging could potentially damage affected batteries, posing a risk of fire.  The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'HV-BA-UESP', '15/09/2023 - 05/03/2024'
+            'None', 'A12/02734/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'Travel adaptor', ' ADAPTOR INTERNATIONAL ALL-IN-ONE', 
+            '', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8016886219315', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02080/24', 'Passenger car', 'Motor vehicles', 'Skoda', 'Citigo, Roomster, Praktik, Fabia II,  Fabia III,Rapid, Octavia III, Superb III, Karoq, Kodiaq', 'Consumer', 
-            'Czechia', 'Injuries', 'The propellant in the driver airbag may deteriorate over time. If the airbags deploy, it could result in fragments from the inflator injuring the vehicle's occupants. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '69KH', '24.09.2012 - 27.06.2014'
+            'None', 'A12/02447/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Grenadier', 
+            'Ineos', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '24038', '11.10.2023 - 02.11.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03571/24', 'Aftershave', 'Cosmetics', 'Prada', 'Luna Rossa', 'Consumer', 
-            'Spain', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 11/12/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02452/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Q3, Q3 Sportback, Q3 Sportback e-tron, Q3 e-tron', 
+            'Audi', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '687Q', '26.04.2024 - 08.05.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03564/24', 'Eau de toilette', 'Cosmetics', 'Lanvin', 'Oxygene', 'Consumer', 
-            'France', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 11/12/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02445/24', 'None', 
+            'Peoples Republic of China', 'None', 'Chemical', 
+            'None', 'Belly button piercing', 'Cubic Zirkonia, Titan. 1,6x10mm', 
+            'Bijou Brigitte', 'Jewellery', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '4049077806845', '010248; 120739
+010248; 120783', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03560/24', 'Perfume', 'Cosmetics', 'Hermes', 'Twilly d'Hermes', 'Consumer', 
-            'France', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 11/12/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02464/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Electric bicycle', 'JAM²', 
+            'Focus', 'Hobby/sports equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03561/24', 'Aftershave lotion', 'Cosmetics', 'Chanel', 'Allure Homme', 'Consumer', 
-            'France', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 11/12/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02520/24', 'None', 
+            'Republic of Korea', 'None', 'Fire', 
+            'None', 'Passenger car', 'Stinger (CK), K9 (RJ)', 
+            'Kia', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '241039
+KRE23-12-P130-CK RJ', '17.07.2017 - 14.08.2021', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03563/24', 'Perfume', 'Cosmetics', 'Chloé', 'Love', 'Consumer', 
-            'France', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 11/12/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02482/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Bus', 'Tourismo (MB E 16 RHD, MB E 17 RHD, MB E 15 RHD, MB E 16/2 RHD)', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '91.10U24296A', '12.12.2023 - 13.2.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03568/24', 'Soap', 'Cosmetics', 'La Florentina', 'Melograno', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 11/12/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02483/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Bus', 'CC500, TC500, MC400 ', 
+            'Setra', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '91.10U24296A', '6.12.2023 - 13.2.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02472/24', 'Passenger car', 'Motor vehicles', 'Jaguar', 'E-PACE', 'Consumer', 
-            'United Kingdom', 'Burns, Injuries', 'During its deployment, the passenger airbag may tear due to the facial airbag deployment door panel not being sufficiently weakened. A torn airbag may reduce the occupant protection, increase risk of injuries in the event of an accident.
-Moreover, a torn airbag could release hot gases, causing burns to occupants. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Sweden', 
-            'H491', '27.10.2020 - 21.10.2022'
+            'None', 'A12/02465/24', 'None', 
+            'Germany', 'None', 'Fire, Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Sprinter', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'VS3KONTAK (4694206)', '11.12.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02642/24', 'Puzzle mat', 'Toys', 'Pincello', 'ALFOMBRA PUZLE DE GOMA EVA', 'Consumer', 
-            'People's Republic of China', 'Choking', 'The puzzle mat can easily break, resulting in small parts. Small children may put them in the mouth and choke. The product does not comply with the requirements of the Toy Safety Directive nor with the European standard EN 71-1.', 'Type of economic operator to whom the measure(s) were ordered: Importer
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 28/03/2024', 'Spain', 
-            'None', 'None'
+            'None', 'A12/02485/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Bus', 'eCitaro, Citaro, Capacity ', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '72.00M24285A', '17-01-2017 to 7-02-2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02441/24', 'Car seat swivel and lift', 'Motor vehicles', 'BraunAbility Europe AB', 'Turny 6-way							', 'Professional', 
-            'Sweden', 'Injuries', 'Missing screws on the swivel seat lift may cause the base to drop to the lowest position while the car is in motion. This may cause an accident. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '8', '1/08/2023 - 31/08/2023'
+            'None', 'A12/02486/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Bus', 'S 516 LE', 
+            'Setra', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '72.00M24285A', '4/12/2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03565/24', 'Perfume', 'Cosmetics', 'New Brand', 'Eau Magic', 'Consumer', 
-            'France', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 29/11/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02710/24', 'None', 
+            'Japan', 'None', 'Injuries', 
+            'None', 'Motorcycle', 'V-Strom 800DE (DL800, DL800U)', 
+            'Suzuki', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '97JR', '11.2022 - 05.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02449/24', 'Ice anchor', 'Protective equipment', 'Petzl', 'Laser speed 10 cm', 'Consumer', 
-            'France', 'Injuries', 'The product's maximum pull-out strength is insufficient, potentially failing to support climbers adequately on ice, thereby increasing the risk of accidents and injuries. The product does not comply with the Personal Protective Equipment (PPE) Regulation nor with the European standard EN 568.', '
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown
-
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Sweden', 
-            'None', 'None'
+            'None', 'SR/03798/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Eau de toilette', 'n° 50', 
+            'DolciSguardi profumi', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8029087005878', 'CMP01M21F', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03290/24', 'Play mat', 'Toys', 'None', '36Pcs Enfants Alphabet Lettres Chiffres Puzzle Coloré Enfants Tapis Tapis De jeu Sol Souple', 'Consumer', 
-            'People's Republic of China', 'Choking', 'The toy has small parts (the inner parts of the numbers and letters) which can easily detach. Small children may put them in their mouth and choke. The product does not comply with the requirements of the Toy Safety Directive nor with the European standard EN 71-1.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: 30/08/2024
-
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: 20/09/2024', 'France', 
-            'None', 'None'
+            'None', 'A12/02712/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Passenger car', 'X3, X3M', 
+            'Bmw', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0051960500', '21.12.2016 - 27.06.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03570/24', 'Eau de toilette', 'Cosmetics', 'Lotto', 'Speed', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02575/24', 'None', 
+            'Poland', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Caddy Maxi', 
+            'VW', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '47U9', '13.05.2024 - 19.06.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03562/24', 'Eau de toilette', 'Cosmetics', 'BENETTON', 'Rosso Woman', 'Consumer', 
-            'France', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02762/24', 'None', 
+            'Poland', 'None', 'Fire', 
+            'None', 'All-terrain vehicle', 'Sportsman 850, Sportsman XP 1000, Sportsman XP 1000 S', 
+            'Polaris', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'A-24-04', '28.06.2023 - 01.07.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03569/24', 'Perfume', 'Cosmetics', 'Roberto Capucci', 'Blu', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02626/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', '2, M2, 3							', 
+            'Bmw', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0072660200', '16.07.2024 - 25.07.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03593/24', 'Shower gel', 'Cosmetics', 'Perlier', 'Fresia di Lanzarote', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl)propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02637/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'E-tron', 
+            'Audi', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '46P6', '23.05.2019 - 10.12.2019', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03595/24', 'Perfume', 'Cosmetics', 'Genny', 'Genny', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl)propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02685/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Toy set', 'Baby Biceps Gift Set', 
+            'Fisher-Price', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '0887961809596', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03596/24', 'Perfume', 'Cosmetics', 'Perlier', 'Fresia di Lanzarote', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl)propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02681/24', 'None', 
+            'United Kingdom', 'None', 'Fire', 
+            'None', 'Passenger car', 'Cooper', 
+            'Mini', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0061750800', '27.11.2018 - 25.01.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02762/24', 'All-terrain vehicle', 'Motor vehicles', 'Polaris', 'Sportsman 850, Sportsman XP 1000, Sportsman XP 1000 S', 'Consumer', 
-            'Poland', 'Fire', 'Water or other contaminants can accumulate on the fuel pump flange, where it can damage the pump flange, which can result in a fuel leak.  A leak at the fuel pump’s flange outlet can lead to a risk of fire. The product does not comply with the requirements laid down in the Regulation on the approval and market surveillance of agricultural and forestry vehicles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'A-24-04', '28.06.2023 - 01.07.2024'
+            'None', 'A12/02682/24', 'None', 
+            'United Kingdom', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Range Rover Sport, Range Rover', 
+            'Land Rover', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'N845', '04.09.2023 - 23.10.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03594/24', 'Eau de toilette', 'Cosmetics', 'Rockford', 'Night Blue', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl)propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may damage the reproductive system, may harm foetal health and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02704/24', 'None', 
+            'United States', 'None', 'Chemical', 
+            'None', 'Tattoo ink - Permanent makeup', 'Luxe Ready ASH', 
+            'Perma Blend', 'Chemical products', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '640058818727', '72309', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03572/24', 'Shower gel', 'Cosmetics', 'Dimensione danza', 'The Musical', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02718/24', 'None', 
+            'Republic of Korea', 'None', 'Injuries', 
+            'None', 'Lorry', 'Xcient FCEV							', 
+            'Hyundai', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'HRE24-61-P021							', '20.5.2021 - 8.2.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03573/24', 'Perfume', 'Cosmetics', 'Dimensione danza', 'The Musical', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02725/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car', 'DS3 Crossback', 
+            'Citroen & DS', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'NB6', '09.04.2024 - 17.05.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03592/24', 'Perfume and body lotion set ', 'Cosmetics', 'Paco Rabanne', 'Olympea', 'Consumer', 
-            'France', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert- butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. 
-
-  The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
-        );
-        
-
-        INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
-        ) VALUES (
-            'A12/02624/24', 'Placemat', 'Kitchen/cooking accessories', 'Zeller Present', 'None', 'Consumer', 
-            'Germany', 'Chemical', 'The plastic material of the placemat has an excessive concentration of dibutyl phthalate (DBP) and bis(2-ethylhexyl) phthalate (DEHP) (measured values: 0.2% and 9.1% by weight, respectively). These phthalates may harm the health by causing possible damage to the reproductive system.
- The product does not comply with the REACH Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Destruction of the product
-Date of entry into force: 28/08/2024
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Finland', 
-            'None', 'None'
-        );
-        
-
-        INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
-        ) VALUES (
-            'A12/03574/24', 'Eau de toilette', 'Cosmetics', 'Fiorucci', 'Kisses of Fire', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
-        );
-        
-
-        INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
-        ) VALUES (
-            'A12/03577/24', 'Eau de toilette', 'Cosmetics', 'Alyssa Ashleh', 'Fizzy', 'Consumer', 
-            'France', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
-        );
-        
-
-        INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
-        ) VALUES (
-            'A12/02668/24', 'Soother holder ', 'Childcare articles and children's equipment', 'Elodie', 'Autumn Rose pacifier clip', 'Consumer', 
-            'People's Republic of China', 'Choking', 'The clip of the soother holder can break, releasing small parts. A small child may put them in the mouth and choke. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 12586.
-', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 02/09/2024', 'Finland', 
-            'None', 'None'
-        );
-        
-
-        INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
-        ) VALUES (
-            'A12/02666/24', 'Soother holder ', 'Childcare articles and children's equipment', 'Elodie', 'Tidemark Drops pacifier clip', 'Consumer', 
-            'Unknown', 'Choking', 'The clip of the soother holder can break, releasing small parts. A small child may put them in the mouth and choke. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 12586.
-', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 02/09/2024', 'Finland', 
-            'None', 'None'
-        );
-        
-
-        INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
-        ) VALUES (
-            'A11/00108/24', 'Hair dryer', 'Electrical appliances and equipment', 'Maestro', 'Travel Hair Dryer', 'Consumer', 
-            'People's Republic of China', 'Electric shock', 'The product's insulation is inadequate. In case the product's casing is damaged, live parts may become accessible, increasing the risk of electric shock to the user. The product does not comply with the requirements of the Low Voltage Directive nor with the European standards EN 60335-1 and EN 60335-2-23.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 01/08/2024
-
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: 01/08/2024', 'Poland', 
-            'None', 'None'
-        );
-        
-
-        INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
-        ) VALUES (
-            'A12/03586/24', 'Body lotion', 'Cosmetics', 'Rocco Barocco', 'Tre', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
-        );
-        
-
-        INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
-        ) VALUES (
-            'A12/03585/24', 'Eau de toilette', 'Cosmetics', 'Renato Balestra', 'Oro Femme', 'Consumer', 
-            'Italy', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
-        );
-        
-
-        INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
-        ) VALUES (
-            'A12/02726/24', 'Passenger car', 'Motor vehicles', 'Opel/Vauxhall', 'Corsa, Mokka', 'Consumer', 
-            'France', 'Injuries', 'A crack located inside the Electric Power Steering motor of the steering rack can cause plastic parts to detach from the worm wheel. This can lead to a steering blockage, increasing the risk of accidents and injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 11/09/2024', 'France', 
+            'None', 'A12/02726/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Corsa, Mokka', 
+            'Opel/Vauxhall', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
             'KMZ', '09.04.2024 - 18.05.2024 (Mokka)
-From 11/4/2024 to 6/5/2024 (Corsa)'
+From 11/4/2024 to 6/5/2024 (Corsa)', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02729/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'CITROEN', 'Jumpy Spacetourer, Jumpy', 'Consumer', 
-            'France', 'Injuries', 'Incorrectly fitted rear axle suspension springs can lead to a loss of vehicle handling and the spring may come free from its support. The spring can fall onto the road whilst driving, posing a risk of accident and injuries to the following traffic. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'ND7', '18.10.2023 - 28.06.2024'
+            'None', 'A12/02737/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Passenger car', 'XD3', 
+            'BMW ALPINA', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0051960500', '21.12.2016 - 30.05.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03224/24', 'Passenger car', 'Motor vehicles', 'Jeep', 'Compass PHEV, Renegade PHEV', 'Consumer', 
-            'Italy', 'Injuries', 'The electrical cable connection to the vehicle's Integrated Dual Charge Module (IDCM) may not be tightened to the correct torque. This can result in the 12-volt battery not being charged, which can cause the vehicle to shut down unexpectedly, thereby increasing the risk of an accident and injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Poland', 
-            '74B', '09.11.2021 - 07.05.2024'
+            'None', 'A12/02729/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Jumpy Spacetourer, Jumpy', 
+            'CITROEN', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'ND7', '18.10.2023 - 28.06.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03584/24', 'Children's hoodie', 'Clothing, textiles and fashion items', 'Best Kid's', 'None', 'Consumer', 
-            'People's Republic of China', 'Injuries, Strangulation', 'The product bears long functional cords close to the neck. The cords may become trapped during various activities of a child, leading to injuries or strangulation. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 14682.', 'Type of economic operator to whom the measure(s) were ordered: Manufacturer
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 25/07/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02736/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Expert Traveller, Expert', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MSQ', '19.02.2024 - 28.06.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02796/24', 'Energy powder', 'Chemical products', 'Wildkraut Energy Sniff', 'None', 'Consumer', 
-            'Austria', 'Injuries', 'Continuous nasal inhalation may cause nasal mucosa erosion, potentially causing nosebleeds, infections, septum perforation, and impaired nasal breathing. It may also disrupt the normal quality and physiological process of air inhalation. Prolonged effects include the risk of hypoxia, which can further result in various complications within the body and may obstruct the respiratory pathways. The product does not comply with the requirements of the General Product Safety Directive.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 11/09/2024', 'Bulgaria', 
-            'None', 'None'
+            'None', 'A12/02731/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Passenger car', 'RAM 2500, RAM 3500, DURANGO', 
+            'Dodge', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '55B', '09.04.2021 - 09.12.2022', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02743/24', 'Massage ball set ', 'Hobby/sports equipment', 'Gymstick', 'Active Spikey Massage Ball Set', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The product has an excessive concentration of diisobutyl phthalate (DIBP) (measured value 15% by weight). This phthalate may harm the health of children, causing possibly damage to the reproductive system. The product does not comply with the REACH Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Importer
-Category of measure(s): Destruction of the product
-Date of entry into force: 20/09/2024
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Finland', 
-            'None', 'None'
+            'None', 'A12/03224/24', 'None', 
+            'Italy', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Compass PHEV, Renegade PHEV', 
+            'Jeep', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '74B', '09.11.2021 - 07.05.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02768/24', 'Passenger car', 'Motor vehicles', 'Kia', 'Picanto, Stonic', 'Consumer', 
-            'Republic of Korea', 'Injuries', 'A short circuit inside the exhaust gas circulation valve can occur, causing the engine to stall before the warning light is on. This increases the risk of accidents and injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Portugal', 
-            '241099', '11/01/2024 - 14/02/2024'
+            'None', 'A12/03670/24', 'None', 
+            'Peoples Republic of China', 'None', 'Strangulation', 
+            'None', 'Childrens hoodie', '', 
+            'Best Kids', 'Clothing, textiles and fashion items', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02832/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'Renault', 'Master III', 'Professional', 
-            'France', 'Fire', 'The fuel line is too close to the wiring harness, which can cause the fuel line to rub against the wires and wear out. This can lead to fuel leaking under the car, creating a risk of fire. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 02/09/2024', 'France', 
-            'C0392', '23.09.2014 - 27.09.2023'
+            'None', 'A12/03584/24', 'None', 
+            'Peoples Republic of China', 'None', 'Injuries, Strangulation', 
+            'None', 'Childrens hoodie', '', 
+            'Best Kids', 'Clothing, textiles and fashion items', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02827/24', 'Passenger car', 'Motor vehicles', 'Opel/Vauxhall', 'Astra L, Corsa, Crossland X, Mokka', 'Consumer', 
-            'France', 'Environment', 'In certain vehicles fitted with the DV5R E6.3 engine, the nitrogen oxide (NOx) emissions are above the regulatory limits. Excessive NOx emissions pose a risk to the environment. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 12/03/2024', 'France', 
+            'None', 'A12/02870/24', 'None', 
+            'Republic of Korea', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Santa Fe MX5', 
+            'Hyundai', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '41D130', '14.03.2024 - 04.07.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/02766/24', 'None', 
+            'Peoples Republic of China', 'None', 'Injuries', 
+            'None', 'Protective gear set ', 'Safety kit', 
+            'SUN & SPORT', 'Hobby/sports equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8001478518334', '10/2022', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/02768/24', 'None', 
+            'Republic of Korea', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Picanto, Stonic', 
+            'Kia', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '241099', '11/01/2024 - 14/02/2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/02791/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Proace, Proace Verso', 
+            'Toyota', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'CI24-042', '02.04.2024 - 29.06.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/02824/24', 'None', 
+            'France', 'None', 'Environment', 
+            'None', 'Passenger car', '208, 2008, 301, 308, 3008, 5008, Partner', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MM3', '1/2/2022 (Partner)
+From 22/1/2022 to 1/2/2022 (301)
+From 3/1/2022 to 14/10/2022 (2008)
+From 3/1/2022 to 8/11/2022 (208)
+From 4/1/2022 to 8/12/2022 (5008)
+From 5/1/2022 to 9/12/2022 (308 and 3008)', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/02827/24', 'None', 
+            'France', 'None', 'Environment', 
+            'None', 'Passenger car', 'Astra L, Corsa, Crossland X, Mokka', 
+            'Opel/Vauxhall', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
             'KKT', 'From 11/1/2022 to 6/12/2022 (Astra L)
 From 3/1/2022 to 9/11/2022 (Crossland X)
 From 4/1/2022 to 10/1/2023 (Mokka)
-From 5/1/2022 to 19/10/2022 (Corsa)'
+From 5/1/2022 to 19/10/2022 (Corsa)', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02830/24', 'Passenger car', 'Motor vehicles', 'Bmw', '1 series, 3 series, X3, E91 with 8TP', 'Consumer', 
-            'Germany', 'Injuries', 'The propellant in the driver airbag may deteriorate over time. If the airbags deploy, it could result in fragments from the inflator injuring the vehicle's occupants. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '0032600300', '02.01.2006 - 28.05.2008'
+            'None', 'A12/02826/24', 'None', 
+            'France', 'None', 'Environment', 
+            'None', 'Passenger car', 'C3 Aircross, C3 V4, C4 V3, C4 Picasso, C5 Aircross, C-Elysee, DS3 crossback', 
+            'Citroen & DS', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MJ4', '3/1/2022 - 18/11/2022 (C3 Aircross)
+3/1/2022 - 9/10/2022 (C3)
+4/1/2022 - 14/10/2022 (C-Elysée)
+4/1/2022 - 24/11/2022 (C4)
+4/1/2022 - 27/6/2022 (C4 Picasso)
+4/1/2022 - 4/12/2022 (DS3 Crossback)
+5/1/2022 -15/12/2022 (C5 Aircross)', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02833/24', 'Passenger car', 'Motor vehicles', 'Bmw', '1, 2, 2 Active Tourer/Gran Tourer, 3, 4, 5, 6, X1, X2, X3, X4, X5, X6', 'Consumer', 
-            'Germany', 'Injuries', 'The propellant in the driver airbag may deteriorate over time. If the airbags deploy, it could result in fragments from the inflator injuring the vehicle's occupants. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '0032620300', '02.01.2016 - 12.12.2017'
+            'None', 'A12/02830/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', '1 series, 3 series, X3, E91 with 8TP', 
+            'Bmw', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0032600300', '02.01.2006 - 28.05.2008', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02968/24', 'All-terrain vehicle', 'Motor vehicles', 'Taiwan Golden Bee (TGB)', 'Blade', 'Consumer', 
-            'Taiwan', 'Injuries', 'The front right stub axle could break due to a material defect. This could impair steering control, increasing the risk of an accident. The product does not comply with the Regulation on the approval and market surveillance of agricultural and forestry vehicles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'HC05E3-5-270824', '06.11.2023 - 04.05.2024'
+            'None', 'A12/02833/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', '1, 2, 2 Active Tourer/Gran Tourer, 3, 4, 5, 6, X1, X2, X3, X4, X5, X6', 
+            'Bmw', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0032620300', '02.01.2016 - 12.12.2017', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03591/24', 'Perfume', 'Cosmetics', 'Creation lamis', 'Golden wave', 'Consumer', 
-            'Belgium', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert- butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation.  The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 03/10/2023', 'Italy', 
-            'None', 'None'
+            'None', 'A12/02834/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'D3, B5, D5, B6, XD3, B3, B4, D4, B3S, B4S', 
+            'BMW ALPINA', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0032550300
+0032560300
+0032570300', '13.03.2003 - 20.06.2018', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03006/24', 'Swim vest ', 'Other - Personal protective equipment', 'Pottwal', 'Schwimmweste Kinder - Schwimmhilfe - mit verstellbarem Schrittgurt', 'Consumer', 
-            'People's Republic of China', 'Drowning', 'There is a risk of drowning as the product can push the child's head into a disadvantageous position or under water. 
-Moreover, the product lacks the necessary warnings and user instructions.  The product does not comply with the requirements of the Personal Protective Equipment Regulation nor with the European standard EN 13138-1.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 01/10/2024', 'Austria', 
-            'None', 'None'
+            'None', 'A12/02858/24', 'None', 
+            'Republic of Korea', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Cruze, Orlando, Trax, Aveo', 
+            'Chevrolet', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KCS', '02.12.2008 - 10.01.2017 (Cruze)
+12.11.2012 - 31.08.2015 (Trax)
+18.06.2010 - 10.05.2016 (Orlando)
+26.01.2011 - 27.06.2016 (Aveo)', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02992/24', 'Cosmetic set', 'Cosmetics', 'Tedi - Casuelle', 'Cosmetic Gift Set		', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The product contains the colorant CI 45170, which is prohibited in cosmetic products. The product does not comply with the Cosmetic Products Regulation.
-', 'Type of economic operator to whom the measure(s) were ordered: Other
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 13/09/2024', 'The Netherlands', 
-            'None', 'None'
+            'None', 'A12/02967/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Touring: B3/B3S BITURBO, D3 BITURBO / Coupé: D4 BITURBO / Cabrio: D4 BITURBO / XD3 BITURBO', 
+            'Alpina', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0032620300							', '2.1.2016 - 12.12.2017', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02969/24', 'Passenger car', 'Motor vehicles', 'Mercedes-Benz', 'CLA, A-Class, EQA/EQB, B-Class, GLA	', 'Consumer', 
-            'Germany', 'Injuries', 'The pyrofuse casing may move while the vehicle is in motion, potentially damaging cables. As a result, the pyrofuse could fail during an accident or cause the separator piston to dislodge into the driver’s footwell, increasing the risk of injury. Additionally, in plug-in hybrid and electric vehicles, cable damage could lead to high-voltage system failure and loss of power without warning, increasing the risk of an accident. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '5498828							', '18.6.2024 - 18.7.2024'
+            'None', 'A12/03063/24', 'None', 
+            'Peoples Republic of China', 'None', 'Injuries', 
+            'None', 'Fall protection system', '', 
+            'Zhongyu', 'Protective equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03008/24', 'Baby book', 'Toys', 'None', 'BOOK', 'Consumer', 
-            'People's Republic of China', 'Choking', 'The product has small parts (googly eyes and clock's press-on fastener) that can be easily detached. A small child may put them in the mouth and choke. The product does not comply with the requirements of the Toy Safety Directive nor with the European standard EN 71-1.', 'Type of economic operator to whom the measure(s) were ordered: Manufacturer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 06/09/2024
-
-Type of economic operator to whom the measure(s) were ordered: Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 04/10/2024', 'Germany', 
-            'None', 'None'
+            'None', 'A12/02969/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'CLA, A-Class, EQA/EQB, B-Class, GLA	', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5498828							', '18.6.2024 - 18.7.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02994/24', 'Ladder', 'Hand tools', 'DRABEST', 'Hliníkový žebřík', 'Consumer', 
-            'Poland', 'Injuries', 'The ladder does not have sufficient mechanical strength and can bend during use, possibly resulting in a fall of the user from a considerable height. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 131-2.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: Unknown', 'Czechia', 
-            'None', 'None'
+            'None', 'A12/03008/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Baby book', 'BOOK', 
+            '', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '3831127580987', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03065/24', 'Baby cot', 'Childcare articles and children's equipment', 'Childhome', 'Panier Moïse', 'Consumer', 
-            'Belgium', 'Injuries', 'The product is not stable, which creates a risk of the child falling. This can lead to various injuries. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 1466.', '
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 17/04/2024
-
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 15/10/2024', 'France', 
-            'None', 'None'
+            'None', 'A12/03065/24', 'None', 
+            'Belgium', 'None', 'Injuries', 
+            'None', 'Baby cot', 'Panier Moïse', 
+            'Childhome', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5420007155445', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02996/24', 'Passenger car', 'Motor vehicles', 'Aston Martin', 'DBX707, DB12, Vantage', 'Consumer', 
-            'United Kingdom', 'Fire, Injuries', 'Variable pressure control during the extrusion process can cause irregularities, cracks or kinks in the internal wall of oil cooler hoses. This can create weak points that can rupture due to temperature and pressure fluctuations, causing oil loss. Engine oil cooler hoses can burst, potentially leading to the engine stalling or seizure. This increases the risk of an accident or fire. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'RA-03-1973', '30.09.2022 - 09.07.2024'
+            'None', 'A12/03112/24', 'None', 
+            'Unknown', 'None', 'Cuts', 
+            'None', 'Lawn mower', 'Miimo', 
+            'Honda', 'Machinery', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', 'From MCJF-1000031 to MCJF-1005100 (HRM1000)
+From MCKF-1000010 to MCKF-1003129 (HRM1500)
+From MCLF-1000011 to MCLF-1003702 (HRM1500 Live)
+From MCMF-1000002 to MCMF-1001631 (HRM2500 )
+From MCMF-1001692 to MCMF-1002081 (HRM2500)
+From MCNF-1000046 to MCNF-1002691 (HRM2500 Live)
+From MCPF-1000050 to MCPF-1003289 (HRM4000 Live)', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03004/24', 'Swim vest', 'Other - Personal protective equipment', 'Moko', 'Kinder Schwimmflügel', 'Consumer', 
-            'People's Republic of China', 'Drowning', 'There is a risk of drowning as the product is not sufficiently visible in water and lacks the necessary warnings about active supervision. The product does not comply with the requirements of the Personal Protective Equipment Regulation nor with the European standard EN 13138-1.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 27/09/2024
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 27/09/2024', 'Austria', 
-            'None', 'None'
+            'None', 'A12/03009/24', 'None', 
+            'Germany', 'None', 'Fire, Injuries', 
+            'None', 'Passenger van', 'Crafter "Grand California"', 
+            'VW', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '76AF', '08.01.2024 - 06.08.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/02995/24', 'Plastic ball', 'Toys', 'None', 'Pilka', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The plastic material of the toy contains an excessive amount of diisobutyl phthalate (DIBP) (measured values up to 30.2% by weight). This phthalate may harm the health of children by causing possible damage to the reproductive system. The product does not comply with the REACH Regulation.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Destruction of the product
-Date of entry into force: 13/09/2024
-
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: 13/09/2024
-
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 13/09/2024', 'Poland', 
-            'None', 'None'
+            'None', 'A12/03011/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Vivaro', 
+            'Opel', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KN6', '10.01.2024 - 28.06.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03011/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'Opel', 'Vivaro', 'Consumer', 
-            'France', 'Injuries', 'Incorrectly fitted rear axle suspension springs can lead to a loss of vehicle handling and the spring may come free from its support. The spring can fall onto the road whilst driving, posing a risk of accident and injuries to the following traffic. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'KN6', '10.01.2024 - 28.06.2024'
+            'None', 'A12/03007/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Scudo', 
+            'Fiat', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '6867', '16.02.2024 - 28.06.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03007/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'Fiat', 'Scudo', 'Consumer', 
-            'France', 'Injuries', 'Incorrectly fitted rear springs can lead to a loss of vehicle handling and the spring may come free from its support. The spring can fall onto the road whilst driving, posing a risk of accident and injuries to the following traffic. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '6867', '16.02.2024 - 28.06.2024'
-        );
-        
-
-        INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
-        ) VALUES (
-            'A12/02962/24', 'Body cream', 'Cosmetics', 'Pure Essence', 'Dermo Spa Peach body butter', 'Consumer', 
-            'Poland', 'Chemical', 'According to the list of ingredients the product contains 2-(4-tert- butylbenzyl) propional dehyde (BMHCA), which is forbidden in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 10/03/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 10/03/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 10/03/2024', 'Hungary', 
-            'None', 'None'
-        );
-        
-
-        INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
-        ) VALUES (
-            'A12/03179/24', 'Passenger car / Light commercial vehicle', 'Motor vehicles', 'Peugeot', '2008 II, Rifter, Partner', 'Consumer', 
-            'France', 'Injuries', 'When there is a specific error in the vacuum circuit and after 6 seconds with the brake applied, the electronic control unit send an "Invalid Value" to the hydraulic brake compensation (HBC). This can cause the HBC to stop functioning, leading to a reduction in braking efficiency. This increases the risk of accidents and injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 31/05/2024', 'France', 
+            'None', 'A12/03179/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car / Light commercial vehicle', '2008 II, Rifter, Partner', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
             'MQY', '02.10.2023 - 15.11.2023 (2008 II)
-11.09.2023 - 22.01.2024 (Rifter and Partner)'
+11.09.2023 - 22.01.2024 (Rifter and Partner)', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03178/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'Fiat', 'Doblo', 'Consumer', 
-            'France', 'Injuries', 'When there is a specific error in the vacuum circuit and after 6 seconds with the brake applied, the electronic control unit send an "Invalid Value" to the hydraulic brake compensation (HBC). This can cause the HBC to stop functioning, leading to a reduction in braking efficiency. This increases the risk of accidents and injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 31/05/2024', 'France', 
-            '6799', '14.09.2023 - 20.01.2024'
+            'None', 'A12/03178/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Doblo', 
+            'Fiat', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '6799', '14.09.2023 - 20.01.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03180/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'Opel', 'Combo', 'Consumer', 
-            'France', 'Injuries', 'When there is a specific error in the vacuum circuit and after 6 seconds with the brake applied, the electronic control unit send an "Invalid Value" to the hydraulic brake compensation (HBC). This can cause the HBC to stop functioning, leading to a reduction in braking efficiency. This increases the risk of accidents and injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 31/05/2024', 'France', 
-            'KLX', '26.10.2023 - 21.01.2024'
+            'None', 'A12/03180/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Combo', 
+            'Opel', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KLX', '26.10.2023 - 21.01.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03207/24', 'Soother holder', 'Childcare articles and children's equipment', 'None', 'Sky blue', 'Consumer', 
-            'People's Republic of China', 'Choking, Strangulation', 'The clothing fastener device of the soother can easily break, resulting in small parts. Small children may put them in the mouth and choke. Moreover, the soother holder and its double-strand part is too long which can lead to strangulation. The product does not comply with the requirements of the General Product Safety Directive nor with the European standards EN 12586.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: Unknown', 'France', 
-            'None', 'None'
+            'None', 'A12/03108/24', 'None', 
+            'Unknown', 'None', 'Injuries', 
+            'None', 'Basketball set for trampoline', 'Basketball Twinhoop', 
+            'Berg Toys B.V', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03192/24', 'Soother holder', 'Childcare articles and children's equipment', 'None', '6 Pièces Chaînes De Tétine Mignonnes, Porte-sucette À Motif De Dessin Animé Aléatoire', 'Consumer', 
-            'People's Republic of China', 'Choking, Entrapment', 'The garment fastener of the soother holder can easily break, resulting in small parts. Small children may put them in the mouth and choke. In addition, the product has holes that may lead to finger entrapment. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 12586.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Warn the seller
-Date of entry into force: Unknown
-
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: Unknown
-
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: Unknown', 'France', 
-            'None', 'None'
+            'None', 'A12/03181/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Berlingo', 
+            'CITROEN', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MP2', '12.09.2023 - 22.01.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03191/24', 'Soother holder', 'Childcare articles and children's equipment', 'None', 'Un adorable attache-soucette, un mignon porte-soucette en silicone réglable', 'Consumer', 
-            'People's Republic of China', 'Choking, Strangulation', 'The soother holder is too long, which may lead to strangulation of a child. Moreover, the chain can easily break, resulting in small parts. Small children may put them in the mouth and choke. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 12586.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: Unknown
-
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: 21/08/2024', 'France', 
-            'None', 'None'
+            'None', 'A12/03223/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car.', 'Rifter', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MSP', '07.01.2024 - 02.02.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03071/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'Nissan', 'NV300', 'Consumer', 
-            'France', 'Injuries', 'The side airbag collision sensors and associated cable kits may not have been installed during production. This can cause the airbag and seatbelt pretensioner system to fail to operate as expected under impact conditions, increasing the risk of injury. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 17/10/2024', 'Belgium', 
-            'PN4C1', '20.02.2021 - 24.11.2023'
+            'None', 'A12/03122/24', 'None', 
+            'Republic of Korea', 'None', 'Fire, Injuries', 
+            'None', 'Passenger car', 'Grand Santa Fe, ix35, Veloster', 
+            'Hyundai', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '41D091 - Teil 1', '04.11.2010 - 31.10.2014', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03051/24', 'Lighting chain', 'Lighting chains', 'None', 'LED Merry Christmas', 'Consumer', 
-            'People's Republic of China', 'Electric shock, Fire', 'Due to an insufficient cross-section of the wires, and an insufficient protection against moisture, the user may access live parts and receive an electric shock. The product does not comply with the requirements of the Low Voltage Directive and the European standards EN 60598-1 and EN 60598-2-20.', '
-Type of economic operator taking notified measure(s): Retailer
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: Unknown
-
-Type of economic operator taking notified measure(s): Retailer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown
-
-Type of economic operator taking notified measure(s): Retailer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: Unknown', 'Slovakia', 
-            'None', 'None'
+            'None', 'A12/03093/24', 'None', 
+            'Poland', 'None', 'Chemical', 
+            'None', 'Perfume', 'Gold Madame', 
+            'Lazell', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5907814625359', '25020420221', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03122/24', 'Passenger car', 'Motor vehicles', 'Hyundai', 'Grand Santa Fe, ix35, Veloster', 'Consumer', 
-            'Republic of Korea', 'Fire, Injuries', 'Impurities in the brake fluid can lead to physical changes in the O-rings. Due to the damaged O-rings, brake fluid can penetrate into current-carrying areas (the ABS control board). This can lead to short circuits and fire. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '41D091 - Teil 1', '04.11.2010 - 31.10.2014'
+            'None', 'SR/03785/24', 'None', 
+            'Unknown', 'None', 'Chemical', 
+            'None', 'Perfume', '16 Her', 
+            'Setablu', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', ' 8055348167320', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03018/24', 'Magnetic toy', 'Toys', 'LEAN Toys', 'Light magnetic sticks blocks', 'Consumer', 
-            'People's Republic of China', 'Injuries', 'The toy contains small magnets with a high magnetic flux (measured value: 1565 kG2mm2). If a child swallows the small magnets, they could attract one another causing intestinal blockage or perforation. The product does not comply with the requirements of the Toy Safety
-Directive nor with the European standard EN 71-1.', '
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 16/10/2024', 'Slovenia', 
-            'None', 'None'
+            'None', 'SR/03788/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Eau de toilette', '14 Her', 
+            'Setablu', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8055348167306', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03016/24', 'LED candle', 'Electrical appliances and equipment', 'Star Trading', 'Tärnljus LED', 'Consumer', 
-            'Unknown', 'Environment', 'The solders in the product have an excessive concentration of lead (measured value up to 8% by weight). Lead poses a risk to the environment.
- The product does not comply with the requirements of the Directive on the restriction of the use of certain hazardous substances in electrical and electronic equipment (RoHS 2 Directive).', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 09/10/2024', 'Sweden', 
-            'None', 'None'
+            'None', 'INFO/00153/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Eau de toilette', 'Jeux dAmour', 
+            'Comin parfum', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8004830281907', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03047/24', 'Toy scooter', 'Toys', 'None', 'ScooTer', 'Consumer', 
-            'People's Republic of China', 'Injuries, Suffocation', 'The diameter of the front wheels of the scooter is too small (measured value: 116 mm). When a child rides a scooter on an uneven surface, the wheel can get stuck in a pit and the child may fall, suffering injuries. 
-Moreover, the plastic bag of the packaging is too thin. If a child plays with the packaging, the plastic can cover the mouth and nose, causing the child to suffocate. The product does not comply with the requirements of the Toy Safety Directive nor with the European standard EN 71-1.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: 19/09/2024
-
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 19/09/2024', 'Poland', 
-            'None', 'None'
+            'None', 'A12/03016/24', 'None', 
+            'Unknown', 'None', 'Environment', 
+            'None', 'LED candle', 'Tärnljus LED', 
+            'Star Trading', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '7391482071408', '2218', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03354/24', 'Vehicle part / ISOFIX adaptor', 'Motor vehicles', 'Diverse', 'Isofix Nachrüsten, Auto Sicherheitssitzhalterung Stahlriegel', 'Consumer', 
-            'Unknown', 'Injuries', 'Child seats fitted with the universal ISOFIX adaptors are not firmly connected to the vehicle. The adaptors can detach in the event of an impact and move freely in the passenger area, increasing the risk of injuries to the child. Additional information on the risk can be found via these links: https://www.kba.de/DE/Presse/Pressemitteilungen/Allgemein/2024/pm33_2024_oeffentliche_warnung_isofix.html and
-https://www.youtube.com/watch?v=e_TnUp8V_xA&list=PL0CX66g9YIlsWtkuiH8Ehh6ZHu9eyeZQD.  The product does not comply with the requirements of the General Product Safety Directive.', 'Type of economic operator to whom the measure(s) were ordered: Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: 02/10/2024', 'Germany', 
-            'None', 'None'
+            'None', 'SR/03815/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Perfume', '12 Her', 
+            'Setablu', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8055348167283', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03158/24', 'Soother', 'Childcare articles and children's equipment', 'None', 'Soft, one piece Silicone baby Pacifier', 'Consumer', 
-            'People's Republic of China', 'Choking', 'The ring on the shield can easily detach from it, releasing small parts. A small child may put it in the mouth and choke.  The product does comply with the requirements of the General Product Safety Directive nor with the European standard EN 1400.', '
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: 17/10/2024', 'Austria', 
-            'None', 'None'
+            'None', 'SR/03829/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Perfume', '11 Her', 
+            'Setablu', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8055348167276', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03333/24', 'Shower gel', 'Cosmetics', 'COSMIA', 'Gel douche gommant aux noyaux d'abricot', 'Consumer', 
-            'Spain', 'Microbiological', 'The gel is microbiologically contaminated with Pseudomonas aeruginosa. If used on damaged skin, or if it comes into contact with the eyes, the product may cause infection or irritation. The product does not comply with the Cosmetic Products Regulation nor with European standard EN 17516.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 18/10/2024
-
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 18/10/2024', 'France', 
-            'None', 'None'
+            'None', 'A12/03084/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Passenger car', 'X3, X3M', 
+            'Bmw', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0051070600', '13.01.2017 - 26.07.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03171/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'Nissan', 'NV400', 'Consumer', 
-            'France', 'Fire', 'An insufficient distance between the gasoil fuel inlet pipe and the engine harness can lead to abrasive wear on the fuel inlet pipe when it comes into contact with the engine harness. This could lead to a fuel leak in the engine compartment, increasing the risk of fire. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 17/10/2024', 'France', 
-            'PN4C6', '26.08.2014 - 27.09.2023'
+            'None', 'SR/03832/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Eau de parfum', '09 ', 
+            'Setablu', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8055348167252', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03120/24', 'Motorcycle', 'Motor vehicles', 'HARLEY-DAVIDSON', 'CVO Street Glide, CVO Road Glide, CVO Road Glide ST, Street Glide, Road Glide', 'Consumer', 
-            'United States', 'Injuries', 'The regulator output wire may rub against the crankcase's front corner, leading to insulation wear and potential exposure of the conductor. If this occurs, the 60-amp main fuse can blow, resulting in a sudden loss of propulsion and all electrical power without warning. This increases the risk of accident and injuries. The product does not comply with the Regulation on the approval and market surveillance of two- or three-wheel vehicles and quadricycles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '0186', '27.10.2023 - 18.07.2024'
+            'None', 'A12/03085/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Highlander', 
+            'Toyota', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '24SD-129', '06.12.2019 - 12.01.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03351/24', 'Passenger car', 'Motor vehicles', 'Jeep', 'Renegade PHEV and MHEV, Compass PHEV and MHEV', 'Consumer', 
-            'Italy', 'Injuries', 'An impact on the brake pedals can cause the pedal arm and the brake pedal lever to disengage. Moreover, the unlocking lever has a low stiffness due to variations in clamping force and friction. Both these reasons can lead the brake pedals to collapse during braking, preventing the driver from activating the service brakes. This could impair the braking performance, increasing the risk of an accident. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'France', 
+            'None', 'SR/03834/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Perfume', '08 ', 
+            'Setablu', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8055348167245', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03801/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Perfume', '05 Her', 
+            'Setablu', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8055348167214', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03800/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Perfume', '02 Her', 
+            'Setablu', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', ' 8055348167184', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03799/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Perfume', '30 Him', 
+            'Setablu', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8055348167160', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03171/24', 'None', 
+            'France', 'None', 'Fire', 
+            'None', 'Passenger van / Light commercial vehicle', 'NV400', 
+            'Nissan', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'PN4C6', '26.08.2014 - 27.09.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03199/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Camper van', 'TRAFIC III SPACENOMAD', 
+            'Renault', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0EGU', '09.05.2022 - 23.05.2022', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03159/24', 'None', 
+            'Sweden', 'None', 'Burns, Fire', 
+            'None', 'Power bank', 'VARMFRONT', 
+            'Ikea', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', 'E2037: 2318, 2319 and 2322
+E20382: 2313, 2316, 2318 and 2319', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03120/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Motorcycle', 'CVO Street Glide, CVO Road Glide, CVO Road Glide ST, Street Glide, Road Glide', 
+            'HARLEY-DAVIDSON', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0186', '27.10.2023 - 18.07.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03061/24', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'String light ', 'String light', 
+            '', 'Lighting chains', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03351/24', 'None', 
+            'Italy', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Renegade PHEV and MHEV, Compass PHEV and MHEV', 
+            'Jeep', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
             'B7B', '20.07.23 - 25.09.2024 (Renegade PHEV)
 20.07.23 - 30.09.2024 (Compass MHEV and PHEV)
-20.07.23 - 30.09.2024 (Renegade MHEV)'
+20.07.23 - 30.09.2024 (Renegade MHEV)', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03352/24', 'Passenger car', 'Motor vehicles', 'Fiat', '500 X', 'Consumer', 
-            'Italy', 'Injuries', 'An impact on the brake pedals can cause the pedal arm and the brake pedal lever to disengage. Moreover, the unlocking lever has a low stiffness due to variations in clamping force and friction. Both these reasons can lead the brake pedals to collapse during braking, preventing the driver from activating the service brakes. This could impair the braking performance, increasing the risk of an accident. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'France', 
-            '6920', '20.07.2023 - 27.06.2024'
+            'None', 'A12/03352/24', 'None', 
+            'Italy', 'None', 'Injuries', 
+            'None', 'Passenger car', '500 X', 
+            'Fiat', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '6920', '20.07.2023 - 27.06.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03349/24', 'Passenger car', 'Motor vehicles', 'Alfa Romeo', 'Tonale MHEV and PHEV', 'Consumer', 
-            'Italy', 'Injuries', 'An impact on the brake pedals can cause the pedal arm and the brake pedal lever to disengage. Moreover, the unlocking lever has a low stiffness due to variations in clamping force and friction. Both these reasons can lead the brake pedals to collapse during braking, preventing the driver from activating the service brakes. This could impair the braking performance, increasing the risk of an accident. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'France', 
-            '6921', '20.07.2023 - 24.09.2024'
+            'None', 'A12/03349/24', 'None', 
+            'Italy', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Tonale MHEV and PHEV', 
+            'Alfa Romeo', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '6921', '20.07.2023 - 24.09.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03037/24', 'Magnetic toy', 'Toys', 'STEM', 'LEARNING MAGNETS MAGNETIC STICKS 3+ (64 PSC)', 'Consumer', 
-            'People's Republic of China', 'Injuries', 'The toy contains small magnets with a high magnetic flux (measured value up to: 176 kG2mm2). If a child swallows the small magnets, they could attract one another causing intestinal blockage or perforation. The product does not comply with the requirements of the Toy Safety
-Directive nor with the European standard EN 71-1.', '
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Slovenia', 
-            'None', 'None'
+            'None', 'A12/03242/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Scudo', 
+            'Fiat', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '6929', '12.03.2024 - 07.10.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03242/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'Fiat', 'Scudo', 'Consumer', 
-            'France', 'Injuries', 'Radio screens can be insufficiently fixed in place. In the event of an accident, the screen can come loose and cause injuries to the occupants and/or damage the airbag when it is deployed. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 21/10/2024', 'France', 
-            '6929', '12.03.2024 - 07.10.2024'
+            'None', 'A12/03104/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van /  Light commercial vehicle', 'Vivaro', 
+            'OPEL.', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KPS', '08/03/2024 - 04/10/2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03104/24', 'Passenger van /  Light commercial vehicle', 'Motor vehicles', 'OPEL.', 'Vivaro', 'Consumer', 
-            'France', 'Injuries', 'Radio screens can be insufficiently fixed in place. In the event of an accident, the screen can come loose and cause injuries to the occupants and/or damage to the airbag when it is deployed.  The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 21/10/2024', 'France', 
-            'KPS', '08/03/2024 - 04/10/2024'
+            'None', 'A12/03244/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Expert', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MT8', '08.03.2024 - 04.10.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03244/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'Peugeot', 'Expert', 'Consumer', 
-            'France', 'Injuries', 'Radio screens can be insufficiently fixed in place. In the event of an accident, the screen can come loose and cause injuries to the occupants and/or damage to the airbag when it is deployed. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 21/10/2024', 'France', 
-            'MT8', '08.03.2024 - 04.10.2024'
+            'None', 'A12/03245/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Jumpy', 
+            'CITROEN', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'NL2', '08.03.2024 - 04.10.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03245/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'CITROEN', 'Jumpy', 'Consumer', 
-            'France', 'Injuries', 'Radio screens can be insufficiently fixed in place. In the event of an accident, the screen can come loose and cause injuries to the occupants and/or damage to the airbag when it is deployed. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 21/10/2024', 'France', 
-            'NL2', '08.03.2024 - 04.10.2024'
+            'None', 'A12/03198/24', 'None', 
+            'Romania', 'None', 'Injuries', 
+            'None', 'Passenger car', 'DUSTER III', 
+            'Renault', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0EGG', '09.11.2023 - 11.07.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03197/24', 'Passenger car', 'Motor vehicles', 'Dacia', 'DUSTER III', 'Consumer', 
-            'Romania', 'Injuries', 'A decoupling of the R107 connector, which may not have been secured properly at the factory can cause a loss of electrical connection between the engine and driver's cabin wiring. As a result, drivers may experience a loss of traction, reduced steering assistance, and malfunctioning airbags, parking sensors, and brakes. This can increase the risk of accidents and injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 24/10/2024', 'France', 
-            '0EFZ', '20.06.2023 - 11.07.2024'
+            'None', 'A12/03197/24', 'None', 
+            'Romania', 'None', 'Injuries', 
+            'None', 'Passenger car', 'DUSTER III', 
+            'Dacia', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0EFZ', '20.06.2023 - 11.07.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03137/24', 'Passenger car', 'Motor vehicles', 'Peugeot', ' 3008, 5008 - MHEV', 'Consumer', 
-            'France', 'Injuries', 'The subframe support can corrode, leading to cracks.  This can result in the loss of structural integrity and the consequent loss of control of the vehicle. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 03/10/2024', 'France', 
-            'MTZ', '26/08/2024 - 03/09/2024'
+            'None', 'A12/03137/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car', ' 3008, 5008 - MHEV', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MTZ', '26/08/2024 - 03/09/2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03203/24', 'Motorcycle', 'Motor vehicles', 'Honda', 'GL1800', 'Consumer', 
-            'Japan', 'Injuries', 'The primary drive gear tightening bolt is prone to fatigue failure due to excessive stress from bending forces. When this occurs, the pulse rotor becomes dislodged, leading the ignition signal to fail and causing the engine to stall while driving or fail to start. This creates a risk of accidents and injuries to vehicle occupants. The product does not comply with the Regulation on the approval and market surveillance of two- or three-wheel vehicles and quadricycles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 28/10/2024', 'Belgium', 
-            '3P5', 'None'
+            'None', 'A12/03130/24', 'None', 
+            'Spain', 'None', 'Injuries', 
+            'None', 'Motorcycle', 'SR4', 
+            'VOGE', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'CSV-04', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03182/24', 'Passenger van / Light commercial vehicle', 'Motor vehicles', 'Hyundai', 'H1', 'Consumer', 
-            'Republic of Korea', 'Fire', 'The heater hoses in the engine compartment can be damaged by the heat during particle filter regeneration. This can lead to a fire. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Poland', 
-            '41D047', '08.05.2015 - 27.11.2020'
+            'None', 'A12/03203/24', 'None', 
+            'Japan', 'None', 'Injuries', 
+            'None', 'Motorcycle', 'GL1800', 
+            'Honda', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '3P5', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03193/24', 'Children's fancy dress', 'Toys', 'None', 'Costume Musculaire Iron Man pour Enfants, Smile Hero Cosplay, Combinaison, Masque, Gants ', 'Consumer', 
-            'People's Republic of China', 'Strangulation', 'The product has long functional cords in the neck area.
-These cords can become trapped during various activities of a child, leading to strangulation. The product does not comply with the requirements of the Toy Safety Directive nor with the European standard EN 14682.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: 27/08/2024
-
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: 03/09/2024', 'France', 
-            'None', 'None'
+            'None', 'A12/03136/24', 'None', 
+            'United Kingdom', 'None', 'Injuries', 
+            'None', 'Passenger car', 'GT', 
+            'McLaren', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '2024/001', '9.8.2019 - 6.6.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03312/24', 'Particle filter mask', 'Protective equipment', 'ctc connexions FFP2 Maske ', 'FFP2 NR Filterung der Halbmaske', 'Consumer', 
-            'People's Republic of China', 'Health risk / other', 'The total filtration capacity of the mask is insufficient (measured values as low as 90.7%). Consequently, the product does not fulfil the health and safety requirements. Thus, even if combined with other recommended measures, it may not properly protect. Moreover, the physical resistance of the filtering material is too high (measured values up to 3.2 mbar) and prevents a user to breathe properly, creating a risk for the user to suffocate. The product does not comply with the Personal Protective Equipment (PPE) Regulation nor with European standard EN 149.', '
-Type of economic operator taking notified measure(s): Retailer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: Unknown', 'Germany', 
-            'None', 'None'
+            'None', 'A12/03182/24', 'None', 
+            'Republic of Korea', 'None', 'Fire', 
+            'None', 'Passenger van / Light commercial vehicle', 'H1', 
+            'Hyundai', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '41D047', '08.05.2015 - 27.11.2020', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03157/24', 'Stroller', 'Childcare articles and children's equipment', 'Stokke®', 'None', 'Consumer', 
-            'Norway', 'Injuries', 'The product's parking brake does not work correctly. This can lead to an accident causing injuries. The product does not comply with the requirements of the General Product Safety Directive.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 28/10/2024', 'Bulgaria', 
-            'None', 'None'
+            'None', 'A12/03157/24', 'None', 
+            'Norway', 'None', 'Injuries', 
+            'None', 'Stroller', '', 
+            'Stokke®', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '142АА0062239', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03152/24', 'Children's high chair', 'Childcare articles and children's equipment', 'Baby Mix', 'High chair', 'Consumer', 
-            'People's Republic of China', 'Choking, Injuries', 'The product breaks easily by falling on the floor. It can therefore cause injuries to the child and bystanders. Moreover, the fall can generate small parts. A small child can put them in the mouth and choke. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 14988.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: Unknown', 'Lithuania', 
-            'None', 'None'
+            'None', 'A12/03280/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Civic, CR-V, Accord, HR-V, Odyssey, Passport, Pilot', 
+            'Honda', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '6XW', '01.06.2020 - 01.03.2021', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03139/24', 'Plastic doll ', 'Toys', 'Girl FASHION', 'Beauty children love', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The doll has an excessive concentration of bis(2-ethylhexyl) phthalate (DEHP) and dibutyl phthalate (DBP) (measured values up to 14% and 0.31% by weight, respectively). These phthalates may harm the health of children by causing possible damage to their reproductive system. The product does not comply with the REACH Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 30/08/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 30/08/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'A12/03202/24', 'None', 
+            'India', 'None', 'Strangulation', 
+            'None', 'Childrens clothing set', 'SPIDER-MAN', 
+            'Cerda', 'Clothing, textiles and fashion items', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5299900577797', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03154/24', 'Plastic toy', 'Toys', 'None', 'Beauty horse', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The plastic material of the product has an excessive concentration of bis(2-ethylhexyl) phthalate (DEHP) (measured value: up to 22.2 % by weight).
-This phthalate may harm the health of children, causing possible damage to their reproductive system. The product does not comply with the REACH Regulation.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 15/10/2024', 'Sweden', 
-            'None', 'None'
+            'None', 'A11/00155/24', 'None', 
+            'Peoples Republic of China', 'None', 'Burns', 
+            'None', 'Ride-on toy ', 'Acctel 24V Vertex UTV', 
+            'SPIKE', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5060307678208', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03222/24', 'All-terrain vehicle', 'Motor vehicles', 'Polaris', 'RANGER XP Kinetic (UTV/ Side-By-Side)', 'Consumer', 
-            'United States', 'Fire, Injuries', 'The high-voltage cables on the engine control unit can become detached. This can lead to a voltage arc or overheating, which can result in a fire and/or unintentional acceleration. Moreover, unintentional acceleration can cause a loss of vehicle control, increasing the risk of accidents and injuries. The product does not comply with the Regulation on the approval and market surveillance of agricultural and forestry vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            'R-24-05', '09.06.2021 - 31.07.2024'
+            'None', 'A12/03222/24', 'None', 
+            'United States', 'None', 'Fire, Injuries', 
+            'None', 'All-terrain vehicle', 'RANGER XP Kinetic (UTV/ Side-By-Side)', 
+            'Polaris', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'R-24-05', '09.06.2021 - 31.07.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03129/24', 'Doll ', 'Toys', 'None', 'Happy Girl Fashion', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The product has an excessive concentration of bis(2-ethylhexyl) phthalate (DEHP) (measured value: 3.1% by weight). This phthalate may harm the health of children, causing possible damage to their reproductive system. The product does not comply with the REACH Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 13/10/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'A12/03221/24', 'None', 
+            'Sweden', 'None', 'Injuries', 
+            'None', 'Passenger car', 'S60, V60, S90, V90, V90CC, S90L, XC60 and XC90', 
+            'Volvo', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'R10289', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03128/24', 'Doll ', 'Toys', 'Torch.hu', 'Princess Happy Fashion Doll', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The product has an excessive concentration of bis(2-ethylhexyl) phthalate (DEHP) and dibutyl phthalate (DBP) (measured value: 29% and 0.34% by weight, respectively). These phthalates may harm the health of children, causing possible damage to their reproductive system.
- The product does not comply with the REACH Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 14/10/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 14/10/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'A12/03161/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Amarok', 
+            'VW - Volkswagen AG', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '690V', '12.10.2022 - 08.02.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03201/24', 'Teething necklace', 'Childcare articles and children's equipment', 'None', 'None', 'Consumer', 
-            'Lithuania', 'Choking', 'The necklace can easily break, resulting in small parts (the beads). A small child may put them in the mouth and choke. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 71-1.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: 26/08/2024', 'France', 
-            'None', 'None'
+            'None', 'A12/03429/24', 'None', 
+            'Poland', 'None', 'Entrapment, Injuries, Strangulation', 
+            'None', 'Children´s cot', 'Children´s cot with barrier', 
+            'KLUPS®', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5902022534004', '2232622', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03204/24', 'Teething necklace ', 'Childcare articles and children's equipment', 'None', 'None', 'Consumer', 
-            'Lithuania', 'Choking', 'The necklace can easily break, releasing small parts (the beads). A small child may put them in the mouth and choke. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 71-1.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: 20/08/2024', 'France', 
-            'None', 'None'
+            'None', 'A12/03448/24', 'None', 
+            'Poland', 'None', 'Cuts, Entrapment, Injuries, Strangulation', 
+            'None', 'Childrens cot ', 'Zyrafka santana', 
+            'DREWEX®', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5902622004815', '05-12-2022 A', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03221/24', 'Passenger car', 'Motor vehicles', 'Volvo', 'S60, V60, S90, V90, V90CC, S90L, XC60 and XC90', 'Consumer', 
-            'Sweden', 'Injuries', 'The rod between the brake pedal and the brake booster may not have been assembled correctly. The rod can become detached, leading the brake pedal to dysfunction, increasing the risk of accidents and injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 29/10/2024', 'Portugal', 
-            'R10289', 'None'
+            'None', 'A12/03599/24', 'None', 
+            'Peoples Republic of China', 'None', 'Damage to sight', 
+            'None', 'Laser pointer', 'Astronaut Nebula projector / Star projection lamp', 
+            'Burnnove', 'Laser pointers', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03161/24', 'Passenger car', 'Motor vehicles', 'VW - Volkswagen AG', 'Amarok', 'Consumer', 
-            'Germany', 'Injuries', 'The seat belt may not have been routed through the anchorage eyelet, but through the plastic cover only. The plastic cover will tear under load, offering no protection, increasing the risk of injuries in the event of an accident. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.
-
-
- ', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Sweden', 
-            '690V', '12.10.2022 - 08.02.2023'
+            'None', 'A12/03291/24', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'Fan', 'Desktop USB fan', 
+            'Goobay', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '4040849620621', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03233/24', 'Fancy dress costume', 'Toys', 'None', 'Enfant garçons filles Clown Costume Halloween cirque à pois Clown vêtements avec chapeau perruque DE', 'Professional', 
-            'People's Republic of China', 'Strangulation', 'The product has non-detachable functional cords in the neck area, in which a child can become trapped during various activities, leading to strangulation. The product does not comply with the requirements of the Toy Safety Directive nor of the European standard EN 71-1.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: 20/09/2024
-
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: 29/08/2024', 'France', 
-            'None', 'None'
+            'None', 'A12/03255/24', 'None', 
+            'Denmark', 'None', 'Strangulation', 
+            'None', 'Swing', 'Nola swing', 
+            'Konges slojd', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5715404196000', '122023
+314017', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03208/24', 'Toy torch light', 'Toys', 'None', 'Lampe de poche de projection, jouet pour enfant, dessin animé, jeux de motif du père noël', 'Consumer', 
-            'People's Republic of China', 'Chemical, Choking, Damage to sight', 'The battery compartment can be easily opened, leaving the button batteries accessible. A child may put them in the mouth, which could cause  them to choke or they can be swallowed, which could cause damage to the child’s gastrointestinal tract. The beam intensity of the white LED is too powerful. Direct viewing of the  beam could cause damage to sight. The product does not comply with the requirements of the Toy Safety Directive nor with the European standards EN 71-1, EN 71-2, EN 71-3 and EN 62115.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: Unknown
-
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: 20/09/2024', 'France', 
-            'None', 'None'
+            'None', 'SR/03781/24', 'None', 
+            'Peoples Republic of China', 'None', 'Chemical', 
+            'None', 'Toy slime', 'Slime Melma di Miele', 
+            '', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '7802694520', '20240401001', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03256/24', 'Electric bicycle', 'Machinery', 'Moustache Bikes', 'None', 'Consumer', 
-            'Unknown', 'Injuries', 'The pivot of the fork can break. The user could therefore have an accident and suffer injuries. The product does not comply with the requirements of the Machinery Directive. ', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 04/11/2024', 'France', 
-            'None', 'None'
+            'None', 'A12/03323/24', 'None', 
+            'Republic of Korea', 'None', 'Fire, Injuries', 
+            'None', 'Passenger car', 'i40', 
+            'Hyundai', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '41D091/2', '04.11.2010 - 31.10.2014', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03288/24', 'Keyring with soft toy', 'Toys', 'None', 'Capybara peluche porte-clés mignon sac pendentif Capybara pelucheux animaux porte-clé Kawaii', 'Consumer', 
-            'People's Republic of China', 'Chemical, Choking', 'The toy has small parts (ring, carabiner clasp and bell). The seam allows access to the stuffing material. A small child may put them in the mouth and choke. Furthermore, the migration of lead from the metal bell in the product is too high (measured value up to 70mg/kg). Lead is harmful to human health, accumulates in the body, can cause developmental neurotoxicity and may affect breast-fed or unborn children.
- The product does not comply with the requirements of the Toy Safety Directive nor with the European standard EN 71-1.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: 20/09/2024
-
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: 30/08/2024', 'France', 
-            'None', 'None'
+            'None', 'A12/03231/24', 'None', 
+            'Peoples Republic of China', 'None', 'Chemical', 
+            'None', 'Doll', 'Mermaid', 
+            'Woolworth', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '2000010534982', 'SEA 124 WGR 707 ORD 33499500', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03160/24', 'Soother holder', 'Childcare articles and children's equipment', 'Smallstuff', 'Dummychain, Fishbone, Light Blue ', 'Consumer', 
-            'Denmark', 'Choking', 'The garment fastener of the soother holder can easily break. A small child may put it in the mouth and choke. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 1400.', '
-Type of economic operator taking notified measure(s): Retailer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 05/11/2024', 'Estonia', 
-            'None', 'None'
+            'None', 'SR/03824/24', 'None', 
+            'Peoples Republic of China', 'None', 'Chemical', 
+            'None', 'Disposable electronic cigarette', 'Roarlabs', 
+            'Roar X, Roarlabs', 'Chemical products', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03196/24', 'Soother holder', 'Childcare articles and children's equipment', 'Bebeconfort', 'Soother fasteners', 'Consumer', 
-            'France', 'Strangulation', 'The soother holder is too long, which may lead to strangulation of a child. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 12586.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 12/11/2024', 'Bulgaria', 
-            'None', 'None'
+            'None', 'A12/03302/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Passenger car', 'XD3', 
+            'BMW ALPINA', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0051070600', '21.12.2016 - 30.05.2024', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03195/24', 'Soother holder', 'Childcare articles and children's equipment', 'Wee baby', 'Patterned soother chain', 'Consumer', 
-            'Türkiye', 'Choking, Strangulation', 'The soother holder is too long, which may lead to strangulation of a child. Moreover, the chain can easily break, resulting in small parts. Small children may put them in the mouth and choke. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 12586.
-', 'Type of economic operator to whom the measure(s) were ordered: Importer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 12/11/2024', 'Bulgaria', 
-            'None', 'None'
+            'None', 'SR/03790/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Hair mask', 'Liso Total Mascarilla', 
+            'Biopoint', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '805177248819', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03323/24', 'Passenger car', 'Motor vehicles', 'Hyundai', 'i40', 'Consumer', 
-            'Republic of Korea', 'Fire, Injuries', 'Impurities in the brake fluid can lead to physical changes in the O-rings. Due to the damaged O-rings, brake fluid can penetrate into current-carrying areas (the ABS control board). This can lead to short circuits and fire and injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '41D091/2', '04.11.2010 - 31.10.2014'
+            'None', 'SR/03776/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Hair mask', 'Crema Delicata Maschera per capelli', 
+            'Bipoint', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8051772484439', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03231/24', 'Doll', 'Toys', 'Woolworth', 'Mermaid', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The plastic arms of the doll have an excessive concentration of bis(2-ethylhexyl) phthalate (DEHP) and diisobutyl phthalate (DIBP) (measured values up to 14% and 0.31% by weight, respectively). These phthalates may harm the health of children by causing possible damage to their reproductive system. The product does not comply with the REACH Regulation.', 'Type of economic operator to whom the measure(s) were ordered: Importer
-Category of measure(s): Stop of sales
-Date of entry into force: 07/10/2024
-
-Type of economic operator to whom the measure(s) were ordered: Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 18/10/2024', 'Germany', 
-            'None', 'None'
+            'None', 'SR/03791/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Hair mask', 'Color Vivo Mascarilla', 
+            'Biopoint', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8051772488833', '20245-220722', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03210/24', 'Children's high chair', 'Childcare articles and children's equipment', 'Chipolino', 'Children's high chair', 'Consumer', 
-            'People's Republic of China', 'Injuries', 'The high chair is not sufficiently stable and can easily tip over. A child may fall and suffer injuries. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 14988', 'Type of economic operator to whom the measure(s) were ordered: Importer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 29/10/2024', 'Bulgaria', 
-            'None', 'None'
+            'None', 'SR/03796/24', 'None', 
+            'United Kingdom', 'None', 'Chemical', 
+            'None', 'Hair conditioner', 'AntiAge', 
+            'PANTENE', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '4015600669027', '96284799', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03322/24', 'Finger paint', 'Toys', 'Crayola', 'Peinture à doigts lavable audacieuse, primaire, dessin pour enfants, 8', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The migration of aluminium from the toy is too high (measured value up to 3502 mg/kg). Aluminium is toxic for children if ingested. Moreover, the product releases an excessive amount of formaldehyde (measured values up to 532 mg/kg). Formaldehyde is a skin sensitiser and can trigger allergic reactions and may cause cancer. The product does not comply with the requirements of the Toy Safety Directive nor with the European standards EN 71-3 and EN 71-7.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: 27/08/2024
-
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Warning consumers of the risks
-Date of entry into force: 04/09/2024', 'France', 
-            'None', 'None'
+            'None', 'SR/03816/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Shampoo', 'Personal ', 
+            'Biopoint', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8051772488000', 'PV01818', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03287/24', 'Children's table and chair set', 'Childcare articles and children's equipment', 'PILSAN', 'Menekse study desk', 'Consumer', 
-            'Türkiye', 'Injuries', 'The chair in the product can easily break, causing the user to fall, which could lead to injuries. Moreover,
-the chair has sharp edges and corners on the back, seat, and legs.  The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 17191.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Import rejected at border
-Date of entry into force: Unknown', 'Bulgaria', 
-            'None', 'None'
+            'None', 'INFO/00137/24', 'None', 
+            'Peoples Republic of China', 'None', 'Damage to sight', 
+            'None', 'Laser pointer', 'Projektor Galaxy Light Milky way', 
+            'MOB Galaxy Light', 'Laser pointers', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '3701365602577', 'GALHT-2023-04', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03243/24', 'Sensory swing', 'Toys', 'None', 'None', 'Consumer', 
-            'People's Republic of China', 'Strangulation, Suffocation', 'The flexible cloth of the swing can easily form a loop. A child can have its head entangled in the flexible material, leading to strangulation. If a child's head is stuck inside the swing, they might not be able to breathe, leading to suffocation. The product does not comply with the requirements of the Toy Safety Directive nor with the European standards EN 71-1 and EN 71-8.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 22/10/2024', 'Iceland', 
-            'None', 'None'
+            'None', 'SR/03813/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Shampoo and hair lotion set', 'trattamento intensivo anticaduta', 
+            'Biopoint', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8051772488079', '09918', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'INFO/00137/24', 'Laser pointer', 'Laser pointers', 'MOB Galaxy Light', 'Projektor Galaxy Light Milky way', 'Consumer', 
-            'People's Republic of China', 'Damage to sight', 'The laser beam is too powerful (measured values up to 17.15 mW) and is not adequately labelled. Direct viewing of the laser beam could cause damage to sight. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 60825-1.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Measure not yet taken
-Date of entry into force: Unknown', 'Germany', 
-            'None', 'None'
+            'None', 'SR/03817/24', 'None', 
+            'Morocco', 'None', 'Chemical', 
+            'None', 'Eyeliner', '', 
+            'KAMAL BALADI', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03332/24', 'Laser engraving machine', 'Machinery', 'Bisofice', 'None', 'Consumer', 
-            'People's Republic of China', 'Damage to sight', 'The product is missing sufficient laser protection as only one of its sides is covered with protective glass. The user can see directly the laser beam which can lead to damage to sight. The product does not comply with the requirements of the Machinery Directive nor with the European standard EN 60825-1.', '
-Type of economic operator taking notified measure(s): Other
-Category of measure(s): Removal of this product listing by the online marketplace
-Date of entry into force: Unknown
-
-Type of economic operator taking notified measure(s): Retailer
-Category of measure(s): Stop of sales
-Date of entry into force: Unknown
-
-Type of economic operator taking notified measure(s): Retailer
-Category of measure(s): Stop of sales
-Date of entry into force: Unknown', 'Germany', 
-            'None', 'None'
+            'None', 'A12/03597/24', 'None', 
+            'Peoples Republic of China', 'None', 'Damage to sight', 
+            'None', 'Light with laser pointer', '2-in-1 Dive Light', 
+            'OrcaTorch', 'Laser pointers', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'INFO/00136/24', 'Light with laser pointer', 'Laser pointers', 'OrcaTorch', '2-in-1 Dive Light', 'Consumer', 
-            'People's Republic of China', 'Damage to sight', 'The laser beam is too powerful (measured values up to 4.61 mW) and not properly labelled. Direct viewing of the laser beam could cause damage to sight. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 60825-1.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): not yet taken
-Date of entry into force: Unknown', 'Germany', 
-            'None', 'None'
+            'None', 'INFO/00138/24', 'None', 
+            'Peoples Republic of China', 'None', 'Damage to sight', 
+            'None', 'Laser pointer', 'Power Light / YL Laser 303', 
+            'Power Style', 'Laser pointers', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6944058328904', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'INFO/00138/24', 'Laser pointer', 'Laser pointers', 'Power Style', 'Power Light / YL Laser 303', 'Consumer', 
-            'People's Republic of China', 'Damage to sight', 'The laser beam is too powerful. Direct viewing of the laser beam could cause damage to sight.  The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 60825-1.', '
-Type of economic operator taking notified measure(s): Retailer
-Category of measure(s): Measure not yet taken.
-Date of entry into force: Unknown', 'Germany', 
-            'None', 'None'
+            'None', 'A12/03211/24', 'None', 
+            'Peoples Republic of China', 'None', 'Injuries', 
+            'None', 'Childrens high chair', 'swing/high chair/booster', 
+            'Kikka boo', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '3800171210966', 'PI LQ2310K15205', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03211/24', 'Children's high chair', 'Childcare articles and children's equipment', 'Kikka boo', 'swing/high chair/booster', 'Consumer', 
-            'People's Republic of China', 'Injuries', 'The high chair lacks an active restraint system and is not sufficiently stable and can easily tip over. The child may fall and suffer injuries. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 14988', 'Type of economic operator to whom the measure(s) were ordered: Importer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 29/10/2024', 'Bulgaria', 
-            'None', 'None'
+            'None', 'SR/03818/24', 'None', 
+            'San Marino', 'None', 'Chemical', 
+            'None', 'Perfume', 'Solo Soprani Natural Scient', 
+            'Luciano Soprani', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '767418214640', '021803', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03367/24', 'Motorcycle', 'Motor vehicles', 'Triumph', 'Bonneville T100, Bonneville T120, Street Scrambler, Scrambler 900, Street Twin, Speed Twin 900', 'Consumer', 
-            'United Kingdom', 'Fire, Injuries', 'A combination of high ambient temperatures, high current loading and excessive lateral tension may cause the wiring between the alternator and the harness connector to form a bridge. If the connector’s blades form a bridge, a thermal threshold can be reached that exceeds the connector’s capacity and causes the connector to become deformed. This can result in a short circuit, increasing the risk of fire, and creating a risk of accident. The product does not comply with the Regulation on the approval and market surveillance of two- or three-wheel vehicles and quadricycles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
+            'None', 'SR/03753/24', 'None', 
+            'Peoples Republic of China', 'None', 'Damage to sight', 
+            'None', 'Projector', 'Astronaut starry sky projector', 
+            'Fulkeley', 'Laser pointers', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03648/24', 'None', 
+            'Unknown', 'None', 'Damage to sight', 
+            'None', 'Toy projector', 'Rocket Astronaut, Music star light and night light', 
+            'ITSHINY', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', 'B0CHYPVWHV', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03819/24', 'None', 
+            'Türkiye', 'None', 'Chemical', 
+            'None', 'Perfume', 'Creation N.2680', 
+            'Creation', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8692229003355', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03792/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Shampoo', 'Shampoo bimbo', 
+            'Natural Care', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8004830291389', 'L 643 of 13/09/10', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03359/24', 'None', 
+            'France', 'None', 'Environment', 
+            'None', 'Lorry', 'D8K - DTI 8 - EU VI Step D; D5K - DTI 5 - EU VI Step D', 
+            'VOLVO TRUCKS, RENAULT TRUCKS', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            ' M0336 VOLVO TRUCKS
+M0337 RENAULT TRUCKS', '09/2019 - 12/2021', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03814/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Eau de toilette', 'SS Sergio Soldano', 
+            'Sergio Soldano', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8050513385301', '109015', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03488/24', 'None', 
+            'Peoples Republic of China', 'None', 'Chemical', 
+            'None', 'Plastic toy', '', 
+            'Adar', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5901271574267', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03434/24', 'None', 
+            'United Kingdom', 'None', 'Choking', 
+            'None', 'Baby book', 'Quiet Book Montessori Spielzeug, 3D Filz Busy Book Sensorisches Spielzeug', 
+            'Ulikey', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', 'X00205F26X', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03835/24', 'None', 
+            'France', 'None', 'Chemical', 
+            'None', 'Moisturising cream', 'Miracle Air De Teint', 
+            'Lancome Paris', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '3605533244807', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03435/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Baby book', 'Quiet Book Montessori Spielzeug', 
+            'FORMIZON', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03436/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Baby book', 'Quiet Book', 
+            'BEKOIUP', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', 'X001N2FNJP', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03794/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Body lotion', 'Crema fluida corpo allolio di mandorle dolci', 
+            'Setablu', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8050847575133', '210601', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03444/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Baby book', 'Quiet Book', 
+            '', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03793/24', 'None', 
+            'Türkiye', 'None', 'Chemical', 
+            'None', 'Perfume', 'No: 3519', 
+            'Creation', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8692229004772', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03787/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Shampoo', 'Gliss Asia Straight', 
+            'Schwarzkopf', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8015700151930', '0909700696', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03367/24', 'None', 
+            'United Kingdom', 'None', 'Fire, Injuries', 
+            'None', 'Motorcycle', 'Bonneville T100, Bonneville T120, Street Scrambler, Scrambler 900, Street Twin, Speed Twin 900', 
+            'Triumph', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
             'SB627
-SRAN627', '27.04.2020 - 04.12.2023'
+SRAN627', '27.04.2020 - 04.12.2023', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03588/24', 'Inflatable swim seat', 'Hobby/sports equipment', 'FILIBABBA', 'Alfie Baby Swim Ring', 'Consumer', 
-            'People's Republic of China', 'Drowning', 'The product may resemble a toy; however, there is a risk of drowning if children play with it unsupervised. Floating seats must be used under constant adult supervision. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 13138-3.', 'Type of economic operator to whom the measure(s) were ordered: Retailer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 08/07/2024', 'Cyprus', 
-            'None', 'None'
+            'None', 'A12/03310/24', 'None', 
+            'Peoples Republic of China', 'None', 'Injuries', 
+            'None', 'Childrens high chair', 'AVA', 
+            'MAXI COSI', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '3220660344024
+3220660344048', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03339/24', 'Lighting chain ', 'Lighting chains', 'None', '8db Jégcsap lámpa ', 'Consumer', 
-            'People's Republic of China', 'Electric shock', 'The product is missing cable strain relief and has inadequate insulation. As a result the user may receive an electric shock.  The product does not comply with the requirements of the Low Voltage Directive nor with the European standard EN 60598.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 25/01/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'SR/03795/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Bath and shower cream', 'Latte di mandorla e burro di Karitè', 
+            'SPUMA DI SCIAMPAGNA', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8007750012408', '09242115', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03337/24', 'Lighting chain ', 'Lighting chains', 'None', 'Merry Christmas LED 30CM', 'Consumer', 
-            'People's Republic of China', 'Electric shock', 'The size of the plug is too small, the product is missing cable strain relief, has inadequate insulation, and is not protected against moisture, although it is recommended for outdoor use. The water could penetrate the product or the user could touch accessible live parts and receive an electric shock. The product does not comply with the requirements of the Low Voltage Directive nor with the European standard EN 60598.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 25/01/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'A12/03442/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'LED light', '', 
+            ' Grow Light-Driver', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03411/24', 'Fancy-dress hairband', 'Toys', 'Flying Tiger Copenhagen', 'Hairband with light for kids', 'Consumer', 
-            'Denmark', 'Chemical, Choking', 'The battery compartment can be easily opened, leaving the batteries accessible. A child could put them in the mouth, which could cause damage to the child’s gastrointestinal tract or choking. The product does not comply with the requirements of the Toy Safety Directive nor with the European standard EN 71-1.', '
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Denmark', 
-            'None', 'None'
+            'None', 'SR/03789/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Hair dye', 'Palette colorazione permanente salonplex', 
+            'TESTANERA', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8015700152906
+8015700152937
+8015700152951
+8015700153040
+8015700159240', '0210487555
+0220Y85107
+0224197100
+0225X84234
+0229387233', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03590/24', 'Engine cleaning product', 'Chemical products', 'None', 'Motor wash', 'Consumer', 
-            'Lithuania', 'Chemical', 'The product is corrosive and does not have a child-resistant fastening. Users are not properly informed about the dangers incurred when the product comes into contact with the skin and eyes or if it is ingested. The product does not comply with the Regulation on the classification, labelling and packaging of substances and mixtures (CLP).', 'Type of economic operator to whom the measure(s) were ordered: Manufacturer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: Unknown', 'Lithuania', 
-            'None', 'None'
+            'None', 'A11/00153/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'USB charger', 'UNIVERSAL TRAVEL CHARGER / LARGE POWER', 
+            'TREQA', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6972047911769', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03589/24', 'Cleaning product', 'Chemical products', 'None', 'Skin wash extra', 'Consumer', 
-            'Lithuania', 'Chemical', 'The product is corrosive and does not have a child-resistant fastening. Users are not properly informed about the dangers incurred when the product comes into contact with the skin and eyes or if it is ingested. The product does not comply with the Regulation on the classification, labelling and packaging of substances and mixtures (CLP).', 'Type of economic operator to whom the measure(s) were ordered: Manufacturer
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: Unknown', 'Lithuania', 
-            'None', 'None'
+            'None', 'SR/03775/24', 'None', 
+            'Türkiye', 'None', 'Chemical', 
+            'None', 'Perfume', '3511', 
+            'Creation', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8692229002082', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03580/24', 'Passenger car', 'Motor vehicles', 'Toyota', 'Corolla', 'Consumer', 
-            'United Kingdom', 'Injuries', 'Due to the programming of the skid control's electronic control unit software, the brake fluid pressure can be incorrectly controlled when the brake pedal is applied during cornering. This can lead users to experience a hard brake pedal with reduced braking force, increasing the brake stopping distance and creating a risk of accidents and injuries. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Importer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Portugal', 
-            '24SD-146', '16.01.2023 - 05.11.2024'
+            'None', 'SR/03777/24', 'None', 
+            'Türkiye', 'None', 'Chemical', 
+            'None', 'Perfume', '2342', 
+            'Creation', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8692229003195', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03587/24', 'Plastic toy', 'Toys', 'None', 'Article lumineux', 'Consumer', 
-            'People's Republic of China', 'Chemical, Choking', 'The battery compartment can be easily opened without the aid of a tool, leaving button batteries accessible. A child may put the batteries in the mouth, which could cause damage to the child’s gastrointestinal tract or choking, if swallowed. The product does not comply with the requirements of the Toy Safety Directive nor with the European standard EN 62115.', '
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 18/11/2024
-
-Type of economic operator taking notified measure(s): Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 18/11/2024', 'France', 
-            'None', 'None'
+            'None', 'SR/03833/24', 'None', 
+            'Italy', 'None', 'Chemical', 
+            'None', 'Liquid soap', 'Muschio bianco', 
+            'Neutro derma', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8033993194090', '40820', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'INFO/00139/24', 'Baby walker ', 'Childcare articles and children's equipment', 'None', 'Baby', 'Consumer', 
-            'People's Republic of China', 'Injuries', 'The strength of the baby walker is inadequate and there is no proper protection against falls from stairs. This can cause injuries to a child. The product does not comply with the requirements of the General Product Safety Directive nor with the European standard EN 1273.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 22/11/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 22/11/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'SR/03831/24', 'None', 
+            'France', 'None', 'Chemical', 
+            'None', 'Hair conditioner', 'Nutri Gloss ', 
+            'Elvive by LOREAL PARIS', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '600520751375', '24M200', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03519/24', 'Passenger car', 'Motor vehicles', 'Mini', 'Cooper, Aceman', 'Consumer', 
-            'People's Republic of China', 'Fire', 'Cell modules of the high-voltage battery can be incorrectly manufactured. This can result in a malfunction in the high-voltage battery and lead to a short circuit. This can increase the risk of a fire, including when the vehicle is parked. The product does not comply with the Regulation on the approval and market surveillance of motor vehicles and their trailers, and of systems, components and separate technical units intended for such vehicles.', '
-Type of economic operator taking notified measure(s): Manufacturer
-Category of measure(s): Recall of the product from end users
-Date of entry into force: Unknown', 'Germany', 
-            '0061970800', '23.02.2024 - 25.09.2024'
+            'None', 'A12/03347/24', 'None', 
+            'Germany', 'None', 'Chemical', 
+            'None', 'Eau de toilette', 'East Coast Club Woman ', 
+            'Tom Tailor', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '4051395181139', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03566/24', 'Hair gel', 'Cosmetics', 'TAFT by Schwarzkopf&Henkel', 'Power elastic gel ', 'Consumer', 
-            'Germany', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.
-
-', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 20/06/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 20/06/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 20/06/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'A12/03293/24', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'Speaker', 'Bluetooth Shower Speaker', 
+            'Manhattan', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '766623165082', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03567/24', 'Hair gel', 'Cosmetics', 'Taft (Schwarzkopf&Henkel)', 'Power styling gel', 'Consumer', 
-            'Germany', 'Chemical', 'According to the list of ingredients, the product contains 2-(4-tert-butylbenzyl) propionaldehyde (BMHCA), which is prohibited in cosmetic products. BMHCA may harm the reproductive system, may harm the health of the unborn child and may cause skin sensitisation. The product does not comply with the Cosmetic Products Regulation.
-', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 20/06/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 20/06/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Ban on the marketing of the product and any accompanying measures
-Date of entry into force: 20/06/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'A12/03411/24', 'None', 
+            'Denmark', 'None', 'Chemical, Choking', 
+            'None', 'Fancy-dress hairband', 'Hairband with light for kids', 
+            'Flying Tiger Copenhagen', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '0200030569151', 'All', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03582/24', 'Lighting chain', 'Lighting chains', 'None', '180L LED DECORATION LIGHTS', 'Consumer', 
-            'Unknown', 'Electric shock', 'The cables are not properly anchored. The accessible wires have inadequate relief and insulation. The user could touch accessible live parts and receive an electric shock. The product does not comply with the requirements of the Low Voltage Directive nor with the European standard EN 60598.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 15/04/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 15/04/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'A12/03412/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'Heated vest', '', 
+            'Genzo', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '7333080039954', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03583/24', 'Lighting chain', 'Lighting chains', 'None', '240L LED DECORATION LIGHTS', 'Consumer', 
-            'Unknown', 'Burns, Electric shock, Fire', 'The cable is not properly anchored and is too thin. The accessible wires have inadequate insulation. The structure of the cord extension socket allows single-pole insertion of plugs. The cable could overheat, leading to burns or fire. The user could touch accessible live parts and receive an electric shock.  The product does not comply with the requirements of the Low Voltage Directive nor with the European standard EN 60598.', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 15/04/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 15/04/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'A12/03361/24', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'Toy mobile phone', 'Smartphone HAPPY KIDS', 
+            'Happy People', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '4008332610757', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03578/24', 'USB charger', 'Electrical appliances and equipment', 'Alien', 'Travel Charger', 'Consumer', 
-            'People's Republic of China', 'Electric shock', 'The insulation and the mains plug's dimensions of the product is inadequate. The user could receive an electric shock from accessible live parts. 
- The product does not comply with the requirements of the Low Voltage Directive nor with the European standard EN 60335-1.
-', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 19/06/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'A12/03676/24', 'None', 
+            'Unknown', 'None', 'Electric shock', 
+            'None', 'Travel adapter', '', 
+            'Dapteri.com', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03579/24', 'Plastic doll ', 'Toys', 'Happy day', 'Beautiful Fashion Stant From Here!', 'Consumer', 
-            'People's Republic of China', 'Chemical', 'The product has an excessive concentration of bis(2-ethylhexyl) phthalate (DEHP) and dibutyl phthalate (DBP) (measured values: 24% and 0.22% by weight, respectively). These phthalates may harm the health of children, causing possible damage to their reproductive system. The product does not comply with the REACH Regulation.
-', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 30/09/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 30/09/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'A12/03513/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Baby book', 'Weicher Filz M...inkinder ab 1 2 3 4 Jahr New', 
+            'colmanda', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', 'X001WYCL7V', '', 
+            '', '', 
+            'None'
         );
         
 
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            'A12/03556/24', ' Bath toy ', 'Toys', 'None', 'Plastic duck family', 'Consumer', 
-            'People's Republic of China', 'Choking', 'Small plastic parts (squeaking element) may easily detach from the toy. A small child may put them in the mouth and choke on them. The product does not comply with the requirements of the Toy Safety Directive nor with the European standard EN 71-1.
-', 'Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Recall of the product from end users
-Date of entry into force: 01/10/2024
-
-Type of economic operator to whom the measure(s) were ordered: Distributor
-Category of measure(s): Withdrawal of the product from the market
-Date of entry into force: 01/10/2024', 'Hungary', 
-            'None', 'None'
+            'None', 'A12/03523/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car / Light commercial vehicle', 'Traveller, Expert', 
+            'Peugeot', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'MT6', '28.08.2024 - 08.10.2024', 
+            'None'
         );
         
--- Inserted data from SOI website
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detský golfový kočík „Lionelo Elia“', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%204.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03490/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Spacetourer, Jumpy', 
+            'CITROEN', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'NK7', '28/08/2024 - 08/10/2024', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detská hračka - Sliz „Crystal Mud Lemon Tea“', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/crystal%20mud%20lemon%20tea%202%20(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/crystal%20mud%20lemon%20tea%202%20(2).jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03525/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car / Light commercial vehicle', 'Zafira, Vivaro', 
+            'Opel', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'KPP', '28.08.2024 - 08.10.2024', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detská hračka - Sliz s farebnými guličkami „MAGIC CLAY“, Item No YE27273', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273%20(2).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273%20(3).jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03524/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger car / Light commercial vehicle', 'Ulysse, Scudo', 
+            'Fiat', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '6931', '28.08.2024 - 08.10.2024', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detská hračka - Sliz v kelímku', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20v%20kel%C3%ADmku(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20v%20kel%C3%ADmku%20(2).jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03464/24', 'None', 
+            'Peoples Republic of China', 'None', 'Chemical', 
+            'None', 'Toy stamps', 'Art & Craft Stamps 26 pcs.', 
+            'Pepco', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '2200160714160', '202403', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detská hračka - Sliz „Crystal Mud“', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%203.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03580/24', 'None', 
+            'United Kingdom', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Corolla', 
+            'Toyota', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '24SD-146', '16.01.2023 - 05.11.2024', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Predlžovací prívod PLASTROL, modeltyp PS-360', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%204.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03783/24', 'None', 
+            'Peoples Republic of China', 'None', 'Drowning', 
+            'None', 'Swim seat', '', 
+            '', 'Hobby/sports equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Predlžovací prívod PLASTROL, modeltyp PS-460', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%205.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03810/24', 'None', 
+            'Peoples Republic of China', 'None', 'Drowning', 
+            'None', 'Swim seat', 'SWIM BOAT', 
+            'NUMEROUS STAR ®', 'Hobby/sports equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Posteľ Emio, typ 04, s rozmerom „90x200“, v prevedení sonoma dub/biela', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%203.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'INFO/00139/24', 'None', 
+            'Peoples Republic of China', 'None', 'Injuries', 
+            'None', 'Baby walker ', 'Baby', 
+            '', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Bicykel s pohonným systémom SAMEBIKE, model 20LVXD30', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%203.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03598/24', 'None', 
+            'Germany', 'None', 'Environment, Fire, Injuries', 
+            'None', 'Passenger car', 'S-Class', 
+            'Mercedes-Benz', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '5496234', '30.06.2020 - 19.09.2023', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Predlžovací prívod PLASTROL, model/typ W-98175', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%204.jpg?w=500&h=500'
-                    );
-                    
--- Inserted data from SOI website
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03492/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Motorcycle', 'MY22 FXRST (Low Rider El Diablo), MY22-24 FXLRST (Low Rider ST)', 
+            'HARLEY-DAVIDSON', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0187', '17.11.2021 - 8.7.2024', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Predlžovací prívod VOREL, model/typ 72494', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.4.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03529/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Passenger car', '5series, i5, i7, 7series, M5', 
+            'Bmw', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0032660300', '17.06.2024 - 04.09.2024', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Predlžovacie prívody ELGOTECH, typ 04GN (rôzne varianty)', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)4.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)6.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)7.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)8.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)9.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)10.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)11.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)12.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)13.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)14.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)15.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03528/24', 'None', 
+            'Germany', 'None', 'Injuries', 
+            'None', 'Motorcycle tyre', 'Scorpion Trail II (Pirelli), Tourance Next (Metzeler), Tourance Next II (Metzeler)', 
+            'Pirelli, Metzeler', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '24629', '30.11.2016 - 30.09.2024', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Kancelárska stolička MEDEA PLUS', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/kanc.%20stol.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03416/24', 'None', 
+            'Unknown', 'None', 'Electric shock', 
+            'None', 'Lighting chain', '140L LED DECORATION LIGHTS', 
+            '', 'Lighting chains', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detská jedálenská stolička 3v1 KRUZZEL®, M: 00012059  (HA-002)', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20jed%C3%A1lensk%C3%A1%20stoli%C4%8Dka%203v1%20kruzzel1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20jed%C3%A1lensk%C3%A1%20stoli%C4%8Dka%203v1%20kruzzel2.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03505/24', 'None', 
+            'Unknown', 'None', 'Burns, Electric shock, Fire', 
+            'None', 'Lighting chain', 'DECORATION LIGHTS', 
+            '', 'Lighting chains', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec v tvare stromčeka STARPIE, modeltyp LX-01, ITEM NO 20640', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%204.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03500/24', 'None', 
+            'Peoples Republic of China', 'None', 'Burns, Electric shock, Fire', 
+            'None', 'Lighting chain', 'Merry Christmas 140 LED', 
+            '', 'Lighting chains', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6902204579143', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec modeltyp STARLED01', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%204%20(2).jpg?w=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%204%20(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%206.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%207.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03502/24', 'None', 
+            'Belarus', 'None', 'Electric shock', 
+            'None', 'Submersible water pump', 'Submersible pump', 
+            'Malish', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec v tvare stromčeka STARPIE, modeltyp LX-01, ITEM NO 20639', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%201.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%203.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%204.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03503/24', 'None', 
+            'Peoples Republic of China', 'None', 'Injuries', 
+            'None', 'Toy scooter', '', 
+            '', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8000004005775', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec ITEM NO: 100L V8 LED-RGB', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.5.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03702/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Playmat', '36pcs Puzzle Kid Jouet Éducatif Alphabet Lettres Chiffre Tapis En Mousse', 
+            '', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec model/typ DN-72', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.6.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.7.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03632/24', 'None', 
+            'United Kingdom', 'None', 'Fire', 
+            'None', 'Passenger car', 'AURIS TMUK, C-HR TMMT, COROLLA TMUK, NX200, RX300', 
+            'Lexus, Toyota', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '24SD-149', '2018 - 2022', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec W/PROOF, ITEM NO: MD100RGB', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb4.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb5.jpg?w=500&h=500'
-                    );
-                    
--- Inserted data from SOI website
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03634/24', 'None', 
+            'Japan', 'None', 'Injuries', 
+            'None', 'Passenger car', 'NX', 
+            'Lexus', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '24SD-151', '30.06.2023 - 16.01.2024', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec modeltyp XL-100 LED', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led4.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led5.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led6.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led7.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03636/24', 'None', 
+            'France', 'None', 'Injuries', 
+            'None', 'Passenger van / Light commercial vehicle', 'Proace, Proace EV, Proace Verso, Proace Verso EV', 
+            'Toyota', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            'CI24-057', '29.08.2024 - 01.10.2024', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'LED svetelný reťazec s 8 plastovými cencúľmi', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.4.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03498/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', ' USB charger', '6USB STAND CHARGER', 
+            'ORIGINAL', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5995858180149', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svietiaci stromček s plastovým ukončením LED svetelných zdrojov v tvare kvetu', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu4.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A11/00162/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'USB charger', 'USB WALL CHARGER, CHARGER POWER ADAPTER', 
+            'EZRA', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6918033883023', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svietiaci stromček s plastovým ukončením LED svetelných zdrojov v tvare guličky', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky%204.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A11/00161/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'USB charger', 'USB CHARGER', 
+            '', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6902111270041', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec model/typ 100M85', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.6.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A11/00163/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'USB charger', 'Fast charger', 
+            'KeKe, XinHua Electronics', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6902022111839', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec model: V8F50', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.6.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A11/00166/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'USB charger', '2.4A FAST SMART CHARGER ', 
+            'XINHUA', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6001835000078', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec L&S, model/typ LAL-50LED', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/lal%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/lal%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/lal3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/lal%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/lal%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/lal%206.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A11/00167/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'USB charger', '', 
+            'Hongyu, Rong Shi', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6900180802804', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec Art No.: LL9855-M, ITEM NO: 6366-6', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.6.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.7.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.8.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03519/24', 'None', 
+            'Peoples Republic of China', 'None', 'Fire', 
+            'None', 'Passenger car', 'Cooper, Aceman', 
+            'Mini', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '0061970800', '23.02.2024 - 25.09.2024', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec ITEM NO: A864', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.6.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.7.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.8.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A11/00165/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'USB charger', 'FAST CHARGING, FAST CHARGER, TRAVEL CHARGER, Adaptive Fast Charging', 
+            'ORIGINAL', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8388722226987', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec model/typ 50L-5M', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.6.jpg?w=500&h=500'
-                    );
-                    
--- Inserted data from SOI website
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A11/00168/24', 'None', 
+            'Vietnam', 'None', 'Electric shock', 
+            'None', 'USB charger', 'FAST CHARGER, TRAVEL ADAPTER', 
+            'Feitun', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6912345678902', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec LS, model/typ AG-50LED', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.6.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.7.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A11/00169/24', 'None', 
+            'Vietnam', 'None', 'Electric shock', 
+            'None', 'USB charger', 'TRAVEL ADAPTER , TRAVEL CHARGER', 
+            'YUFANO', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6901336001126', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Svetelný reťazec ITEM NO: A845', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.6.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03780/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'Lighting chain', '', 
+            'Lampada', 'Lighting chains', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8016886231010', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detská postieľka DREWEX®, model Žirafa, Batch Num 05-12-2022 A', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20drewex%C2%AE,%20model%20%C5%BEirafa,%20batch%20num%2005-12-2022%20a%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20drewex%C2%AE,%20model%20%C5%BEirafa,%20batch%20num%2005-12-2022%20a%20c.%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20drewex%C2%AE,%20model%20%C5%BEirafa,%20batch%20num%2005-12-2022%20a%20c.3.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03779/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'LED light', '200 LED Decorative Lights', 
+            '', 'Lighting chains', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '691510100207', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detská postieľka CORNER Babybett, model: LUCA 22-252-F3-2, Art.Num.: 22-252,  Los-Num: H15', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20corner%20babybett,%20model%20luca%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20corner%20babybett,%20model%20luca%20c.%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20corner%20babybett,%20model%20luca%20c.%203.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A11/00164/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'USB charger', 'Charger', 
+            'Earldom', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6971410558167', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detská postieľka so zábranou KLUPŚ®, model TINO, SN: 2232622', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/klup%C5%A1%201.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20so%20z%C3%A1branou%20klups%20c.2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20so%20z%C3%A1branou%20klup%C5%9B%20c.%203.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03582/24', 'None', 
+            'Unknown', 'None', 'Electric shock', 
+            'None', 'Lighting chain', '180L LED DECORATION LIGHTS', 
+            '', 'Lighting chains', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detská postieľka so sťahovacou bočnicou DREWEX®, model LULAYA', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20so%20s%C5%A5ahovacou%20bo%C4%8Dnicou%20drewex%C2%AE,%20model%20lulaya%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20so%20s%C5%A5ahovacou%20bo%C4%8Dnicou%20drewex%C2%AE,%20model%20lulaya%20c.%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20so%20s%C5%A5ahovacou%20bo%C4%8Dnicou%20drewex%C2%AE,%20model%20lulaya%20c.3.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03583/24', 'None', 
+            'Unknown', 'None', 'Burns, Electric shock, Fire', 
+            'None', 'Lighting chain', '240L LED DECORATION LIGHTS', 
+            '', 'Lighting chains', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Laserové ukazovadlo – Svietidlo Silikon stift, model 77427', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20%E2%80%93%20svietidlo%20silikon%20stift,%20model%2077427%20c.%201.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20%E2%80%93%20svietidlo%20silikon%20stift,%20model%2077427%20c.%202.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20%E2%80%93%20svietidlo%20silikon%20stift,%20model%2077427%20c.3.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03578/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'USB charger', 'Travel Charger', 
+            'Alien', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '9982503144805', '', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Laserové ukazovadlo WEDO s bodovou projekciou modeltyp 236 2001', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20wedo%20s%20bodovou%20projekciou%20modeltyp%20236%202001%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20wedo%20s%20bodovou%20projekciou%20modeltyp%20236%202001%20c.2.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03626/24', 'None', 
+            'Poland', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Avenger', 
+            'Jeep', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '84B', '05.04.2024 - 06.05.2024', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detská cestovná postieľka SAMBA PLUS, 05/green', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20cestovn%C3%A1%20postie%C4%BEka%20samba%20plus,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20cestovn%C3%A1%20postie%C4%BEka%20samba%20plus,%20obr.%202.png?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20cestovn%C3%A1%20postie%C4%BEka%20samba%20plus,%20obr.3.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03758/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Auto belay', 'TRUBLUE Speed', 
+            'Headrush Technologies', 'Protective equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', 'TBSD00098
+TBSD01180', 
+            '', '', 
+            'None'
+        );
+        
 
-                    INSERT INTO defective_products (
-                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
-                    ) VALUES (
-                        'Detská postieľka bez matraca Moony Pine White, Art. 350390', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20bez%20matraca%20moony%20pine%20white,%20art.%20350390%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20bez%20matraca%20moony%20pine%20white,%20art.%20350390%20c.%202.jpg?w=500&h=500'
-                    );
-                    
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03556/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', ' Bath toy ', 'Plastic duck family', 
+            '', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '1000039317130', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03458/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Bath toy ', 'Duck family', 
+            'Torch', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03642/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Set of toy cars', 'toys', 
+            '', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '3602426885178', '17091302', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03778/24', 'None', 
+            'Peoples Republic of China', 'None', 'Microbiological', 
+            'None', 'Make-up concealer', 'MUA MAKEUP ACADEMY PRO/BASE, CONCEALER ', 
+            'MUA MAKEUP ACADEMY PROFESSIONAL', 'Cosmetics', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5055402967500', 'ANWG20
+ANWL15', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03749/24', 'None', 
+            'Greece', 'None', 'Injuries', 
+            'None', 'High chair ', 'High chair Play chair', 
+            'BebeStars by Gilis / Leaf 2 in 1', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', ' 5213011832347
+5213011832354', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03693/24', 'None', 
+            'Unknown', 'None', 'Drowning', 
+            'None', 'Swim vest', 'Buoyant aids for swimming instruction ', 
+            'Limmys', 'Protective equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'INFO/00152/24', 'None', 
+            'Unknown', 'None', 'Chemical', 
+            'None', 'Screen protector', 'Skin sticker', 
+            '', 'Communication and media equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'A12/03647/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Plastic toy', 'Peppa Pig', 
+            '', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '2301639', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03811/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock, Fire', 
+            'None', 'USB charger', '120W Charger, Type-c CHARGER', 
+            'Type-c', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'OR/00171/24', 'None', 
+            'Poland', 'None', 'Entrapment', 
+            'None', 'Childrens high chair ', 'Kala gray', 
+            'MoMi', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5900495050922', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'OR/00182/24', 'None', 
+            'Peoples Republic of China', 'None', 'Cuts', 
+            'None', 'Protective gloves ', 'Amet', 
+            'cxs', 'Protective equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8591940213060', '2021/540', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'OR/00181/24', 'None', 
+            'Peoples Republic of China', 'None', 'Injuries', 
+            'None', 'Pushchair', 'Elia', 
+            'Lionelo', 'Childcare articles and childrens equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5902581658852', '20210922
+20220456', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03830/24', 'None', 
+            'Peoples Republic of China', 'None', 'Chemical', 
+            'None', 'Plastic doll', 'Girl sesies ', 
+            'Charm Girl FASHION', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6464655961040', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03743/24', 'None', 
+            'Türkiye', 'None', 'Injuries', 
+            'None', 'Step stool', '', 
+            'Minik Basamaklar', 'Furniture', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8697677482332', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03745/24', 'None', 
+            'Türkiye', 'None', 'Injuries', 
+            'None', 'Table', 'Arslan Plastik', 
+            'Rumex', 'Furniture', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8697677481519', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03782/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Toy gun set', 'SOFT BULLET GUN', 
+            '', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6971396360259', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03774/24', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'Lamp ', 'Bear Lamp', 
+            'Coolstuff', 'Lighting equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '7333251006143', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03773/24', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'Electric toy', 'Penguin race', 
+            'Coolstuff', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '7333251005887', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03807/24', 'None', 
+            'United States', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Grand Cherokee ', 
+            'Jeep', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '36B', '03.04.2023 - 16.05.2023', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03806/24', 'None', 
+            'Republic of Korea', 'None', 'Injuries', 
+            'None', 'Passenger car', 'EV9', 
+            'Kia', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '241164', '10.03.2023 - 06.09.2024 ', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03805/24', 'None', 
+            'Republic of Korea', 'None', 'Fire', 
+            'None', 'Passenger car', 'Sorento', 
+            'Kia', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '241143', '01.07. 2010 - 21.08.2014', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03804/24', 'None', 
+            'Poland', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Avenger BEV', 
+            'Jeep', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '88B', '26.03.2024 - 31.05.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03803/24', 'None', 
+            'Republic of Korea', 'None', 'Injuries', 
+            'None', 'Passenger car', 'Picanto', 
+            'Kia', 'Motor vehicles', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '241170, 241171', '01.04.2024 - 14.05.2024', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03746/24', 'None', 
+            'Peoples Republic of China', 'None', 'Burns', 
+            'None', 'Novelty lighter', 'Zapalovač YoMin rtěnka', 
+            'Yomin', 'Lighters', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03726/24', 'None', 
+            'Peoples Republic of China', 'None', 'Burns', 
+            'None', 'Novelty lighter', 'Zapalovač ve tvaru pěti hracích kostek', 
+            'Neuvedena', 'Lighters', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '8592023024795', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03809/24', 'None', 
+            'Peoples Republic of China', 'None', 'Drowning', 
+            'None', 'Inflatable swim seat', 'SWIM BOAT', 
+            'Numerous Star', 'Hobby/sports equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03808/24', 'None', 
+            'Unknown', 'None', 'Choking', 
+            'None', 'Puzzle', 'City Vehicles Puzzle', 
+            'Legler (Smallfoot)', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '4020972115034', '04438', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03827/24', 'None', 
+            'Peoples Republic of China', 'None', 'Chemical', 
+            'None', 'Doll', 'Bella Ragazza Mile Moda', 
+            '', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '6972997674035', 'MLB-003', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03825/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'Lighting chain', 'MOON', 
+            'MOON', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5902270764253', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03828/24', 'None', 
+            'Peoples Republic of China', 'None', 'Chemical', 
+            'None', 'Doll', 'Beautiful sweet', 
+            '', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', 'H92', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03802/24', 'None', 
+            'Poland', 'None', 'Electric shock', 
+            'None', 'Extension cord ', '', 
+            'ELGOTECH', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5902694000421', '17.05.2024', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03812/24', 'None', 
+            'Peoples Republic of China', 'None', 'Choking', 
+            'None', 'Toy train', 'Clockwork train', 
+            '', 'Toys', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5014631011804', '007786', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03826/24', 'None', 
+            'Peoples Republic of China', 'None', 'Electric shock', 
+            'None', 'Extension lead', 'Przedluzacz 3x2P', 
+            'IRNA', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '5907736500239', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'INFO/00154/24', 'None', 
+            'Unknown', 'None', 'Environment', 
+            'None', 'USB fan ', 'USB fläkt Mini', 
+            '', 'Gadgets', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03823/24', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'Headphones', 'Hörlurar m mikrofon', 
+            'Sport', 'Gadgets', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'INFO/00155/24', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'Disco lamp', 'LED Crystal Magic Ball Light', 
+            '', 'Gadgets', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03822/24', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'LED ring lamp', 'Adjustable Desktop mount round video light kits', 
+            'Puluz', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'INFO/00156/24', 'None', 
+            'Sweden', 'None', 'Chemical, Environment', 
+            'None', 'USB desktop hoover ', '', 
+            '', 'Gadgets', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '7333287750027', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03820/24', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'Handheld magnifier', 'With 3LED Hand-held magnifier', 
+            '', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '7340216003345', '', 
+            '', '', 
+            'None'
+        );
+        
+
+        INSERT INTO defective_products (
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
+        ) VALUES (
+            'None', 'SR/03821/24', 'None', 
+            'Peoples Republic of China', 'None', 'Environment', 
+            'None', 'Lighting appliance', 'USB Charging Bottle Stoplight', 
+            '', 'Electrical appliances and equipment', 'None', 
+            'None', 'None', 
+            'None', 'None', 
+            'None', '', '', 
+            '', '', 
+            'None'
+        );
+        

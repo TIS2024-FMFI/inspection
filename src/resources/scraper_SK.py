@@ -72,7 +72,7 @@ def process_page(page_url):
                     insert_statements.append(sql)
 
         # Write to seed.sql
-        with open(seed_file_path, "a", encoding="utf-8") as seed_file:
+        with open(seed_file_path, "a", encoding="utf-8") as seed_file:  
             seed_file.write("\n-- Inserted data from SOI website\n")
             seed_file.write("\n".join(insert_statements))
         return soup
