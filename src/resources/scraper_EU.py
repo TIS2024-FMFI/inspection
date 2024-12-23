@@ -2,12 +2,16 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from lxml import etree  # Using lxml for tolerant XML parsing
 import time
 import os
-import xml.etree.ElementTree as ET
 
 # Path to the seed SQL file
 seed_file_path = "src/resources/db/seed.sql"  # Adjust this if your seed file is stored elsewhere
+
+def sanitize(value):
+    """Remove single quotes from strings to avoid SQL issues."""
+    return value.replace("'", "") if isinstance(value, str) else value
 
 # Set up WebDriver
 driver = webdriver.Chrome()
@@ -49,32 +53,43 @@ try:
     latest_file = max(files, key=os.path.getctime)
     print(f"Processing file: {latest_file}")
 
-    # Parse the XML file
-    tree = ET.parse(latest_file)
-    root = tree.getroot()
+    # Parse the XML file using lxml (tolerant parser)
+    try:
+        parser = etree.XMLParser(recover=True)
+        tree = etree.parse(latest_file, parser)
+        root = tree.getroot()
+        print("XML parsing completed successfully using lxml.")
+    except etree.XMLSyntaxError as e:
+        print(f"XML parsing error with lxml: {e}")
+        raise
 
     # Extract data from the XML
     notifications = root.findall(".//notifications")
     products_data = []
     for notification in notifications:
         data = {
-            "case_number": notification.find("caseNumber").text if notification.find("caseNumber") is not None else None,
-            "category": notification.find("category").text if notification.find("category") is not None else None,
-            "product": notification.find("product").text if notification.find("product") is not None else None,
-            "brand": notification.find("brand").text if notification.find("brand") is not None else None,
-            "name": notification.find("name").text if notification.find("name") is not None else None,
-            "model": notification.find("type_numberOfModel").text if notification.find("type_numberOfModel") is not None else None,
-            "batch_number": notification.find("batchNumber").text if notification.find("batchNumber") is not None else None,
-            "barcode": notification.find("barcode").text if notification.find("barcode") is not None else None,
-            "risk_type": notification.find("riskType").text if notification.find("riskType") is not None else None,
-            "danger": notification.find("danger").text if notification.find("danger") is not None else None,
-            "measures": notification.find("measures").text if notification.find("measures") is not None else None,
-            "notifying_country": notification.find("notifyingCountry").text if notification.find("notifyingCountry") is not None else None,
-            "origin_country": notification.find("countryOfOrigin").text if notification.find("countryOfOrigin") is not None else None,
-            "type": notification.find("type").text if notification.find("type") is not None else None,
-            "level": notification.find("level").text if notification.find("level") is not None else None,
-            "company_recall_code": notification.find("companyRecallCode").text if notification.find("companyRecallCode") is not None else None,
-            "production_dates": notification.find("productionDates").text if notification.find("productionDates") is not None else None,
+            "type_of_alert": sanitize(notification.findtext("typeOfAlert")),
+            "alert_number": sanitize(notification.findtext("caseNumber")),
+            "alert_submitted_by": sanitize(notification.findtext("submittedBy")),
+            "country_of_origin": sanitize(notification.findtext("countryOfOrigin")),
+            "counterfeit": sanitize(notification.findtext("counterfeit")),
+            "risk_type": sanitize(notification.findtext("riskType")),
+            "risk_legal_provision": sanitize(notification.findtext("riskLegalProvision")),
+            "product": sanitize(notification.findtext("product")),
+            "name": sanitize(notification.findtext("name")),
+            "brand": sanitize(notification.findtext("brand")),
+            "category": sanitize(notification.findtext("category")),
+            "type_model": sanitize(notification.findtext("typeNumberModel")),
+            "compulsory_measures": sanitize(notification.findtext("compulsoryMeasures")),
+            "voluntary_measures": sanitize(notification.findtext("voluntaryMeasures")),
+            "distribution_countries": sanitize(notification.findtext("distributionCountries")),
+            "company_recall_page": sanitize(notification.findtext("companyRecallPage")),
+            "url_of_case": sanitize(notification.findtext("urlOfCase")),
+            "barcode": sanitize(notification.findtext("barcode")),
+            "batch_number": sanitize(notification.findtext("batchNumber")),
+            "company_recall_code": sanitize(notification.findtext("companyRecallCode")),
+            "production_dates": sanitize(notification.findtext("productionDates")),
+            "packaging_description": sanitize(notification.findtext("packagingDescription")),
         }
         products_data.append(data)
 
@@ -83,11 +98,21 @@ try:
     for product in products_data:
         sql = f"""
         INSERT INTO defective_products (
-            alert_number, product_name, product_category, brand, product_description, type, country_of_origin, risk_type, risk_description, measures_authorities, notifying_country, company_recall_code, production_dates
+            type_of_alert, alert_number, alert_submitted_by, country_of_origin, counterfeit,
+            risk_type, risk_legal_provision, product_name, product_description, brand, product_category,
+            model_type_number, compulsory_measures, voluntary_measures, found_and_measures_taken_in,
+            company_recall_page, case_url, barcode, batch_number, company_recall_code,
+            production_dates, packaging_description
         ) VALUES (
-            '{product["case_number"]}', '{product["product"]}', '{product["category"]}', '{product["brand"]}', '{product["name"]}', '{product["type"]}', 
-            '{product["origin_country"]}', '{product["risk_type"]}', '{product["danger"]}', '{product["measures"]}', '{product["notifying_country"]}', 
-            '{product["company_recall_code"]}', '{product["production_dates"]}'
+            '{product["type_of_alert"]}', '{product["alert_number"]}', '{product["alert_submitted_by"]}', 
+            '{product["country_of_origin"]}', '{product["counterfeit"]}', '{product["risk_type"]}', 
+            '{product["risk_legal_provision"]}', '{product["product"]}', '{product["name"]}', 
+            '{product["brand"]}', '{product["category"]}', '{product["type_model"]}', 
+            '{product["compulsory_measures"]}', '{product["voluntary_measures"]}', 
+            '{product["distribution_countries"]}', '{product["company_recall_page"]}', 
+            '{product["url_of_case"]}', '{product["barcode"]}', '{product["batch_number"]}', 
+            '{product["company_recall_code"]}', '{product["production_dates"]}', 
+            '{product["packaging_description"]}'
         );
         """
         insert_statements.append(sql)
