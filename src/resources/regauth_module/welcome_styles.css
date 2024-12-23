@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+header .logo {
+    height: 50px;
+    flex-shrink: 0;
+}
+
+header .sign-in-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #ddd;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+header .sign-in-button:hover {
+    background-color: #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .sign-in-button {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 100px 20px 20px; /* Добавляем отступ для учета фиксированного хедера */
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.welcome-image {
+    width: 300px;
+    height: 300px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.welcome-text {
+    text-align: left;
+    max-width: 500px;
+}
+
+.welcome-text ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.welcome-text strong {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.register-button,
+.continue-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.register-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+.continue-button {
+    background-color: #ddd;
+    color: #333;
+}
+
+.continue-button:hover {
+    background-color: #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
