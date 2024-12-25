@@ -67,3 +67,7 @@ function startScan() {
     alert("Barcode scanning is not yet implemented!");
 }
 
+
+document.getElementById("scan-button").addEventListener("click", () => {
+    window.open("../scanner.html", "Scanner", "width=800,height=400");
+});

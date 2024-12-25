@@ -52,7 +52,10 @@
         // Po úspešnom načítaní barcode
         Quagga.onDetected((data) => {
             const barcode = data.codeResult.code;
+            Quagga.stop(); // Zastaviť skenovanie po nájdení barcode
             document.getElementById("result").textContent = `Barcode: ${barcode}`;
+            document.getElementById("camera").innerHTML = `Načítavam údaje...`;
+            
 
             // AJAX volanie na server
             $.ajax({
@@ -62,10 +65,10 @@
                 success: function (response) {
                     const data = JSON.parse(response);
                     if (data.error) {
-                        document.getElementById("result").textContent = data.error;
+                        document.getElementById("camera").innerHTML = `<p>${data.error}</p>`;
                     } else {
                         const details = ``;
-                        document.getElementById("result").innerHTML = details;
+                        document.getElementById("camera").innerHTML = details;
                     }
                 },
                 error: function () {
@@ -73,7 +76,7 @@
                 }
             });
 
-            Quagga.stop(); // Zastaviť skenovanie po nájdení barcode
+            
         });
     </script>
 </body>
