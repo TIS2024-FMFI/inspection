@@ -32,7 +32,7 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
             <input type="text" placeholder="Search">
         </div>
         <p>or scan them...</p>
-        <button class="scan-button">Scan</button>
+        <button id="scan-button">Scan</button>
     </div>
 
     <?php if ($isLoggedIn && $userRole === 'admin'): ?>
