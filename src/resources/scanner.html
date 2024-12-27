@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #camera {
+            width: 100%;
+            height: auto;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Barcode Scanner</h1>
+<div id="camera"></div>
+<div id="result">Skenujem...</div>
+
+<script>
+    // Inicializácia QuaggaJS
+    Quagga.init({
+        inputStream: {
+            type: "LiveStream",
+            constraints: {
+                width: 640,
+                height: 480,
+                facingMode: "environment" // Použiť zadnú kameru
+            },
+            target: document.getElementById("camera"),
+        },
+        decoder: {
+            readers: ["code_128_reader", "ean_reader"] // Typy barcode
+        }
+    }, (err) => {
+        if (err) {
+            document.getElementById("result").textContent = "Chyba: Kamera nie je dostupná.";
+            console.error(err);
+            return;
+        }
+        Quagga.start();
+    });
+
+    // Po úspešnom načítaní barcode
+    Quagga.onDetected((data) => {
+        const barcode = data.codeResult.code;
+        Quagga.stop(); // Zastaviť skenovanie po nájdení barcode
+        document.getElementById("result").textContent = `Barcode: ${barcode}`;
+        document.getElementById("camera").innerHTML = `Načítavam údaje...`;
+
+
+        // AJAX volanie na server
+        $.ajax({
+            url: "get_data.php",
+            method: "GET",
+            data: { barcode },
+            success: function (response) {
+                const data = JSON.parse(response);
+                if (data.error) {
+                    document.getElementById("camera").innerHTML = `<p>${data.error}</p>`;
+                } else {
+                    const details = ``;
+                    document.getElementById("camera").innerHTML = details;
+                }
+            },
+            error: function () {
+                document.getElementById("result").textContent = "Chyba pri načítaní údajov z databázy.";
+            }
+        });
+
+
+    });
+</script>
+</body>
+
+</html>

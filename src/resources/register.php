@@ -17,7 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif ($password !== $confirmPassword) {
         $error = "Passwords do not match.";
     } else {
-        // Database insertion logic
         require 'db/config.php';
 
         try {
@@ -26,12 +25,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($stmt->rowCount() > 0) {
                 $error = "Email is already registered.";
             } else {
-                // Insert the new user
                 $hashedPassword = md5($password);
                 $stmt = $pdo->prepare("INSERT INTO users (email, password, role) VALUES (:email, :password, 'user')");
                 $stmt->execute(['email' => $email, 'password' => $hashedPassword]);
 
-                // Redirect to login page
                 header('Location: login.php');
                 exit;
             }
@@ -41,7 +38,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +53,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <li class="active"><a href="#">Sign Up</a></li>
     </ul>
 
-    <!-- Registration form -->
     <form method="POST" action="register.php" class="auth-form">
         <?php if (!empty($error)): ?>
             <div class="error-message"><?php echo htmlspecialchars($error); ?></div>
@@ -90,4 +85,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 </body>
 </html>
-    

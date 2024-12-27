@@ -17,7 +17,12 @@
             <input type="text" placeholder="Search">
         </div>
         <p>or scan them...</p>
-        <button class="scan-button">Scan</button>
+        <button id="scan-button">Scan</button>
     </main>
+    <script>
+        document.getElementById("scan-button").addEventListener("click", () => {
+            window.open("scanner.html", "Scanner", "width=800,height=400");
+        });
+    </script>
 </body>
 </html>
