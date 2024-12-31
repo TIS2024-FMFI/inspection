@@ -7,6 +7,7 @@
     <title>Scanner</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="regauth_module/styles.css">
     <style>
         #camera {
             width: 100%;
@@ -53,7 +54,8 @@
         Quagga.onDetected((data) => {
             const barcode = data.codeResult.code;
             Quagga.stop(); // Zastaviť skenovanie po nájdení barcode
-            document.getElementById("result").textContent = `Barcode: ${barcode}`;
+            
+            document.getElementById("result").textContent = ``;
             document.getElementById("camera").innerHTML = `Načítavam údaje...`;
             
 
@@ -67,12 +69,92 @@
                     if (data.error) {
                         document.getElementById("camera").innerHTML = `<p>${data.error}</p>`;
                     } else {
-                        const details = ``;
+                        const product = data[0]; // Access the first (and presumably only) product
+                        //doplniť údaje z databázy tak, aby vypisovali všetky údaje
+                        //product_name, published_on, hazard_causes ak DEFECTIVE, pri see details všetko ostatné
+                        const details = `
+                            <div class="product-card">
+                                <h2>Defective</h2>
+                                <p><strong>Name:</strong> ${product.product_name}</p>
+                                <p><strong>Reported date:</strong> ${product.published_on}</p>
+                                <p><strong>Hazard Causes:</strong> ${product.hazard_causes}</p>
+                                <p><strong>Barcode: </strong>${product.barcode} </p>
+                                <button id="see-details">See Details</button>
+                                <div id="additional-info" style="display: none;">
+                                    <p><strong>Category:</strong> ${product.product_category}</p>
+                                    <p><strong>Description:</strong> ${product.product_description}</p>
+                                    <p><strong>Brand:</strong> ${product.brand}</p>
+                                    <p><strong>Alert Number:</strong> ${product.alert_number}</p>
+                                    <p><strong>Type of alert:</strong> ${product.type_of_alert}</p>
+                                    <p><strong>Type:</strong> ${product.type}</p>
+                                    <p><strong>Risk type:</strong> ${product.risk_type}</p>
+                                    <p><strong>Alert type:</strong> ${product.alert_type}</p>
+                                    <p><strong>Country of origin:</strong> ${product.country_of_origin}</p>
+                                    <p><strong>Alert submitted by:</strong> ${product.alert_submitted_by}</p>
+                                    <p><strong>Notifying country:</strong> ${product.notifying_country}</p>
+                                    <p><strong>Counterfeit:</strong> ${product.counterfeit}</p>
+                                    <p><strong>Hazard type:</strong> ${product.hazard_type}</p>
+                                    <p><strong>Measures operators:</strong> ${product.measures_operators}</p>
+                                    <p><strong>Measures authorities:</strong> ${product.measures_authorities}</p>
+                                    <p><strong>Compulsory measures:</strong> ${product.compulsory_measures}</p>
+                                    <p><strong>Voluntary measures:</strong> ${product.voluntary_measures}</p>
+                                    <p><strong>Found and measures taken in:</strong> ${product.found_and_measures_taken_in}</p>
+                                    <p><strong>Product description:</strong> ${product.product_description}</p>
+                                    <p><strong>Packaging description:</strong> ${product.packaging_description}</p>
+                                    <p><strong>Brand:</strong> ${product.brand}</p>
+                                    <p><strong>Product category:</strong> ${product.product_category}</p>
+                                    <p><strong>Model type number:</strong> ${product.model_type_number}</p>
+                                    <p><strong>OECD portal category:</strong> ${product.oecd_portal_category}</p>
+                                    <p><strong>Risk description:</strong> ${product.risk_description}</p>
+                                    <p><strong>Risk legal provision:</strong> ${product.risk_legal_provision}</p>
+                                    <p><strong>Recall code:</strong> ${product.recall_code}</p>
+                                    <p><strong>Company recall code:</strong> ${product.company_recall_code}</p>
+                                    <p><strong>Company recall page:</strong> ${product.company_recall_page}</p>
+                                    <p><strong>Case URL:</strong> ${product.case_url}</p>
+                                    <p><strong>Batch number:</strong> ${product.batch_number}</p>
+                                    <p><strong>Production dates:</strong> ${product.production_dates}</p>
+                                    <p><strong>Images:</strong> ${product.images}</p>
+                                </div>
+                            </div>
+                        `;
                         document.getElementById("camera").innerHTML = details;
+                        // Add event listener for the 'See Details' button
+                        document.getElementById("see-details").addEventListener("click", function () {
+                            const additionalInfo = document.getElementById("additional-info");
+                            if (additionalInfo.style.display === "none") {
+                                additionalInfo.style.display = "block";
+                                this.textContent = "Hide Details";
+                            } else {
+                                additionalInfo.style.display = "none";
+                                this.textContent = "See Details";
+                            }
+                        });
                     }
                 },
-                error: function () {
-                    document.getElementById("result").textContent = "Chyba pri načítaní údajov z databázy.";
+                error: function (jqXHR) {
+                    if  (jqXHR.status === 404) {
+                        document.getElementById("camera").innerHTML = `
+                            <div class="product-card">
+                                <h2>Not Found</h2>  
+                                <p>Barcode: ${barcode}</p>
+                                <form method="post">
+                                    <input type="text" id="name" name="name" placeholder="Name (mandatory)" required>
+                                    <input type="text" id="description" name="description" placeholder="Description (optional)">
+                                    <input type="text" id="brand" name="brand" placeholder="Brand (optional)">
+                                    <button id="add-product">Add to personalized list</button>
+                                    <button id="cancel">Cancel</button>
+                                </form>
+                            </div>
+                    `;
+                        // Add event listener for the 'Add to Personalized List' button
+                        document.getElementById("add-product").addEventListener("click", function () {
+                            // Implement the functionality to add the product to the personalized list
+                            alert('Produkt bol pridaný do vášho personalizovaného zoznamu.');
+                        });
+                    }
+                    else {
+                        document.getElementById("result").textContent = "Chyba pri načítaní údajov z databázy.";
+                    }
                 }
             });
 
