@@ -69,7 +69,7 @@ function startScan() {
 
 
 document.getElementById("scan-button").addEventListener("click", () => {
-    window.open("../scanner.html", "Scanner", "width=800,height=400");
+    window.open("scanner.html", "Scanner", "width=800,height=400");
 });
 
 function toggleProfileMenu() {
