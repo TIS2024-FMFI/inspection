@@ -20,18 +20,35 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My List</title>
+    <title>Personalized List</title>
     <link rel="stylesheet" href="personalizedlist_styles.css">
 </head>
 <body>
 <header>
     <div class="tabs">
-        <button class="tab active" onclick="showTab('my-list')">My List</button>
-        <button class="tab" onclick="showTab('history')">History</button>
+        <button class="tab active" onclick="showTab('my-list')">Personalized List</button>
+<!--        <button class="tab" onclick="showTab('history')">History</button>-->
     </div>
-    <div class="profile-header">
-        <span class="username">Username</span>
-        <img src="images/profile-pic.png" alt="Profile Picture" class="profile-pic">
+
+    <!-- Вместо div.profile-header оставляем практически то же, но оборачиваем в profile-menu-container -->
+    <div class="profile-header profile-menu-container">
+        <img src="images/profile-pic.png"
+             alt="Profile Picture"
+             class="profile-pic"
+             onclick="toggleProfileMenu()">
+
+        <!-- Выпадающее меню -->
+        <div class="profile-menu" id="profile-menu">
+            <!-- Email -->
+            <p class="profile-email">
+                <!-- Если в PHP-коде уже есть $_SESSION['email'], можно вывести здесь -->
+                <?php echo htmlspecialchars($_SESSION['email'] ?? 'No email'); ?>
+            </p>
+            <a href="index.php" class="profile-menu-item">Home</a>
+            <a href="/history.php" class="profile-menu-item">History</a>
+            <a href="logout.php" class="profile-menu-item">Logout</a>
+
+        </div>
     </div>
 </header>
 <main>

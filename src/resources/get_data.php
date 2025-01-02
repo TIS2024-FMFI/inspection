@@ -1,5 +1,5 @@
 <?php
-require_once 'regauth_module\db\config.php';
+require_once 'db\config.php';
 
 try {
     $stmt = $pdo->prepare("SELECT * FROM defective_products WHERE barcode = :barcode");

@@ -17,6 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['role'] = $user['role'];
                 $_SESSION['username'] = $user['username']; // Если есть поле username
+                $_SESSION['email'] = $user['email'];       // <-- добавляем email
+
                 header('Location: index.php');
                 exit;
             } else {
@@ -29,7 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = "Database error: " . $e->getMessage();
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,6 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <li class="active"><a href="#">Log In</a></li>
         <li><a href="register.php">Sign Up</a></li>
     </ul>
+
     <form method="POST" action="login.php" class="auth-form">
         <?php if (!empty($error)): ?>
             <div class="error-message"><?php echo htmlspecialchars($error); ?></div>

@@ -1,6 +1,8 @@
 <?php
 session_start();
+
 $isLoggedIn = isset($_SESSION['user_id']); // Проверяем, авторизован ли пользователь
+$email = isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : 'No email available';
 $userRole = isset($_SESSION['role']) ? $_SESSION['role'] : null;    // Получаем роль пользователя
 $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : ''; // Имя пользователя
 ?>
@@ -15,16 +17,34 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 <body>
 <header>
     <img src="images/logo.png" alt="Logo" class="logo">
+
     <div class="header-buttons">
         <?php if ($isLoggedIn): ?>
-            <a href="personalized_list.php" class="my-list-button">My List</a>
-            <a href="logout.php" class="sign-out-button">Logout</a>
-            <img src="images/profile-pic.png" alt="Profile Picture" class="profile-pic">
+            <!-- Контейнер для иконки + выпадающее меню -->
+            <div class="profile-menu-container">
+                <!-- Иконка профиля (аватарка) -->
+                <img src="images/profile-pic.png"
+                     alt="Profile Picture"
+                     class="profile-pic"
+                     onclick="toggleProfileMenu()">
+
+                <!-- Само выпадающее меню -->
+                <div class="profile-menu" id="profile-menu">
+                    <p class="profile-email">
+                        <?php echo htmlspecialchars($_SESSION['email'] ?? 'No email'); ?>
+                    </p>
+                    <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
+                    <a href="history.php" class="profile-menu-item">History</a>
+                    <a href="logout.php" class="profile-menu-item">Logout</a>
+                </div>
+            </div>
         <?php else: ?>
             <button class="sign-in-button" onclick="openModal('login-modal')">Sign In</button>
         <?php endif; ?>
     </div>
 </header>
+
+
 <main>
     <div class="content-container">
         <h1>Search for defective products</h1>

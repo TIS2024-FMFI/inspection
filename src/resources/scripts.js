@@ -69,5 +69,18 @@ function startScan() {
 
 
 document.getElementById("scan-button").addEventListener("click", () => {
-    window.open("../scanner.html", "Scanner", "width=800,height=400");
+    window.open("scanner.html", "Scanner", "width=800,height=400");
+});
+
+function toggleProfileMenu() {
+    const menu = document.getElementById('profile-menu');
+    menu.classList.toggle('show');
+}
+
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('profile-menu');
+    const profilePic = document.querySelector('.profile-pic');
+    if (!menu.contains(event.target) && !profilePic.contains(event.target)) {
+        menu.classList.remove('show');
+    }
 });

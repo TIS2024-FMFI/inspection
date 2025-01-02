@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <button class="sign-in-button">Sign In</button>
+    </header>
+    <main>
+        <h1>Search for defective products</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+        </div>
+        <p>or scan them...</p>
+        <button id="scan-button">Scan</button>
+    </main>
+    <script>
+        document.getElementById("scan-button").addEventListener("click", () => {
+            window.open("scanner.html", "Scanner", "width=800,height=400");
+        });
+    </script>
+</body>
+</html>
