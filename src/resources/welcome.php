@@ -27,7 +27,7 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 <main>
     <h1>WELCOME</h1>
     <div class="content-container">
-        <img src="images/welcome-placeholder.png" alt="Placeholder Image" class="welcome-image">
+        <img src="images/logo.png" alt="Placeholder Image" class="welcome-image">
         <div class="welcome-text">
             <p>
                 This website is part of a school project designed to help users identify defective products.

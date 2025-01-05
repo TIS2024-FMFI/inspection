@@ -27,7 +27,7 @@ header {
     left: 0;
     z-index: 1000;
     box-sizing: border-box;
-    flex-wrap: wrap; /* Адаптация для маленьких экранов */
+    flex-wrap: wrap;
 }
 
 header .logo {
@@ -35,7 +35,6 @@ header .logo {
     flex-shrink: 0;
 }
 
-/* Контейнер кнопок в шапке */
 .header-buttons {
     display: flex;
     justify-content: center;
@@ -43,7 +42,6 @@ header .logo {
     gap: 10px;
 }
 
-/* Кнопка Sign In */
 .sign-in-button {
     padding: 10px 20px;
     font-size: 14px;
@@ -62,7 +60,6 @@ header .logo {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Кнопки My List и Logout */
 .my-list-button,
 .sign-out-button {
     padding: 10px 20px;
@@ -82,7 +79,6 @@ header .logo {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Для небольших экранов */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -110,7 +106,6 @@ header .logo {
     border: 1px solid #ddd;
 }
 
-/* По умолчанию скрыто */
 .profile-menu {
     position: absolute;
     top: 50px;
@@ -125,12 +120,10 @@ header .logo {
     z-index: 999;
 }
 
-/* При добавлении класса .show — показываем меню */
 .profile-menu.show {
     display: flex;
 }
 
-/* Элементы меню */
 .profile-menu-item {
     padding: 10px;
     text-decoration: none;
@@ -152,7 +145,7 @@ header .logo {
    Main Content (Основной контент)
    ============================================================ */
 main {
-    margin-top: 80px; /* отступ под фиксированный header */
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +156,6 @@ main {
     text-align: center;
 }
 
-/* Заголовки, параграфы */
 h1 {
     font-size: 28px;
     font-weight: bold;
@@ -175,7 +167,6 @@ p {
     color: #333;
 }
 
-/* Поисковый блок */
 .search-container {
     margin: 20px 0;
     display: flex;
@@ -203,7 +194,6 @@ p {
     background-color: #0056b3;
 }
 
-/* Кнопка Scan */
 #scan-button,
 .scan-button {
     padding: 10px 20px;
@@ -221,7 +211,6 @@ p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Результаты поиска */
 #result-container {
     margin-top: 20px;
     text-align: left;
@@ -235,10 +224,10 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Админ-панель */
+
 .admin-panel {
     position: absolute;
-    top: 120px; /* Под хедером */
+    top: 120px;
     right: 20px;
 }
 .scrape-sites-button {
@@ -268,7 +257,7 @@ p {
    Modal Styles (Модальные окна)
    ============================================================ */
 .modal {
-    display: none; /* Скрыто по умолчанию */
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -332,7 +321,6 @@ p {
     border-color: #007bff;
 }
 
-/* Форма авторизации */
 .auth-form .form-group {
     margin-bottom: 15px;
     text-align: left;
@@ -367,7 +355,6 @@ p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Google-кнопка */
 .google-auth-btn {
     display: flex;
     align-items: center;
