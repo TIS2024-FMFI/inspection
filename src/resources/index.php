@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$isLoggedIn = isset($_SESSION['user_id']); // Проверяем, авторизован ли пользователь
+$isLoggedIn = isset($_SESSION['user_id']);
 $email = isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : 'No email available';
-$userRole = isset($_SESSION['role']) ? $_SESSION['role'] : null;    // Получаем роль пользователя
-$username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : ''; // Имя пользователя
+$userRole = isset($_SESSION['role']) ? $_SESSION['role'] : null;
+$username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : '';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,15 +20,12 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 
     <div class="header-buttons">
         <?php if ($isLoggedIn): ?>
-            <!-- Контейнер для иконки + выпадающее меню -->
             <div class="profile-menu-container">
-                <!-- Иконка профиля (аватарка) -->
                 <img src="images/profile-pic.png"
                      alt="Profile Picture"
                      class="profile-pic"
                      onclick="toggleProfileMenu()">
 
-                <!-- Само выпадающее меню -->
                 <div class="profile-menu" id="profile-menu">
                     <p class="profile-email">
                         <?php echo htmlspecialchars($_SESSION['email'] ?? 'No email'); ?>
