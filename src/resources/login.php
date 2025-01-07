@@ -23,8 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $response['success'] = true;
         } else {
-            $response['error'] = "The email address or password you entered is incorrect. Please try again... Stored password hash: " . $password . " " . $user['password_hash'] . " " . password_hash($password, PASSWORD_DEFAULT) . " " . "Password verify: " . (password_verify($password, $user['password_hash']) ? 'true' : 'false');
-            //$response['error'] = "The email address or password you entered is incorrect. Please try again...";
+            $response['error'] = "The email address or password you entered is incorrect. Please try again...";
         }
     } catch (PDOException $e) {
         $response['error'] = "Database error: " . $e->getMessage();

@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($stmt->rowCount() > 0) {
                 $response['error'] = "Email is already registered.";
             } else {
-                $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+                $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
                 $username = substr($email, 0, strpos($email, '@'));
                 $stmt = $pdo->prepare("INSERT INTO users (email, password_hash, role, username) VALUES (:email, :password_hash, 1, :username)");
                 $stmt->execute(['email' => $email, 'password_hash' => $hashedPassword, 'username' => $username]);
