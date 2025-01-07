@@ -2,39 +2,40 @@
 global $pdo;
 session_start();
 require 'db/config.php';
+header('Content-Type: application/json');
+
+$response = ['success' => false, 'error' => ''];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $password = isset($_POST['password']) ? $_POST['password'] : '';
 
     try {
-        // Fetch the user from the database
         $stmt = $pdo->prepare("SELECT * FROM users WHERE email = :email");
         $stmt->execute(['email' => $email]);
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($user) {
-            // Use password_verify to compare the input password with the hashed password
-            if (password_verify($password, $user['password_hash'])) {
-                // Store user information in the session
-                $_SESSION['user_id'] = $user['id'];
-                $_SESSION['role'] = $user['role'];
-                $_SESSION['username'] = $user['username'];
-                $_SESSION['email'] = $user['email'];
+        if ($user && password_verify($password, $user['password_hash'])) {
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['role'] = $user['role'];
+            $_SESSION['username'] = $user['username'];
+            $_SESSION['email'] = $user['email'];
 
-                // Redirect to the index page
-                header('Location: index.php');
-                exit;
-            } else {
-                $error = "The email address or password you entered is incorrect. Please try again...";
-            }
+            $response['success'] = true;
         } else {
-            $error = "The email address or password you entered is incorrect. Please try again...";
+            $response['error'] = "The email address or password you entered is incorrect. Please try again... Stored password hash: " . $password . " " . $user['password_hash'] . " " . password_hash($password, PASSWORD_DEFAULT) . " " . "Password verify: " . (password_verify($password, $user['password_hash']) ? 'true' : 'false');
+            //$response['error'] = "The email address or password you entered is incorrect. Please try again...";
         }
     } catch (PDOException $e) {
-        $error = "Database error: " . $e->getMessage();
+        $response['error'] = "Database error: " . $e->getMessage();
     }
 }
+
+echo json_encode($response);
+exit;
+?>
+
+<!--
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,9 +54,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <form method="POST" action="login.php" class="auth-form">
 
-        <?php if (!empty($error)): ?>
-            <div class="error-message"><?php echo htmlspecialchars($error); ?></div>
-        <?php endif; ?>
+        /*
+        // <?php if (!empty($error)): ?>
+        //    <div class="error-message"><?php echo htmlspecialchars($error); ?></div>
+        // <?php endif; ?>
+        */
 
         <div class="form-group">
             <label for="email">Email address</label>
@@ -71,3 +74,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 </body>
 </html>
+-->

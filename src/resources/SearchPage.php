@@ -1,7 +1,7 @@
 <?php
 // Connect to database
 $host = 'localhost';
-$dbname = 'projectTIS';
+$dbname = 'safety_app';
 $user = 'root'; 
 $password = ''; 
 

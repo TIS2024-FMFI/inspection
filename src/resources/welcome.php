@@ -1,8 +1,8 @@
 <?php
 session_start();
-$isLoggedIn = isset($_SESSION['user_id']); // Проверяем, авторизован ли пользователь
-$userRole = isset($_SESSION['role']) ? $_SESSION['role'] : null;    // Получаем роль пользователя
-$username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : ''; // Имя пользователя
+$isLoggedIn = isset($_SESSION['user_id']); 
+$userRole = isset($_SESSION['role']) ? $_SESSION['role'] : null;
+$username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : '';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,6 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="welcome_styles.css">
-    <script src="scripts.js"></script>
 </head>
 <body>
 <header>
@@ -57,10 +56,11 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
     <div class="modal-content">
         <span class="close" onclick="closeModal('login-modal')">&times;</span>
         <ul class="auth-tabs">
-            <li class="active"><a href="#" onclick="switchToLogin()">Log In</a></li>
+            <li class="active"><a href="#">Log In</a></li>
             <li><a href="#" onclick="switchToRegister()">Sign Up</a></li>
         </ul>
-        <form action="login.php" method="POST" class="auth-form">
+        <form id="login-form" method="POST" class="auth-form" onsubmit="handleLogin(event)">
+            <div class="error-message" style="display:none; color: red;"></div>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email address" required>
@@ -87,7 +87,8 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
             <li><a href="#" onclick="switchToLogin()">Log In</a></li>
             <li class="active"><a href="#">Sign Up</a></li>
         </ul>
-        <form action="register.php" method="POST" class="auth-form">
+        <form id="register-form" method="POST" class="auth-form" onsubmit="handleRegister(event)">
+            <div class="error-message" style="display:none; color: red;"></div>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email address" required>
@@ -109,5 +110,8 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
         </button>
     </div>
 </div>
+
+<script src="scripts.js"></script>
+
 </body>
 </html>
