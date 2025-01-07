@@ -1,6 +1,8 @@
 <?php
 session_start();
 $error = ""; // Default error message
+header('Content-Type: application/json');
+$response = ['success' => false, 'error' => ''];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
@@ -9,13 +11,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Validation checks
     if (empty($email) || empty($password) || empty($confirmPassword)) {
-        $error = "Please fill in all fields.";
+        $response['error'] = "Please fill in all fields.";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $error = "Invalid email address.";
+        $response['error'] = "Invalid email address.";
     } elseif (strlen($password) < 8) {
-        $error = "Password must be at least 8 characters.";
+        $response['error'] = "Password must be at least 8 characters.";
     } elseif ($password !== $confirmPassword) {
-        $error = "Passwords do not match.";
+        $response['error'] = "Passwords do not match.";
     } else {
         require 'db/config.php';
 
@@ -23,21 +25,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $pdo->prepare("SELECT * FROM users WHERE email = :email");
             $stmt->execute(['email' => $email]);
             if ($stmt->rowCount() > 0) {
-                $error = "Email is already registered.";
+                $response['error'] = "Email is already registered.";
             } else {
-                $hashedPassword = md5($password);
-                $stmt = $pdo->prepare("INSERT INTO users (email, password, role) VALUES (:email, :password, 'user')");
-                $stmt->execute(['email' => $email, 'password' => $hashedPassword]);
+                $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+                $username = substr($email, 0, strpos($email, '@'));
+                $stmt = $pdo->prepare("INSERT INTO users (email, password_hash, role, username) VALUES (:email, :password_hash, 1, :username)");
+                $stmt->execute(['email' => $email, 'password_hash' => $hashedPassword, 'username' => $username]);
 
-                header('Location: login.php');
-                exit;
+                $response['success'] = true;
+                $response['error'] = 'Register successful! Please log in.';
             }
         } catch (PDOException $e) {
-            $error = "Database error: " . $e->getMessage();
+            $response['error'] = "Database error: " . $e->getMessage();
         }
     }
+    echo json_encode($response);
+    exit;
 }
 ?>
+
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,3 +92,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 </body>
 </html>
+-->

@@ -3,7 +3,16 @@ function openModal(modalId) {
 }
 
 function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
+    const modal = document.getElementById(modalId);
+    modal.style.display = "none";
+
+    // Clear input fields
+    const inputs = modal.querySelectorAll('input[type="password"], input[type="email"]');
+    inputs.forEach(input => input.value = '');
+
+    // Clear error messages
+    const errorMessages = modal.querySelectorAll('.error-message');
+    errorMessages.forEach(error => error.textContent = '');
 }
 
 function switchToLogin() {
@@ -84,3 +93,61 @@ document.addEventListener('click', function(event) {
         menu.classList.remove('show');
     }
 });
+
+function handleLogin(event) {
+    event.preventDefault();
+    const form = document.getElementById('login-form');
+    const formData = new FormData(form);
+    const errorMessage = form.querySelector('.error-message');
+
+    fetch('login.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.href = 'index.php';
+        } else {
+            errorMessage.style.display = 'block';
+            errorMessage.textContent = data.error;
+            form.querySelector('#password').value = '';
+        }
+    })
+    .catch(error => {
+        errorMessage.style.display = 'block';
+        errorMessage.textContent = data.error;
+        form.querySelector('#password').value = '';
+    });
+}
+
+function handleRegister(event) {
+    event.preventDefault();
+    const form = document.getElementById('register-form');
+    const formData = new FormData(form);
+    const errorMessage = form.querySelector('.error-message');
+
+    fetch('register.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        errorMessage.style.display = 'block';
+        errorMessage.textContent = data.error;
+        if (data.success) {
+            errorMessage.style.color = 'green';
+            form.querySelector('#email').value = '';
+        } else {
+            errorMessage.style.color = 'red';
+        }
+        form.querySelector('#password').value = '';
+        form.querySelector('#confirm-password').value = '';
+    })
+    .catch(_ => {
+        errorMessage.style.display = 'block';
+        errorMessage.textContent = 'An error occurred. Please try again.';
+        form.querySelector('#password').value = '';
+        form.querySelector('#confirm-password').value = '';
+    });
+}

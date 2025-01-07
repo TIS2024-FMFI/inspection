@@ -44,7 +44,7 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
                     <!-- Home link (return to index.php) -->
                     <a href="index.php" class="profile-menu-item">Home</a>
                     <!-- Current page (History) -->
-                    <a href="history.php" class="profile-menu-item">History</a>
+                    <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
                     <!-- Logout link -->
                     <a href="logout.php" class="profile-menu-item">Logout</a>
                 </div>

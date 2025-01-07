@@ -8,7 +8,7 @@ require_once 'db/config.php'; // Include database configuration
 
 // Fetch products for the user
 try {
-    $stmt = $pdo->prepare("SELECT * FROM products WHERE user_id = :user_id");
+    $stmt = $pdo->prepare("SELECT * FROM user_submitted_products WHERE user_id = :user_id");
     $stmt->execute(['user_id' => 1]); // Replace 1 with the logged-in user's ID
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
@@ -25,6 +25,7 @@ try {
 </head>
 <body>
 <header>
+    <img src="images/logo.png" alt="Logo" class="logo">
     <div class="tabs">
         <button class="tab active" onclick="showTab('my-list')">Personalized List</button>
 <!--        <button class="tab" onclick="showTab('history')">History</button>-->
@@ -45,7 +46,7 @@ try {
                 <?php echo htmlspecialchars($_SESSION['email'] ?? 'No email'); ?>
             </p>
             <a href="index.php" class="profile-menu-item">Home</a>
-            <a href="/history.php" class="profile-menu-item">History</a>
+            <a href="history.php" class="profile-menu-item">History</a>
             <a href="logout.php" class="profile-menu-item">Logout</a>
 
         </div>
