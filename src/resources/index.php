@@ -104,6 +104,10 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
             </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
+            </div>
             <button type="submit" class="auth-button">Create an Account</button>
         </form>
         <div class="divider">OR</div>
