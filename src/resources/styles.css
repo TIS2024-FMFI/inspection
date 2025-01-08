@@ -134,7 +134,8 @@ header .logo {
     background-color: #f0f0f0;
 }
 
-.profile-email {
+.profile-username {
+    margin: 0px;
     padding: 10px;
     font-weight: bold;
     color: #555;
@@ -251,6 +252,13 @@ p {
         text-align: center;
         margin-top: 20px;
     }
+}
+
+.homepage-title {
+    font-size: 32px;
+    padding: 0;
+    margin: 0px 0;
+    color: #333;
 }
 
 /* ============================================================
@@ -390,3 +398,4 @@ p {
     color: #aaa;
     text-align: center;
 }
+

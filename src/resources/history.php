@@ -12,40 +12,43 @@ $isLoggedIn = isset($_SESSION['user_id']);
 $email = isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : 'No email available';
 $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : '';
 
+// Database connection
+$host = 'localhost';
+$dbname = 'safety_app';
+$username_db = 'root';
+$password_db = '';
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username_db, $password_db);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection error: " . $e->getMessage());
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>History</title>
-    <!-- Link to the dedicated CSS file (assuming it resides in the same folder as this file) -->
     <link rel="stylesheet" href="history.css">
 </head>
 <body>
 
 <header>
-    <!-- Logo located one level above, e.g., ../images/logo.png -->
     <img src="images/logo.png" alt="Logo" class="logo">
-
+    <h2 class="history-title">Scan History</h2>
     <div class="header-buttons">
         <?php if ($isLoggedIn): ?>
-            <!-- Container for the avatar icon and dropdown menu -->
             <div class="profile-menu-container">
-                <!-- Profile picture (requires a file at regauth_module/images/profile-pic.png) -->
                 <img src="images/profile-pic.png"
                      alt="Profile Picture"
                      class="profile-pic"
                      onclick="toggleProfileMenu()">
 
-                <!-- Dropdown menu -->
                 <div class="profile-menu" id="profile-menu">
-                    <p class="profile-email"><?php echo $email; ?></p>
-
-                    <!-- Home link (return to index.php) -->
+                    <p class="profile-username"><?php echo $username; ?></p>
                     <a href="index.php" class="profile-menu-item">Home</a>
-                    <!-- Current page (History) -->
                     <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
-                    <!-- Logout link -->
                     <a href="logout.php" class="profile-menu-item">Logout</a>
                 </div>
             </div>
@@ -54,19 +57,42 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
         <?php endif; ?>
     </div>
 </header>
-
 <main>
     <div class="content-container">
-        <h1>History of Scans</h1>
-        <p>This page can display the list of scanned products or search history, etc.</p>
-
         <div class="history-list">
-            <p>No scan history yet.</p>
+            <?php
+            // Fetch history items for the logged-in user
+            $user_id = $_SESSION['user_id'];
+            try {
+                $stmt = $pdo->prepare("SELECT date, time, barcode, product_link FROM product_history WHERE user_id = :user_id");
+                $stmt->execute(['user_id' => $user_id]);
+                $historyItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                // Display history items
+                if (count($historyItems) > 0) {
+                    foreach ($historyItems as $row) {
+                        echo '<div class="history-item">';
+                        echo '<div class="history-details">';
+                        echo 'Date: ' . htmlspecialchars($row['date']) . ' | ';
+                        echo 'Time: ' . htmlspecialchars($row['time']) . ' | ';
+                        echo 'Barcode: ' . (htmlspecialchars($row['barcode']) ?? 'Not Present');
+                        echo '</div>';
+                        echo '<div class="history-link">';
+                        echo '<a href="' . htmlspecialchars($row['product_link']) . '" target="_blank">Product Link</a>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
+                } else {
+                    echo '<p>No history items found.</p>';
+                }
+            } catch (PDOException $e) {
+                echo '<p>Error fetching history: ' . htmlspecialchars($e->getMessage()) . '</p>';
+            }
+            ?>
         </div>
     </div>
 </main>
 
-<!-- Link to your scripts.js file (which should contain toggleProfileMenu() and more) -->
 <script src="scripts.js"></script>
 </body>
 </html>
