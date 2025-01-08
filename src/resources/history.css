@@ -76,7 +76,8 @@ header .logo {
     display: flex;
 }
 
-.profile-email {
+.profile-username {
+    margin: 0px;
     padding: 10px;
     font-weight: bold;
     color: #555;
@@ -135,10 +136,11 @@ main {
 }
 
 .content-container {
-    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Headings and paragraphs */
 h1 {
     font-size: 28px;
     font-weight: bold;
@@ -150,12 +152,70 @@ p {
     color: #333;
 }
 
-/* History list styling */
 .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.history-item p {
+    margin: 0;
+    padding: 0;
+}
+
+.history-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.history-item a:hover {
+    text-decoration: underline;
+}
+
+.history-title {
+    font-size: 32px;
+    padding: 0;
+    margin: 0px 0;
+    color: #333;
+}
+
+.history-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.history-right {
+    margin-left: auto;
+}
+
+.history-details {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.history-link {
+    margin-left: auto;
+    text-align: right;
+}
+
+.history-link a:hover {
+    text-decoration: underline;
 }

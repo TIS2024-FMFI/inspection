@@ -17,7 +17,7 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 <body>
 <header>
     <img src="images/logo.png" alt="Logo" class="logo">
-
+    <h2 class="homepage-title">Homepage</h2>
     <div class="header-buttons">
         <?php if ($isLoggedIn): ?>
             <div class="profile-menu-container">
@@ -27,8 +27,8 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
                      onclick="toggleProfileMenu()">
 
                 <div class="profile-menu" id="profile-menu">
-                    <p class="profile-email">
-                        <?php echo htmlspecialchars($_SESSION['email'] ?? 'No email'); ?>
+                    <p class="profile-username">
+                        <?php echo htmlspecialchars($_SESSION['username'] ?? 'No username'); ?>
                     </p>
                     <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
                     <a href="history.php" class="profile-menu-item">History</a>
