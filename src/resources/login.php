@@ -7,32 +7,50 @@ header('Content-Type: application/json');
 $response = ['success' => false, 'error' => ''];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = isset($_POST['email']) ? $_POST['email'] : '';
+    // Получение данных из POST
+    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
     $password = isset($_POST['password']) ? $_POST['password'] : '';
 
+    // Проверка заполненности полей
+    if (empty($email) || empty($password)) {
+        $response['error'] = "Please fill in all fields.";
+        echo json_encode($response);
+        exit;
+    }
+
     try {
+        // Поиск пользователя по email
         $stmt = $pdo->prepare("SELECT * FROM users WHERE email = :email");
         $stmt->execute(['email' => $email]);
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($user && password_verify($password, $user['password_hash'])) {
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['role'] = $user['role'];
-            $_SESSION['username'] = $user['username'];
-            $_SESSION['email'] = $user['email'];
+        if ($user) {
+            // Проверка пароля
+            if (password_verify($password, $user['password_hash'])) {
+                // Установка данных сессии при успешном входе
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['role'] = $user['role'];
+                $_SESSION['username'] = $user['username'];
+                $_SESSION['email'] = $user['email'];
 
-            $response['success'] = true;
+                $response['success'] = true;
+            } else {
+                $response['error'] = "The password you entered is incorrect. Please try again.";
+            }
         } else {
-            $response['error'] = "The email address or password you entered is incorrect. Please try again...";
+            $response['error'] = "No account found with this email address.";
         }
     } catch (PDOException $e) {
         $response['error'] = "Database error: " . $e->getMessage();
     }
+} else {
+    $response['error'] = "Invalid request method.";
 }
 
 echo json_encode($response);
 exit;
 ?>
+
 
 <!--
 ?>
