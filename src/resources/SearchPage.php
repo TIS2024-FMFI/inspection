@@ -71,7 +71,7 @@ if (isset($_GET['search'])) {
 
     <?php 
         if (!empty($searchQuery)) {
-            echo "<h4 class='mt-4 ms-4'>Search Results for: htmlspecialchars($searchQuery) </h4>";
+            echo "<h4 class='mt-4 ms-4'>Search Results for: " . htmlspecialchars($searchQuery) . "</h4>";
         }
         if (!empty($results)) {
             echo '<div class="container my-4">';

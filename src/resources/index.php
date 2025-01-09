@@ -46,7 +46,9 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
     <div class="content-container">
         <h1>Search for defective products</h1>
         <div class="search-container">
-            <input type="text" placeholder="Search">
+            <form action="SearchPage.php" method="GET" class="d-flex gap-2">
+                <input type="text" name="search" placeholder="Search" class="form-control">
+            </form>
         </div>
         <p>or scan them...</p>
         <button id="scan-button">Scan</button>
