@@ -8,56 +8,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="regauth_module/styles.css">
-    <style>
-        #camera {
-            width: 100%;
-            height: auto;
-        }
-
-        #result {
-            margin-top: 20px;
-            font-size: 1.2em;
-        }
-    </style>
 </head>
 
 <body>
-<h1>Barcode Scanner</h1>
-<div id="camera"></div>
-<div id="result">Skenujem...</div>
-
-<script>
-    // Inicializácia QuaggaJS
-    Quagga.init({
-        inputStream: {
-            type: "LiveStream",
-            constraints: {
-                width: 640,
-                height: 480,
-                facingMode: "environment" // Použiť zadnú kameru
+    <h1 class="title">Barcode Scanner</h1>
+    <div id="camera"></div>
+    <div id="result">Skenujem...</div>
+    <script>
+        Quagga.init({
+            inputStream: {
+                type: "LiveStream",
+                constraints: {
+                    width: 500,
+                    height: 400,
+                    facingMode: "environment" // Použiť zadnú kameru
+                },
+                target: document.getElementById("camera"),
             },
-            target: document.getElementById("camera"),
-        },
-        decoder: {
-            readers: ["code_128_reader", "ean_reader"] // Typy barcode
-        }
-    }, (err) => {
-        if (err) {
-            document.getElementById("result").textContent = "Chyba: Kamera nie je dostupná.";
-            console.error(err);
-            return;
-        }
-        Quagga.start();
-    });
-
+            decoder: {
+                readers: ["code_128_reader", "ean_reader"] // Typy barcode
+            }
+        }, (err) => {
+            if (err) {
+                document.getElementById("result").textContent = "Camera was not found";
+                console.error(err);
+                return;
+            }
+            Quagga.start();
+        });
         // Po úspešnom načítaní barcode
         Quagga.onDetected((data) => {
             const barcode = data.codeResult.code;
             Quagga.stop(); // Zastaviť skenovanie po nájdení barcode
-            
+
             document.getElementById("result").textContent = ``;
-            document.getElementById("camera").innerHTML = `Načítavam údaje...`;
-            
+            document.getElementById("camera").innerHTML = `Loading data ...`;
 
             // AJAX volanie na server
             $.ajax({
@@ -70,8 +55,6 @@
                         document.getElementById("camera").innerHTML = `<p>${data.error}</p>`;
                     } else {
                         const product = data[0]; // Access the first (and presumably only) product
-                        //doplniť údaje z databázy tak, aby vypisovali všetky údaje
-                        //product_name, published_on, hazard_causes ak DEFECTIVE, pri see details všetko ostatné
                         const details = `
                             <div class="product-card">
                                 <h2>Defective</h2>
@@ -132,12 +115,12 @@
                     }
                 },
                 error: function (jqXHR) {
-                    if  (jqXHR.status === 404) {
+                    if (jqXHR.status === 404) {
                         document.getElementById("camera").innerHTML = `
                             <div class="product-card">
-                                <h2>Not Found</h2>  
+                                <h3>Not Found</h3>  
                                 <p>Barcode: ${barcode}</p>
-                                <form method="post">
+                                <form method="post" id="add-product-form">
                                     <input type="text" id="name" name="name" placeholder="Name (mandatory)" required>
                                     <input type="text" id="description" name="description" placeholder="Description (optional)">
                                     <input type="text" id="brand" name="brand" placeholder="Brand (optional)">
@@ -146,23 +129,49 @@
                                 </form>
                             </div>
                     `;
-                        // Add event listener for the 'Add to Personalized List' button
-                        document.getElementById("add-product").addEventListener("click", function () {
-                            // Implement the functionality to add the product to the personalized list
-                            alert('Produkt bol pridaný do vášho personalizovaného zoznamu.');
+                        $(document).ready(function () {
+                            // Handle form submission
+                            $('#add-product-form').on('submit', function (e) {
+                                e.preventDefault(); // Prevent the default form submission
+                                // Collect form data
+                                var formData = {
+                                    barcode: barcode,
+                                    name: $('#name').val(),
+                                    description: $('#description').val(),
+                                    brand: $('#brand').val()
+                                };
+                                // Send data to the server via AJAX POST
+                                $.ajax({
+                                    url: 'add_product.php',
+                                    type: 'POST',
+                                    data: formData,
+                                    success: function (response) {
+                                        alert('Product has been added to your personalized list.');
+                                        $('#camera').html('<p>Product added successfully.</p>');
+                                    },
+                                    error: function (jqXHR, textStatus, errorThrown) {
+                                        // Handle error response
+                                        console.error('Error adding product:', textStatus, errorThrown);
+                                        alert('There was an error adding the product. Please try again.');
+                                    }
+                                });
+                            });
+                        });
+                        document.getElementById("cancel").addEventListener("click", function () {
+                            window.close();
                         });
                     }
                     else {
-                        document.getElementById("result").textContent = "Chyba pri načítaní údajov z databázy.";
+                        document.getElementById("result").textContent = "Error loading data from the database.";
                     }
                 }
             },
-            
-        );
 
+            );
 
-    });
-</script>
+        });
+
+    </script>
 </body>
 
 </html>
