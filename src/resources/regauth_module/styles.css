@@ -550,7 +550,6 @@ p {
 }
 
 
-
 .product-card p {
     margin: 8px 0;
     color: #555;
@@ -564,13 +563,11 @@ p {
 }
 
 
-
 .product-card button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+    background-color: #d9dde2;
+    border-color: rgba(22, 22, 22, 0.842);
     padding: 10px 16px;
-    border-radius: 4px;
+    border-radius: 12px;
     cursor: pointer;
     margin-top: 10px;
 }
@@ -583,4 +580,33 @@ p {
     margin-top: 15px;
     border-top: 1px solid #eee;
     padding-top: 10px;
+}
+
+.product-card input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 2em;
+    color: rgb(22, 196, 22);
+}
+
+.title {
+    text-align: center;
+}
+
+#camera {
+    margin-left: 35%;
+    width: 100%;
+    height: auto;
+}
+
+#result {
+    margin-left: 35%;
+    margin-top: 1%;
+    font-size: 1.2em;
 }
