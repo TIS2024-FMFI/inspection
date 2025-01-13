@@ -43,15 +43,18 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 
 
 <main>
-    <div class="content-container">
-        <h1>Search for defective products</h1>
+    <div class="box-container">
+        <h1 class='headline-text'>Search for defective products</h1>
+        <p class='description-text'>Type and press enter to filter names of defective products by your input.</p>
         <div class="search-container">
             <form action="SearchPage.php" method="GET" class="d-flex gap-2">
-                <input type="text" name="search" placeholder="Search" class="form-control">
+            <input type="text" name="search" placeholder="Enter product name..." class="form-control">
             </form>
         </div>
-        <p>or scan them...</p>
-        <button id="scan-button">Scan</button>
+        <div class="divider">OR</div>
+        <h1 class='headline-text'>Scan the barcode</h1>
+        <p class='description-text'>Scan the barcode to check if it is found in the database. <br> Additionally, you can add it to your personalized list to receive future alerts.</p>
+        <button id="scan-button">Scan product's barcode...</button>
     </div>
 
     <?php if ($isLoggedIn && $userRole === 'admin'): ?>
@@ -62,15 +65,15 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 </main>
 
 
-<!-- Login Modal -->
 <div class="modal" id="login-modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal('login-modal')">&times;</span>
         <ul class="auth-tabs">
-            <li class="active"><a href="#" onclick="switchToLogin()">Log In</a></li>
+            <li class="active"><a href="#">Log In</a></li>
             <li><a href="#" onclick="switchToRegister()">Sign Up</a></li>
         </ul>
-        <form action="login.php" method="POST" class="auth-form">
+        <form id="login-form" method="POST" class="auth-form" onsubmit="handleLogin(event)">
+            <div class="error-message" style="display:none; color: red;"></div>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email address" required>
@@ -89,7 +92,6 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
     </div>
 </div>
 
-<!-- Register Modal -->
 <div class="modal" id="register-modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal('register-modal')">&times;</span>
@@ -97,7 +99,8 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
             <li><a href="#" onclick="switchToLogin()">Log In</a></li>
             <li class="active"><a href="#">Sign Up</a></li>
         </ul>
-        <form action="register.php" method="POST" class="auth-form">
+        <form id="register-form" method="POST" class="auth-form" onsubmit="handleRegister(event)">
+            <div class="error-message" style="display:none; color: red;"></div>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email address" required>
