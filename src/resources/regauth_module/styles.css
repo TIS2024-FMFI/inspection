@@ -601,7 +601,7 @@ h3 {
 
 #camera {
     margin-left: 35%;
-    width: 100%;
+    width: 150%;
     height: auto;
 }
 
@@ -609,4 +609,12 @@ h3 {
     margin-left: 35%;
     margin-top: 1%;
     font-size: 1.2em;
+}
+
+#scanner {
+    width: 800px;
+}
+
+.scanner-title {
+    text-align: left;
 }

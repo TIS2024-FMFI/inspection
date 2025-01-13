@@ -9,9 +9,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="regauth_module/styles.css">
 </head>
-
-<body>
-    <h1 class="title">Barcode Scanner</h1>
+<header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <h2 class="scanner-title">Barcode Scanner</h2>
+</header>
+<body id="scanner">
     <div id="camera"></div>
     <div id="result">Skenujem...</div>
     <script>
@@ -19,7 +21,7 @@
             inputStream: {
                 type: "LiveStream",
                 constraints: {
-                    width: 500,
+                    width: 800,
                     height: 400,
                     facingMode: "environment" // Použiť zadnú kameru
                 },
