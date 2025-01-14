@@ -20,9 +20,6 @@ if (!$barcode || !$name) {
 
 // Prepare and execute the SQL statement
 try {
-
-
-
     $stmt = $pdo->prepare('INSERT INTO user_submitted_products (name, user_id, barcode, product_description, brand) VALUES (:name, :user_id, :barcode, :description, :brand)');
     $stmt->execute([
         ':barcode' => $barcode,

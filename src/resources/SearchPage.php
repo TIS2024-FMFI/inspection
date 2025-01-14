@@ -19,7 +19,7 @@ $sort = '';
 
 if (isset($_GET['search'])) {
     $searchQuery = trim($_GET['search']);
-    $sort = trim($_GET['sort']);
+    $sort = isset($_GET['sort']) ? trim($_GET['sort']) : 'name_asc';
     
     if (!empty($searchQuery)) {
         try {
@@ -79,8 +79,7 @@ if (isset($_GET['search'])) {
             foreach ($results as $product) {
                 echo <<<HTML
                         <div class="card my-2 ms-4" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-
+                            <img src="images\No_Image_Available.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">{$product['product_name']} </h5>
                                 <p class="card-text">Reported date: {$product['published_on']} </p>

@@ -197,15 +197,20 @@ p {
 
 #scan-button,
 .scan-button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: #ddd;
     color: black;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
+    align-self: center;
+    width: 83%;
+    font-size: 16px; 
     transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
+
 #scan-button:hover,
 .scan-button:hover {
     background-color: #ccc;
@@ -399,3 +404,24 @@ p {
     text-align: center;
 }
 
+.box-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.description-text {
+    padding: 0%;
+    margin: 0px 0;
+    font-size: 12px;
+}
+
+.headline-text {
+    margin-bottom: 0px;
+}
