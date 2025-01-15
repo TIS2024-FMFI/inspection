@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+$isLoggedIn = isset($_SESSION['user_id']);
+$email = isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : 'No email available';
+$userRole = isset($_SESSION['role']) ? $_SESSION['role'] : null;
+$username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : '';
+
+
 // Connect to database
 $host = 'localhost';
 $dbname = 'safety_app';
@@ -44,12 +52,38 @@ if (!$product) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="search_page_style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Search Page</title>
 </head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <h2 class="homepage-title">Product</h2>
+    <div class="header-buttons">
+        <?php if ($isLoggedIn): ?>
+            <div class="profile-menu-container">
+                <img src="images/profile-pic.png"
+                     alt="Profile Picture"
+                     class="profile-pic"
+                     onclick="toggleProfileMenu()">
+
+                <div class="profile-menu" id="profile-menu">
+                    <p class="profile-username">
+                        <?php echo htmlspecialchars($_SESSION['username'] ?? 'No username'); ?>
+                    </p>
+                    <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
+                    <a href="history.php" class="profile-menu-item">History</a>
+                    <a href="logout.php" class="profile-menu-item">Logout</a>
+                </div>
+            </div>
+        <?php else: ?>
+            <button class="sign-in-button" onclick="openModal('login-modal')">Sign In</button>
+        <?php endif; ?>
+    </div>
+</header>
 
 <main>
     <div class="container my-5">
