@@ -31,7 +31,7 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
                         <?php echo htmlspecialchars($_SESSION['username'] ?? 'No username'); ?>
                     </p>
                     <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
-                    <a href="history.php" class="profile-menu-item">History</a>
+                    <a href="history.php" class="profile-menu-item">Scan History</a>
                     <a href="logout.php" class="profile-menu-item">Logout</a>
                 </div>
             </div>
@@ -55,13 +55,13 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
         <h1 class='headline-text'>Scan the barcode</h1>
         <p class='description-text'>Scan the barcode to check if it is found in the database. <br> Additionally, you can add it to your personalized list to receive future alerts.</p>
         <button id="scan-button">Scan product's barcode...</button>
+        <div class="divider">OR</div>
+        <?php if ($isLoggedIn && $userRole === '2'): ?>
+            <a href="scrape_sites.php" class="scrape-sites-button">Scrape Sites</a>
+        <?php endif; ?>
     </div>
 
-    <?php if ($isLoggedIn && $userRole === 'admin'): ?>
-        <div class="admin-panel">
-            <a href="scrape_sites.php" class="scrape-sites-button">Scrape Sites</a>
-        </div>
-    <?php endif; ?>
+
 </main>
 
 
