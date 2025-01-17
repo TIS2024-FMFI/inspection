@@ -1,0 +1,159 @@
+/* ============================================================
+   Modal Styles (Модальные окна)
+   ============================================================ */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.modal .close {
+    color: #aaa;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.modal .close:hover {
+    color: black;
+}
+
+/* ============================================================
+   Tabs and Forms (Вкладки и формы)
+   ============================================================ */
+.modal .auth-tabs {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    border-bottom: 2px solid #ddd;
+}
+.modal .auth-tabs li {
+    flex: 1;
+    text-align: center;
+}
+.modal .auth-tabs li a {
+    display: inline-block;
+    padding: 10px 0;
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+.modal .auth-tabs li.active a {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.modal .auth-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.modal .auth-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.modal .auth-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.modal .auth-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.modal .auth-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal .google-auth-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.modal .google-auth-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.modal .google-auth-btn:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================
+   Divider (Разделитель)
+   ============================================================ */
+.modal .divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+}
+
+.modal .box-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.modal .description-text {
+    padding: 0%;
+    margin: 0px 0;
+    font-size: 12px;
+}
+
+.modal .headline-text {
+    margin-bottom: 0px;
+}

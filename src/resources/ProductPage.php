@@ -141,6 +141,10 @@ if (!$product) {
     </div>
 </main>
 
+<?php include 'login_signup_popup_widget.html'; ?>
+
+<script src="scripts.js"></script>
+
 </body>
 </html>
 

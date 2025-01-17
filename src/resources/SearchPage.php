@@ -136,5 +136,8 @@ if (isset($_GET['search'])) {
 
 </main>
 
+<?php include 'login_signup_popup_widget.html'; ?>
+
+<script src="scripts.js"></script>
 </body>
 </html>
