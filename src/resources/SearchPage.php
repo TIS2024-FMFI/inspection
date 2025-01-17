@@ -92,11 +92,7 @@ if (isset($_GET['search'])) {
 <main>
     <form class="d-flex mt-3 md-5 justify-content-between align-items-center gap-2 px-3" role="search" method="GET" action="SearchPage.php">
         <?php 
-            if (!empty($searchQuery)) {
-                echo "<h4 class='no-wrap'>Search Results for: " . htmlspecialchars($searchQuery) . "</h4>";
-            } else {
-                echo "<h4 class='no-wrap'>Search Results for: " . "</h4>";
-            }
+            echo "<h4 class='no-wrap'>Search Results for: </h4>";
         ?>
 
             <input type="text" name="search" class="form-control" placeholder="Search Products" aria-label="Search" aria-describedby="button-addon2" value=" <?php if (isset($_GET['search'])) { echo htmlspecialchars($searchQuery); } else { echo ''; } ?>">
@@ -120,7 +116,7 @@ if (isset($_GET['search'])) {
             foreach ($results as $product) {
                 echo <<<HTML
                         <div class="card my-2 ms-4" style="width: 18rem;">
-                            <img src="images\No_Image_Available.jpg" class="card-img-top" alt="...">
+                        <img src="{$product['images']}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">{$product['product_name']} </h5>
                                 <p class="card-text">Reported date: {$product['published_on']} </p>
