@@ -1,37 +1,25 @@
-
 main {
     background-color: #f5f5f5;
     padding-top: 80px; 
     box-sizing: border-box;
 }
 
-
-.homepage-title {
-    font-family: Arial, sans-serif;
-    font-size: 32px;
-    padding: 0;
-    font-weight: bold;
-    margin: 0px 0;
-    color: #333;
-}
-
-
-h4.no-wrap {
+main h4.no-wrap {
     margin: 0; 
     display: flex; 
     align-items: center;
     white-space: nowrap; 
 }
 
-form .form-control,
-form .btn,
-form select {
+main form .form-control,
+main form .btn,
+main form select {
     height: 40px;
     padding: 0 10px;
     border-radius: 5px;
 }
 
-form {
+main form {
     height: 50px;
     display: flex;
     align-items: center;
@@ -39,6 +27,16 @@ form {
     padding: 0 15px;
 }
 
+main .card-img-top {
+    width: 100%; /* Ensure the image stretches the full width of the card */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Crop the image to fit the height and width without distortion */
+    padding-top: 10px;
+}
+
+/* ============================================================
+   Header Styles (Стили шапки)
+   ============================================================ */
 
 header {
     width: 100%;
@@ -169,9 +167,11 @@ header .logo {
     border-bottom: 1px solid #ddd;
 }
 
-.card-img-top {
-    width: 100%; /* Ensure the image stretches the full width of the card */
-    height: 200px; /* Set a fixed height for all images */
-    object-fit: cover; /* Crop the image to fit the height and width without distortion */
-    padding-top: 10px;
+.homepage-title {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    padding: 0;
+    font-weight: bold;
+    margin: 0px 0;
+    color: #333;
 }

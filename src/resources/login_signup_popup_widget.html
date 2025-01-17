@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="login_signup_widget_styles.css">
+
+<div class="modal" id="login-modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('login-modal')">&times;</span>
+        <ul class="auth-tabs">
+            <li class="active"><a href="#">Log In</a></li>
+            <li><a href="#" onclick="switchToRegister()">Sign Up</a></li>
+        </ul>
+        <form id="login-form" method="POST" class="auth-form" onsubmit="handleLogin(event)">
+            <div class="error-message" style="display:none; color: red;"></div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="auth-button">Log In</button>
+        </form>
+        <div class="divider">OR</div>
+        <button class="google-auth-btn">
+            <img src="images/google-icon.png" class="modal-img" alt="Google Icon">
+            Continue with Google
+        </button>
+    </div>
+</div>
+
+<div class="modal" id="register-modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('register-modal')">&times;</span>
+        <ul class="auth-tabs">
+            <li><a href="#" onclick="switchToLogin()">Log In</a></li>
+            <li class="active"><a href="#">Sign Up</a></li>
+        </ul>
+        <form id="register-form" method="POST" class="auth-form" onsubmit="handleRegister(event)">
+            <div class="error-message" style="display:none; color: red;"></div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="auth-button">Create an Account</button>
+        </form>
+        <div class="divider">OR</div>
+        <button class="google-auth-btn">
+            <img src="images/google-icon.png" alt="Google Icon">
+            Continue with Google
+        </button>
+    </div>
+</div>
