@@ -6797,3 +6797,784 @@ ANWL15',
             'None'
         );
         
+-- Inserted data from SOI website
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská hračka – Sequin Slime', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20hra%C4%8Dka%20%E2%80%93%20sequin%20slime,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20hra%C4%8Dka%20%E2%80%93%20sequin%20slim,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20hra%C4%8Dka%20%E2%80%93%20sequin%20slim,%20obr.3.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Vianočný svetielkujúci stromček TEMPO KONDELA, model: WHITE BIRCH 90cm A191106', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.1.png?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.2.jpeg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.3.jpeg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.4.jpeg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.5.jpeg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný záves model/typ RPBL-96L', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.%202.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.%203.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec ART NO. AA8001', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%206.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%207.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec ART NO 207', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%205.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detský golfový kočík „Lionelo Elia“', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská hračka - Sliz „Crystal Mud Lemon Tea“', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/crystal%20mud%20lemon%20tea%202%20(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/crystal%20mud%20lemon%20tea%202%20(2).jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ hraÄka - Sliz s farebnÃ½mi guliÄkami âMAGIC CLAYâ, Item No YE27273', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273%20(2).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273%20(3).jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská hračka - Sliz v kelímku', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20v%20kel%C3%ADmku(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20v%20kel%C3%ADmku%20(2).jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská hračka - Sliz „Crystal Mud“', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%203.jpg?w=500&h=500'
+                    );
+                    
+-- Inserted data from SOI website
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Predlžovací prívod PLASTROL, modeltyp PS-360', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Predlžovací prívod PLASTROL, modeltyp PS-460', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%205.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Posteľ Emio, typ 04, s rozmerom „90x200“, v prevedení sonoma dub/biela', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%203.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Bicykel s pohonným systémom SAMEBIKE, model 20LVXD30', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%203.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Predlžovací prívod VOREL, model/typ 72494', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.4.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Predlžovací prívod PLASTROL, model/typ W-98175', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Predlžovacie prívody ELGOTECH, typ 04GN (rôzne varianty)', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)4.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)6.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)7.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)8.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)9.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)10.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)11.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)12.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)13.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)14.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)15.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Kancelárska stolička MEDEA PLUS', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/kanc.%20stol.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská jedálenská stolička 3v1 KRUZZEL®, M: 00012059  (HA-002)', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20jed%C3%A1lensk%C3%A1%20stoli%C4%8Dka%203v1%20kruzzel1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20jed%C3%A1lensk%C3%A1%20stoli%C4%8Dka%203v1%20kruzzel2.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec v tvare stromčeka STARPIE, modeltyp LX-01, ITEM NO 20640', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%204.jpg?w=500&h=500'
+                    );
+                    
+-- Inserted data from SOI website
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec modeltyp STARLED01', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%204%20(2).jpg?w=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%204%20(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%206.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%207.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec v tvare stromčeka STARPIE, modeltyp LX-01, ITEM NO 20639', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%201.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%203.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec model/typ DN-72', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.6.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.7.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec modeltyp XL-100 LED', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led4.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led5.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led6.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led7.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec W/PROOF, ITEM NO: MD100RGB', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb4.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb5.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec ITEM NO: 100L V8 LED-RGB', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.5.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'LED svetelný reťazec s 8 plastovými cencúľmi', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.4.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svietiaci stromček s plastovým ukončením LED svetelných zdrojov v tvare kvetu', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu4.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svietiaci stromček s plastovým ukončením LED svetelných zdrojov v tvare guličky', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec model: V8F50', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.6.jpg?w=500&h=500'
+                    );
+                    
+-- Inserted data from SOI website
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec L&S, model/typ LAL-50LED', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/lal%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/lal%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/lal3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/lal%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/lal%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/lal%206.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec model/typ 100M85', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20100m85,%20obr.6.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec Art No.: LL9855-M, ITEM NO: 6366-6', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.6.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.7.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20ll9855-m,%20obr.8.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec model/typ 50L-5M', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%2050l-5m,%20obr.6.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec LS, model/typ AG-50LED', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.6.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20ls,%20modeltyp%20ag-50led,%20obr.7.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec ITEM NO: A864', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.6.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.7.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20a864%20obr.8.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svetelný reťazec ITEM NO: A845', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20obr.6.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská postieľka DREWEX®, model Žirafa, Batch Num 05-12-2022 A', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20drewex%C2%AE,%20model%20%C5%BEirafa,%20batch%20num%2005-12-2022%20a%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20drewex%C2%AE,%20model%20%C5%BEirafa,%20batch%20num%2005-12-2022%20a%20c.%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20drewex%C2%AE,%20model%20%C5%BEirafa,%20batch%20num%2005-12-2022%20a%20c.3.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská postieľka CORNER Babybett, model: LUCA 22-252-F3-2, Art.Num.: 22-252,  Los-Num: H15', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20corner%20babybett,%20model%20luca%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20corner%20babybett,%20model%20luca%20c.%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20corner%20babybett,%20model%20luca%20c.%203.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská postieľka so zábranou KLUPŚ®, model TINO, SN: 2232622', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/klup%C5%A1%201.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20so%20z%C3%A1branou%20klups%20c.2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20so%20z%C3%A1branou%20klup%C5%9B%20c.%203.jpg?w=500&h=500'
+                    );
+                    
+-- Inserted data from SOI website
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská postieľka so sťahovacou bočnicou DREWEX®, model LULAYA', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20so%20s%C5%A5ahovacou%20bo%C4%8Dnicou%20drewex%C2%AE,%20model%20lulaya%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20so%20s%C5%A5ahovacou%20bo%C4%8Dnicou%20drewex%C2%AE,%20model%20lulaya%20c.%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20so%20s%C5%A5ahovacou%20bo%C4%8Dnicou%20drewex%C2%AE,%20model%20lulaya%20c.3.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Laserové ukazovadlo – Svietidlo Silikon stift, model 77427', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20%E2%80%93%20svietidlo%20silikon%20stift,%20model%2077427%20c.%201.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20%E2%80%93%20svietidlo%20silikon%20stift,%20model%2077427%20c.%202.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20%E2%80%93%20svietidlo%20silikon%20stift,%20model%2077427%20c.3.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Laserové ukazovadlo WEDO s bodovou projekciou modeltyp 236 2001', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20wedo%20s%20bodovou%20projekciou%20modeltyp%20236%202001%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20wedo%20s%20bodovou%20projekciou%20modeltyp%20236%202001%20c.2.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská cestovná postieľka SAMBA PLUS, 05/green', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20cestovn%C3%A1%20postie%C4%BEka%20samba%20plus,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20cestovn%C3%A1%20postie%C4%BEka%20samba%20plus,%20obr.%202.png?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20cestovn%C3%A1%20postie%C4%BEka%20samba%20plus,%20obr.3.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská postieľka YAPPY KIDS® White, Model: Yappy La:le, šarža: 09/2022', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20yappy%20kids%C2%AE%20white,%20model%20yappy%20lale,%20%C5%A1ar%C5%BEa%20092022%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20yappy%20kids%C2%AE%20white,%20model%20yappy%20lale,%20%C5%A1ar%C5%BEa%20092022%20c.2.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská postieľka bez matraca Moony Pine White, Art. 350390', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20bez%20matraca%20moony%20pine%20white,%20art.%20350390%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20postie%C4%BEka%20bez%20matraca%20moony%20pine%20white,%20art.%20350390%20c.%202.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská drevená postieľka, model: NANNA ELLE, šarža 09/22', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20dreven%C3%A1%20postie%C4%BEka%20nanna%20elle,%20obr.%202.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20dreven%C3%A1%20postie%C4%BEka%20nanna%20elle,%20obr.%201.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Predlžovací prívod JOEL, model/typ SY-CZ-03, Art. 820017', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20joel,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20joel,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/kabel%20joel%20obr.%203.png?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20joel,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20joel,%20obr.5.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská postieľka STAR, Art.Num. 22-491, los.Num. H52', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20postie%C4%BEka%20star,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20postie%C4%BEka%20star,%20obr.%202.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Predlžovací prívod ELGOTECH, typ 04GZ', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20elgotech,%20typ%2004gz%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20elgotech,%20typ%2004gz%20c.%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20elgotech,%20typ%2004gz%20c.%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20elgotech,%20typ%2004gz%20c.%204.jpg?w=500&h=500'
+                    );
+                    
+-- Inserted data from SOI website
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Kľúčenka s laserom, model: T18329', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/k%C4%BE%C3%BA%C4%8Denka%20s%20laserom%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/k%C4%BE%C3%BA%C4%8Denka%20s%20laserom%20obr.2.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Solight LED svietidlo s laserom model: WL27', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/solight___.png?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/solight%20led%20obr.%202.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/solight%20led%20obr.%203.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Laserové ukazovadlá Alligator červený a zelený laser so zaostrovaním', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/alligator%20obr.%201.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/alligator%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/alligator%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/alligator%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/alligator%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/alligator%20obr.6.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Laserové ukazovadlo TRUE UTILITY LASERLITE model: TU 289K', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/true%20utility%20laserlite%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/true%20utility%20laserlite%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/true%20utility%20laserlite%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/true%20utility%20laserlite%20obr.4.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Laserové ukazovadlo Best All', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/best%20all%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/best%20all%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/best%20all%20obr.3.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Laserové ukazovadlo LegaMaster, model LX4', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20legamaster,%20model%20lx4%20c%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20legamaster,%20model%20lx4%20c2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20legamaster,%20model%20lx4%20c3.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Laserové ukazovadlo zelené 5mW, model: A5B-01B1-05', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/laserove%20ukazovadlo%205mw%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/laserove%20ukazovadlo%205mw%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/laserove%20ukazovadlo%205mw%20obr.2.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Laserové ukazovadlo v tvare granátu, model/typ: U13', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20v%20tvare%20gran%C3%A1tu%20c.%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20v%20tvare%20gran%C3%A1tu%20c.%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20v%20tvare%20gran%C3%A1tu%20c.%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/laserov%C3%A9%20ukazovadlo%20v%20tvare%20gran%C3%A1tu%20c.%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská stolička rastúca, zn. ZOPA, model: GROW-UP, ZOP055715', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20stoli%C4%8Dka%20zopa%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20stoli%C4%8Dka%20zopa%20obr.2.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská vysoká stolička, zn. Mama Kiddies, ProComfort Newline, ITEM No: BXS-216', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20vysok%C3%A1%20stoli%C4%8Dka,%20zn.%20mama%20kiddies,%20procomfort%20newline,%20item%20no%20bxs-216%20c.1.jpg?w=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20vysok%C3%A1%20stoli%C4%8Dka,%20zn.%20mama%20kiddies,%20procomfort%20newline,%20item%20no%20bxs-216%20c.2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20vysok%C3%A1%20stoli%C4%8Dka,%20zn.%20mama%20kiddies,%20procomfort%20newline,%20item%20no%20bxs-216%20c.3.jpg?w=500&h=500'
+                    );
+                    
+-- Inserted data from SOI website
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ hraÄka â Sequin Slime', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20hra%C4%8Dka%20%E2%80%93%20sequin%20slime,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20hra%C4%8Dka%20%E2%80%93%20sequin%20slim,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20hra%C4%8Dka%20%E2%80%93%20sequin%20slim,%20obr.3.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'VianoÄnÃ½ svetielkujÃºci stromÄek TEMPO KONDELA, model: WHITE BIRCH 90cm A191106', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.1.png?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.2.jpeg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.3.jpeg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.4.jpeg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.5.jpeg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ zÃ¡ves model/typ RPBL-96L', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.%202.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.%203.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec ART NO. AA8001', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%206.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%207.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec ART NO 207', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%205.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ½ golfovÃ½ koÄÃ­k âLionelo Eliaâ', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ hraÄka - Sliz âCrystal Mud Lemon Teaâ', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/crystal%20mud%20lemon%20tea%202%20(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/crystal%20mud%20lemon%20tea%202%20(2).jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ hraÄka - Sliz s farebnÃ½mi guliÄkami âMAGIC CLAYâ, Item No YE27273', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273%20(2).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273%20(3).jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ hraÄka - Sliz v kelÃ­mku', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20v%20kel%C3%ADmku(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20v%20kel%C3%ADmku%20(2).jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ hraÄka - Sliz âCrystal Mudâ', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%203.jpg?w=500&h=500'
+                    );
+                    
+-- Inserted data from SOI website
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PredlÅ¾ovacÃ­ prÃ­vod PLASTROL, modeltyp PS-360', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PredlÅ¾ovacÃ­ prÃ­vod PLASTROL, modeltyp PS-460', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%205.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PosteÄ¾ Emio, typ 04, s rozmerom â90x200â, v prevedenÃ­ sonoma dub/biela', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%203.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Bicykel s pohonnÃ½m systÃ©mom SAMEBIKE, model 20LVXD30', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%203.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PredlÅ¾ovacÃ­ prÃ­vod VOREL, model/typ 72494', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.4.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PredlÅ¾ovacÃ­ prÃ­vod PLASTROL, model/typ W-98175', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PredlÅ¾ovacie prÃ­vody ELGOTECH, typ 04GN (rÃ´zne varianty)', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)4.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)6.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)7.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)8.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)9.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)10.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)11.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)12.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)13.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)14.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)15.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'KancelÃ¡rska stoliÄka MEDEA PLUS', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/kanc.%20stol.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ jedÃ¡lenskÃ¡ stoliÄka 3v1 KRUZZELÂ®, M: 00012059  (HA-002)', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20jed%C3%A1lensk%C3%A1%20stoli%C4%8Dka%203v1%20kruzzel1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20jed%C3%A1lensk%C3%A1%20stoli%C4%8Dka%203v1%20kruzzel2.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec v tvare stromÄeka STARPIE, modeltyp LX-01, ITEM NO 20640', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%204.jpg?w=500&h=500'
+                    );
+                    
+-- Inserted data from SOI website
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec modeltyp STARLED01', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%204%20(2).jpg?w=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%204%20(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%206.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20starled01%207.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec v tvare stromÄeka STARPIE, modeltyp LX-01, ITEM NO 20639', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%201.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%203.png?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020639%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec model/typ DN-72', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.6.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20dn-72,%20obr.7.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec modeltyp XL-100 LED', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led4.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led5.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led6.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20modeltyp%20xl-100%20led7.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec W/PROOF, ITEM NO: MD100RGB', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb4.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20wproof,%20item%20no%20md100rgb5.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec ITEM NO: 100L V8 LED-RGB', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20item%20no%20100l%20v8%20led-rgb,%20obr.5.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'LED svetelnÃ½ reÅ¥azec s 8 plastovÃ½mi cencÃºÄ¾mi', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/led%20sveteln%C3%BD%20re%C5%A5azec%20s%208%20cenc%C3%BA%C4%BEmi,%20obr.4.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svietiaci stromÄek s plastovÃ½m ukonÄenÃ­m LED svetelnÃ½ch zdrojov v tvare kvetu', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20kvetu4.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Svietiaci stromÄek s plastovÃ½m ukonÄenÃ­m LED svetelnÃ½ch zdrojov v tvare guliÄky', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/svietiaci%20strom%C4%8Dek%20s%20plastov%C3%BDm%20ukon%C4%8Den%C3%ADm%20led%20sveteln%C3%BDch%20zdrojov%20v%20tvare%20guli%C4%8Dky%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec model: V8F50', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.4.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.5.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20re%C5%A5azec%20v8f50%20obr.6.jpg?w=500&h=500'
+                    );
+                    
+-- Inserted data from SOI website
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ hraÄka â Sequin Slime', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20hra%C4%8Dka%20%E2%80%93%20sequin%20slime,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20hra%C4%8Dka%20%E2%80%93%20sequin%20slim,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/detsk%C3%A1%20hra%C4%8Dka%20%E2%80%93%20sequin%20slim,%20obr.3.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'VianoÄnÃ½ svetielkujÃºci stromÄek TEMPO KONDELA, model: WHITE BIRCH 90cm A191106', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.1.png?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.2.jpeg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.3.jpeg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.4.jpeg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/viano%C4%8Dn%C3%BD%20svetielkuj%C3%BAci%20strom%C4%8Dek,%20obr.5.jpeg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ zÃ¡ves model/typ RPBL-96L', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.%202.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.%203.jpg?w=500&h=500,https://www.soi.sk/files/img/nebezp%20vyr%20%202024/sveteln%C3%BD%20z%C3%A1ves%20model_typ%20rpbl-96l,%20obr.%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec ART NO. AA8001', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%206.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no.%20aa8001%207.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec ART NO 207', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20art%20no%20207%205.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ½ golfovÃ½ koÄÃ­k âLionelo Eliaâ', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20golfov%C3%BD%20ko%C4%8D%C3%ADk%20%E2%80%9Elionelo%20elia%E2%80%9C%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ hraÄka - Sliz âCrystal Mud Lemon Teaâ', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/crystal%20mud%20lemon%20tea%202%20(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/crystal%20mud%20lemon%20tea%202%20(2).jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Detská hračka - Sliz s farebnými guličkami „MAGIC CLAY“, Item No YE27273', 'Nebezpečný výrobok - Národný trh SR', '27. 11. 2024', 'Čína', 'Sliz ružovej farby, ktorý je zabalený v plastovej nádobke v tvare detskej fľašky. V plastovom vrchnáku hračky sa nachádzajú malé farebné guličky. Hračka je označená CE, Item No: XE27273 a EAN kódom: 8584156293704. Na hračke chýba označenie s údajmi o výrobcovi a dovozcovi s plnou adresou.', 'Chemické riziko.', 'Výrobok obsahuje nadlimitné množstvo bóru. Bór je toxický na reprodukciu a môže spôsobiť alergické reakcie, podráždenie slizníc, a pri požití aj nevoľnosť, kŕče, zvracanie alebo hnačky.', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273%20(2).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20s%20farebn%C3%BDmi%20guli%C4%8Dkami%20%E2%80%9Emagic%20clay%E2%80%9C,%20item%20no%20ye27273%20(3).jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ hraÄka - Sliz v kelÃ­mku', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20v%20kel%C3%ADmku(1).jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20v%20kel%C3%ADmku%20(2).jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ hraÄka - Sliz âCrystal Mudâ', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20hra%C4%8Dka%20-%20sliz%20%E2%80%9Ecrystal%20mud%E2%80%9C%203.jpg?w=500&h=500'
+                    );
+                    
+-- Inserted data from SOI website
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PredlÅ¾ovacÃ­ prÃ­vod PLASTROL, modeltyp PS-360', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-360%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PredlÅ¾ovacÃ­ prÃ­vod PLASTROL, modeltyp PS-460', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%204.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20ps-460%205.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PosteÄ¾ Emio, typ 04, s rozmerom â90x200â, v prevedenÃ­ sonoma dub/biela', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/poste%C4%BE%20emio,%20typ%2004,%20s%20rozmerom%20%E2%80%9E90x200%E2%80%9C,%20v%20preveden%C3%AD%20sonoma%20dubbiela%203.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'Bicykel s pohonnÃ½m systÃ©mom SAMEBIKE, model 20LVXD30', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/bicykel%20s%20pohonn%C3%BDm%20syst%C3%A9mom%20samebike,%20model%2020lvxd30%203.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PredlÅ¾ovacÃ­ prÃ­vod VOREL, model/typ 72494', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20vorel,%20obr.4.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PredlÅ¾ovacÃ­ prÃ­vod PLASTROL, model/typ W-98175', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovac%C3%AD%20pr%C3%ADvod%20plastrol,%20modeltyp%20w-98175%204.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'PredlÅ¾ovacie prÃ­vody ELGOTECH, typ 04GN (rÃ´zne varianty)', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)2.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)3.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)4.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)%205.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)6.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)7.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)8.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)9.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)10.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)11.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)12.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)13.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)14.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/predl%C5%BEovacie%20pr%C3%ADvody%20elgotech,%20typ%2004gn%20(r%C3%B4zne%20varianty)15.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'KancelÃ¡rska stoliÄka MEDEA PLUS', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/kanc.%20stol.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'DetskÃ¡ jedÃ¡lenskÃ¡ stoliÄka 3v1 KRUZZELÂ®, M: 00012059  (HA-002)', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20jed%C3%A1lensk%C3%A1%20stoli%C4%8Dka%203v1%20kruzzel1.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/detsk%C3%A1%20jed%C3%A1lensk%C3%A1%20stoli%C4%8Dka%203v1%20kruzzel2.jpg?w=500&h=500'
+                    );
+                    
+
+                    INSERT INTO defective_products (
+                        product_name, product_category, published_on, country_of_origin, product_description, risk_type, risk_description, images
+                    ) VALUES (
+                        'SvetelnÃ½ reÅ¥azec v tvare stromÄeka STARPIE, modeltyp LX-01, ITEM NO 20640', 'None', 'None', 'None', 'None', 'None', 'None', 'https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%201.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%202.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%203.jpg?w=500&h=500,https://www.soi.sk/files/documents/nebvyr/2024/sveteln%C3%BD%20re%C5%A5azec%20v%20tvare%20strom%C4%8Deka%20starpie,%20modeltyp%20lx-01,%20item%20no%2020640%204.jpg?w=500&h=500'
+                    );
+                    
