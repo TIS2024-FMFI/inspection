@@ -55,8 +55,9 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
         <h1 class='headline-text'>Scan the barcode</h1>
         <p class='description-text'>Scan the barcode to check if it is found in the database. <br> Additionally, you can add it to your personalized list to receive future alerts.</p>
         <button id="scan-button">Scan product's barcode...</button>
-        <div class="divider">OR</div>
+        
         <?php if ($isLoggedIn && $userRole === '2'): ?>
+            <div class="divider">OR</div>
             <a href="scrape_sites.php" class="scrape-sites-button">Scrape Sites</a>
         <?php endif; ?>
     </div>
