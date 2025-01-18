@@ -151,3 +151,45 @@ function handleRegister(event) {
         form.querySelector('#confirm-password').value = '';
     });
 }
+
+
+// Проверка на недопустимые символы
+function validateSearchInput(input) {
+    const invalidCharacters = /[<>{};]/; // Определяем запрещенные символы
+    if (invalidCharacters.test(input)) {
+        showError("Invalid input detected. Please avoid using special characters.");
+        return false;
+    }
+    return true; // Ввод корректен
+}
+
+// Показать всплывающее окно с сообщением
+function showError(message) {
+    const errorPopup = document.getElementById("error-popup");
+    const errorMessage = document.getElementById("error-message");
+
+    errorMessage.textContent = message;
+    errorPopup.style.display = "block";
+}
+
+// Скрыть всплывающее окно
+function closeErrorPopup() {
+    const errorPopup = document.getElementById("error-popup");
+    errorPopup.style.display = "none";
+}
+
+// Обработчик события submit для формы
+document.getElementById("search-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Останавливаем стандартное поведение отправки формы
+
+    const searchInput = document.getElementById("search-input").value.trim();
+
+    // Проверяем ввод на недопустимые символы
+    if (!validateSearchInput(searchInput)) {
+        return; // Прерываем выполнение, если ввод некорректен
+    }
+
+    // Если ввод корректен, отправляем форму
+    this.submit(); // Отправляет форму на сервер
+});
+

@@ -47,8 +47,8 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
         <h1 class='headline-text'>Search for defective products</h1>
         <p class='description-text'>Type and press enter to filter names of defective products by your input.</p>
         <div class="search-container">
-            <form action="SearchPage.php" method="GET" class="d-flex gap-2">
-            <input type="text" name="search" placeholder="Enter product name..." class="form-control">
+            <form id="search-form" class="d-flex gap-2 search-container" method="GET" action="SearchPage.php">
+            <input type="text" id="search-input" name="search" placeholder="Enter product name..." class="form-control">
             </form>
         </div>
         <div class="divider">OR</div>
@@ -140,6 +140,11 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
             Continue with Google
         </button>
     </div>
+</div>
+
+<div id="error-popup" class="error-popup" style="display: none;">
+    <p id="error-message"></p>
+    <button class="close-btn" onclick="closeErrorPopup()">Close</button>
 </div>
 
 <script src="scripts.js"></script>

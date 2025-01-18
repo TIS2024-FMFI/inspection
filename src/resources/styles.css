@@ -425,3 +425,39 @@ p {
 .headline-text {
     margin-bottom: 0px;
 }
+
+/* Styles for error popup */
+.error-popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    width: 300px;
+}
+
+.error-popup p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.error-popup .close-btn {
+    background-color: #721c24;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.error-popup .close-btn:hover {
+    background-color: #a71e2a;
+}

@@ -10,8 +10,8 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 // Connect to database
 $host = 'localhost';
 $dbname = 'safety_app';
-$user = 'root'; 
-$password = ''; 
+$user = 'root';
+$password = '';
 
 try {
     $connect = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $password);
@@ -25,14 +25,26 @@ $searchQuery = '';
 $results = [];
 $sort = '';
 
+// Функция проверки строки на недопустимые символы
+function hasInvalidCharacters($input) {
+    return preg_match('/[<>{};]/', $input); // Проверяем на наличие символов
+}
+
 if (isset($_GET['search'])) {
     $searchQuery = trim($_GET['search']);
     $sort = isset($_GET['sort']) ? trim($_GET['sort']) : 'name_asc';
-    
-    if (!empty($searchQuery)) {
+
+    // Проверка строки на недопустимые символы
+    if (preg_match('/[<>{};]/', $searchQuery)) {
+        echo "<script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    showError('Invalid input detected. Please avoid using special characters.');
+                });
+              </script>";
+    } elseif (!empty($searchQuery)) {
         try {
             $sql = "SELECT id, product_name, published_on, hazard_causes, images FROM defective_products WHERE product_name LIKE :search";
-            // Sort
+
             if ($sort == 'name_asc') {
                 $sql .= " ORDER BY product_name ASC";
             } elseif ($sort == 'name_desc') {
@@ -40,7 +52,6 @@ if (isset($_GET['search'])) {
             }
 
             $stmt = $connect->prepare($sql);
-
             $stmt->execute(['search' => "%$searchQuery%"]);
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
@@ -91,22 +102,26 @@ if (isset($_GET['search'])) {
 
 <main>
     <form class="d-flex mt-3 md-5 justify-content-between align-items-center gap-2 px-3" role="search" method="GET" action="SearchPage.php">
-        <?php 
+        <?php
             echo "<h4 class='no-wrap'>Search Results for: </h4>";
         ?>
 
-            <input type="text" name="search" class="form-control" placeholder="Search Products" aria-label="Search" aria-describedby="button-addon2" value=" <?php if (isset($_GET['search'])) { echo htmlspecialchars($searchQuery); } else { echo ''; } ?>">
-            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
-            
-            <select name="sort" class="btn btn-outline-secondary" onchange="this.form.submit()">
-                <option value=""  >Sort By</option>
-                <option value="name_asc"  <?php echo isset($_GET['sort']) && $_GET['sort'] == 'name_asc' ? 'selected' : ''; ?>>By name A-Z</option>
-                <option value="name_desc"  <?php echo isset($_GET['sort']) && $_GET['sort'] == 'name_desc' ? 'selected' : ''; ?>>By name Z-A</option>
-            </select>
+        <input type="text" id="search-input" name="search" class="form-control" placeholder="Search Products" aria-label="Search" aria-describedby="button-addon2" value="<?php echo htmlspecialchars($searchQuery); ?>">
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+        <select name="sort" class="btn btn-outline-secondary" onchange="this.form.submit()">
+            <option value="">Sort By</option>
+            <option value="name_asc" <?php echo isset($_GET['sort']) && $_GET['sort'] == 'name_asc' ? 'selected' : ''; ?>>By name A-Z</option>
+            <option value="name_desc" <?php echo isset($_GET['sort']) && $_GET['sort'] == 'name_desc' ? 'selected' : ''; ?>>By name Z-A</option>
+        </select>
     </form>
 
+    <div id="error-popup" class="error-popup" style="display: none;">
+        <p id="error-message"></p>
+        <button class="close-btn" onclick="closeErrorPopup()">Close</button>
+    </div>
 
-    <?php 
+
+    <?php
         // if (!empty($searchQuery)) {
         //     echo "<h4 class='mt-4 ms-4'>Search Results for: " . htmlspecialchars($searchQuery) . "</h4>";
         // }
