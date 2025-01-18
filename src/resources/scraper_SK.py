@@ -1,8 +1,11 @@
 import os
+from sys import stderr
 import requests
 from bs4 import BeautifulSoup
 import pymysql
 from datetime import datetime
+
+print("Starting scraping process of the Slovak website, please stand tight...")
 
 def connect_to_db():
     try:
@@ -31,7 +34,7 @@ try:
         pdo.commit()
     print("Successfully cleared defective_products and related rows in product_history.")
 except Exception as e:
-    print(f"Error clearing defective_products or related rows: {e}")
+    print(f"Error clearing defective_products or related rows: {e}", file=stderr)
     pdo.rollback()
 
 # Base URL and main page URL for scraping
@@ -93,7 +96,7 @@ def parse_date(date_string):
         parsed_date = datetime.strptime(date_string, "%d.%m.%Y")
         return parsed_date  # Return as a datetime object
     except (ValueError, TypeError):
-        print(f"Invalid date format: {date_string}")
+        print(f"Invalid date format: {date_string}", file=stderr)
         return None    
 
 # Process individual pages and insert into database
@@ -116,7 +119,7 @@ def process_page(page_url):
 
         # Process each product
         for link in product_links:
-            print(f"Scraping: {link}")
+            print(f"Scraping: {link}", file=stderr)
             product_response = requests.get(link)
             if product_response.status_code == 200:
                 # Fix encoding for product page
@@ -128,7 +131,7 @@ def process_page(page_url):
                     product_title = wrap_div.find('h1').text.strip() if wrap_div.find('h1') else "Title not found"
                     category = extract_text(wrap_div, 'Kategória:')
                     date = parse_date(extract_text(wrap_div, 'Dátum:'))
-                    print(f"Date: {date}")
+                    print( f"Date: {date}", file=stderr)
                     country_of_origin = extract_text(wrap_div, 'Pôvod:')
                     product_description = extract_text(wrap_div, 'Identifikácia výrobku:')
                     risk_type = extract_text(wrap_div, 'Druh nebezpečnosti:')
@@ -152,16 +155,16 @@ def process_page(page_url):
                                 product_description, risk_type, causes_of_danger, image_url, link
                             ))
                             pdo.commit()
-                        print(f"Inserted: {product_title}")
+                        print(f"Inserted: {product_title}", file=stderr)
                     except Exception as e:
-                        print(f"Error inserting data for {product_title}: {e}")
+                        print(f"Error inserting data for {product_title}: {e}", file=stderr)
     return soup
 
 def scrape_all_pages():
     current_url = main_page_url  # Ensure main_page_url is correctly defined
     while current_url:
         try:
-            print(f"Processing page: {current_url}")
+            print(f"Processing page: {current_url}", file=stderr)
             soup = process_page(current_url)  # Ensure process_page returns a valid soup object
 
             # Find the next page link
@@ -179,4 +182,5 @@ def scrape_all_pages():
             current_url = None  # Stop the loop if an error occurs
 
 # Start scraping
+
 scrape_all_pages()
