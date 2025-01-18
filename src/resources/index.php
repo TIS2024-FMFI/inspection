@@ -58,8 +58,26 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
         
         <?php if ($isLoggedIn && $userRole === '2'): ?>
             <div class="divider">OR</div>
-            <a href="scrape_sites.php" class="scrape-sites-button">Scrape Sites</a>
+            <button id="scrapeSitesButton" class="scrape-sites-button">Scrape Sites</button>
+            <div id="scrapeResult"></div>
+
+            <script>
+                document.getElementById('scrapeSitesButton').addEventListener('click', function() {
+                    const scrapeResult = document.getElementById('scrapeResult');
+                    scrapeResult.innerHTML = 'Scraping in progress...';
+                    fetch('scrape_sites.php', { method: 'POST' })
+                        .then(response => response.text())
+                        .then(data => {
+                            scrapeResult.innerHTML = '<pre>' + data + '</pre>';
+                        })
+                        .catch(error => {
+                            scrapeResult.innerHTML = 'Error: ' + error;
+                            console.error('Error:', error);
+                        });
+                });
+            </script>
         <?php endif; ?>
+
     </div>
 
 
