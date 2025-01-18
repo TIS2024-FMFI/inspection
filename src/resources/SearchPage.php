@@ -57,6 +57,23 @@ if (isset($_GET['search'])) {
         } catch (PDOException $e) {
             die("Query error: " . $e->getMessage());
         }
+    } elseif (empty($searchQuery)) {
+        try {
+            $sql = "SELECT id, product_name, published_on, hazard_causes, images FROM defective_products";
+            // Sort
+            if ($sort == 'name_asc') {
+                $sql .= " ORDER BY product_name ASC";
+            } elseif ($sort == 'name_desc') {
+                $sql .= " ORDER BY product_name DESC";
+            }
+
+            $stmt = $connect->prepare($sql);
+
+            $stmt->execute();
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            die("Query error: " . $e->getMessage());
+        }
     }
 }
 
@@ -67,8 +84,8 @@ if (isset($_GET['search'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="search_page_style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="search_page_style.css">
     <title>Search Page</title>
 </head>
 <body>
@@ -108,11 +125,26 @@ if (isset($_GET['search'])) {
 
         <input type="text" id="search-input" name="search" class="form-control" placeholder="Search Products" aria-label="Search" aria-describedby="button-addon2" value="<?php echo htmlspecialchars($searchQuery); ?>">
         <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
-        <select name="sort" class="btn btn-outline-secondary" onchange="this.form.submit()">
-            <option value="">Sort By</option>
-            <option value="name_asc" <?php echo isset($_GET['sort']) && $_GET['sort'] == 'name_asc' ? 'selected' : ''; ?>>By name A-Z</option>
-            <option value="name_desc" <?php echo isset($_GET['sort']) && $_GET['sort'] == 'name_desc' ? 'selected' : ''; ?>>By name Z-A</option>
-        </select>
+
+        <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort By
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="?<?php echo http_build_query(array_merge($_GET, ['sort' => 'name_asc'])); ?>" 
+                        <?php echo isset($_GET['sort']) && $_GET['sort'] == 'name_asc' ? 'aria-current="true"' : ''; ?>>
+                            By name A-Z
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="?<?php echo http_build_query(array_merge($_GET, ['sort' => 'name_desc'])); ?>" 
+                        <?php echo isset($_GET['sort']) && $_GET['sort'] == 'name_desc' ? 'aria-current="true"' : ''; ?>>
+                            By name Z-A
+                        </a>
+                    </li>
+                </ul>
+            </div>
     </form>
 
     <div id="error-popup" class="error-popup" style="display: none;">
@@ -121,24 +153,19 @@ if (isset($_GET['search'])) {
     </div>
 
 
-    <?php
-        // if (!empty($searchQuery)) {
-        //     echo "<h4 class='mt-4 ms-4'>Search Results for: " . htmlspecialchars($searchQuery) . "</h4>";
-        // }
+    <?php 
         if (!empty($results)) {
-            echo '<div class="container my-4">';
+            echo '<div class="container-fluid my-5">';
             echo '<div class="row row-cols-1 row-cols-md-3 g-4 justify-content-start">';
             foreach ($results as $product) {
                 echo <<<HTML
-                        <div class="card my-2 ms-4" style="width: 18rem;">
-                        <img src="{$product['images']}" class="card-img-top" alt="...">
+                        <div class="card my-2 ms-4" style="width: 20.5rem; height: 32rem; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
+                        <img src="images/No_Image_Available.jpg" class="card-img-top" alt="..." >
                             <div class="card-body">
-                                <h5 class="card-title">{$product['product_name']} </h5>
-                                <p class="card-text">Reported date: {$product['published_on']} </p>
-                                <p class="card-text">Hazard Causes: {$product['hazard_causes']} </p>
-                            </div>
-
-                            <div class="card-body">
+                                <h5 class="card-title" style="margin-bottom: 10px;">{$product['product_name']} </h5>
+                                <p class="card-text" style="margin-bottom: 5px;"><strong>Reported date: </strong>{$product['published_on']} </p>
+                                <p class="card-text" style="margin-bottom: 5px;"><strong>Hazard Causes: </strong>{$product['hazard_causes']} </p>
+                            
                                 <a href="ProductPage.php?id={$product['id']}" class="card-link">See details</a>
                             </div>
                         </div>
