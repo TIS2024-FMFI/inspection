@@ -29,7 +29,7 @@ main form {
 
 main .card-img-top {
     width: 100%; /* Ensure the image stretches the full width of the card */
-    height: 200px; /* Set a fixed height for all images */
+    height: 250px; /* Set a fixed height for all images */
     object-fit: cover; /* Crop the image to fit the height and width without distortion */
     padding-top: 10px;
 }

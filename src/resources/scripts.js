@@ -107,7 +107,13 @@ function handleLogin(event) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            window.location.href = 'index.php';
+            const currentPage = window.location.pathname; // current path
+            if (currentPage.includes('welcome.php')) {
+                window.location.href = 'index.php';
+            } else {
+                window.location.reload();
+            }
+            // window.location.href = 'index.php';
         } else {
             errorMessage.style.display = 'block';
             errorMessage.textContent = data.error;
