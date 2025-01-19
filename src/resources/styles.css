@@ -82,13 +82,19 @@ header .logo {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
+
+    .header-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 5px;
+    }
+
     .sign-in-button {
-        font-size: 13px;
-        padding: 8px 16px;
-        margin: 10px 0 0;
-        align-self: flex-end;
+        width: 90%;
+        text-align: center;
     }
 }
 
@@ -142,6 +148,30 @@ header .logo {
     border-bottom: 1px solid #ddd;
 }
 
+@media (max-width: 768px) {
+    .profile-menu {
+        position: absolute; /* Меню будет накладываться поверх остальных элементов */
+        top: 60px; /* Отступ сверху, чтобы меню выпадало ниже аватара */
+        right: 10px; /* Сохранить положение по правому краю */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        min-width: 150px;
+        z-index: 999; /* Меню поверх всех элементов */
+    }
+
+    .profile-menu.show {
+        display: flex; /* Отображение меню при открытии */
+    }
+
+    .profile-menu-item {
+        padding: 15px;
+        text-align: center;
+    }
+}
 /* ============================================================
    Main Content (Основной контент)
    ============================================================ */
@@ -266,6 +296,130 @@ p {
     color: #333;
 }
 
+.homepage-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Промежуток между заголовком и иконкой */
+}
+
+/* Десктопная версия: показываем большую иконку */
+.profile-pic {
+    display: block;
+}
+
+/* Мобильная версия: показываем маленькую иконку возле Homepage */
+.profile-pic-mobile {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Меню для десктопной версии */
+.profile-menu-container {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .profile-pic {
+        display: none;
+    }
+
+    /* Мобильная версия видима */
+    .profile-pic-mobile {
+        display: block;
+    }
+
+    .homepage-container {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Промежуток между текстом и иконкой */
+    }
+
+    /* Увеличиваем размер мобильной иконки */
+    .homepage-title {
+        font-size: 18px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    /* Меню привязывается к новой иконке */
+    .profile-menu {
+        position: absolute;
+        top: 100%; /* Расположить сразу под иконкой */
+        left: 50%; /* Центрируем относительно иконки */
+        transform: translateX(-50%); /* Сдвигаем на половину ширины для центрирования */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: none; /* Скрыто по умолчанию */
+        flex-direction: column;
+        min-width: 150px;
+        z-index: 999; /* Поверх остальных элементов */
+    }
+
+    .profile-menu.show {
+        display: flex; /* Показ меню при клике */
+    }
+
+    .profile-pic-mobile {
+        position: relative; /* Устанавливаем положение для связи с меню */
+        z-index: 1000; /* Чтобы иконка была поверх других элементов */
+    }
+
+    .profile-menu-item {
+        padding: 15px;
+        text-align: center;
+        color: #333;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .profile-menu-item:hover {
+        background-color: #f0f0f0;
+    }
+
+    .search-container input {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .box-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #scan-button,
+    .scan-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .admin-panel {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
 /* ============================================================
    Modal Styles (Модальные окна)
    ============================================================ */

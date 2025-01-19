@@ -17,15 +17,21 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 <body>
 <header>
     <img src="images/logo.png" alt="Logo" class="logo">
-    <h2 class="homepage-title">Homepage</h2>
+    <div class="homepage-container">
+        <h2 class="homepage-title">Homepage</h2>
+        <!-- Мобильная версия иконки -->
+        <?php if ($isLoggedIn): ?>
+        <img src="images/profile-pic.png" alt="Profile Picture" class="profile-pic-mobile" onclick="toggleProfileMenu()">
+        <?php endif; ?>
+    </div>
     <div class="header-buttons">
+        <!-- Десктопная версия иконки -->
         <?php if ($isLoggedIn): ?>
             <div class="profile-menu-container">
                 <img src="images/profile-pic.png"
                      alt="Profile Picture"
                      class="profile-pic"
                      onclick="toggleProfileMenu()">
-
                 <div class="profile-menu" id="profile-menu">
                     <p class="profile-username">
                         <?php echo htmlspecialchars($_SESSION['username'] ?? 'No username'); ?>
