@@ -24,10 +24,10 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
     </div>
 </header>
 <main>
-    <h1>WELCOME</h1>
-    <div class="content-container">
+    <div class="welcome-container">
         <img src="images/logo.png" alt="Placeholder Image" class="welcome-image">
         <div class="welcome-text">
+            <h1>WELCOME</h1>
             <p>
                 This website is part of a school project designed to help users identify defective products.
                 You can search for products or scan their barcodes to check if they meet safety and quality standards.
