@@ -247,3 +247,13 @@ main {
     }
 
 }
+
+.green-background {
+    background-color: #d4edda;
+    border: 1px solid #155724;
+}
+
+.red-background {
+    background-color: #f8d7da;
+    border: 1px solid #721c24;
+}

@@ -62,14 +62,15 @@ try {
             // Fetch history items for the logged-in user
             $user_id = $_SESSION['user_id'];
             try {
-                $stmt = $pdo->prepare("SELECT date, time, barcode, product_link FROM product_history WHERE user_id = :user_id");
+                $stmt = $pdo->prepare("SELECT date, time, barcode, product_link, status FROM product_history WHERE user_id = :user_id");
                 $stmt->execute(['user_id' => $user_id]);
                 $historyItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 // Display history items
                 if (count($historyItems) > 0) {
                     foreach ($historyItems as $row) {
-                        echo '<div class="history-item">';
+                        $statusClass = ($row['status'] == 0) ? 'green-background' : 'red-background';
+                        echo '<div class="history-item ' . $statusClass . '">';
                         echo '<div class="history-details">';
                         echo 'Date: ' . htmlspecialchars($row['date']) . ' | ';
                         echo 'Time: ' . htmlspecialchars($row['time']) . ' | ';

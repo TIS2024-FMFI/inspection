@@ -4,7 +4,18 @@ if (!isset($_SESSION['user_id'])) {
     header('Location: index.php');
     exit;
 }
-require_once 'db/config.php';
+// Database connection
+$host = 'localhost';
+$dbname = 'safety_app';
+$username_db = 'root';
+$password_db = '';
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username_db, $password_db);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection error: " . $e->getMessage());
+}
 
 try {
     $stmt = $pdo->prepare("SELECT * FROM user_submitted_products WHERE user_id = :user_id");
