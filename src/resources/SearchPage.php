@@ -8,10 +8,10 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 
 
 // Connect to database
-$host = 'localhost';
-$dbname = 'safety_app';
-$user = 'root'; 
-$password = ''; 
+$host = getenv('DB_HOST') ?: 'localhost';
+$dbname = getenv('DB_NAME') ?: 'safety_app';
+$user = getenv('DB_USER') ?: 'root';
+$password = getenv('DB_PASSWORD') ?: '';
 
 try {
     $connect = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $password);

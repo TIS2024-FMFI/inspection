@@ -51,12 +51,12 @@ CREATE TABLE `defective_products` (
 CREATE TABLE `product_history` (
     `id` INT PRIMARY KEY AUTO_INCREMENT,
     `product_id` INT NOT NULL,
+    `status` INT NOT NULL,
     `user_id` INT NOT NULL,
     `barcode` VARCHAR(255) NOT NULL,
     `product_link` VARCHAR(255) NOT NULL,
     `date` DATE NOT NULL,
     `time` TIME NOT NULL,
-    FOREIGN KEY (`product_id`) REFERENCES `defective_products` (`id`),
     FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

@@ -1,17 +1,19 @@
 <?php
-if (!file_exists("scraper_SK.py")) {
-    echo "Python script not found.";
+$pythonPath = '/app/python';
+if (!file_exists("$pythonPath/scraper_SK.py")) {
+    echo "Python script SK not found.";
     exit();
 }
-if (!file_exists("scraper_EU.py")) {
-    echo "Python script not found.";
+
+if (!file_exists("$pythonPath/scraper_EU.py")) {
+    echo "Python script EU not found.";
     exit();
 }
-$pythonScriptSK = 'C:\\xampp\\htdocs\\inspection\\inspection\\src\\resources\\scraper_SK.py';
-$pythonScriptEU = 'C:\\xampp\\htdocs\\inspection\\inspection\\src\\resources\\scraper_EU.py';
-$venvPath = 'C:\\xampp\\htdocs\\inspection\\inspection\\venv\\Scripts\\activate';
+
 set_time_limit(600);
-$command = "cmd /c \"$venvPath && python $pythonScriptSK && python $pythonScriptEU\"";
+//python3 $pythonPath/scraper_SK.py && 
+$command = "python3 $pythonPath/scraper_EU.py";
+// $command = "python3 $pythonPath/scraper_EU.py";
 $output = shell_exec($command);
 header('Content-Type: text/plain');
 echo $output ? $output : "Done";

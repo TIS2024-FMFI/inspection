@@ -10,10 +10,10 @@ print("Starting scraping process of the Slovak website, please stand tight...")
 def connect_to_db():
     try:
         return pymysql.connect(
-            host='localhost',
-            user='root',
-            password='',
-            database='safety_app',
+            host=os.getenv('DB_HOST', 'localhost'),
+            user=os.getenv('DB_USER', 'root'),
+            password=os.getenv('DB_PASSWORD', ''),
+            database=os.getenv('DB_NAME', 'safety_app'),
             cursorclass=pymysql.cursors.DictCursor
         )
     except pymysql.MySQLError as e:

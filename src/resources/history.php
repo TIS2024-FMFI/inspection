@@ -13,10 +13,10 @@ $email = isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : 'No 
 $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : '';
 
 // Database connection
-$host = 'localhost';
-$dbname = 'safety_app';
-$username_db = 'root';
-$password_db = '';
+$host = getenv('DB_HOST') ?: 'localhost';
+$dbname = getenv('DB_NAME') ?: 'safety_app';
+$username_db = getenv('DB_USER') ?: 'root';
+$password_db = getenv('DB_PASSWORD') ?: '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username_db, $password_db);
