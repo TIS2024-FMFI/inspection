@@ -16,6 +16,37 @@ main {
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+main h4.no-wrap {
+    margin: 0; 
+    display: flex; 
+    align-items: center;
+    white-space: nowrap; 
+}
+
+main form .form-control,
+main form .btn,
+main form select {
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+main form {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+main .card-img-top {
+    width: 100%; /* Ensure the image stretches the full width of the card */
+    height: 250px; /* Set a fixed height for all images */
+    object-fit: cover; /* Crop the image to fit the height and width without distortion */
+    padding-top: 10px;
 }
 
 .container {
