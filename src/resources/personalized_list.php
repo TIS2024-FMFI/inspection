@@ -63,87 +63,257 @@ try {
     </div>
 </header>
 <main>
-    <div class="content" id="my-list">
-        <div class="product-grid">
-            <?php if (count($products) > 0): ?>
-                <?php foreach ($products as $product): ?>
-                    <div class="product-card" data-id="<?php echo htmlspecialchars($product['id']); ?>">
-                        <div class="view-mode">
-                            <h3><?php echo htmlspecialchars($product['name']); ?></h3>
-                            <p><strong>Barcode:</strong> <?php echo htmlspecialchars(isset($product['barcode']) ? $product['barcode'] : 'N/A'); ?></p>
-                            <p><strong>Brand:</strong> <?php echo htmlspecialchars(isset($product['brand']) ? $product['brand'] : 'N/A'); ?></p>
-                            <p><strong>Description:</strong> <?php echo htmlspecialchars(isset($product['description']) ? $product['description'] : 'No description available.'); ?></p>
-                            <button class="edit-btn">Edit</button>
-                        </div>
-                        <div class="edit-mode hidden">
-                            <h3> Name:</h3>
-                            <input type="text" class="edit-name" value="<?php echo htmlspecialchars($product['name']); ?>" />
-                            <p><strong>Brand:</strong></p>
-                            <input type="text" class="edit-brand" value="<?php echo htmlspecialchars($product['brand']); ?>" />
-                            <p><strong>Description:</strong></p>
-                            <textarea class="edit-description"><?php echo htmlspecialchars($product['product_description']); ?></textarea>
-                            <button class="save-btn">Save</button>
-                            <button class="cancel-btn">Cancel</button>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <p>No products found.</p>
-            <?php endif; ?>
-        </div>
+<div class="view-toggle">
+        <style>
+            .view-toggle {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 15px 0; 
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                overflow: hidden;
+                width: 300px;
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            
+            .toggle-option {
+                flex: 1;
+                text-align: center;
+                padding: 10px 15px;
+                cursor: pointer;
+                background-color: #f0f0f0;
+                color: #333;
+                font-weight: bold;
+                transition: background-color 0.3s, color 0.3s;
+                position: relative;
+            }
+            .toggle-option:not(:last-child) {
+                border-right: 1px solid #ccc; 
+            }
+            
+            .toggle-option.active {
+                background-color: #333;
+                color: #fff;
+            }
+            
+            .toggle-option:hover:not(.active) {
+                background-color: #e0e0e0;
+            }
+        </style>
+        <div id="cards-view" class="toggle-option active" onclick="switchView('cards')">Cards View</div>
+        <div id="table-view" class="toggle-option" onclick="switchView('table')">Table View</div>
     </div>
+    <div class="content" id="my-list">
+        
+    </div>
+
     <div class="content hidden" id="history">
         <p>History tab content goes here.</p>
     </div>
 </main>
 
+
+<!-- switch between cards view and table view -->
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('.edit-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const card = button.closest('.product-card');
-                card.querySelector('.view-mode').classList.add('hidden');
-                card.querySelector('.edit-mode').classList.remove('hidden');
-            });
-        });
+    function switchView(view) {
+    const container = document.getElementById('my-list');
+    const cardsView = document.getElementById('cards-view');
+    const tableView = document.getElementById('table-view');
 
-        document.querySelectorAll('.save-btn').forEach(button => {
-            button.addEventListener('click', async () => {
-                const card = button.closest('.product-card');
-                const id = card.dataset.id;
-                const name = card.querySelector('.edit-name').value;
-                const brand = card.querySelector('.edit-brand').value;
-                const description = card.querySelector('.edit-description').value;
+    cardsView.classList.remove('active');
+    tableView.classList.remove('active');
 
-                // Send the data to the server to update
-                const response = await fetch('update_product.php', {
+    if (view === 'cards') {
+        cardsView.classList.add('active');
+    } else if (view === 'table') {
+        tableView.classList.add('active');
+    }
+
+    fetch(view === 'cards' ? 'personalized_list_cards_view.php' : 'personalized_list_table_view.php')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to load view');
+        }
+        return response.text();
+    })
+    .then(html => {
+        container.innerHTML = html;
+    })
+    .catch(error => {
+        console.error('Error loading view:', error);
+        container.innerHTML = '<p>Error loading view. Please try again later.</p>';
+    });
+}
+</script>    
+
+<!-- delete for table view -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const container = document.getElementById('my-list');
+    container.addEventListener('click', function (event) {
+        if (event.target && event.target.classList.contains('delete-table')) {
+            const row = event.target.closest('.product-row');
+            const productId = row.getAttribute('data-id'); 
+
+                fetch('delete_product.php', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ id, name, brand, description })
-                });
+                    headers: {
+                        'Content-Type': 'application/json' 
+                    },
+                    body: JSON.stringify({ id: productId }) 
+                })
+                .then(response => response.json()) 
+                .then(data => {
+                    if (data.success) {
+                        row.remove(); 
+                    } else {
+                        alert('Failed to delete the product: ' + data.message); 
+                    }
+                })
+                .catch(error => console.error('Error:', error)); 
+        }
+    });
+});
+</script>
 
+<!-- delete for card view -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('my-list').addEventListener('click', function (event) {
+        if (event.target && event.target.classList.contains('delete-btn')) {
+            const card = event.target.closest('.product-card'); 
+            const productId = card.getAttribute('data-id'); 
+
+                fetch('delete_product.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ id: productId }) 
+                })
+                .then(response => response.json()) 
+                .then(data => {
+                    if (data.success) {
+                        card.remove(); 
+                    } else {
+                        alert('Failed to delete the product: ' + data.message); 
+                    }
+                })
+                .catch(error => console.error('Error:', error)); 
+        }
+    });
+});
+</script>
+
+<!-- edit for table view -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const container = document.getElementById('my-list');
+
+    container.addEventListener('click', function (event) {
+        if (event.target && event.target.classList.contains('edit-table')) {
+            const row = event.target.closest('.product-row');
+            row.querySelectorAll('.my-view-mode').forEach(cell => cell.classList.add('hidden'));
+            row.querySelectorAll('.my-edit-mode').forEach(cell => cell.classList.remove('hidden'));
+        }
+
+        if (event.target && event.target.classList.contains('save-table')) {
+            const row = event.target.closest('.product-row');
+            const id = row.dataset.id;
+            const name = row.querySelector('.edit-name').value;
+            const brand = row.querySelector('.edit-brand').value;
+            const description = row.querySelector('.edit-description').value;
+
+            fetch('update_product.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id, name, brand, description })
+            })
+                .then(response => {
+                    if (response.ok) {
+                        row.querySelectorAll('.my-view-mode')[0].textContent = name;
+                        row.querySelectorAll('.my-view-mode')[2].textContent = brand;
+                        row.querySelectorAll('.my-view-mode')[3].textContent = description;
+
+                        row.querySelectorAll('.my-edit-mode').forEach(cell => cell.classList.add('hidden'));
+                        row.querySelectorAll('.my-view-mode').forEach(cell => cell.classList.remove('hidden'));
+                    } else {
+                        alert('Failed to save changes.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Failed to save changes.');
+                });
+        }
+
+        if (event.target && event.target.classList.contains('cancel-table')) {
+            const row = event.target.closest('.product-row');
+            row.querySelectorAll('.my-edit-mode').forEach(cell => cell.classList.add('hidden'));
+            row.querySelectorAll('.my-view-mode').forEach(cell => cell.classList.remove('hidden'));
+        }
+    });
+});
+</script>
+
+
+<!-- edit for card viwe -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('my-list').addEventListener('click', function (event) {
+        if (event.target && event.target.classList.contains('edit-btn')) {
+            const card = event.target.closest('.product-card');
+            card.querySelector('.view-mode').classList.add('hidden');
+            card.querySelector('.edit-mode').classList.remove('hidden');
+        }
+    });
+
+    document.getElementById('my-list').addEventListener('click', function (event) {
+        if (event.target && event.target.classList.contains('save-btn')) {
+            const card = event.target.closest('.product-card');
+            const id = card.dataset.id;
+            const name = card.querySelector('.edit-name').value;
+            const brand = card.querySelector('.edit-brand').value;
+            const description = card.querySelector('.edit-description').value;
+
+
+            fetch('update_product.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id, name, brand, description })
+            })
+            .then(response => {
                 if (response.ok) {
-                    // Update the UI with the new values
                     card.querySelector('h3').textContent = name;
-                    card.querySelector('.view-mode p:nth-child(3)').innerHTML = `<strong>Brand:</strong> ${brand}`;
-                    card.querySelector('.view-mode p:nth-child(4)').innerHTML = `<strong>Description:</strong> ${description}`;
+                    card.querySelector('.view-mode p:nth-child(4)').innerHTML = `<strong>Brand:</strong> ${brand}`;
+                    card.querySelector('.view-mode p:nth-child(5)').innerHTML = `<strong>Description:</strong> ${description}`;
+                    
+
                     card.querySelector('.view-mode').classList.remove('hidden');
                     card.querySelector('.edit-mode').classList.add('hidden');
                 } else {
                     alert('Failed to save changes.');
                 }
+            })
+            .catch(error => {
+                console.error('Error saving changes:', error);
+                alert('Failed to save changes.');
             });
-        });
-
-        document.querySelectorAll('.cancel-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const card = button.closest('.product-card');
-                card.querySelector('.view-mode').classList.remove('hidden');
-                card.querySelector('.edit-mode').classList.add('hidden');
-            });
-        });
+        }
     });
+
+    document.getElementById('my-list').addEventListener('click', function (event) {
+        if (event.target && event.target.classList.contains('cancel-btn')) {
+            const card = event.target.closest('.product-card');
+            card.querySelector('.view-mode').classList.remove('hidden');
+            card.querySelector('.edit-mode').classList.add('hidden');
+        }
+    });
+});
 </script>
+
 <script src="scripts.js"></script>
 </body>
 </html>
