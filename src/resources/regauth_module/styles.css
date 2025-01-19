@@ -534,87 +534,9 @@ p {
     text-align: center;
 }
 
-.product-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 20px auto;
-    background-color: #fff;
-}
-
-.product-card h2 {
-    margin-top: 0;
-    color: red;
-}
 
 
-.product-card p {
-    margin: 8px 0;
-    color: #555;
-}
-
-.product-card form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
 
 
-.product-card button {
-    background-color: #d9dde2;
-    border-color: rgba(22, 22, 22, 0.842);
-    padding: 10px 16px;
-    border-radius: 12px;
-    cursor: pointer;
-    margin-top: 10px;
-}
 
-.product-card button:hover {
-    background-color: #0056b3;
-}
 
-#additional-info {
-    margin-top: 15px;
-    border-top: 1px solid #eee;
-    padding-top: 10px;
-}
-
-.product-card input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-h3 {
-    margin-top: 0;
-    font-size: 2em;
-    color: rgb(22, 196, 22);
-}
-
-.title {
-    text-align: center;
-}
-
-#camera {
-    margin-left: 35%;
-    width: 150%;
-    height: auto;
-}
-
-#result {
-    margin-left: 35%;
-    margin-top: 1%;
-    font-size: 1.2em;
-}
-
-#scanner {
-    width: 800px;
-}
-
-.scanner-title {
-    text-align: left;
-}

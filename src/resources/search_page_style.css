@@ -1,59 +1,62 @@
-main {
+/* ============================================================
+   General Styles
+============================================================ */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+    font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    padding-top: 80px; 
+}
+
+main {
+    padding-top: 80px; /* Учитываем высоту фиксированного заголовка */
+    padding-left: 15px;
+    padding-right: 15px;
     box-sizing: border-box;
 }
 
-main h4.no-wrap {
-    margin: 0; 
-    display: flex; 
-    align-items: center;
-    white-space: nowrap; 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
 }
 
-main form .form-control,
-main form .btn,
-main form select {
-    height: 40px;
-    padding: 0 10px;
-    border-radius: 5px;
-}
-
-main form {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0 15px;
-}
-
-main .card-img-top {
-    width: 100%; /* Ensure the image stretches the full width of the card */
-    height: 200px; /* Set a fixed height for all images */
-    object-fit: cover; /* Crop the image to fit the height and width without distortion */
-    padding-top: 10px;
+h2.homepage-title {
+    font-size: 32px;
+    color: #333;
+    margin: 0;
 }
 
 /* ============================================================
-   Header Styles (Стили шапки)
-   ============================================================ */
+   Header Styles
+============================================================ */
 
 header {
-    width: 100%;
-    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     z-index: 1000;
     box-sizing: border-box;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
+header .homepage-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align for desktop */
+    gap: 10px; /* Add spacing between icon and title */
+    flex-grow: 1; /* Ensure the logo aligns to the left */
+}
 header .logo {
     height: 50px;
     flex-shrink: 0;
@@ -61,74 +64,24 @@ header .logo {
 
 .header-buttons {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-end;
     gap: 10px;
-    min-width: 100px; 
 }
-
-.sign-in-button {
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    background-color: #ddd;
-    color: black;
-    border: none;
-    border-radius: 20px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    margin-left: auto;
-    flex-shrink: 0;
-}
-
-.sign-in-button:hover {
-    background-color: #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.my-list-button,
-.sign-out-button {
-    padding: 10px 20px;
-    font-size: 14px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-}
-
-.my-list-button:hover,
-.sign-out-button:hover {
-    background-color: #0056b3;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    .sign-in-button {
-        font-size: 13px;
-        padding: 8px 16px;
-        margin: 10px 0 0;
-        align-self: flex-end;
-    }
-}
-
 .profile-menu-container {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Add spacing between the user icon and "Search" title */
 }
 
 .profile-pic {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    cursor: pointer;
     object-fit: cover;
     border: 1px solid #ddd;
+    cursor: pointer;
+    display: block;
 }
 
 .profile-menu {
@@ -155,23 +108,217 @@ header .logo {
     color: #333;
     transition: background-color 0.3s;
 }
+
 .profile-menu-item:hover {
     background-color: #f0f0f0;
 }
 
-.profile-username {
-    margin: 0px;
-    padding: 10px;
-    font-weight: bold;
-    color: #555;
-    border-bottom: 1px solid #ddd;
+.no-wrap {
+    white-space: nowrap;
 }
 
-.homepage-title {
-    font-family: Arial, sans-serif;
-    font-size: 32px;
-    padding: 0;
+/*!* ============================================================*/
+/*   Form Styles*/
+/*============================================================ *!*/
+
+/*form {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 10px;*/
+/*    padding: 15px;*/
+/*    flex-wrap: wrap; !* Перенос строк для мобильных экранов *!*/
+/*}*/
+
+/*form .form-control {*/
+/*    width: 250px; !* Ширина поля ввода *!*/
+/*    height: 40px;*/
+/*    padding: 0 10px;*/
+/*    border-radius: 5px;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*form .btn {*/
+/*    height: 40px;*/
+/*    padding: 0 20px;*/
+/*    font-size: 16px;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*form select {*/
+/*    height: 40px;*/
+/*    padding: 0 10px;*/
+/*    font-size: 16px;*/
+/*    border-radius: 5px;*/
+/*    align-self: flex-start; !* Расположение под кнопкой *!*/
+/*}*/
+
+
+/*form input[type="text"],*/
+/*form select,*/
+/*form button {*/
+/*    flex: 1; !* Элементы равной ширины *!*/
+/*    height: 40px;*/
+/*    padding: 0 10px;*/
+/*    border-radius: 5px;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*form button {*/
+/*    background-color: #007bff;*/
+/*    color: #fff;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*form button:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
+
+/* ============================================================
+   Card Styles
+============================================================ */
+
+.card {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
     font-weight: bold;
-    margin: 0px 0;
-    color: #333;
+    margin: 0 0 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.card-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   Error Popup
+============================================================ */
+
+.error-popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* ============================================================
+   Responsive Styles
+============================================================ */
+
+.profile-pic-mobile {
+    display: none; /* По умолчанию скрыта */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profile-menu-container h2.homepage-title {
+    margin: 0;
+    font-size: 20px; /* Adjust font size */
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    main {
+        padding-top: 100px; /* Увеличиваем отступ для мобильных экранов */
+    }
+
+
+    .profile-pic {
+        display: none; /* Скрываем десктопную иконку */
+    }
+
+    .profile-pic-mobile {
+        display: block; /* Показываем мобильную версию */
+    }
+
+    .homepage-container {
+        justify-content: flex-start;
+    }
+    .profile-menu-container {
+        flex-direction: row; /* Ensure proper alignment for title and icon */
+    }
+    h2.homepage-title {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+
+    form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    form .form-control {
+        width: 90%; /* Растягиваем поле ввода */
+    }
+
+    form .btn {
+        align-self: flex-end; /* Кнопка справа */
+        width: auto;
+    }
+
+    form select {
+        align-self: flex-start; /* Расположение слева */
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .card-img-top {
+        height: 120px; /* Уменьшаем высоту изображения на мобильных устройствах */
+    }
+
+    .homepage-title {
+        font-size: 20px; /* Уменьшаем размер текста */
+    }
+
+    .no-wrap {
+        white-space: normal; /* Разрешает перенос текста на маленьких экранах */
+    }
 }

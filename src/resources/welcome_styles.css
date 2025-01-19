@@ -1,4 +1,15 @@
 /* General Styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,7 +25,7 @@ header {
     width: 100%;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Распределение элементов по краям */
     align-items: center;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -50,21 +61,32 @@ header .sign-in-button:hover {
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row; /* Оставляем горизонтальное расположение */
+        justify-content: space-between; /* Логотип и кнопка по краям */
+        align-items: center;
+        padding: 10px;
     }
 
-    header .sign-in-button {
-        margin-top: 10px;
-        align-self: flex-end;
+    .logo {
+        height: 40px; /* Уменьшаем размер логотипа */
+    }
+
+    .sign-in-button {
+        font-size: 13px;
+        padding: 8px 16px;
     }
 }
 
 /* Main Content */
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 100px 20px 20px; /* Добавляем отступ для учета фиксированного хедера */
+    padding: 100px 20px 20px;
     max-width: 900px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -82,9 +104,18 @@ h1 {
     margin-bottom: 20px;
 }
 
+.welcome-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
 .welcome-image {
-    width: 300px;
-    height: 300px;
+    /* width: 300px; 
+    height: 300px; */
     background-color: #e0e0e0;
     border-radius: 8px;
     object-fit: cover;
@@ -111,6 +142,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Добавлен перенос для мобильной версии */
 }
 
 .register-button,
@@ -300,4 +332,31 @@ footer {
     font-size: 14px;
     color: #aaa;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .welcome-container {
+        flex-direction: column; /* Изменяем расположение на вертикальное */
+        text-align: center;    /* Центрируем текст */
+    }
+
+    .welcome-image {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px; /* Добавляем отступ для разделения */
+    }
+
+    .welcome-text {
+        max-width: 100%; /* Растягиваем текст на всю ширину */
+    }
+
+    .button-container {
+        flex-direction: column; /* Расположение кнопок вертикально */
+        gap: 15px; /* Увеличиваем расстояние между кнопками */
+    }
+
+    .register-button,
+    .continue-button {
+        width: 100%; /* Кнопки занимают всю ширину */
+    }
 }

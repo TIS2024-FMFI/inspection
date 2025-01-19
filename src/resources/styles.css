@@ -82,13 +82,19 @@ header .logo {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
+
+    .header-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 5px;
+    }
+
     .sign-in-button {
-        font-size: 13px;
-        padding: 8px 16px;
-        margin: 10px 0 0;
-        align-self: flex-end;
+        width: 90%;
+        text-align: center;
     }
 }
 
@@ -142,6 +148,30 @@ header .logo {
     border-bottom: 1px solid #ddd;
 }
 
+@media (max-width: 768px) {
+    .profile-menu {
+        position: absolute; /* Меню будет накладываться поверх остальных элементов */
+        top: 60px; /* Отступ сверху, чтобы меню выпадало ниже аватара */
+        right: 10px; /* Сохранить положение по правому краю */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        min-width: 150px;
+        z-index: 999; /* Меню поверх всех элементов */
+    }
+
+    .profile-menu.show {
+        display: flex; /* Отображение меню при открытии */
+    }
+
+    .profile-menu-item {
+        padding: 15px;
+        text-align: center;
+    }
+}
 /* ============================================================
    Main Content (Основной контент)
    ============================================================ */
@@ -266,6 +296,130 @@ p {
     color: #333;
 }
 
+.homepage-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Промежуток между заголовком и иконкой */
+}
+
+/* Десктопная версия: показываем большую иконку */
+.profile-pic {
+    display: block;
+}
+
+/* Мобильная версия: показываем маленькую иконку возле Homepage */
+.profile-pic-mobile {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Меню для десктопной версии */
+.profile-menu-container {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .profile-pic {
+        display: none;
+    }
+
+    /* Мобильная версия видима */
+    .profile-pic-mobile {
+        display: block;
+    }
+
+    .homepage-container {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Промежуток между текстом и иконкой */
+    }
+
+    /* Увеличиваем размер мобильной иконки */
+    .homepage-title {
+        font-size: 18px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    /* Меню привязывается к новой иконке */
+    .profile-menu {
+        position: absolute;
+        top: 100%; /* Расположить сразу под иконкой */
+        left: 50%; /* Центрируем относительно иконки */
+        transform: translateX(-50%); /* Сдвигаем на половину ширины для центрирования */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: none; /* Скрыто по умолчанию */
+        flex-direction: column;
+        min-width: 150px;
+        z-index: 999; /* Поверх остальных элементов */
+    }
+
+    .profile-menu.show {
+        display: flex; /* Показ меню при клике */
+    }
+
+    .profile-pic-mobile {
+        position: relative; /* Устанавливаем положение для связи с меню */
+        z-index: 1000; /* Чтобы иконка была поверх других элементов */
+    }
+
+    .profile-menu-item {
+        padding: 15px;
+        text-align: center;
+        color: #333;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .profile-menu-item:hover {
+        background-color: #f0f0f0;
+    }
+
+    .search-container input {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .box-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #scan-button,
+    .scan-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .admin-panel {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
 /* ============================================================
    Modal Styles (Модальные окна)
    ============================================================ */
@@ -424,4 +578,148 @@ p {
 
 .headline-text {
     margin-bottom: 0px;
+}
+
+/* Styles for error popup */
+.error-popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    width: 300px;
+}
+
+.error-popup p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.error-popup .close-btn {
+    background-color: #721c24;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.error-popup .close-btn:hover {
+    background-color: #a71e2a;
+}
+/* ============================================================
+   Scanner
+   ============================================================ */
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    background-color: #fff;
+}
+
+.product-card h2 {
+    margin-top: 0;
+    color: red;
+}
+
+
+.product-card p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.product-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.product-card button {
+    background-color: #d9dde2;
+    border-color: rgba(22, 22, 22, 0.842);
+    padding: 10px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+#additional-info {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    max-height: 200px;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.product-card input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 2em;
+    color: rgb(22, 196, 22);
+}
+
+.title {
+    text-align: center;
+}
+
+#camera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0;
+}
+
+#camera video {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#result {
+    position: relative;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    z-index: 2;
+    font-size: 1.2em;
+
+}
+
+#scanner {
+    width: 800px;
+}
+
+.scanner-title {
+    margin-right: 50%;
 }
