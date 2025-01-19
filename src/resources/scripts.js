@@ -88,8 +88,14 @@ function toggleProfileMenu() {
 
 document.addEventListener('click', function(event) {
     const menu = document.getElementById('profile-menu');
-    const profilePic = document.querySelector('.profile-pic');
-    if (!menu.contains(event.target) && !profilePic.contains(event.target)) {
+    const profilePicMobile = document.querySelector('.profile-pic-mobile');
+    const profilePicDesktop = document.querySelector('.profile-pic');
+
+    if (
+        !menu.contains(event.target) &&
+        event.target !== profilePicMobile &&
+        event.target !== profilePicDesktop
+    ) {
         menu.classList.remove('show');
     }
 });
@@ -107,13 +113,7 @@ function handleLogin(event) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            const currentPage = window.location.pathname; // current path
-            if (currentPage.includes('welcome.php')) {
-                window.location.href = 'index.php';
-            } else {
-                window.location.reload();
-            }
-            // window.location.href = 'index.php';
+            window.location.href = 'index.php';
         } else {
             errorMessage.style.display = 'block';
             errorMessage.textContent = data.error;

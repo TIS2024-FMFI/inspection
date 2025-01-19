@@ -8,7 +8,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
-    height: 100vh; /* You can remove if you want unlimited height */
+    height: auto;
+    max-width: 100%;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Отключить горизонтальную прокрутку */
 }
 
 /* ============================================================
@@ -22,34 +28,37 @@ header {
     align-items: center;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     z-index: 1000;
     box-sizing: border-box;
-    flex-wrap: wrap; /* Responsive for smaller screens */
+    flex-wrap: wrap; /* Wrap content for smaller screens */
 }
 
-/* Logo */
 header .logo {
     height: 50px;
     flex-shrink: 0;
 }
 
-/* Container for header buttons, including dropdown menu triggers */
-.header-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.history-title {
+    font-size: 32px;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    flex-grow: 1;
 }
 
-/* Profile menu container & avatar */
-.profile-menu-container {
-    position: relative;
-    display: inline-block;
+.homepage-container {
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    gap: 10px; /* Промежуток между иконкой и текстом */
+    justify-content: center; /* Центрирование всего блока */
 }
+
+
 .profile-pic {
+    display: block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -58,7 +67,27 @@ header .logo {
     border: 1px solid #ddd;
 }
 
-/* Dropdown menu, hidden by default */
+.profile-pic-mobile {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profile-menu-container {
+    position: relative;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Profile menu */
 .profile-menu {
     position: absolute;
     top: 50px;
@@ -66,18 +95,19 @@ header .logo {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     min-width: 150px;
     z-index: 999;
 }
+
 .profile-menu.show {
     display: flex;
 }
 
 .profile-username {
-    margin: 0px;
+    margin: 0;
     padding: 10px;
     font-weight: bold;
     color: #555;
@@ -90,40 +120,9 @@ header .logo {
     color: #333;
     transition: background-color 0.3s;
 }
+
 .profile-menu-item:hover {
     background-color: #f0f0f0;
-}
-
-/* Sign-in button if not logged in */
-.sign-in-button {
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    background-color: #ddd;
-    color: black;
-    border: none;
-    border-radius: 20px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    margin-left: auto;
-    flex-shrink: 0;
-}
-.sign-in-button:hover {
-    background-color: #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive styling for smaller screens */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .sign-in-button {
-        font-size: 13px;
-        padding: 8px 16px;
-        margin: 10px 0 0;
-        align-self: flex-end;
-    }
 }
 
 /* ============================================================
@@ -133,23 +132,13 @@ main {
     margin-top: 80px; /* Space for fixed header */
     min-height: calc(100vh - 80px);
     padding: 20px;
+    height: auto;
 }
 
 .content-container {
-    max-width: 1200px;
+    max-width: 100%; /* Максимальная ширина */
     margin: 0 auto;
     padding: 20px;
-}
-
-h1 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #333;
 }
 
 .history-list {
@@ -161,7 +150,8 @@ p {
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
 }
 
 .history-item {
@@ -173,11 +163,18 @@ p {
     padding: 10px;
     border-radius: 5px;
     font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .history-item p {
     margin: 0;
     padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* Переносим текст внутри контейнера */
+    white-space: normal; /* Отключаем однострочный текст */
+    max-width: 100%; /* Убедитесь, что текст не выйдет за границы */
 }
 
 .history-item a {
@@ -189,33 +186,64 @@ p {
     text-decoration: underline;
 }
 
-.history-title {
-    font-size: 32px;
-    padding: 0;
-    margin: 0px 0;
-    color: #333;
-}
+/* Responsive Styling */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 
-.history-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
-.history-right {
-    margin-left: auto;
-}
+    .profile-pic {
+        display: none; /* Hide large icon */
+    }
 
-.history-details {
-    text-align: left;
-    flex-grow: 1;
-}
+    .profile-pic-mobile {
+        display: block; /* Show mobile icon */
+    }
 
-.history-link {
-    margin-left: auto;
-    text-align: right;
-}
+    .history-title {
+        font-size: 18px;
+        text-align: center;
+    }
 
-.history-link a:hover {
-    text-decoration: underline;
+    .profile-menu {
+        top: calc(100% + 5px); /* Place menu below icon */
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 150px;
+    }
+
+    .history-list {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .content-container {
+        padding: 10px; /* Уменьшаем отступы для мобильных экранов */
+    }
+
+    .history-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .history-details,
+    .history-link {
+        text-align: left;
+    }
+
+    .history-item p {
+        font-size: 12px; /* Уменьшаем размер текста */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+
 }

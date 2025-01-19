@@ -29,6 +29,7 @@ try {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History</title>
     <link rel="stylesheet" href="history.css">
 </head>
@@ -36,25 +37,22 @@ try {
 
 <header>
     <img src="images/logo.png" alt="Logo" class="logo">
-    <h2 class="history-title">Scan History</h2>
+    <div class="homepage-container">
+        <h2 class="history-title">Scan History</h2>
+        <!-- Мобильная версия иконки -->
+        <img src="images/profile-pic.png" alt="Profile Picture" class="profile-pic-mobile" onclick="toggleProfileMenu()">
+    </div>
     <div class="header-buttons">
-        <?php if ($isLoggedIn): ?>
-            <div class="profile-menu-container">
-                <img src="images/profile-pic.png"
-                     alt="Profile Picture"
-                     class="profile-pic"
-                     onclick="toggleProfileMenu()">
-
-                <div class="profile-menu" id="profile-menu">
-                    <p class="profile-username"><?php echo $username; ?></p>
-                    <a href="index.php" class="profile-menu-item">Home</a>
-                    <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
-                    <a href="logout.php" class="profile-menu-item">Logout</a>
-                </div>
+        <!-- Десктопная версия иконки -->
+        <div class="profile-menu-container">
+            <img src="images/profile-pic.png" alt="Profile Picture" class="profile-pic" onclick="toggleProfileMenu()">
+            <div class="profile-menu" id="profile-menu">
+                <p class="profile-username"><?php echo $username; ?></p>
+                <a href="index.php" class="profile-menu-item">Home</a>
+                <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
+                <a href="logout.php" class="profile-menu-item">Logout</a>
             </div>
-        <?php else: ?>
-            <button class="sign-in-button" onclick="openModal('login-modal')">Sign In</button>
-        <?php endif; ?>
+        </div>
     </div>
 </header>
 <main>
