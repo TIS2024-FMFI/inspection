@@ -1,11 +1,11 @@
 import os
 import time
-import pymysql
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
+import pymysql # type: ignore
+from selenium import webdriver # type: ignore
+from selenium.webdriver.common.by import By # type: ignore
+from selenium.webdriver.support.ui import WebDriverWait # type: ignore
+from selenium.webdriver.support import expected_conditions as EC # type: ignore
+from selenium.webdriver.chrome.options import Options # type: ignore
 from lxml import etree  # for XML parsing
 
 # ------------------------------------------------------------------------------

@@ -54,6 +54,7 @@ CREATE TABLE `product_history` (
     `status` INT NOT NULL,
     `user_id` INT NOT NULL,
     `barcode` VARCHAR(255) NOT NULL,
+    `name` VARCHAR(255),
     `product_link` VARCHAR(255) NOT NULL,
     `date` DATE NOT NULL,
     `time` TIME NOT NULL,

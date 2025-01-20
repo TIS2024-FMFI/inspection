@@ -257,7 +257,7 @@ function initScanner() {
         }
     
         // 3. Confidence threshold (tweak this value to suit your use case)
-        const errorThreshold = 0.15;
+        const errorThreshold = 0.10;
     
         // 4. If average error is too high, ignore this detection
         if (avgError > errorThreshold) {
