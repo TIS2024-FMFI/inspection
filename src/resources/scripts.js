@@ -257,7 +257,7 @@ function initScanner() {
         }
     
         // 3. Confidence threshold (tweak this value to suit your use case)
-        const errorThreshold = 0.15;
+        const errorThreshold = 0.10;
     
         // 4. If average error is too high, ignore this detection
         if (avgError > errorThreshold) {
@@ -370,7 +370,6 @@ function initScanner() {
                             </div>
                         `;
                         $(document).ready(function () {
-                            // Handle form submission
                             $('#add-product-form').on('submit', function (e) {
                                 e.preventDefault(); // Prevent the default form submission
                                 // Collect form data
