@@ -370,7 +370,6 @@ function initScanner() {
                             </div>
                         `;
                         $(document).ready(function () {
-                            // Handle form submission
                             $('#add-product-form').on('submit', function (e) {
                                 e.preventDefault(); // Prevent the default form submission
                                 // Collect form data
