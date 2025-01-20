@@ -1,0 +1,50 @@
+services:
+  server:
+    build:
+      context: .
+    ports:
+      - "9000:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=rootpassword
+      - DB_NAME=safety_app
+      - PYTHONPATH=/app/python
+      - PYTHON_VENV=/opt/venv/bin
+      - CHROME_DRIVER_PATH=/usr/bin/chromedriver
+    volumes:
+      - ./src/resources:/var/www/html/
+      - ./src/resources:/app/python/
+      - ~/.cache/selenium:/home/www-data/.cache/selenium
+    networks:
+      - app-network
+
+  db:
+    image: mysql:8
+    environment:
+      - MYSQL_DATABASE=safety_app
+      - MYSQL_ROOT_PASSWORD=rootpassword  
+      - MYXXSQL_USER=user                   
+      - MYSQL_PASSWORD=userpass 
+    ports:
+      - "3306:3306" 
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./src/resources/db:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app-network
+
+volumes:
+  mysql_data:
+
+networks:
+  app-network:
+    driver: bridge

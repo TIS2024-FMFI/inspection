@@ -1,0 +1,360 @@
+/* General Styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+header .logo {
+    height: 50px;
+    flex-shrink: 0;
+}
+
+header .sign-in-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #ddd;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+header .sign-in-button:hover {
+    background-color: #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .sign-in-button {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.welcome-image {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.welcome-text {
+    text-align: left;
+    max-width: 500px;
+}
+
+.welcome-text ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.welcome-text strong {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.register-button,
+.continue-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.register-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+.continue-button {
+    background-color: #ddd;
+    color: #333;
+}
+
+.continue-button:hover {
+    background-color: #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* ============================================================
+   Tabs and Forms Styles
+   ============================================================ */
+.auth-tabs {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.auth-tabs li {
+    flex: 1;
+    text-align: center;
+}
+
+.auth-tabs li a {
+    display: inline-block;
+    padding: 10px 0;
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.auth-tabs li.active a {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.auth-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.auth-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.google-auth-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.google-auth-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-auth-btn:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================
+   Divider Styles
+   ============================================================ */
+.divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .welcome-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome-image {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text {
+        max-width: 100%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .register-button,
+    .continue-button {
+        width: 100%;
+    }
+}

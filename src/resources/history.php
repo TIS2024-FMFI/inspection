@@ -3,7 +3,7 @@ session_start();
 
 // If the user is not logged in, redirect to the main page
 if (!isset($_SESSION['user_id'])) {
-    header('Location: index.php');
+    header('Location: welcome.php');
     exit;
 }
 
@@ -13,10 +13,10 @@ $email = isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : 'No 
 $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : '';
 
 // Database connection
-$host = 'localhost';
-$dbname = 'safety_app';
-$username_db = 'root';
-$password_db = '';
+$host = getenv('DB_HOST') ?: 'localhost';
+$dbname = getenv('DB_NAME') ?: 'safety_app';
+$username_db = getenv('DB_USER') ?: 'root';
+$password_db = getenv('DB_PASSWORD') ?: '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username_db, $password_db);
@@ -39,16 +39,14 @@ try {
     <img src="images/logo.png" alt="Logo" class="logo">
     <div class="homepage-container">
         <h2 class="history-title">Scan History</h2>
-        <!-- Мобильная версия иконки -->
         <img src="images/profile-pic.png" alt="Profile Picture" class="profile-pic-mobile" onclick="toggleProfileMenu()">
     </div>
     <div class="header-buttons">
-        <!-- Десктопная версия иконки -->
         <div class="profile-menu-container">
             <img src="images/profile-pic.png" alt="Profile Picture" class="profile-pic" onclick="toggleProfileMenu()">
             <div class="profile-menu" id="profile-menu">
                 <p class="profile-username"><?php echo $username; ?></p>
-                <a href="index.php" class="profile-menu-item">Home</a>
+                <a href="welcome.php" class="profile-menu-item">Home</a>
                 <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
                 <a href="logout.php" class="profile-menu-item">Logout</a>
             </div>
@@ -59,7 +57,6 @@ try {
     <div class="content-container">
         <div class="history-list">
             <?php
-            // Fetch history items for the logged-in user
             $user_id = $_SESSION['user_id'];
             try {
                 $stmt = $pdo->prepare("SELECT date, time, barcode, product_link, status FROM product_history WHERE user_id = :user_id");

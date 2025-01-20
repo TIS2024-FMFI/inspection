@@ -1,8 +1,8 @@
 import os
 from sys import stderr
 import requests
-from bs4 import BeautifulSoup
-import pymysql
+from bs4 import BeautifulSoup # type: ignore
+import pymysql # type: ignore
 from datetime import datetime
 
 print("Starting scraping process of the Slovak website, please stand tight...")
@@ -10,10 +10,10 @@ print("Starting scraping process of the Slovak website, please stand tight...")
 def connect_to_db():
     try:
         return pymysql.connect(
-            host='localhost',
-            user='root',
-            password='',
-            database='safety_app',
+            host=os.getenv('DB_HOST', 'localhost'),
+            user=os.getenv('DB_USER', 'root'),
+            password=os.getenv('DB_PASSWORD', ''),
+            database=os.getenv('DB_NAME', 'safety_app'),
             cursorclass=pymysql.cursors.DictCursor
         )
     except pymysql.MySQLError as e:
@@ -182,5 +182,4 @@ def scrape_all_pages():
             current_url = None  # Stop the loop if an error occurs
 
 # Start scraping
-
 scrape_all_pages()

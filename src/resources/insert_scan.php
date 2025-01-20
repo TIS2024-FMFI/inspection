@@ -1,10 +1,9 @@
 <?php
 session_start();
-// Database connection
-$host = 'localhost';
-$dbname = 'safety_app';
-$username_db = 'root';
-$password_db = '';
+$host = getenv('DB_HOST') ?: 'localhost';
+$dbname = getenv('DB_NAME') ?: 'safety_app';
+$username_db = getenv('DB_USER') ?: 'root';
+$password_db = getenv('DB_PASSWORD') ?: '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username_db, $password_db);
@@ -22,8 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $date = date("Y-m-d");
     $time = date("H:i:s");
-
-
 
     $stmt = $pdo->prepare("INSERT INTO product_history (product_id, user_id, barcode, product_link, date, time, status) 
                                VALUES (:product_id, :user_id, :barcode, :product_link, :date, :time, :status)");

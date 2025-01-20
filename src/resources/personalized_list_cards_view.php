@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header('Location: index.php');
+    header('Location: welcome.php');
     exit;
 }
 require_once 'db/config.php';
@@ -189,85 +189,3 @@ textarea.edit-description {
         <p>No products found.</p>
     <?php endif; ?>
 </div>
-
-
-
-<!-- <script>
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.delete-btn').forEach(function (button) {
-        button.addEventListener('click', function () {
-            const card = button.closest('.product-card'); // Найти карточку, в которой находится кнопка
-            const productId = card.getAttribute('data-id'); // Получить ID продукта из data-id
-
-            // if (confirm('Are you sure you want to delete this product?')) {
-                fetch('delete_product.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json' // Сообщаем серверу, что данные в формате JSON
-                    },
-                    body: JSON.stringify({ id: productId }) // Отправляем ID продукта на сервер
-                })
-                .then(response => response.json()) // Обрабатываем JSON-ответ от сервера
-                .then(data => {
-                    if (data.success) {
-                        card.remove(); // Если удаление успешно, убираем карточку из DOM
-                    } else {
-                        alert('Failed to delete the product: ' + data.message); // Показываем ошибку
-                    }
-                })
-                .catch(error => console.error('Error:', error)); // Обрабатываем ошибки
-            // }
-        });
-    });
-});
-</script>
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('.edit-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const card = button.closest('.product-card');
-                card.querySelector('.view-mode').classList.add('hidden');
-                card.querySelector('.edit-mode').classList.remove('hidden');
-            });
-        });
-
-        document.querySelectorAll('.save-btn').forEach(button => {
-            button.addEventListener('click', async () => {
-                const card = button.closest('.product-card');
-                const id = card.dataset.id;
-                const name = card.querySelector('.edit-name').value;
-                const brand = card.querySelector('.edit-brand').value;
-                const description = card.querySelector('.edit-description').value;
-
-                // Send the data to the server to update
-                const response = await fetch('update_product.php', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ id, name, brand, description })
-                });
-
-                if (response.ok) {
-                    // Update the UI with the new values
-                    card.querySelector('h3').textContent = name;
-                    card.querySelector('.view-mode p:nth-child(3)').innerHTML = `<strong>Brand:</strong> ${brand}`;
-                    card.querySelector('.view-mode p:nth-child(4)').innerHTML = `<strong>Description:</strong> ${description}`;
-                    card.querySelector('.view-mode').classList.remove('hidden');
-                    card.querySelector('.edit-mode').classList.add('hidden');
-                } else {
-                    alert('Failed to save changes.');
-                }
-            });
-        });
-
-        document.querySelectorAll('.cancel-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const card = button.closest('.product-card');
-                card.querySelector('.view-mode').classList.remove('hidden');
-                card.querySelector('.edit-mode').classList.add('hidden');
-            });
-        });
-    });
-</script>
-<script src="scripts.js"></script> -->

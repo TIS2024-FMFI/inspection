@@ -8,10 +8,10 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
 
 
 // Connect to database
-$host = 'localhost';
-$dbname = 'safety_app';
-$user = 'root'; 
-$password = ''; 
+$host = getenv('DB_HOST') ?: 'localhost';
+$dbname = getenv('DB_NAME') ?: 'safety_app';
+$user = getenv('DB_USER') ?: 'root';
+$password = getenv('DB_PASSWORD') ?: '';
 
 try {
     $connect = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $password);
@@ -74,6 +74,7 @@ if (!$product) {
                     <p class="profile-username">
                         <?php echo htmlspecialchars($_SESSION['username'] ?? 'No username'); ?>
                     </p>
+                    <a href="welcome.php" class="profile-menu-item">Home</a> 
                     <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
                     <a href="history.php" class="profile-menu-item">History</a>
                     <a href="logout.php" class="profile-menu-item">Logout</a>
@@ -91,50 +92,50 @@ if (!$product) {
         
         <div class="card p-4 shadow-lg">
             <h4 class="mb-3">General Information</h4>
-            <p><strong>Category:</strong> <?php echo htmlspecialchars($product['product_category']); ?></p>
-            <p><strong>Brand:</strong> <?php echo htmlspecialchars($product['brand']); ?></p>
-            <p><strong>Model/Type Number:</strong> <?php echo htmlspecialchars($product['model_type_number']); ?></p>
-            <p><strong>Packaging Description:</strong> <?php echo htmlspecialchars($product['packaging_description']); ?></p>
-            <p><strong>Production Dates:</strong> <?php echo htmlspecialchars($product['production_dates']); ?></p>
-            <p><strong>Country of Origin:</strong> <?php echo htmlspecialchars($product['country_of_origin']); ?></p>
-            <p><strong>Notifying Country:</strong> <?php echo htmlspecialchars($product['notifying_country']); ?></p>
-            <p><strong>Alert Number:</strong> <?php echo htmlspecialchars($product['alert_number']); ?></p>
-            <p><strong>Type of Alert:</strong> <?php echo htmlspecialchars($product['type_of_alert']); ?></p>
-            <p><strong>Alert Type:</strong> <?php echo htmlspecialchars($product['alert_type']); ?></p>
-            <p><strong>Type:</strong> <?php echo htmlspecialchars($product['type']); ?></p>
-            <p><strong>Alert Submitted By:</strong> <?php echo htmlspecialchars($product['alert_submitted_by']); ?></p>
+            <p><strong>Category:</strong> <?php echo htmlspecialchars($product['product_category'] ?? ''); ?></p>
+            <p><strong>Brand:</strong> <?php echo htmlspecialchars($product['brand'] ?? ''); ?></p>
+            <p><strong>Model/Type Number:</strong> <?php echo htmlspecialchars($product['model_type_number'] ?? ''); ?></p>
+            <p><strong>Packaging Description:</strong> <?php echo htmlspecialchars($product['packaging_description'] ?? ''); ?></p>
+            <p><strong>Production Dates:</strong> <?php echo htmlspecialchars($product['production_dates'] ?? ''); ?></p>
+            <p><strong>Country of Origin:</strong> <?php echo htmlspecialchars($product['country_of_origin'] ?? ''); ?></p>
+            <p><strong>Notifying Country:</strong> <?php echo htmlspecialchars($product['notifying_country'] ?? ''); ?></p>
+            <p><strong>Alert Number:</strong> <?php echo htmlspecialchars($product['alert_number'] ?? ''); ?></p>
+            <p><strong>Type of Alert:</strong> <?php echo htmlspecialchars($product['type_of_alert'] ?? ''); ?></p>
+            <p><strong>Alert Type:</strong> <?php echo htmlspecialchars($product['alert_type'] ?? ''); ?></p>
+            <p><strong>Type:</strong> <?php echo htmlspecialchars($product['type'] ?? ''); ?></p>
+            <p><strong>Alert Submitted By:</strong> <?php echo htmlspecialchars($product['alert_submitted_by'] ?? ''); ?></p>
             <p><strong>Counterfeit:</strong> <?php echo $product['counterfeit'] ? 'Yes' : 'No'; ?></p>
             <hr>
             <h4 class="mb-3">Risk Information</h4>
-            <p><strong>Risk Type: </strong> <?php echo htmlspecialchars($product['risk_type']); ?></p>
-            <p><strong>Hazard Type: </strong> <?php echo htmlspecialchars($product['hazard_type']); ?></p>
-            <p><strong>Hazard Causes: </strong> <?php echo htmlspecialchars($product['hazard_causes']); ?></p>
-            <p><strong>Risk Description: </strong> <?php echo htmlspecialchars($product['risk_description']); ?></p>
-            <p><strong>Risk Legal Provision: </strong> <?php echo htmlspecialchars($product['risk_legal_provision']); ?></p>
+            <p><strong>Risk Type: </strong> <?php echo htmlspecialchars($product['risk_type'] ?? ''); ?></p>
+            <p><strong>Hazard Type: </strong> <?php echo htmlspecialchars($product['hazard_type'] ?? ''); ?></p>
+            <p><strong>Hazard Causes: </strong> <?php echo htmlspecialchars($product['hazard_causes'] ?? ''); ?></p>
+            <p><strong>Risk Description: </strong> <?php echo htmlspecialchars($product['risk_description'] ?? ''); ?></p>
+            <p><strong>Risk Legal Provision: </strong> <?php echo htmlspecialchars($product['risk_legal_provision'] ?? ''); ?></p>
             
             <hr>
             <h4 class="mb-3">Measures Taken</h4>
-            <p><strong>Measures Operators:</strong> <?php echo htmlspecialchars($product['measures_operators']); ?></p>
-            <p><strong>Measures Authorities:</strong> <?php echo htmlspecialchars($product['measures_authorities']); ?></p>
-            <p><strong>Compulsory Measures:</strong> <?php echo htmlspecialchars($product['compulsory_measures']); ?></p>
-            <p><strong>Voluntary Measures:</strong> <?php echo htmlspecialchars($product['voluntary_measures']); ?></p>
-            <p><strong>Found and Measures Taken In:</strong> <?php echo htmlspecialchars($product['found_and_measures_taken_in']); ?></p>
+            <p><strong>Measures Operators:</strong> <?php echo htmlspecialchars($product['measures_operators'] ?? ''); ?></p>
+            <p><strong>Measures Authorities:</strong> <?php echo htmlspecialchars($product['measures_authorities'] ?? ''); ?></p>
+            <p><strong>Compulsory Measures:</strong> <?php echo htmlspecialchars($product['compulsory_measures'] ?? ''); ?></p>
+            <p><strong>Voluntary Measures:</strong> <?php echo htmlspecialchars($product['voluntary_measures'] ?? ''); ?></p>
+            <p><strong>Found and Measures Taken In:</strong> <?php echo htmlspecialchars($product['found_and_measures_taken_in'] ?? ''); ?></p>
 
             <hr>
             <h4 class="mb-3">Additional Details</h4>
-            <p><strong>OECD Portal Category:</strong> <?php echo htmlspecialchars($product['oecd_portal_category']); ?></p>
-            <p><strong>Recall Code:</strong> <?php echo htmlspecialchars($product['recall_code']); ?></p>
-            <p><strong>Company Recall Code:</strong> <?php echo htmlspecialchars($product['company_recall_code']); ?></p>
-            <p><strong>Company Recall Page:</strong> <a href="<?php echo htmlspecialchars($product['company_recall_page']); ?>" target="_blank">Link</a></p>
-            <p><strong>Case URL:</strong> <a href="<?php echo htmlspecialchars($product['case_url']); ?>" target="_blank">Link</a></p>
-            <p><strong>Barcode:</strong> <?php echo htmlspecialchars($product['barcode']); ?></p>
-            <p><strong>Batch Number:</strong> <?php echo htmlspecialchars($product['batch_number']); ?></p>
-            <p><strong>Published On:</strong> <?php echo htmlspecialchars($product['published_on']); ?></p>
+            <p><strong>OECD Portal Category:</strong> <?php echo htmlspecialchars($product['oecd_portal_category'] ?? ''); ?></p>
+            <p><strong>Recall Code:</strong> <?php echo htmlspecialchars($product['recall_code'] ?? ''); ?></p>
+            <p><strong>Company Recall Code:</strong> <?php echo htmlspecialchars($product['company_recall_code'] ?? ''); ?></p>
+            <p><strong>Company Recall Page:</strong> <a href="<?php echo htmlspecialchars($product['company_recall_page'] ?? ''); ?>" target="_blank">Link</a></p>
+            <p><strong>Case URL:</strong> <a href="<?php echo htmlspecialchars($product['case_url'] ?? ''); ?>" target="_blank">Link</a></p>
+            <p><strong>Barcode:</strong> <?php echo htmlspecialchars($product['barcode'] ?? ''); ?></p>
+            <p><strong>Batch Number:</strong> <?php echo htmlspecialchars($product['batch_number'] ?? ''); ?></p>
+            <p><strong>Published On:</strong> <?php echo htmlspecialchars($product['published_on'] ?? ''); ?></p>
 
             <?php if (!empty($product['images'])): ?>
                 <hr>
                 <h4 class="mb-3">Images</h4>
-                <img src="<?php echo htmlspecialchars($product['images']); ?>" class="img-fluid" alt="Product Image">
+                <img src="<?php echo htmlspecialchars($product['images'] ?? ''); ?>" class="img-fluid" alt="Product Image">
             <?php endif; ?>
 
         </div>
