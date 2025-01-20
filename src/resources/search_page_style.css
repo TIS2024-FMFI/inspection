@@ -6,13 +6,13 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
 }
 
 main {
-    padding-top: 80px; /* Учитываем высоту фиксированного заголовка */
+    padding-top: 80px;
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
@@ -144,67 +144,17 @@ header .logo {
     background-color: #f0f0f0;
 }
 
+.profile-username {
+    margin: 0px;
+    padding: 10px;
+    font-weight: bold;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
+
 .no-wrap {
     white-space: nowrap;
 }
-
-/*!* ============================================================*/
-/*   Form Styles*/
-/*============================================================ *!*/
-
-/*form {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    gap: 10px;*/
-/*    padding: 15px;*/
-/*    flex-wrap: wrap; !* Перенос строк для мобильных экранов *!*/
-/*}*/
-
-/*form .form-control {*/
-/*    width: 250px; !* Ширина поля ввода *!*/
-/*    height: 40px;*/
-/*    padding: 0 10px;*/
-/*    border-radius: 5px;*/
-/*    font-size: 16px;*/
-/*}*/
-
-/*form .btn {*/
-/*    height: 40px;*/
-/*    padding: 0 20px;*/
-/*    font-size: 16px;*/
-/*    border-radius: 5px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*form select {*/
-/*    height: 40px;*/
-/*    padding: 0 10px;*/
-/*    font-size: 16px;*/
-/*    border-radius: 5px;*/
-/*    align-self: flex-start; !* Расположение под кнопкой *!*/
-/*}*/
-
-
-/*form input[type="text"],*/
-/*form select,*/
-/*form button {*/
-/*    flex: 1; !* Элементы равной ширины *!*/
-/*    height: 40px;*/
-/*    padding: 0 10px;*/
-/*    border-radius: 5px;*/
-/*    font-size: 14px;*/
-/*}*/
-
-/*form button {*/
-/*    background-color: #007bff;*/
-/*    color: #fff;*/
-/*    border: none;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*form button:hover {*/
-/*    background-color: #0056b3;*/
-/*}*/
 
 /* ============================================================
    Card Styles
@@ -275,7 +225,7 @@ header .logo {
 ============================================================ */
 
 .profile-pic-mobile {
-    display: none; /* По умолчанию скрыта */
+    display: none;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -297,26 +247,26 @@ header .logo {
     }
 
     main {
-        padding-top: 100px; /* Увеличиваем отступ для мобильных экранов */
+        padding-top: 100px;
     }
 
 
     .profile-pic {
-        display: none; /* Скрываем десктопную иконку */
+        display: none;
     }
 
     .profile-pic-mobile {
-        display: block; /* Показываем мобильную версию */
+        display: block;
     }
 
     .homepage-container {
         justify-content: flex-start;
     }
     .profile-menu-container {
-        flex-direction: row; /* Ensure proper alignment for title and icon */
+        flex-direction: row;
     }
     h2.homepage-title {
-        font-size: 18px; /* Smaller font size for mobile */
+        font-size: 18px;
     }
 
     form {
@@ -325,16 +275,16 @@ header .logo {
     }
 
     form .form-control {
-        width: 90%; /* Растягиваем поле ввода */
+        width: 90%;
     }
 
     form .btn {
-        align-self: flex-end; /* Кнопка справа */
+        align-self: flex-end;
         width: auto;
     }
 
     form select {
-        align-self: flex-start; /* Расположение слева */
+        align-self: flex-start;
     }
 
     .card {
@@ -342,14 +292,14 @@ header .logo {
     }
 
     .card-img-top {
-        height: 120px; /* Уменьшаем высоту изображения на мобильных устройствах */
+        height: 120px;
     }
 
     .homepage-title {
-        font-size: 20px; /* Уменьшаем размер текста */
+        font-size: 20px;
     }
 
     .no-wrap {
-        white-space: normal; /* Разрешает перенос текста на маленьких экранах */
+        white-space: normal;
     }
 }

@@ -74,6 +74,7 @@ if (!$product) {
                     <p class="profile-username">
                         <?php echo htmlspecialchars($_SESSION['username'] ?? 'No username'); ?>
                     </p>
+                    <a href="welcome.php" class="profile-menu-item">Home</a> 
                     <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
                     <a href="history.php" class="profile-menu-item">History</a>
                     <a href="logout.php" class="profile-menu-item">Logout</a>

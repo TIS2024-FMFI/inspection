@@ -1,5 +1,5 @@
 /* ============================================================
-   Общие стили для body, шрифтов
+   Main Body
    ============================================================ */
 body {
     font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@ body {
 }
 
 /* ============================================================
-   Header Styles (Стили шапки)
+   Header Styles
    ============================================================ */
 header {
     width: 100%;
@@ -129,15 +129,13 @@ header .logo {
 .homepage-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Промежуток между заголовком и иконкой */
+    gap: 10px;
 }
 
-/* Десктопная версия: показываем большую иконку */
 .profile-pic {
     display: block;
 }
 
-/* Мобильная версия: показываем маленькую иконку возле Homepage */
 .profile-pic-mobile {
     display: none;
     width: 30px;
@@ -147,7 +145,6 @@ header .logo {
     cursor: pointer;
 }
 
-/* Меню для десктопной версии */
 .profile-menu-container {
     position: relative;
 }
@@ -161,13 +158,12 @@ header .logo {
         gap: 10px;
     }
 
-    /* Мобильная версия: маленькая иконка вместо большой */
     .profile-pic {
-        display: none; /* Скрываем большую иконку на мобильной версии */
+        display: none;
     }
 
     .profile-pic-mobile {
-        display: block; /* Показываем маленькую иконку */
+        display: block;
         width: 30px;
         height: 30px;
         border-radius: 50%;
@@ -178,38 +174,37 @@ header .logo {
     .homepage-container {
         display: flex;
         align-items: center;
-        gap: 10px; /* Промежуток между текстом и иконкой */
+        gap: 10px;
     }
 
     .homepage-title {
-        font-size: 18px; /* Уменьшаем размер заголовка */
+        font-size: 18px;
         margin-top: 5px;
         text-align: center;
     }
 
-    /* Меню для мобильной версии */
     .profile-menu {
         position: absolute;
-        top: calc(100% + 5px); /* Расположить чуть ниже иконки */
-        left: 50%; /* Центрируем относительно иконки */
-        transform: translateX(-50%); /* Сдвигаем для точного центрирования */
+        top: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
         background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        display: none; /* Скрыто по умолчанию */
+        display: none;
         flex-direction: column;
         min-width: 150px;
-        z-index: 999; /* Поверх остальных элементов */
+        z-index: 999;
     }
 
     .profile-menu.show {
-        display: flex; /* Показываем меню при клике */
+        display: flex;
     }
 
     .profile-pic-mobile {
-        position: relative; /* Для корректной привязки меню */
-        z-index: 1000; /* Поверх других элементов */
+        position: relative;
+        z-index: 1000;
     }
 
     .profile-menu-container {
@@ -236,13 +231,12 @@ main {
     padding: 20px;
 }
 
-/* Скрытый таб */
 .hidden {
     display: none !important;
 }
 
 /* ============================================================
-   Сетка продуктов (product-grid), карточки (product-card)
+   product-grid, product-card
    ============================================================ */
 .product-grid {
     display: grid;

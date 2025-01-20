@@ -115,13 +115,12 @@ function handleLogin(event) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            const currentPage = window.location.pathname; // current path
-            if (currentPage.includes('welcome.php')) {
-                window.location.href = 'index.php';
+            const currentPage = window.location.pathname;
+            if (currentPage.includes('index.php')) {
+                window.location.href = 'welcome.php';
             } else {
                 window.location.reload();
             }
-            // window.location.href = 'index.php';
         } else {
             errorMessage.style.display = 'block';
             errorMessage.textContent = data.error;
@@ -167,17 +166,15 @@ function handleRegister(event) {
 }
 
 
-// Проверка на недопустимые символы
 function validateSearchInput(input) {
-    const invalidCharacters = /[<>{};]/; // Определяем запрещенные символы
+    const invalidCharacters = /[<>{};]/;
     if (invalidCharacters.test(input)) {
         showError("Invalid input detected. Please avoid using special characters.");
         return false;
     }
-    return true; // Ввод корректен
+    return true;
 }
 
-// Показать всплывающее окно с сообщением
 function showError(message) {
     const errorPopup = document.getElementById("error-popup");
     const errorMessage = document.getElementById("error-message");
@@ -186,25 +183,19 @@ function showError(message) {
     errorPopup.style.display = "block";
 }
 
-// Скрыть всплывающее окно
 function closeErrorPopup() {
     const errorPopup = document.getElementById("error-popup");
     errorPopup.style.display = "none";
 }
 
-// Обработчик события submit для формы
 document.getElementById("search-form").addEventListener("submit", function (event) {
-    event.preventDefault(); // Останавливаем стандартное поведение отправки формы
+    event.preventDefault();
 
     const searchInput = document.getElementById("search-input").value.trim();
-
-    // Проверяем ввод на недопустимые символы
     if (!validateSearchInput(searchInput)) {
-        return; // Прерываем выполнение, если ввод некорректен
+        return;
     }
-
-    // Если ввод корректен, отправляем форму
-    this.submit(); // Отправляет форму на сервер
+    this.submit();
 });
 
 
@@ -225,6 +216,20 @@ function initScanner() {
         locate: true,
         multiple: false,
         numOfWorkers: 4,
+        debug: {
+            drawBoundingBox: true,
+            showFrequency: true,
+            drawScanline: true,
+            showPattern: true
+          },
+        halfSample: false,
+        patchSize: "medium",
+        area: {
+            top: "25%",    // start scanning 25% from the top
+            right: "25%",  // 25% from the right
+            left: "25%",   // 25% from the left
+            bottom: "25%"  // 25% from the bottom
+          }
     }, (err) => {
         if (err) {
             document.getElementById("result").textContent = "Camera was not found";
@@ -235,14 +240,42 @@ function initScanner() {
     });
 
 
-    Quagga.onDetected((data) => {
-        const barcode = data.codeResult.code;
+    Quagga.onDetected((result) => {
+        // 1. Safeguard checks to ensure result and code exist
+        if (!result || !result.codeResult || !result.codeResult.code) {
+            return;
+        }
+    
+        // 2. Calculate the average error of decoded characters
+        const errors = result.codeResult.decodedCodes
+            .filter((c) => c.error !== undefined)
+            .map((c) => c.error);
+    
+        let avgError = 0;
+        if (errors.length) {
+            avgError = errors.reduce((sum, val) => sum + val, 0) / errors.length;
+        }
+    
+        // 3. Confidence threshold (tweak this value to suit your use case)
+        const errorThreshold = 0.15;
+    
+        // 4. If average error is too high, ignore this detection
+        if (avgError > errorThreshold) {
+            console.log("Ignoring low-confidence scan, avgError=", avgError);
+            return;
+        }
+    
+        // If we reach here, detection passed the confidence filter
+        const barcode = result.codeResult.code;
+    
+        // Stop scanning once a confident result is found
         Quagga.stop();
-
+    
+        // Clear any old messages
         document.getElementById("result").textContent = ``;
         document.getElementById("camera").innerHTML = `Loading data ...`;
-
-
+    
+        // 5. Continue with your AJAX call and the rest of your logic
         $.ajax({
             url: "get_data.php",
             method: "GET",
@@ -255,23 +288,21 @@ function initScanner() {
                     let status = data.status === "defective" ? 1 : 0;
                     let product_id = data.data?.[0]?.product_id || null;
                     let product_link = "ProductPage.php?id=0";  
-
+    
                     insertScanToHistory(barcode, product_id, product_link, status);
-
-
-
+    
                     if (data.status === "defective") {
                         const product = data.data[0]; // Access the first (and presumably only) product
-                    const details = `
-                        <div class="product-card">
-                            <h2>Defective</h2>
-                            <p><strong>Name:</strong> ${product.product_name}</p>
-                            <p><strong>Reported date:</strong> ${product.published_on}</p>
-                            <p><strong>Hazard Causes:</strong> ${product.hazard_causes}</p>
-                            <p><strong>Barcode: </strong>${product.barcode} </p>
-                            <button id="see-details">See Details</button>
-                            <div id="additional-info" style="display: none;">
-                                <p><strong>Category:</strong> ${product.product_category}</p>
+                        const details = `
+                            <div class="product-card">
+                                <h2>Defective</h2>
+                                <p><strong>Name:</strong> ${product.product_name}</p>
+                                <p><strong>Reported date:</strong> ${product.published_on}</p>
+                                <p><strong>Hazard Causes:</strong> ${product.hazard_causes}</p>
+                                <p><strong>Barcode: </strong>${product.barcode} </p>
+                                <button id="see-details">See Details</button>
+                                <div id="additional-info" style="display: none;">
+                                    <p><strong>Category:</strong> ${product.product_category}</p>
                                     <p><strong>Description:</strong> ${product.product_description}</p>
                                     <p><strong>Brand:</strong> ${product.brand}</p>
                                     <p><strong>Alert Number:</strong> ${product.alert_number}</p>
@@ -304,41 +335,41 @@ function initScanner() {
                                     <p><strong>Batch number:</strong> ${product.batch_number}</p>
                                     <p><strong>Production dates:</strong> ${product.production_dates}</p>
                                     <p><strong>Images:</strong> ${product.images}</p>
+                                </div>
                             </div>
-                        </div>
-                    `;
-                    document.getElementById("camera").innerHTML = details;
-
-                    // Toggle details visibility
-                    document.getElementById("see-details").addEventListener("click", function () {
-                        const additionalInfo = document.getElementById("additional-info");
-                        if (additionalInfo.style.display === "none") {
-                            additionalInfo.style.display = "block";
-                            this.textContent = "Hide Details";
-                        } else {
-                            additionalInfo.style.display = "none";
-                            this.textContent = "See Details";
-                        }
-                    });
+                        `;
+                        document.getElementById("camera").innerHTML = details;
+    
+                        // Toggle details visibility
+                        document.getElementById("see-details").addEventListener("click", function () {
+                            const additionalInfo = document.getElementById("additional-info");
+                            if (additionalInfo.style.display === "none") {
+                                additionalInfo.style.display = "block";
+                                this.textContent = "Hide Details";
+                            } else {
+                                additionalInfo.style.display = "none";
+                                this.textContent = "See Details";
+                            }
+                        });
                     }
                     else if (data.status === "exists_in_personalized") {
-                          document.getElementById("camera").innerHTML = `<p>${data.message}</p>`;
+                        document.getElementById("camera").innerHTML = `<p>${data.message}</p>`;
                     }
                     else if (data.status === "not_found") {
                         document.getElementById("camera").innerHTML = `
-                        <div class="product-card">
-                            <h3>Not Found</h3>  
-                            <p>Barcode: ${barcode}</p>
-                            <form method="post" id="add-product-form">
+                            <div class="product-card">
+                                <h3>Not Found</h3>
+                                <p>Barcode: ${barcode}</p>
+                                <form method="post" id="add-product-form">
                                     <input type="text" id="name" name="name" placeholder="Name (mandatory)" required>
                                     <input type="text" id="description" name="description" placeholder="Description (optional)">
                                     <input type="text" id="brand" name="brand" placeholder="Brand (optional)">
                                     <button id="add-product">Add to personalized list</button>
                                     <button id="cancel" onclick="closeModal('scanner-modal')">Cancel</button>
                                 </form>
-                        </div>
-                    `;
-                    $(document).ready(function () {
+                            </div>
+                        `;
+                        $(document).ready(function () {
                             // Handle form submission
                             $('#add-product-form').on('submit', function (e) {
                                 e.preventDefault(); // Prevent the default form submission
@@ -359,7 +390,6 @@ function initScanner() {
                                         $('#camera').html('<p>Product added successfully.</p>');
                                     },
                                     error: function (jqXHR, textStatus, errorThrown) {
-                                        // Handle error response
                                         console.error('Error adding product:', textStatus, errorThrown);
                                         alert('There was an error adding the product. Please try again.');
                                     }
@@ -367,14 +397,13 @@ function initScanner() {
                             });
                         });
                         document.getElementById("cancel").addEventListener("click", function () {
-                            
+                            // You can add any cancel/close logic here
                         });
                     }
                 }
             },
             error: function () {
-                    document.getElementById("result").textContent = "Error loading data from the database.";
-                
+                document.getElementById("result").textContent = "Error loading data from the database.";
             }
         });
     });

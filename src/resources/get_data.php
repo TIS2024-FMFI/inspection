@@ -1,9 +1,8 @@
 <?php
-// Database connection
-$host = 'localhost';
-$dbname = 'safety_app';
-$username_db = 'root';
-$password_db = '';
+$host = getenv('DB_HOST') ?: 'localhost';
+$dbname = getenv('DB_NAME') ?: 'safety_app';
+$username_db = getenv('DB_USER') ?: 'root';
+$password_db = getenv('DB_PASSWORD') ?: '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username_db, $password_db);
@@ -14,7 +13,6 @@ try {
 
 try {
     $barcode = $_GET['barcode'] ?? '';
-
 
     $stmt = $pdo->prepare("SELECT * FROM defective_products WHERE barcode = :barcode");
     $stmt->bindParam(':barcode', $barcode, PDO::PARAM_STR);

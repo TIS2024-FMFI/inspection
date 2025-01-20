@@ -1,24 +1,35 @@
 # kontrola
 Verification of products
-
 ## Setup Instructions
-1. Clone the repository
 
-2. Create virtual enviroment for admin scanning.
-```
-python -m venv venv
-source venv/bin/activate
-```
+### Prerequisites
+- Docker Desktop installed on Windows
 
-3. User must have Chrome to open a WebDriver
+### Steps
+1. Open a command line interface.
+2. Run the following command to build and start the containers:
+    ```sh
+    docker-compose up --build -d
+    ```
+3. To shut down the containers, run:
+    ```sh
+    docker-compose down
+    ```
 
-4. In powershell enter:
-```
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-venv\Scripts\activate
-```
+## Modifying the Database
 
-5. Install dependencies
-```
-pip install -r requirements.txt
-```
+### Steps
+1. Open Docker Desktop.
+2. Navigate to the `inspection` container group.
+3. Select the `inspection-db-1` container.
+4. Open an Exec terminal.
+5. Connect to the MySQL database by running:
+    ```sh
+    mysql -h db -u root -p
+    ```
+6. Enter the root password when prompted.
+7. Switch to the `safety_app` database:
+    ```sh
+    USE safety_app;
+    ```
+8. You can now execute SQL commands to modify the database.

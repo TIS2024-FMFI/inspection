@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header('Location: index.php');
+    header('Location: welcome.php');
     exit;
 }
 // Database connection
@@ -37,26 +37,22 @@ try {
 <header>
     <img src="images/logo.png" alt="Logo" class="logo">
 
-    <!-- Контейнер для заголовка и мобильной иконки -->
     <div class="homepage-container">
         <h2 class="homepage-title personalized-list-title">Personalized List</h2>
-        <!-- Мобильная версия иконки -->
         <img src="images/profile-pic.png" alt="Profile Picture" class="profile-pic-mobile" onclick="toggleProfileMenu()">
     </div>
 
-    <!-- Десктопная версия иконки -->
     <div class="profile-header profile-menu-container">
         <img src="images/profile-pic.png"
              alt="Profile Picture"
              class="profile-pic"
              onclick="toggleProfileMenu()">
 
-        <!-- Меню профиля -->
         <div class="profile-menu" id="profile-menu">
             <p class="profile-username">
                 <?php echo htmlspecialchars($_SESSION['username'] ?? 'No username'); ?>
             </p>
-            <a href="index.php" class="profile-menu-item">Home</a>
+            <a href="welcome.php" class="profile-menu-item">Home</a>
             <a href="history.php" class="profile-menu-item">Scan History</a>
             <a href="logout.php" class="profile-menu-item">Logout</a>
         </div>
@@ -102,7 +98,7 @@ try {
                 background-color: #e0e0e0;
             }
         </style>
-        <div id="cards-view" class="toggle-option active" onclick="switchView('cards')">Cards View</div>
+        <div id="cards-view" class="toggle-option active" onclick="switchView('cards')">Card View</div>
         <div id="table-view" class="toggle-option" onclick="switchView('table')">Table View</div>
     </div>
     <div class="content" id="my-list">

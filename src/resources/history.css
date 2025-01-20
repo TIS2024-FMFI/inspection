@@ -14,7 +14,7 @@ body {
 
 html, body {
     width: 100%;
-    overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+    overflow-x: hidden;
 }
 
 /* ============================================================
@@ -33,7 +33,7 @@ header {
     left: 0;
     z-index: 1000;
     box-sizing: border-box;
-    flex-wrap: wrap; /* Wrap content for smaller screens */
+    flex-wrap: wrap;
 }
 
 header .logo {
@@ -51,9 +51,9 @@ header .logo {
 
 .homepage-container {
     display: flex;
-    align-items: center; /* Центрирование по вертикали */
-    gap: 10px; /* Промежуток между иконкой и текстом */
-    justify-content: center; /* Центрирование всего блока */
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }
 
 
@@ -129,14 +129,14 @@ header .logo {
    Main Content
 ============================================================ */
 main {
-    margin-top: 80px; /* Space for fixed header */
+    margin-top: 80px;
     min-height: calc(100vh - 80px);
     padding: 20px;
     height: auto;
 }
 
 .content-container {
-    max-width: 100%; /* Максимальная ширина */
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -172,9 +172,9 @@ main {
     margin: 0;
     padding: 0;
     word-wrap: break-word;
-    overflow-wrap: break-word; /* Переносим текст внутри контейнера */
-    white-space: normal; /* Отключаем однострочный текст */
-    max-width: 100%; /* Убедитесь, что текст не выйдет за границы */
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
 }
 
 .history-item a {
@@ -224,7 +224,7 @@ main {
     }
 
     .content-container {
-        padding: 10px; /* Уменьшаем отступы для мобильных экранов */
+        padding: 10px;
     }
 
     .history-item {
@@ -240,7 +240,7 @@ main {
     }
 
     .history-item p {
-        font-size: 12px; /* Уменьшаем размер текста */
+        font-size: 12px;
         word-wrap: break-word;
         overflow-wrap: break-word;
         white-space: normal;

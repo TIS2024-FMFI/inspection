@@ -1,5 +1,5 @@
 /* ============================================================
-   General Styles (Общие стили)
+   General Styles
    ============================================================ */
 
 /* Общие настройки */
@@ -12,7 +12,7 @@ body {
 }
 
 /* ============================================================
-   Header Styles (Стили шапки)
+   Header Styles
    ============================================================ */
 header {
     width: 100%;
@@ -150,9 +150,9 @@ header .logo {
 
 @media (max-width: 768px) {
     .profile-menu {
-        position: absolute; /* Меню будет накладываться поверх остальных элементов */
-        top: 60px; /* Отступ сверху, чтобы меню выпадало ниже аватара */
-        right: 10px; /* Сохранить положение по правому краю */
+        position: absolute;
+        top: 60px;
+        right: 10px;
         background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 8px;
@@ -160,11 +160,11 @@ header .logo {
         display: none;
         flex-direction: column;
         min-width: 150px;
-        z-index: 999; /* Меню поверх всех элементов */
+        z-index: 999;
     }
 
     .profile-menu.show {
-        display: flex; /* Отображение меню при открытии */
+        display: flex;
     }
 
     .profile-menu-item {
@@ -173,7 +173,7 @@ header .logo {
     }
 }
 /* ============================================================
-   Main Content (Основной контент)
+   Main Content
    ============================================================ */
 main {
     margin-top: 80px;
@@ -199,7 +199,7 @@ p {
 }
 
 .search-container {
-    margin: 20px 0;
+    margin: 20px 0 10px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -299,15 +299,13 @@ p {
 .homepage-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Промежуток между заголовком и иконкой */
+    gap: 10px;
 }
 
-/* Десктопная версия: показываем большую иконку */
 .profile-pic {
     display: block;
 }
 
-/* Мобильная версия: показываем маленькую иконку возле Homepage */
 .profile-pic-mobile {
     display: none;
     width: 30px;
@@ -317,7 +315,6 @@ p {
     cursor: pointer;
 }
 
-/* Меню для десктопной версии */
 .profile-menu-container {
     position: relative;
 }
@@ -342,7 +339,6 @@ p {
         display: none;
     }
 
-    /* Мобильная версия видима */
     .profile-pic-mobile {
         display: block;
     }
@@ -350,39 +346,37 @@ p {
     .homepage-container {
         display: flex;
         align-items: center;
-        gap: 10px; /* Промежуток между текстом и иконкой */
+        gap: 10px;
     }
 
-    /* Увеличиваем размер мобильной иконки */
     .homepage-title {
         font-size: 18px;
         margin-top: 5px;
         text-align: center;
     }
 
-    /* Меню привязывается к новой иконке */
     .profile-menu {
         position: absolute;
-        top: 100%; /* Расположить сразу под иконкой */
-        left: 50%; /* Центрируем относительно иконки */
-        transform: translateX(-50%); /* Сдвигаем на половину ширины для центрирования */
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
         background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        display: none; /* Скрыто по умолчанию */
+        display: none;
         flex-direction: column;
         min-width: 150px;
-        z-index: 999; /* Поверх остальных элементов */
+        z-index: 999;
     }
 
     .profile-menu.show {
-        display: flex; /* Показ меню при клике */
+        display: flex;
     }
 
     .profile-pic-mobile {
-        position: relative; /* Устанавливаем положение для связи с меню */
-        z-index: 1000; /* Чтобы иконка была поверх других элементов */
+        position: relative;
+        z-index: 1000;
     }
 
     .profile-menu-item {
@@ -395,6 +389,15 @@ p {
 
     .profile-menu-item:hover {
         background-color: #f0f0f0;
+    }
+
+    .search-container {
+        align-self: center;
+        width: 90%;
+        margin: 20px 0 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
 
     .search-container input {
@@ -421,7 +424,7 @@ p {
     }
 }
 /* ============================================================
-   Modal Styles (Модальные окна)
+   Modal Styles
    ============================================================ */
 .modal {
     display: none;
@@ -460,7 +463,7 @@ p {
 }
 
 /* ============================================================
-   Tabs and Forms (Вкладки и формы)
+   Tabs and Forms
    ============================================================ */
 .auth-tabs {
     display: flex;
@@ -549,7 +552,7 @@ p {
 }
 
 /* ============================================================
-   Divider (Разделитель)
+   Divider
    ============================================================ */
 .divider {
     margin: 20px 0;

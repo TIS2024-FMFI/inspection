@@ -6,7 +6,6 @@ $email = isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : 'No 
 $userRole = isset($_SESSION['role']) ? $_SESSION['role'] : null;
 $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : '';
 
-
 // Connect to database
 $host = getenv('DB_HOST') ?: 'localhost';
 $dbname = getenv('DB_NAME') ?: 'safety_app';
@@ -25,16 +24,14 @@ $searchQuery = '';
 $results = [];
 $sort = '';
 
-// Функция проверки строки на недопустимые символы
 function hasInvalidCharacters($input) {
-    return preg_match('/[<>{};]/', $input); // Проверяем на наличие символов
+    return preg_match('/[<>{};]/', $input);
 }
 
 if (isset($_GET['search'])) {
     $searchQuery = trim($_GET['search']);
     $sort = isset($_GET['sort']) ? trim($_GET['sort']) : 'name_asc';
 
-    // Проверка строки на недопустимые символы
     if (preg_match('/[<>{};]/', $searchQuery)) {
         echo "<script>
                 document.addEventListener('DOMContentLoaded', function() {
@@ -60,7 +57,7 @@ if (isset($_GET['search'])) {
     } elseif (empty($searchQuery)) {
         try {
             $sql = "SELECT id, product_name, published_on, hazard_causes, images FROM defective_products";
-            // Sort
+
             if ($sort == 'name_asc') {
                 $sql .= " ORDER BY product_name ASC";
             } elseif ($sort == 'name_desc') {
@@ -109,6 +106,7 @@ if (isset($_GET['search'])) {
                     <p class="profile-username">
                         <?php echo htmlspecialchars($_SESSION['username'] ?? 'No username'); ?>
                     </p>
+                    <a href="welcome.php" class="profile-menu-item">Home</a>
                     <a href="personalized_list.php" class="profile-menu-item">Personalized List</a>
                     <a href="history.php" class="profile-menu-item">History</a>
                     <a href="logout.php" class="profile-menu-item">Logout</a>

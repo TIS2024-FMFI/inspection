@@ -3,7 +3,6 @@ session_start();
 require_once 'db/config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Получаем данные из JSON
     $input = json_decode(file_get_contents('php://input'), true);
 
     if (isset($input['id'])) {
@@ -13,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $pdo->prepare("DELETE FROM user_submitted_products WHERE id = :id AND user_id = :user_id");
             $stmt->execute([
                 ':id' => $productId,
-                ':user_id' => $_SESSION['user_id'] // Убедимся, что пользователь удаляет свои продукты
+                ':user_id' => $_SESSION['user_id']
             ]);
 
             if ($stmt->rowCount() > 0) {

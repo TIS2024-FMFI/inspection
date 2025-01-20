@@ -1,8 +1,8 @@
 import os
 from sys import stderr
 import requests
-from bs4 import BeautifulSoup
-import pymysql
+from bs4 import BeautifulSoup # type: ignore
+import pymysql # type: ignore
 from datetime import datetime
 
 print("Starting scraping process of the Slovak website, please stand tight...")
@@ -182,5 +182,4 @@ def scrape_all_pages():
             current_url = None  # Stop the loop if an error occurs
 
 # Start scraping
-
 scrape_all_pages()

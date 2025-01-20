@@ -33,6 +33,10 @@ RUN mkdir -p /var/www/.cache/selenium \
     && chown -R www-data:www-data /var/www/.cache \
     && chmod -R 755 /var/www/.cache
 
+RUN mkdir -p /app/downloads && chown -R www-data:www-data /app/downloads
+
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
+RUN mkdir -p /var/www/html/src/resources/db
 
 USER www-data

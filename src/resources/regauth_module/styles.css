@@ -1,5 +1,5 @@
 /* ============================================================
-   General Styles (Общие стили)
+   General Styles
    ============================================================ */
 /* General Styles */
 body {
@@ -24,7 +24,7 @@ header {
     left: 0;
     z-index: 1000;
     box-sizing: border-box;
-    flex-wrap: wrap; /* Добавлено для адаптации на маленьких экранах */
+    flex-wrap: wrap;
 }
 
 
@@ -33,12 +33,11 @@ header .logo {
     flex-shrink: 0;
 }
 
-/* Контейнер кнопок */
 .header-buttons {
     display: flex;
-    justify-content: center; /* Центрируем кнопки горизонтально */
-    align-items: center; /* Центрируем кнопки вертикально */
-    gap: 10px; /* Расстояние между кнопками и иконкой */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Кнопка My List */
@@ -68,8 +67,8 @@ header .logo {
     border: none;
     border-radius: 20px;
     transition: background-color 0.3s, box-shadow 0.3s;
-    margin-left: auto; /* Убедимся, что кнопка выровнена справа */
-    flex-shrink: 0; /* Запрещаем уменьшать кнопку на маленьких экранах */
+    margin-left: auto;
+    flex-shrink: 0;
 }
 
 .sign-in-button:hover {
@@ -77,16 +76,15 @@ header .logo {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Адаптация для маленьких экранов */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Переключаемся на столбец */
-        align-items: flex-start; /* Логотип и кнопка выравниваются по левому краю */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .sign-in-button {
-        margin: 10px 0 0; /* Отступ сверху и убираем margin-left */
-        align-self: flex-end; /* Размещаем кнопку справа */
+        margin: 10px 0 0;
+        align-self: flex-end;
     }
 }
 
@@ -108,17 +106,17 @@ header .logo {
 }
 
 .profile-pic {
-    width: 40px; /* Ширина иконки */
-    height: 40px; /* Высота иконки */
-    border-radius: 50%; /* Закругление для круглой формы */
-    object-fit: cover; /* Убедимся, что изображение вписывается в круг */
-    border: 1px solid #ddd; /* Легкая граница для отделения */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
 }
 
 .profile-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Расстояние между иконкой профиля и кнопкой Logout */
+    gap: 10px;
 }
 
 /* Main Content */
@@ -227,14 +225,14 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Контейнер для кнопки Scrape Sites */
+/* Scrape Sites */
 .admin-panel {
     position: absolute;
-    top: 120px; /* Расстояние под хедером */
-    right: 20px; /* Расстояние от правого края */
+    top: 120px;
+    right: 20px;
 }
 
-/* Кнопка Scrape Sites */
+/* Scrape Sites */
 .scrape-sites-button {
     padding: 10px 20px;
     font-size: 14px;
@@ -252,17 +250,16 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Адаптация для маленьких экранов */
 @media (max-width: 768px) {
     .admin-panel {
-        position: static; /* Уберем абсолютное позиционирование */
+        position: static;
         text-align: center;
-        margin-top: 20px; /* Добавим отступ сверху */
+        margin-top: 20px;
     }
 }
 
 /* ============================================================
-   Header Styles (Стили шапки)
+   Header Styles
    ============================================================ */
 header {
     width: 100%;
@@ -299,7 +296,7 @@ header .logo {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Кнопка Logout */
+/* Logout */
 .sign-out-button {
     padding: 10px 20px;
     font-size: 14px;
@@ -326,7 +323,7 @@ header .logo {
 
 
 /* ============================================================
-   Main Content Styles (Стили основного контента)
+   Main Content Styles
    ============================================================ */
 main {
     display: flex;
@@ -383,10 +380,10 @@ p {
 }
 
 /* ============================================================
-   Modal Styles (Стили модальных окон)
+   Modal Styles
    ============================================================ */
 .modal {
-    display: none; /* Скрыто по умолчанию */
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -395,8 +392,8 @@ p {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center; /* Горизонтальное центрирование */
-    align-items: center; /* Вертикальное центрирование */
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content {
@@ -427,7 +424,7 @@ p {
 
 
 /* ============================================================
-   Tabs and Forms Styles (Стили вкладок и форм)
+   Tabs and Forms Styles
    ============================================================ */
 .auth-tabs {
     display: flex;
@@ -525,7 +522,7 @@ p {
 }
 
 /* ============================================================
-   Divider Styles (Стили разделителя)
+   Divider Styles
    ============================================================ */
 .divider {
     margin: 20px 0;

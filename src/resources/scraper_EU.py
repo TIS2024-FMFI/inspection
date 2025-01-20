@@ -18,10 +18,10 @@ def connect_to_db():
     """
     try:
         return pymysql.connect(
-            host='localhost',
-            user='root',
-            password='',
-            database='safety_app',
+            host=os.environ.get('DB_HOST', 'db'),
+            user=os.environ.get('DB_USER', 'root'),
+            password=os.environ.get('DB_PASSWORD', 'rootpassword'),
+            database=os.environ.get('DB_NAME', 'safety_app'),
             cursorclass=pymysql.cursors.DictCursor
         )
     except pymysql.MySQLError as e:
@@ -34,7 +34,7 @@ def connect_to_db():
 def sanitize(value):
     """Remove single quotes or other problematic characters from strings to avoid SQL injection or query errors."""
     if isinstance(value, str):
-        return value.replace("'", "''") 
+        return value.replace("'", "''")
     return value
 
 def parse_xml_file(file_path):
@@ -87,18 +87,20 @@ def load_history_data(history_file_path):
         print("123")
         return []
 
+    print("!!!  File exists !!! ")
+
     root = parse_xml_file(history_file_path)
     return extract_notifications(root)
 
 def merge_data_with_history(new_data, history_data):
     existing_alert_numbers = {item["alert_number"] for item in history_data}
-    
+
     merged_data = list(history_data)
     for item in new_data:
         if item["alert_number"] and (item["alert_number"] not in existing_alert_numbers):
             merged_data.append(item)
             existing_alert_numbers.add(item["alert_number"])
-    
+
     return merged_data
 
 def write_history_data_to_xml(all_data, history_file_path):
@@ -188,6 +190,9 @@ def insert_data_into_database(data_list):
             """
 
             for item in data_list:
+                if not item.get("counterfeit"):
+                    item["counterfeit"] = 0
+
                 cursor.execute(insert_query, item)
 
         connection.commit()
@@ -214,32 +219,37 @@ def main():
         }
     )
 
+    download_path = "/app/downloads"
+
+    chrome_options.add_experimental_option(
+        "prefs",
+        {
+            "download.default_directory": download_path,
+            "download.prompt_for_download": False,
+            "download.directory_upgrade": True,
+            "safebrowsing.enabled": True
+        }
+    )
+
     driver = webdriver.Chrome(options=chrome_options)
-    
+    driver.set_window_size(1920, 1080)
+
     try:
         driver.get("https://ec.europa.eu/safety-gate-alerts/screen/search?resetSearch=true")
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         print("Page loaded.")
 
-        popover_toggle = WebDriverWait(driver, 20).until(
-            EC.element_to_be_clickable((By.XPATH, "//a[contains(@class, 'ecl-popover__toggle')]"))
-        )
-        popover_toggle.click()
-        print("Popover toggle clicked.")
+        print(f"Driver title: {driver.title}")
 
+        try:
+            WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".ecl-link--standalone > .eui-icon-svg"))).click()
+            WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".ecl-popover__item:nth-child(1) .ecl-link__label"))).click()
+        except:
+            print("Error: Element not found")
+            return
 
-        WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.CLASS_NAME, "ecl-popover__content"))
-        )
-        print("Popover content is visible.")
-        export_to_xml = WebDriverWait(driver, 20).until(
-            EC.element_to_be_clickable((By.XPATH, "//span[text()='Export to XML']/parent::a"))
-        )
-        export_to_xml.click()
-        print("Export to XML clicked.")
         time.sleep(10)
 
-        download_path = os.path.expanduser("~/Downloads")
         files = [os.path.join(download_path, f) for f in os.listdir(download_path) if f.endswith('.xml')]
         if not files:
             print("No XML files found in the downloads folder.")
@@ -259,7 +269,9 @@ def main():
     # ------------------------------------------------------------------------------
     # 4. Load existing history and merge
     # ------------------------------------------------------------------------------
-    history_file_path = "C:\\xampp\\htdocs\\inspection\\inspection\\src\\resources\\db\\HistoryData.xml"
+    history_file_path = "db/HistoryData.xml"
+    if not os.path.exists(os.path.dirname(history_file_path)):
+        os.makedirs(os.path.dirname(history_file_path))
     history_data = load_history_data(history_file_path)
     print(f"Loaded {len(history_data)} records from HistoryData.xml")
 
