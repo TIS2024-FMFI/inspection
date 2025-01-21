@@ -59,9 +59,24 @@ try {
             <?php
             $user_id = $_SESSION['user_id'];
             try {
-                $stmt = $pdo->prepare("SELECT date, time, barcode, product_link, status FROM product_history WHERE user_id = :user_id");
+                $stmt = $pdo->prepare("
+        SELECT ph.date, ph.time, ph.barcode, ph.product_link, ph.status,
+            COALESCE(dp.product_name, pl.name, '') AS name
+        FROM product_history ph
+        LEFT JOIN defective_products dp ON ph.barcode = dp.barcode
+        LEFT JOIN user_submitted_products pl ON ph.barcode = pl.barcode
+        WHERE ph.user_id = :user_id
+        ORDER BY date, time
+    ");
                 $stmt->execute(['user_id' => $user_id]);
                 $historyItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                $stmt = $pdo->prepare("
+    UPDATE product_history ph
+    JOIN user_submitted_products usp ON ph.barcode = usp.barcode
+    SET ph.name = usp.name
+    WHERE ph.user_id = :user_id AND ph.name = ''
+");
+                $stmt->execute(['user_id' => $user_id]);
 
                 // Display history items
                 if (count($historyItems) > 0) {
@@ -71,7 +86,7 @@ try {
                         echo '<div class="history-details">';
                         echo 'Date: ' . htmlspecialchars($row['date']) . ' | ';
                         echo 'Time: ' . htmlspecialchars($row['time']) . ' | ';
-                        echo 'Barcode: ' . (htmlspecialchars($row['barcode']) ?? 'Not Present');
+                        echo 'Name: ' . (htmlspecialchars($row['name']) ?? '');
                         echo '</div>';
                         echo '<div class="history-link">';
                         echo '<a href="' . htmlspecialchars($row['product_link']) . '" target="_blank">Product Link</a>';
