@@ -125,9 +125,11 @@ if (isset($_GET['search'])) {
         ?>
 
         <input type="text" id="search-input" name="search" class="form-control" placeholder="Search Products" aria-label="Search" aria-describedby="button-addon2" value="<?php echo htmlspecialchars($searchQuery); ?>">
-        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+        
+        <span class="form-row">
+            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
 
-        <div class="dropdown">
+            <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Sort By
                 </button>
@@ -146,6 +148,7 @@ if (isset($_GET['search'])) {
                     </li>
                 </ul>
             </div>
+        </span>
     </form>
 
     <div id="error-popup" class="error-popup" style="display: none;">
@@ -157,7 +160,7 @@ if (isset($_GET['search'])) {
     <?php 
         if (!empty($results)) {
             echo '<div class="container-fluid my-5">';
-            echo '<div class="row row-cols-1 row-cols-md-3 g-4 justify-content-start">';
+            echo '<div class="product-container row row-cols-1 row-cols-md-3 g-4 justify-content-start">';
             foreach ($results as $product) {
                 $imageSrc = ($product['images'] !== NULL) ? $product['images'] : 'images/No_Image_Available.jpg';
                 
@@ -169,7 +172,11 @@ if (isset($_GET['search'])) {
                                 <p class="card-text" style="margin-bottom: 5px;"><strong>Reported date: </strong>{$product['published_on']} </p>
                                 <p class="card-text" style="margin-bottom: 5px;"><strong>Hazard Causes: </strong>{$product['hazard_causes']} </p>
                             
-                                <a href="ProductPage.php?id={$product['id']}" class="card-link">See details</a>
+                                <!-- <a href="ProductPage.php?id={$product['id']}" class="card-link">See details</a> -->
+                                <div class="card-links" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <a href="ProductPage.php?id={$product['id']}" class="card-link">See details</a>
+                                    <a href="{$caseUrl}" class="card-link">Case URL</a>
+                                </div>
                             </div>
                         </div>
                 HTML;

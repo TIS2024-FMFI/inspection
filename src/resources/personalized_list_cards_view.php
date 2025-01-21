@@ -9,15 +9,56 @@ require_once 'db/config.php';
 try {
     $userId = $_SESSION['user_id'];
 
-    $stmt = $pdo->prepare("SELECT * FROM user_submitted_products WHERE user_id = :user_id");
+    $stmt = $pdo->prepare("
+        SELECT usp.*, 
+               dp.id AS defective_id 
+        FROM user_submitted_products usp
+        LEFT JOIN defective_products dp 
+        ON usp.barcode = dp.barcode
+        WHERE usp.user_id = :user_id
+    ");
     $stmt->execute(['user_id' => $userId]);
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    
+    foreach ($products as &$product) {
+        $product['is_defective'] = !is_null($product['defective_id']);
+    }
+    unset($product); 
+
+    
+    usort($products, function ($a, $b) {
+        return $b['is_defective'] <=> $a['is_defective'];
+    });
+
+    // $stmt = $pdo->prepare("SELECT * FROM user_submitted_products WHERE user_id = :user_id");
+    // $stmt->execute(['user_id' => $userId]);
+    // $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     die("Database error: " . $e->getMessage());
 }
 ?>
 
 <style>
+
+.product-card.defective {
+    border-color: red;
+    color: #b30000;
+    background-color: #ffe6e6; 
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+    position: relative;
+}
+
+.product-card.defective::before {
+    content: "⚠️";
+    font-size: 24px;
+    color: red;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+}
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -41,7 +82,7 @@ try {
     background: none;
     border: none;
     color: #333;
-    font-size: 18px;
+    font-size: 26px;
     cursor: pointer;
 }
 
@@ -161,7 +202,7 @@ textarea.edit-description {
 <div class="product-grid">
     <?php if (count($products) > 0): ?>
         <?php foreach ($products as $product): ?>
-            <div class="product-card" data-id="<?php echo htmlspecialchars($product['id']); ?>">
+            <div class="product-card <?php echo $product['is_defective'] ? 'defective' : ''; ?>" data-id="<?php echo htmlspecialchars($product['id']); ?>">
                 <div class="view-mode">
                     <button class="delete-btn">
                         &times;

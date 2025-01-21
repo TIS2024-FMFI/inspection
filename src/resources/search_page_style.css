@@ -34,6 +34,15 @@ main form select {
     border-radius: 5px;
 }
 
+main form span.form-row {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 main form {
     height: 50px;
     display: flex;
@@ -41,6 +50,7 @@ main form {
     gap: 10px;
     padding: 0 15px;
 }
+
 
 main .card-img-top {
     width: 100%; /* Ensure the image stretches the full width of the card */
@@ -274,7 +284,30 @@ header .logo {
         gap: 15px;
     }
 
-    form .form-control {
+    form .form-row {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    main form .form-control {
+        width: 100%; 
+    }
+
+    main form .dropdown,
+    main form .form-control,
+    main form .btn {
+        height: 100%; 
+    }
+
+    main h4.no-wrap {
+        margin-bottom: 10px; 
+    }
+
+    .product-container {
+        margin-top: 80px; 
+    }
+
+    /* form .form-control {
         width: 90%;
     }
 
@@ -285,7 +318,7 @@ header .logo {
 
     form select {
         align-self: flex-start;
-    }
+    } */
 
     .card {
         margin: 0 auto;
