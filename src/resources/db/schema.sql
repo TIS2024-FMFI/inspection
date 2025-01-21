@@ -5,6 +5,7 @@ CREATE TABLE `users` (
   `email` varchar(255) DEFAULT NULL,
   `password_hash` varchar(255) DEFAULT NULL,
   `role` varchar(50) DEFAULT NULL,
+  `notified` boolean DEFAULT 0,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
 )  ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
