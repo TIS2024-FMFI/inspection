@@ -9,15 +9,46 @@ require_once 'db/config.php';
 try {
     $userId = $_SESSION['user_id'];
 
-    $stmt = $pdo->prepare("SELECT * FROM user_submitted_products WHERE user_id = :user_id");
+    $stmt = $pdo->prepare("
+        SELECT usp.*, dp.id AS defective_id
+        FROM user_submitted_products usp
+        LEFT JOIN defective_products dp ON usp.barcode = dp.barcode
+        WHERE usp.user_id = :user_id
+    ");
     $stmt->execute(['user_id' => $userId]);
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    foreach ($products as &$product) {
+        $product['is_defective'] = !is_null($product['defective_id']);
+    }
+    unset($product);
+
+    usort($products, function ($a, $b) {
+        return isset($b['defective_id']) - isset($a['defective_id']);
+    });
+
+    // $stmt = $pdo->prepare("SELECT * FROM user_submitted_products WHERE user_id = :user_id");
+    // $stmt->execute(['user_id' => $userId]);
+    // $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     die("Database error: " . $e->getMessage());
 }
 ?>
 
 <style>
+
+.product-row.defective {
+    background-color: #ffe6e6; /* Светло-красный фон */
+    color: #b30000; /* Темно-красный текст */
+    font-weight: bold;
+}
+
+.product-row.defective .exclamation {
+    color: #b30000;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
 .products-table {
   width: 100%;
   border-collapse: collapse;
@@ -146,7 +177,7 @@ try {
   <tbody>
     <?php if (count($products) > 0): ?>
         <?php foreach ($products as $product): ?>
-            <tr class="product-row" data-id="<?php echo htmlspecialchars($product['id']); ?>">
+            <tr class="product-row <?php echo $product['is_defective'] ? 'defective' : ''; ?>" data-id="<?php echo htmlspecialchars($product['id']); ?>">
                     <td class="my-view-mode"><?php echo htmlspecialchars($product['name']); ?></td>
                     <td class="my-view-mode"><?php echo htmlspecialchars(isset($product['barcode']) ? $product['barcode'] : 'N/A'); ?></td>
                     <td class="my-view-mode"><?php echo htmlspecialchars(isset($product['brand']) ? $product['brand'] : 'N/A'); ?></td>

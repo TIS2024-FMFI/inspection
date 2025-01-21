@@ -97,12 +97,18 @@ try {
             .toggle-option:hover:not(.active) {
                 background-color: #e0e0e0;
             }
+
+            @media (max-width: 768px) {
+                div.view-toggle {
+                    margin-top: 30px !important;
+                }
+            }
         </style>
         <div id="cards-view" class="toggle-option active" onclick="switchView('cards')">Card View</div>
         <div id="table-view" class="toggle-option" onclick="switchView('table')">Table View</div>
     </div>
     <div class="content" id="my-list">
-        
+        <?php include 'personalized_list_cards_view.php'; ?>
     </div>
 
     <div class="content hidden" id="history">

@@ -40,7 +40,7 @@ if (isset($_GET['search'])) {
               </script>";
     } elseif (!empty($searchQuery)) {
         try {
-            $sql = "SELECT id, product_name, published_on, hazard_causes, images FROM defective_products WHERE product_name LIKE :search";
+            $sql = "SELECT id, product_name, published_on, case_url, hazard_causes, images FROM defective_products WHERE product_name LIKE :search";
 
             if ($sort == 'name_asc') {
                 $sql .= " ORDER BY product_name ASC";
@@ -56,7 +56,7 @@ if (isset($_GET['search'])) {
         }
     } elseif (empty($searchQuery)) {
         try {
-            $sql = "SELECT id, product_name, published_on, hazard_causes, images FROM defective_products";
+            $sql = "SELECT id, product_name, published_on, hazard_causes, images, case_url FROM defective_products";
 
             if ($sort == 'name_asc') {
                 $sql .= " ORDER BY product_name ASC";
@@ -125,9 +125,11 @@ if (isset($_GET['search'])) {
         ?>
 
         <input type="text" id="search-input" name="search" class="form-control" placeholder="Search Products" aria-label="Search" aria-describedby="button-addon2" value="<?php echo htmlspecialchars($searchQuery); ?>">
-        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+        
+        <span class="form-row">
+            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
 
-        <div class="dropdown">
+            <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Sort By
                 </button>
@@ -146,6 +148,7 @@ if (isset($_GET['search'])) {
                     </li>
                 </ul>
             </div>
+        </span>
     </form>
 
     <div id="error-popup" class="error-popup" style="display: none;">
@@ -155,29 +158,43 @@ if (isset($_GET['search'])) {
 
 
     <?php 
-        if (!empty($results)) {
-            echo '<div class="container-fluid my-5">';
-            echo '<div class="row row-cols-1 row-cols-md-3 g-4 justify-content-start">';
-            foreach ($results as $product) {
-                $imageSrc = ($product['images'] !== NULL) ? $product['images'] : 'images/No_Image_Available.jpg';
-                
-                echo <<<HTML
-                        <div class="card my-2 ms-4" style="width: 20.5rem; height: 32rem; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
-                        <img src="{$imageSrc}" class="card-img-top" alt="..." >
-                            <div class="card-body">
-                                <h5 class="card-title" style="margin-bottom: 10px;">{$product['product_name']} </h5>
-                                <p class="card-text" style="margin-bottom: 5px;"><strong>Reported date: </strong>{$product['published_on']} </p>
-                                <p class="card-text" style="margin-bottom: 5px;"><strong>Hazard Causes: </strong>{$product['hazard_causes']} </p>
-                            
-                                <a href="ProductPage.php?id={$product['id']}" class="card-link">See details</a>
-                            </div>
-                        </div>
-                HTML;
+    if (!empty($results)) {
+        echo '<div class="container-fluid my-5">';
+        echo '<div class="product-container row row-cols-1 row-cols-md-3 g-4 justify-content-start">';
+        foreach ($results as $product) {
+            $imageSrc = (!empty($product['images'])) ? $product['images'] : 'images/No_Image_Available.jpg';
+            // Use HEREDOC for part of the markup.
+            echo <<<HTML
+            <div class="card my-2 ms-4" style="width: 20.5rem; height: 32rem; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <img src="{$imageSrc}" class="card-img-top" alt="..." >
+                <div class="card-body">
+                    <h5 class="card-title" style="margin-bottom: 10px;">{$product['product_name']}</h5>
+                    <p class="card-text" style="margin-bottom: 5px;"><strong>Reported date: </strong>{$product['published_on']}</p>
+                    <p class="card-text" style="margin-bottom: 5px;"><strong>Hazard Causes: </strong>{$product['hazard_causes']}</p>
+                    <div class="card-links" style="display: flex; justify-content: space-between; align-items: center;">
+    HTML;
+            echo '<a href="ProductPage.php?id=' . htmlspecialchars($product['id']) . '" class="card-link">See details</a>';
+            
+            if (!empty($product['case_url'])) {
+                echo '<a href="' . htmlspecialchars($product['case_url']) . '" target="_blank" class="card-link">Case URL</a>';
+            } else {
+                echo '<a href="#" class="card-link disabled">Case URL</a>';
             }
-        } else if (!empty($searchQuery)) {
-            echo "<div class='container mt-4 ms-4'> <p> Product not found </p> </div>";
+            
+            // Continue closing the card HTML.
+            echo <<<HTML
+                    </div>
+                </div>
+            </div>
+    HTML;
         }
+        echo '</div>'; // Close .product-container
+        echo '</div>'; // Close .container-fluid
+    } else if (!empty($searchQuery)) {
+        echo "<div class='container mt-4 ms-4'><p>Product not found</p></div>";
+    }
     ?>
+
 
 </main>
 
