@@ -8,6 +8,7 @@ function openModal(modalId) {
 function closeModal(modalId) {
     const modal = document.getElementById(modalId);
     modal.style.display = "none";
+    document.getElementById("result").textContent = "Scanning...";
 
     // Clear input fields
     const inputs = modal.querySelectorAll('input[type="password"], input[type="email"]');
@@ -198,6 +199,7 @@ document.getElementById("search-form").addEventListener("submit", function (even
     this.submit();
 });
 
+let scanningInProgress = false; // Flag to ensure only one scan is processed at a time
 
 function initScanner() {
     Quagga.init({
@@ -241,8 +243,15 @@ function initScanner() {
 
 
     Quagga.onDetected((result) => {
+        if (scanningInProgress) {
+            console.log("Scan already in progress. Skipping this detection.");
+            return; // Prevent multiple scans at once
+        }
+         scanningInProgress = true;
+
         // 1. Safeguard checks to ensure result and code exist
         if (!result || !result.codeResult || !result.codeResult.code) {
+            scanningInProgress = false;
             return;
         }
     
@@ -257,7 +266,7 @@ function initScanner() {
         }
     
         // 3. Confidence threshold (tweak this value to suit your use case)
-        const errorThreshold = 0.10;
+        const errorThreshold = 0.15;
     
         // 4. If average error is too high, ignore this detection
         if (avgError > errorThreshold) {
@@ -274,137 +283,175 @@ function initScanner() {
         // Clear any old messages
         document.getElementById("result").textContent = ``;
         document.getElementById("camera").innerHTML = `Loading data ...`;
-    
-        // 5. Continue with your AJAX call and the rest of your logic
+
+
         $.ajax({
-            url: "get_data.php",
-            method: "GET",
-            data: { barcode },
-            success: function (response) {
-                const data = JSON.parse(response);
-                if (data.error) {
-                    document.getElementById("camera").innerHTML = `<p>${data.error}</p>`;
-                } else {
-                    let status = data.status === "defective" ? 1 : 0;
-                    let product_id = data.data?.[0]?.product_id || null;
-                    let product_link = "ProductPage.php?id=0";  
-    
-                    insertScanToHistory(barcode, product_id, product_link, status);
-    
-                    if (data.status === "defective") {
-                        const product = data.data[0]; // Access the first (and presumably only) product
-                        const details = `
-                            <div class="product-card">
-                                <h2>Defective</h2>
-                                <p><strong>Name:</strong> ${product.product_name}</p>
-                                <p><strong>Reported date:</strong> ${product.published_on}</p>
-                                <p><strong>Hazard Causes:</strong> ${product.hazard_causes}</p>
-                                <p><strong>Barcode: </strong>${product.barcode} </p>
-                                <button id="see-details">See Details</button>
-                                <div id="additional-info" style="display: none;">
-                                    <p><strong>Category:</strong> ${product.product_category}</p>
-                                    <p><strong>Description:</strong> ${product.product_description}</p>
-                                    <p><strong>Brand:</strong> ${product.brand}</p>
-                                    <p><strong>Alert Number:</strong> ${product.alert_number}</p>
-                                    <p><strong>Type of alert:</strong> ${product.type_of_alert}</p>
-                                    <p><strong>Type:</strong> ${product.type}</p>
-                                    <p><strong>Risk type:</strong> ${product.risk_type}</p>
-                                    <p><strong>Alert type:</strong> ${product.alert_type}</p>
-                                    <p><strong>Country of origin:</strong> ${product.country_of_origin}</p>
-                                    <p><strong>Alert submitted by:</strong> ${product.alert_submitted_by}</p>
-                                    <p><strong>Notifying country:</strong> ${product.notifying_country}</p>
-                                    <p><strong>Counterfeit:</strong> ${product.counterfeit}</p>
-                                    <p><strong>Hazard type:</strong> ${product.hazard_type}</p>
-                                    <p><strong>Measures operators:</strong> ${product.measures_operators}</p>
-                                    <p><strong>Measures authorities:</strong> ${product.measures_authorities}</p>
-                                    <p><strong>Compulsory measures:</strong> ${product.compulsory_measures}</p>
-                                    <p><strong>Voluntary measures:</strong> ${product.voluntary_measures}</p>
-                                    <p><strong>Found and measures taken in:</strong> ${product.found_and_measures_taken_in}</p>
-                                    <p><strong>Product description:</strong> ${product.product_description}</p>
-                                    <p><strong>Packaging description:</strong> ${product.packaging_description}</p>
-                                    <p><strong>Brand:</strong> ${product.brand}</p>
-                                    <p><strong>Product category:</strong> ${product.product_category}</p>
-                                    <p><strong>Model type number:</strong> ${product.model_type_number}</p>
-                                    <p><strong>OECD portal category:</strong> ${product.oecd_portal_category}</p>
-                                    <p><strong>Risk description:</strong> ${product.risk_description}</p>
-                                    <p><strong>Risk legal provision:</strong> ${product.risk_legal_provision}</p>
-                                    <p><strong>Recall code:</strong> ${product.recall_code}</p>
-                                    <p><strong>Company recall code:</strong> ${product.company_recall_code}</p>
-                                    <p><strong>Company recall page:</strong> ${product.company_recall_page}</p>
-                                    <p><strong>Case URL:</strong> ${product.case_url}</p>
-                                    <p><strong>Batch number:</strong> ${product.batch_number}</p>
-                                    <p><strong>Production dates:</strong> ${product.production_dates}</p>
-                                    <p><strong>Images:</strong> ${product.images}</p>
+        url: 'check_login.php',
+        method: 'GET',
+        success: function (response) {
+            const loggedIn = response === 'logged_in';
+            // 5. Continue with your AJAX call and the rest of your logic
+            $.ajax({
+                url: "get_data.php",
+                method: "GET",
+                data: { barcode },
+                success: function (response) {
+                    const data = JSON.parse(response);
+                    if (data.error) {
+                        document.getElementById("camera").innerHTML = `<p>${data.error}</p>`;
+                    } else {
+                        let status = data.status === "defective" ? 1 : 0;
+                        let product_id = data.data?.[0]?.product_id || null;
+                        let product_link = "ProductPage.php?id=0";  
+        
+        
+        
+                        if (data.status === "defective") {
+                            const product = data.data[0]; // Access the first (and presumably only) product
+                            const details = `
+                                <div class="product-card">
+                                    <h2>Defective</h2>
+                                    <p><strong>Name:</strong> ${product.product_name}</p>
+                                    <p><strong>Reported date:</strong> ${product.published_on}</p>
+                                    <p><strong>Hazard Causes:</strong> ${product.hazard_causes}</p>
+                                    <p><strong>Barcode: </strong>${product.barcode} </p>
+                                    <button id="see-details">See Details</button>
+                                    <div id="additional-info" style="display: none;">
+                                        <p><strong>Category:</strong> ${product.product_category}</p>
+                                        <p><strong>Description:</strong> ${product.product_description}</p>
+                                        <p><strong>Brand:</strong> ${product.brand}</p>
+                                        <p><strong>Alert Number:</strong> ${product.alert_number}</p>
+                                        <p><strong>Type of alert:</strong> ${product.type_of_alert}</p>
+                                        <p><strong>Type:</strong> ${product.type}</p>
+                                        <p><strong>Risk type:</strong> ${product.risk_type}</p>
+                                        <p><strong>Alert type:</strong> ${product.alert_type}</p>
+                                        <p><strong>Country of origin:</strong> ${product.country_of_origin}</p>
+                                        <p><strong>Alert submitted by:</strong> ${product.alert_submitted_by}</p>
+                                        <p><strong>Notifying country:</strong> ${product.notifying_country}</p>
+                                        <p><strong>Counterfeit:</strong> ${product.counterfeit}</p>
+                                        <p><strong>Hazard type:</strong> ${product.hazard_type}</p>
+                                        <p><strong>Measures operators:</strong> ${product.measures_operators}</p>
+                                        <p><strong>Measures authorities:</strong> ${product.measures_authorities}</p>
+                                        <p><strong>Compulsory measures:</strong> ${product.compulsory_measures}</p>
+                                        <p><strong>Voluntary measures:</strong> ${product.voluntary_measures}</p>
+                                        <p><strong>Found and measures taken in:</strong> ${product.found_and_measures_taken_in}</p>
+                                        <p><strong>Product description:</strong> ${product.product_description}</p>
+                                        <p><strong>Packaging description:</strong> ${product.packaging_description}</p>
+                                        <p><strong>Brand:</strong> ${product.brand}</p>
+                                        <p><strong>Product category:</strong> ${product.product_category}</p>
+                                        <p><strong>Model type number:</strong> ${product.model_type_number}</p>
+                                        <p><strong>OECD portal category:</strong> ${product.oecd_portal_category}</p>
+                                        <p><strong>Risk description:</strong> ${product.risk_description}</p>
+                                        <p><strong>Risk legal provision:</strong> ${product.risk_legal_provision}</p>
+                                        <p><strong>Recall code:</strong> ${product.recall_code}</p>
+                                        <p><strong>Company recall code:</strong> ${product.company_recall_code}</p>
+                                        <p><strong>Company recall page:</strong> ${product.company_recall_page}</p>
+                                        <p><strong>Case URL:</strong> ${product.case_url}</p>
+                                        <p><strong>Batch number:</strong> ${product.batch_number}</p>
+                                        <p><strong>Production dates:</strong> ${product.production_dates}</p>
+                                        <p><strong>Images:</strong> ${product.images}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        `;
-                        document.getElementById("camera").innerHTML = details;
-    
-                        // Toggle details visibility
-                        document.getElementById("see-details").addEventListener("click", function () {
-                            const additionalInfo = document.getElementById("additional-info");
-                            if (additionalInfo.style.display === "none") {
-                                additionalInfo.style.display = "block";
-                                this.textContent = "Hide Details";
-                            } else {
-                                additionalInfo.style.display = "none";
-                                this.textContent = "See Details";
-                            }
-                        });
-                    }
-                    else if (data.status === "exists_in_personalized") {
-                        document.getElementById("camera").innerHTML = `<p>${data.message}</p>`;
-                    }
-                    else if (data.status === "not_found") {
-                        document.getElementById("camera").innerHTML = `
-                            <div class="product-card">
-                                <h3>Not Found</h3>
-                                <p>Barcode: ${barcode}</p>
-                                <form method="post" id="add-product-form">
-                                    <input type="text" id="name" name="name" placeholder="Name (mandatory)" required>
-                                    <input type="text" id="description" name="description" placeholder="Description (optional)">
-                                    <input type="text" id="brand" name="brand" placeholder="Brand (optional)">
-                                    <button id="add-product">Add to personalized list</button>
-                                    <button id="cancel" onclick="closeModal('scanner-modal')">Cancel</button>
-                                </form>
-                            </div>
-                        `;
-                        $(document).ready(function () {
-                            $('#add-product-form').on('submit', function (e) {
-                                e.preventDefault(); // Prevent the default form submission
-                                // Collect form data
-                                var formData = {
-                                    barcode: barcode,
-                                    name: $('#name').val(),
-                                    description: $('#description').val(),
-                                    brand: $('#brand').val()
-                                };
-                                // Send data to the server via AJAX POST
-                                $.ajax({
-                                    url: 'add_product.php',
-                                    type: 'POST',
-                                    data: formData,
-                                    success: function (response) {
-                                        alert('Product has been added to your personalized list.');
-                                        $('#camera').html('<p>Product added successfully.</p>');
-                                    },
-                                    error: function (jqXHR, textStatus, errorThrown) {
-                                        console.error('Error adding product:', textStatus, errorThrown);
-                                        alert('There was an error adding the product. Please try again.');
-                                    }
+                            `;
+                            document.getElementById("camera").innerHTML = details;
+        
+                            // Toggle details visibility
+                            document.getElementById("see-details").addEventListener("click", function () {
+                                const additionalInfo = document.getElementById("additional-info");
+                                if (additionalInfo.style.display === "none") {
+                                    additionalInfo.style.display = "block";
+                                    this.textContent = "Hide Details";
+                                } else {
+                                    additionalInfo.style.display = "none";
+                                    this.textContent = "See Details";
+                                }
+                            });
+                        }
+                        else if (data.status === "exists_in_personalized") {
+                            product_link = "personalized_list.php";
+                            document.getElementById("camera").innerHTML = `<p>${data.message}</p>`;   
+                        }
+                        else if (data.status === "not_found") {
+                                    if (loggedIn) {
+                                        product_link = "";
+                                        document.getElementById("camera").innerHTML = `
+                                            <div class="product-card">
+                                                <h3>Not Found</h3>
+                                                <p>Barcode: ${barcode}</p>
+                                                <form method="post" id="add-product-form">
+                                                    <input type="text" id="name" name="name" placeholder="Name (mandatory)" required>
+                                                    <input type="text" id="description" name="description" placeholder="Description (optional)">
+                                                    <input type="text" id="brand" name="brand" placeholder="Brand (optional)">
+                                                    <button id="add-product">Add to personalized list</button>
+                                                    <button id="cancel" onclick="closeModal('scanner-modal')">Cancel</button>
+                                                </form>
+                                            </div>
+                                        `;
+                            $(document).ready(function () {
+                                // Handle form submission
+                                $('#add-product-form').on('submit', function (e) {
+                                    e.preventDefault(); // Prevent the default form submission
+                                    const nameValue = $('#name').val();
+                                    // Collect form data
+                                    var formData = {
+                                        barcode: barcode,
+                                        name: nameValue,
+                                        description: $('#description').val(),
+                                        brand: $('#brand').val()
+                                    };
+                                    // Send data to the server via AJAX POST
+                                    $.ajax({
+                                        url: 'add_product.php',
+                                        type: 'POST',
+                                        data: formData,
+                                        success: function (response) {
+                                            alert('Product has been added to your personalized list.');
+                                            $('#camera').html('<p>Product added successfully.</p>');
+                                            product_link = "personalized_list.php";
+                                        },
+                                        error: function (jqXHR, textStatus, errorThrown) {
+                                            console.error('Error adding product:', textStatus, errorThrown);
+                                            alert('There was an error adding the product. Please try again.');
+                                        }
+                                    });
                                 });
                             });
-                        });
-                        document.getElementById("cancel").addEventListener("click", function () {
-                            // You can add any cancel/close logic here
-                        });
-                    }
+
+                            } else {
+                                document.getElementById("camera").innerHTML = `
+                                    <div class="product-card">
+                                        <h3>Not Found</h3>
+                                        <p>Barcode: ${barcode}</p>
+                                        <p>You need to be logged in to add products.</p>
+                                    </div>
+                                `;
+                                }
+                                document.getElementById("cancel").addEventListener("click", function () {
+                                // You can add any cancel/close logic here
+                                document.getElementById("result").textContent = "Scanning...";
+                            });
+
+                        }
+                        if (loggedIn) {
+                            insertScanToHistory(barcode, product_id, product_link, status);
+                        };
+                        
+                    };
+                    scanningInProgress = false;
+                },
+                error: function () {
+                    document.getElementById("result").textContent = "Error loading data from the database.";
+                    scanningInProgress = false;
                 }
-            },
-            error: function () {
-                document.getElementById("result").textContent = "Error loading data from the database.";
-            }
-        });
+            });
+            
+        },
+        error: function () {
+            document.getElementById("result").textContent = "Error checking login status.";
+            scanningInProgress = false;
+        }
+    });
+        
     });
 }
 
@@ -416,7 +463,7 @@ function insertScanToHistory(barcode, product_id, product_link, status) {
             barcode: barcode,
             product_id: product_id || null,
             product_link: product_link || "",
-            status: status
+            status: status,
         },
         success: function (response) {
             console.log("Scan history updated:", response);
@@ -426,4 +473,3 @@ function insertScanToHistory(barcode, product_id, product_link, status) {
         }
     });
 }
-

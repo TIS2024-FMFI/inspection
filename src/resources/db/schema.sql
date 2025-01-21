@@ -60,6 +60,7 @@ CREATE TABLE `product_history` (
     `date` DATE NOT NULL,
     `time` TIME NOT NULL,
     'status' INT NOT NULL,
+    'name' VARCHAR(255) NOT NULL,
     FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
