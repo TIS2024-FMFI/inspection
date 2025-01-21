@@ -1,18 +1,36 @@
 <?php
 $pythonPath = '/app/python';
-if (!file_exists("$pythonPath/scraper_SK.py")) {
-    echo "Python script SK not found.";
+$scripts = [
+    'scraper_SK.py',
+    'scraper_EU.py',
+    'sendmail.py'
+];
+
+foreach ($scripts as $script) {
+    if (!file_exists("$pythonPath/$script")) {
+        echo "Python script $script not found.";
     exit();
 }
-
-if (!file_exists("$pythonPath/scraper_EU.py")) {
-    echo "Python script EU not found.";
-    exit();
 }
 
 set_time_limit(600);
-$command = "python3 $pythonPath/scraper_SK.py && python3 $pythonPath/scraper_EU.py";
-$output = shell_exec($command);
+
+$commands = [
+    //"python3 $pythonPath/scraper_SK.py",
+    //"python3 $pythonPath/scraper_EU.py",
+    "python3 $pythonPath/sendmail.py"
+];
+
+$output = '';
+foreach ($commands as $command) {
+    $result = shell_exec($command);
+    if ($result === null) {
+        echo "Error executing command: $command";
+        exit();
+    }
+    $output .= $result . "\n";
+}
+
 header('Content-Type: text/plain');
 echo $output ? $output : "Done";
 ?>
