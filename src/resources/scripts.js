@@ -20,20 +20,37 @@ function closeModal(modalId) {
 }
 
 function switchToLogin() {
-    closeModal('register-modal');
-    openModal('login-modal');
+    const registerModal = document.getElementById('register-modal');
+    const loginModal = document.getElementById('login-modal');
+
+    // Hide the register modal and show the login modal
+    registerModal.style.display = "none";
+    loginModal.style.display = "flex";
 }
 
 function switchToRegister() {
-    closeModal('login-modal');
-    openModal('register-modal');
+    const loginModal = document.getElementById('login-modal');
+    const registerModal = document.getElementById('register-modal');
+
+    // Hide the login modal and show the register modal
+    loginModal.style.display = "none";
+    registerModal.style.display = "flex";
 }
+
 
 // Ensure no modal opens on page load
 document.addEventListener("DOMContentLoaded", () => {
     closeModal('login-modal');
     closeModal('register-modal');
     closeModal('scanner-modal');
+});
+
+// Disable auto focus on modals
+document.addEventListener("DOMContentLoaded", () => {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        modal.style.display = "none";
+    });
 });
 
 // Highlight 'My List' button when on personalized_list.php
@@ -82,8 +99,6 @@ function startScan() {
 }
 
 
-
-
 function toggleProfileMenu() {
     const menu = document.getElementById('profile-menu');
     menu.classList.toggle('show');
@@ -123,6 +138,7 @@ function handleLogin(event) {
                 window.location.reload();
             }
         } else {
+            errorMessage.style.paddingBottom = '10px';
             errorMessage.style.display = 'block';
             errorMessage.textContent = data.error;
             form.querySelector('#password').value = '';
@@ -148,6 +164,7 @@ function handleRegister(event) {
     .then(response => response.json())
     .then(data => {
         errorMessage.style.display = 'block';
+        errorMessage.style.paddingBottom = '10px';
         errorMessage.textContent = data.error;
         if (data.success) {
             errorMessage.style.color = 'green';
@@ -302,7 +319,7 @@ function initScanner() {
                     } else {
                         let status = data.status === "defective" ? 1 : 0;
                         let product_id = data.data?.[0]?.product_id || null;
-                        let product_link = "ProductPage.php?id=0";  
+                        let product_link = `ProductPage.php?id=${product_id}`;  
         
         
         

@@ -75,11 +75,11 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
             </div>
             <button type="submit" class="auth-button">Log In</button>
         </form>
-        <div class="divider">OR</div>
+        <!--<div class="divider">OR</div>
         <button class="google-auth-btn">
             <img src="images/google-icon.png" alt="Google Icon">
             Continue with Google
-        </button>
+        </button>-->
     </div>
 </div>
 
@@ -107,11 +107,11 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
             </div>
             <button type="submit" class="auth-button">Create an Account</button>
         </form>
-        <div class="divider">OR</div>
+        <!--<div class="divider">OR</div>
         <button class="google-auth-btn">
             <img src="images/google-icon.png" alt="Google Icon">
             Continue with Google
-        </button>
+        </button>-->
     </div>
 </div>
 

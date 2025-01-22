@@ -266,21 +266,27 @@ p {
     top: 120px;
     right: 20px;
 }
+
 .scrape-sites-button {
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 83%;
     background-color: #007bff;
     color: white;
     border: none;
+    align-self: center;
     border-radius: 20px;
     text-decoration: none;
     transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
 .scrape-sites-button:hover {
     background-color: #0056b3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 @media (max-width: 768px) {
     .admin-panel {
         position: static;

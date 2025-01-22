@@ -40,7 +40,7 @@ if (isset($_GET['search'])) {
               </script>";
     } elseif (!empty($searchQuery)) {
         try {
-            $sql = "SELECT id, product_name, published_on, case_url, hazard_causes, images FROM defective_products WHERE product_name LIKE :search";
+            $sql = "SELECT id, product_name, case_url, risk_type, images, production_dates  FROM defective_products WHERE product_name LIKE :search";
 
             if ($sort == 'name_asc') {
                 $sql .= " ORDER BY product_name ASC";
@@ -56,7 +56,7 @@ if (isset($_GET['search'])) {
         }
     } elseif (empty($searchQuery)) {
         try {
-            $sql = "SELECT id, product_name, published_on, hazard_causes, images, case_url FROM defective_products";
+            $sql = "SELECT id, product_name, case_url, risk_type, images, production_dates FROM defective_products";
 
             if ($sort == 'name_asc') {
                 $sql .= " ORDER BY product_name ASC";
@@ -169,8 +169,8 @@ if (isset($_GET['search'])) {
                 <img src="{$imageSrc}" class="card-img-top" alt="..." >
                 <div class="card-body">
                     <h5 class="card-title" style="margin-bottom: 10px;">{$product['product_name']}</h5>
-                    <p class="card-text" style="margin-bottom: 5px;"><strong>Reported date: </strong>{$product['published_on']}</p>
-                    <p class="card-text" style="margin-bottom: 5px;"><strong>Hazard Causes: </strong>{$product['hazard_causes']}</p>
+                    <p class="card-text" style="margin-bottom: 5px;"><strong>Reported date: </strong>{$product['production_dates']}</p>
+                    <p class="card-text" style="margin-bottom: 5px;"><strong>Risk Type: </strong>{$product['risk_type']}</p>
                     <div class="card-links" style="display: flex; justify-content: space-between; align-items: center;">
     HTML;
             echo '<a href="ProductPage.php?id=' . htmlspecialchars($product['id']) . '" class="card-link">See details</a>';
