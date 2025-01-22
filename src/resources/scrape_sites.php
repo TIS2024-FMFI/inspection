@@ -17,7 +17,7 @@ set_time_limit(600);
 
 $commands = [
     "python3 $pythonPath/scraper_SK.py",
-    //"python3 $pythonPath/scraper_EU.py",
+    "python3 $pythonPath/scraper_EU.py",
     "python3 $pythonPath/sendmail.py"
 ];
 

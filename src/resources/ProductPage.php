@@ -95,7 +95,7 @@ if (!$product) {
             <p><strong>Category:</strong> <?php echo htmlspecialchars($product['product_category'] ?? ''); ?></p>
             <p><strong>Brand:</strong> <?php echo htmlspecialchars($product['brand'] ?? ''); ?></p>
             <p><strong>Model/Type Number:</strong> <?php echo htmlspecialchars($product['model_type_number'] ?? ''); ?></p>
-            <p><strong>Packaging Description:</strong> <?php echo htmlspecialchars($product['packaging_description'] ?? ''); ?></p>
+            <p><strong>Description:</strong> <?php echo htmlspecialchars($product['product_description'] ?? ''); ?></p>
             <p><strong>Production Dates:</strong> <?php echo htmlspecialchars($product['production_dates'] ?? ''); ?></p>
             <p><strong>Country of Origin:</strong> <?php echo htmlspecialchars($product['country_of_origin'] ?? ''); ?></p>
             <p><strong>Notifying Country:</strong> <?php echo htmlspecialchars($product['notifying_country'] ?? ''); ?></p>

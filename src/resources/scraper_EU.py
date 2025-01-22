@@ -34,7 +34,7 @@ def connect_to_db():
 def sanitize(value):
     """Remove single quotes or other problematic characters from strings."""
     if isinstance(value, str):
-        return value.replace("'", "''")
+        return value.replace("'", "")
     return value
 
 def parse_xml_file(file_path):
@@ -57,27 +57,29 @@ def extract_notifications(xml_root):
     for notification in notifications:
         data = {
             "type_of_alert":       sanitize(notification.findtext("typeOfAlert") or ""),
-            "alert_number":        sanitize(notification.findtext("caseNumber") or ""),
+            "alert_number":        sanitize(notification.findtext("caseNumber") or ""), # Check
             "alert_submitted_by":  sanitize(notification.findtext("submittedBy") or ""),
-            "country_of_origin":   sanitize(notification.findtext("countryOfOrigin") or ""),
-            "counterfeit":         sanitize(notification.findtext("counterfeit") or ""),
-            "risk_type":           sanitize(notification.findtext("riskType") or ""),
-            "risk_legal_provision":sanitize(notification.findtext("riskLegalProvision") or ""),
-            "product":             sanitize(notification.findtext("product") or ""),
-            "name":                sanitize(notification.findtext("name") or ""),
-            "brand":               sanitize(notification.findtext("brand") or ""),
-            "category":            sanitize(notification.findtext("category") or ""),
-            "type_model":          sanitize(notification.findtext("typeNumberModel") or ""),
+            "country_of_origin":   sanitize(notification.findtext("countryOfOrigin") or ""), # Check
+            "counterfeit":         sanitize(notification.findtext("counterfeit") or ""), # Check
+            "risk_type":           sanitize(notification.findtext("riskType") or ""), # Check
+            "risk_legal_provision":sanitize(notification.findtext("danger") or ""), # Check
+            "product":             sanitize(notification.findtext("product") or ""), # Check
+            "name":                sanitize(notification.findtext("name") or ""), # Check
+            "brand":               sanitize(notification.findtext("brand") or ""), # Check
+            "category":            sanitize(notification.findtext("category") or ""), # Check
+            "type_model":          sanitize(notification.findtext("type_numberOfModel") or ""), # Check
             "compulsory_measures": sanitize(notification.findtext("compulsoryMeasures") or ""),
             "voluntary_measures":  sanitize(notification.findtext("voluntaryMeasures") or ""),
             "distribution_countries": sanitize(notification.findtext("distributionCountries") or ""),
             "company_recall_page": sanitize(notification.findtext("companyRecallPage") or ""),
-            "url_of_case":         sanitize(notification.findtext("urlOfCase") or ""),
-            "barcode":             sanitize(notification.findtext("barcode") or ""),
-            "batch_number":        sanitize(notification.findtext("batchNumber") or ""),
+            "url_of_case":         sanitize(notification.findtext("reference") or ""), # Check
+            "barcode":             sanitize(notification.findtext("barcode") or ""), # Check
+            "batch_number":        sanitize(notification.findtext("batchNumber") or ""), # Check
             "company_recall_code": sanitize(notification.findtext("companyRecallCode") or ""),
-            "production_dates":    sanitize(notification.findtext("productionDates") or ""),
+            "production_dates":    sanitize(notification.findtext("productionDates") or ""), # Check
             "packaging_description": sanitize(notification.findtext("packagingDescription") or ""),
+            "images": sanitize(notification.findtext("picture") or ""), # Check
+            "product_description": sanitize(notification.findtext("description") or ""), # Check
         }
         products_data.append(data)
     return products_data
@@ -121,6 +123,8 @@ def write_history_data_to_xml(all_data, history_file_path):
         etree.SubElement(notif_el, "companyRecallCode").text  = entry["company_recall_code"]
         etree.SubElement(notif_el, "productionDates").text    = entry["production_dates"]
         etree.SubElement(notif_el, "packagingDescription").text = entry["packaging_description"]
+        etree.SubElement(notif_el, "picture").text              = entry["images"]
+        etree.SubElement(notif_el, "description").text         = entry["product_description"]
 
     tree = etree.ElementTree(root)
     tree.write(history_file_path, encoding="utf-8", xml_declaration=True, pretty_print=True)
@@ -184,7 +188,6 @@ def prepare_record_for_insertion(record):
         if key in record_cleaned:
             cleaned_value = clean_field(record_cleaned[key], max_len)
             if cleaned_value is None:
-                print(f"Skipping record {record.get('alert_number', 'N/A')} because field '{key}' exceeds allowed length even after cleaning.")
                 return None
             record_cleaned[key] = cleaned_value
 
@@ -198,13 +201,12 @@ def insert_record_into_db(connection, record):
     # Clean record fields based on predetermined limits.
     record_prepared = prepare_record_for_insertion(record)
     if record_prepared is None:
-        print(f"Record with alert_number {record.get('alert_number', 'N/A')} was skipped due to field length issues.")
         return  # Skip this record
 
     insert_query = """
         INSERT INTO defective_products (
-            type_of_alert,
             alert_number,
+            type_of_alert,
             alert_submitted_by,
             country_of_origin,
             counterfeit,
@@ -212,53 +214,49 @@ def insert_record_into_db(connection, record):
             risk_legal_provision,
             product_name,
             product_description,
+            packaging_description,
             brand,
             product_category,
             model_type_number,
-            compulsory_measures,
-            voluntary_measures,
             found_and_measures_taken_in,
             company_recall_page,
             case_url,
             barcode,
             batch_number,
-            company_recall_code,
             production_dates,
-            packaging_description
+            images
         )
         VALUES (
-            %(type_of_alert)s,
             %(alert_number)s,
+            %(type_of_alert)s,
             %(alert_submitted_by)s,
             %(country_of_origin)s,
             %(counterfeit)s,
             %(risk_type)s,
             %(risk_legal_provision)s,
-            %(product)s,
-            %(name)s,
+            %(name)s,                 -- product_name comes from <name>
+            %(product_description)s,  -- product_description from <description>
+            %(packaging_description)s,
             %(brand)s,
             %(category)s,
             %(type_model)s,
-            %(compulsory_measures)s,
-            %(voluntary_measures)s,
             %(distribution_countries)s,
             %(company_recall_page)s,
             %(url_of_case)s,
             %(barcode)s,
             %(batch_number)s,
-            %(company_recall_code)s,
             %(production_dates)s,
-            %(packaging_description)s
+            %(images)s
         )
     """
-    # Make sure 'counterfeit' is set to a valid value.
+    # Ensure 'counterfeit' has a proper value (if not provided, set it to 0)
     if not record_prepared.get("counterfeit"):
         record_prepared["counterfeit"] = 0
 
     with connection.cursor() as cursor:
         cursor.execute(insert_query, record_prepared)
     connection.commit()
-    print(f"Record with alert_number {record_prepared['alert_number']} inserted.")
+
 
 # ------------------------------------------------------------------------------ 
 # 4. Main Selenium + Download + Individual Merge + Insert Flow
@@ -342,9 +340,6 @@ def main():
         if record["alert_number"] and (record["alert_number"] not in history_alerts):
             history_data.append(record)
             history_alerts.add(record["alert_number"])
-            print(f"Alert {record['alert_number']} added to history.")
-        else:
-            print(f"Alert {record['alert_number']} is already in history.")
 
     # Save the updated history data back to the XML file.
     write_history_data_to_xml(history_data, history_file_path)
@@ -362,8 +357,7 @@ def main():
 
             if not record_exists_in_db(connection, record["alert_number"]):
                 insert_record_into_db(connection, record)
-            else:
-                print(f"Record with alert_number {record['alert_number']} already exists in the database.")
+
     except Exception as e:
         print("Database operation error:", e)
     finally:
