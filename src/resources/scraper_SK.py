@@ -97,27 +97,13 @@ def product_exists(product_name):
         result = cursor.fetchone()
     return result is not None
 
-def get_latest_published_on_no_alert():
-    """
-    Get the most recent published_on date among products that do NOT have an alert_number.
-    Adjust the condition if your table stores alert_number differently (e.g., empty string).
-    """
-    with pdo.cursor() as cursor:
-        cursor.execute("SELECT MAX(published_on) as latest_date FROM defective_products WHERE alert_number IS NULL")
-        row = cursor.fetchone()
-    if row and row['latest_date']:
-        # Ensure we have a datetime object; if stored as string, you might need to parse it.
-        return row['latest_date']
-    return None
-
 # --------------------------------------------------
 # Main processing functions
 # --------------------------------------------------
-def process_page(page_url, latest_date):
+def process_page(page_url):
     """
     Process a page URL, inserting new products. 
     Returns a tuple: (soup, stop_scraping_flag)
-    stop_scraping_flag is True if an encountered product's published_on date is older than latest_date.
     """
     stop_scraping = False
     response = requests.get(page_url)
@@ -158,12 +144,7 @@ def process_page(page_url, latest_date):
                     category = extract_text(wrap_div, 'Kategória:')
                     raw_date = extract_text(wrap_div, 'Dátum:')
                     date_obj = parse_date(raw_date)
-                    
-                    # Check if the product is older than the latest published date (if defined)
-                    # if latest_date and date_obj and date_obj < latest_date:
-                    #    print(f"Product '{product_title}' published on {date_obj} is older than the latest ({latest_date}). Stopping scraper.", file=stderr)
-                    #    stop_scraping = True
-                    #    break  # Exit the loop for products on this page
+                
                     
                     country_of_origin = extract_text(wrap_div, 'Pôvod:')
                     product_description = extract_text(wrap_div, 'Identifikácia výrobku:')
@@ -176,8 +157,8 @@ def process_page(page_url, latest_date):
                         with pdo.cursor() as cursor:
                             sql = """
                                 INSERT INTO defective_products (
-                                    product_name, product_category, published_on, country_of_origin, 
-                                    product_description, risk_type, risk_description, images, case_url
+                                    product_name, product_category, production_dates, country_of_origin, 
+                                    product_description, risk_type, risk_info, images, case_url
                                 ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);
                             """
                             cursor.execute(sql, (
@@ -195,18 +176,11 @@ def process_page(page_url, latest_date):
         return None, stop_scraping
 
 def scrape_all_pages():
-    # Get the latest published_on date from the DB for products without an alert_number
-    latest_date = get_latest_published_on_no_alert()
-    if latest_date:
-        print(f"Latest published date without alert_number in DB: {latest_date}", file=stderr)
-    else:
-        print("No latest published date found in DB (or no products without alert_number).", file=stderr)
-    
     current_url = main_page_url
     while current_url:
         try:
             print(f"Processing page: {current_url}", file=stderr)
-            soup, stop_scraping = process_page(current_url, latest_date)
+            soup, stop_scraping = process_page(current_url)
             
             # If a product was encountered that is older than the latest date, stop scraping further.
             if stop_scraping:

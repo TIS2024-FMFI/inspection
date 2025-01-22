@@ -11,43 +11,47 @@ CREATE TABLE `users` (
 )  ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `defective_products` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `alert_number` varchar(100) DEFAULT NULL,
-  `type_of_alert` varchar(100) DEFAULT NULL,
-  `type` VARCHAR(100) DEFAULT NULL,
-  `risk_type` VARCHAR(255) DEFAULT NULL,
-  `alert_type` varchar(100) DEFAULT NULL,
-  `country_of_origin` VARCHAR(1023) DEFAULT NULL,
-  `alert_submitted_by` varchar(100) DEFAULT NULL,
-  `notifying_country` varchar(100) DEFAULT NULL,
-  `counterfeit` boolean DEFAULT NULL,
-  `hazard_type` varchar(100) DEFAULT NULL,
-  `hazard_causes` text DEFAULT NULL,
-  `measures_operators` text DEFAULT NULL,
-  `measures_authorities` text DEFAULT NULL,
-  `compulsory_measures` text DEFAULT NULL,
-  `voluntary_measures` text DEFAULT NULL,
-  `found_and_measures_taken_in` text DEFAULT NULL,
-  `product_name` varchar(1023) DEFAULT NULL,
-  `product_description` text DEFAULT NULL,
-  `packaging_description` text DEFAULT NULL,
-  `brand` varchar(100) DEFAULT NULL,
-  `product_category` varchar(1023) DEFAULT NULL,
-  `model_type_number` varchar(100) DEFAULT NULL,
-  `oecd_portal_category` varchar(100) DEFAULT NULL,
-  `risk_description` text DEFAULT NULL,
-  `risk_legal_provision` text DEFAULT NULL,
-  `recall_code` varchar(100) DEFAULT NULL,
-  `company_recall_code` varchar(100) DEFAULT NULL,
-  `company_recall_page` varchar(255) DEFAULT NULL,
-  `case_url` varchar(255) DEFAULT NULL,
-  `barcode` varchar(255) DEFAULT NULL,
-  `batch_number` varchar(1023) DEFAULT NULL,
-  `production_dates` varchar(255) DEFAULT NULL,
-  `published_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `images` text DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  -- Basic identifiers
+  `alert_number` VARCHAR(100) DEFAULT NULL,          -- EU: caseNumber
+  `case_url` VARCHAR(255) DEFAULT NULL,                -- EU: reference, Slovak: case_url
+  
+  -- Product information
+  `product_name` VARCHAR(255) DEFAULT NULL,           -- EU: name, Slovak: product_name
+  `product_info` VARCHAR(255) DEFAULT NULL,           -- EU: product
+  `product_category` VARCHAR(255) DEFAULT NULL,       -- EU: category, Slovak: product_category
+  `brand` VARCHAR(100) DEFAULT NULL,                   -- brand
+  `model_type_number` VARCHAR(100) DEFAULT NULL,       -- EU: type_numberOfModel
+  
+  -- Batch and codes
+  `batch_number` VARCHAR(255) DEFAULT NULL,           -- batchNumber
+  `barcode` VARCHAR(255) DEFAULT NULL,                 -- barcode
+  `company_recall_code` VARCHAR(100) DEFAULT NULL,     -- companyRecallCode
+  
+  -- Risk and measures information
+  `risk_type` VARCHAR(255) DEFAULT NULL,               -- EU: riskType, Slovak: risky_type
+  `risk_info` TEXT DEFAULT NULL,                       -- Combined EU (danger) and Slovak (risk_description)
+  `measures` TEXT DEFAULT NULL,                        -- EU: measures
+  
+  -- Additional recall and production info
+  `company_recall_page` VARCHAR(255) DEFAULT NULL,     -- EU: URLrecall
+  `product_description` TEXT DEFAULT NULL,            -- EU: description, Slovak: product_description
+  `production_dates` VARCHAR(255) DEFAULT NULL,        -- productionDates
+  
+  -- Country and origin info
+  `notifying_country` VARCHAR(100) DEFAULT NULL,       -- EU: notifyingCountry
+  `country_of_origin` VARCHAR(255) DEFAULT NULL,      -- EU: countryOfOrigin; also Slovak: country_of_origin
+  
+  -- Other fields (if needed)
+  `type` VARCHAR(100) DEFAULT NULL,                    -- EU: type (or used for product type, if needed)
+  `level` VARCHAR(100) DEFAULT NULL,                   -- EU: level
+  
+  -- Media
+  `images` TEXT DEFAULT NULL                           -- EU: pictures (from <picture>), Slovak: images
+) ENGINE=InnoDB 
+  DEFAULT CHARSET=utf8mb4 
+  COLLATE=utf8mb4_general_ci;
+
 
 CREATE TABLE `product_history` (
     `id` INT PRIMARY KEY AUTO_INCREMENT,
