@@ -1,11 +1,11 @@
 import os
 from sys import stderr
 import requests
-from bs4 import BeautifulSoup # type: ignore
-import pymysql # type: ignore
+from bs4 import BeautifulSoup  # type: ignore
+import pymysql  # type: ignore
 from datetime import datetime
 
-print("Starting scraping process of the Slovak website, please stand tight...")
+print("Starting the scraping process of the Slovak website, please stand tight...")
 
 def connect_to_db():
     try:
@@ -20,28 +20,16 @@ def connect_to_db():
         print(f"Database connection failed: {e}")
         raise
 
-try:
-    # Establish database connection
-    pdo = connect_to_db()
-
-    with pdo.cursor() as cursor:
-        # Delete rows in the child table first
-        cursor.execute("DELETE FROM product_history WHERE product_id IN (SELECT id FROM defective_products)")
-        pdo.commit()
-
-        # Now delete rows in the parent table
-        cursor.execute("DELETE FROM defective_products")
-        pdo.commit()
-    print("Successfully cleared defective_products and related rows in product_history.")
-except Exception as e:
-    print(f"Error clearing defective_products or related rows: {e}", file=stderr)
-    pdo.rollback()
+# Global database connection
+pdo = connect_to_db()
 
 # Base URL and main page URL for scraping
 base_url = "https://www.soi.sk"
 main_page_url = f"{base_url}/sk/Nebezpecne-vyrobky/Narodny-trh-SR.soi"
 
-# Define a function to extract text based on labels (original method)
+# --------------------------------------------------
+# Utility functions for text extraction and date parsing
+# --------------------------------------------------
 def extract_text_by_label(parent_div, label):
     all_elements = parent_div.find_all(['div', 'span', 'p', 'u', 'strong'])
     for element in all_elements:
@@ -59,7 +47,6 @@ def extract_text_by_label(parent_div, label):
                 return nested_text.strip()
     return None
 
-# Define a fallback function for tougher cases
 def extract_text_by_label_fallback(wrap_div, label):
     label_element = wrap_div.find(['u', 'strong'], string=lambda text: text and label in text)
     if label_element:
@@ -80,7 +67,6 @@ def extract_text_by_label_fallback(wrap_div, label):
                 return nearby_text
     return None
 
-# Wrapper function to try both methods
 def extract_text(parent_div, label):
     text = extract_text_by_label(parent_div, label)
     if text is None:
@@ -97,10 +83,43 @@ def parse_date(date_string):
         return parsed_date  # Return as a datetime object
     except (ValueError, TypeError):
         print(f"Invalid date format: {date_string}", file=stderr)
-        return None    
+        return None
 
-# Process individual pages and insert into database
-def process_page(page_url):
+# --------------------------------------------------
+# Additional functions for database checks
+# --------------------------------------------------
+def product_exists(product_name):
+    """
+    Check if a product with the given name already exists in defective_products.
+    """
+    with pdo.cursor() as cursor:
+        cursor.execute("SELECT id FROM defective_products WHERE product_name = %s", (product_name,))
+        result = cursor.fetchone()
+    return result is not None
+
+def get_latest_published_on_no_alert():
+    """
+    Get the most recent published_on date among products that do NOT have an alert_number.
+    Adjust the condition if your table stores alert_number differently (e.g., empty string).
+    """
+    with pdo.cursor() as cursor:
+        cursor.execute("SELECT MAX(published_on) as latest_date FROM defective_products WHERE alert_number IS NULL")
+        row = cursor.fetchone()
+    if row and row['latest_date']:
+        # Ensure we have a datetime object; if stored as string, you might need to parse it.
+        return row['latest_date']
+    return None
+
+# --------------------------------------------------
+# Main processing functions
+# --------------------------------------------------
+def process_page(page_url, latest_date):
+    """
+    Process a page URL, inserting new products. 
+    Returns a tuple: (soup, stop_scraping_flag)
+    stop_scraping_flag is True if an encountered product's published_on date is older than latest_date.
+    """
+    stop_scraping = False
     response = requests.get(page_url)
     if response.status_code == 200:
         # Explicitly set encoding
@@ -117,7 +136,7 @@ def process_page(page_url):
                 full_url = href if href.startswith("https://") else f"{base_url}{href}"
                 product_links.append(full_url)
 
-        # Process each product
+        # Process each product found on the page
         for link in product_links:
             print(f"Scraping: {link}", file=stderr)
             product_response = requests.get(link)
@@ -128,58 +147,86 @@ def process_page(page_url):
                 wrap_div = product_page.find('div', class_='wrap')
                 if wrap_div:
                     # Extract details
-                    product_title = wrap_div.find('h1').text.strip() if wrap_div.find('h1') else "Title not found"
+                    h1_tag = wrap_div.find('h1')
+                    product_title = h1_tag.text.strip() if h1_tag else "Title not found"
+                    
+                    # Before proceeding, check if the product already exists by name.
+                    if product_exists(product_title):
+                        print(f"Product '{product_title}' already exists in the DB. Skipping insertion.", file=stderr)
+                        continue
+
                     category = extract_text(wrap_div, 'Kategória:')
-                    date = parse_date(extract_text(wrap_div, 'Dátum:'))
-                    print( f"Date: {date}", file=stderr)
+                    raw_date = extract_text(wrap_div, 'Dátum:')
+                    date_obj = parse_date(raw_date)
+                    
+                    # Check if the product is older than the latest published date (if defined)
+                    # if latest_date and date_obj and date_obj < latest_date:
+                    #    print(f"Product '{product_title}' published on {date_obj} is older than the latest ({latest_date}). Stopping scraper.", file=stderr)
+                    #    stop_scraping = True
+                    #    break  # Exit the loop for products on this page
+                    
                     country_of_origin = extract_text(wrap_div, 'Pôvod:')
                     product_description = extract_text(wrap_div, 'Identifikácia výrobku:')
                     risk_type = extract_text(wrap_div, 'Druh nebezpečnosti:')
                     causes_of_danger = extract_text(wrap_div, 'Príčiny nebezpečnosti:')
                     images = [img['src'] for img in wrap_div.find_all('img') if 'src' in img.attrs]
-
-                    # Use the first image only
                     image_url = images[0] if images else None
 
-                    # Insert data into the database
                     try:
                         with pdo.cursor() as cursor:
                             sql = """
-                            INSERT INTO defective_products (
-                                product_name, product_category, published_on, country_of_origin, 
-                                product_description, risk_type, risk_description, images, case_url
-                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);
+                                INSERT INTO defective_products (
+                                    product_name, product_category, published_on, country_of_origin, 
+                                    product_description, risk_type, risk_description, images, case_url
+                                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);
                             """
                             cursor.execute(sql, (
-                                product_title, category, date, country_of_origin,
+                                product_title, category, date_obj, country_of_origin,
                                 product_description, risk_type, causes_of_danger, image_url, link
                             ))
                             pdo.commit()
                         print(f"Inserted: {product_title}", file=stderr)
                     except Exception as e:
                         print(f"Error inserting data for {product_title}: {e}", file=stderr)
-    return soup
+                        pdo.rollback()
+        return soup, stop_scraping
+    else:
+        print(f"Error: Received status code {response.status_code} for {page_url}", file=stderr)
+        return None, stop_scraping
 
 def scrape_all_pages():
-    current_url = main_page_url  # Ensure main_page_url is correctly defined
+    # Get the latest published_on date from the DB for products without an alert_number
+    latest_date = get_latest_published_on_no_alert()
+    if latest_date:
+        print(f"Latest published date without alert_number in DB: {latest_date}", file=stderr)
+    else:
+        print("No latest published date found in DB (or no products without alert_number).", file=stderr)
+    
+    current_url = main_page_url
     while current_url:
         try:
             print(f"Processing page: {current_url}", file=stderr)
-            soup = process_page(current_url)  # Ensure process_page returns a valid soup object
+            soup, stop_scraping = process_page(current_url, latest_date)
+            
+            # If a product was encountered that is older than the latest date, stop scraping further.
+            if stop_scraping:
+                print("Stopping further scraping as an older product was found.", file=stderr)
+                break
 
             # Find the next page link
-            next_button = soup.find('a', class_='AspNet-Pager-NextPage', rel='next')
+            next_button = soup.find('a', class_='AspNet-Pager-NextPage', rel='next') if soup else None
             if next_button and 'href' in next_button.attrs:
                 current_url = next_button['href']
                 if not current_url.startswith("https://"):
-                    current_url = f"{base_url}{current_url}"  # Ensure base_url is correctly defined
+                    current_url = f"{base_url}{current_url}"
             else:
                 print("No more pages to process.")
-                current_url = None
+                break
 
         except Exception as e:
-            print(f"Error processing page {current_url}: {e}")
-            current_url = None  # Stop the loop if an error occurs
+            print(f"Error processing page {current_url}: {e}", file=stderr)
+            break
 
 # Start scraping
 scrape_all_pages()
+print("Scraping process completed.")

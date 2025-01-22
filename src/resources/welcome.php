@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (basename($_SERVER['PHP_SELF']) === 'welcome.php') {
+    session_start();
+}
 
 $isLoggedIn = isset($_SESSION['user_id']);
 $email = isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : 'No email available';
@@ -65,13 +67,14 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
             <button id="scan-button" onclick="openModal('scanner-modal')">Scan product's barcode...</button>
             <?php if ($isLoggedIn && $userRole === '2'): ?>
                 <div class="divider">OR</div>
-                <button id="scrapeSitesButton" class="scrape-sites-button">Scrape Sites</button>
+                <button id="scrapeSitesButton" class="scrape-sites-button">Scrape Sites and send notifications</button>
                 <div id="scrapeResult"></div>
 
                 <script>
                     document.getElementById('scrapeSitesButton').addEventListener('click', function() {
                         const scrapeResult = document.getElementById('scrapeResult');
                         scrapeResult.innerHTML = 'Scraping in progress...';
+                        scrapeResult.style.paddingTop = '10px';
                         fetch('scrape_sites.php', {
                                 method: 'POST'
                             })
@@ -109,11 +112,11 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
                 </div>
                 <button type="submit" class="auth-button">Log In</button>
             </form>
-            <div class="divider">OR</div>
+            <!--<div class="divider">OR</div>
             <button class="google-auth-btn">
                 <img src="images/google-icon.png" alt="Google Icon">
                 Continue with Google
-            </button>
+            </button>-->
         </div>
     </div>
 
@@ -140,11 +143,11 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
                 </div>
                 <button type="submit" class="auth-button">Create an Account</button>
             </form>
-            <div class="divider">OR</div>
+            <!--<div class="divider">OR</div>
             <button class="google-auth-btn">
                 <img src="images/google-icon.png" alt="Google Icon">
                 Continue with Google
-            </button>
+            </button>-->
         </div>
     </div>
 

@@ -15,7 +15,7 @@ CREATE TABLE `defective_products` (
   `alert_number` varchar(100) DEFAULT NULL,
   `type_of_alert` varchar(100) DEFAULT NULL,
   `type` VARCHAR(100) DEFAULT NULL,
-  `risk_type` VARCHAR(100) DEFAULT NULL,
+  `risk_type` VARCHAR(255) DEFAULT NULL,
   `alert_type` varchar(100) DEFAULT NULL,
   `country_of_origin` VARCHAR(1023) DEFAULT NULL,
   `alert_submitted_by` varchar(100) DEFAULT NULL,
