@@ -73,7 +73,7 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
                 <script>
                     document.getElementById('scrapeSitesButton').addEventListener('click', function() {
                         const scrapeResult = document.getElementById('scrapeResult');
-                        scrapeResult.innerHTML = 'Scraping in progress...';
+                        scrapeResult.innerHTML = 'Please wait...';
                         scrapeResult.style.paddingTop = '10px';
                         fetch('scrape_sites.php', {
                                 method: 'POST'

@@ -251,8 +251,8 @@ def insert_record_into_db(connection, record):
         INSERT INTO defective_products (
             alert_number,
             case_url,
-            product_info, 
-            product_name,
+            product_name, 
+            product_info,
             product_category,
             brand,
             model_type_number,

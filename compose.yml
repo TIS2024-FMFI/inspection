@@ -12,7 +12,7 @@ services:
       - DB_USER=root
       - DB_PASSWORD=rootpassword
       - DB_NAME=safety_app
-      - APP_PASSWORD="ajdb ucsa cjkv whfx"
+      - APP_PASSWORD='yaap hdkr fmmf wbev'
       - PYTHONPATH=/app/python
       - PYTHON_VENV=/opt/venv/bin
       - CHROME_DRIVER_PATH=/usr/bin/chromedriver

@@ -1,4 +1,4 @@
-import pymysql # type: ignore
+import pymysql  # type: ignore
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -13,10 +13,12 @@ DB_PASSWORD = os.getenv('DB_PASSWORD', '')
 DB_NAME = os.getenv('DB_NAME', 'safety_app')
 
 EMAIL_ADDRESS = 'safety.inspection.team@gmail.com'
-EMAIL_PASSWORD = os.getenv('APP_PASSWORD', 'ajdb ucsa cjkv whfx')
+EMAIL_PASSWORD = 'yaap hdkr fmmf wbev'
 
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
+
+PRODUCT_PAGE_URL_TEMPLATE = "http://localhost:9000/ProductPage.php?id={id}"
 
 # -----------------------------------------------------------------------------
 # 2. Connect to Database (using PyMySQL)
@@ -26,52 +28,92 @@ def get_db_connection():
         host=DB_HOST,
         user=DB_USER,
         password=DB_PASSWORD,
-        db=DB_NAME
+        db=DB_NAME,
+        charset='utf8mb4',
+        cursorclass=pymysql.cursors.DictCursor  # To get results as dictionaries
     )
     return connection
 
 # -----------------------------------------------------------------------------
-# 3. Fetch all users who have submitted defective products but have not been notified
+# 3. Fetch All Users Who Have Submitted Products
 # -----------------------------------------------------------------------------
-def get_users_to_notify(connection):
-    query = """
-        SELECT DISTINCT u.id, u.email
-        FROM users AS u
-        JOIN user_submitted_products usp ON u.id = usp.user_id
-        JOIN defective_products dp ON usp.barcode = dp.barcode
-        WHERE u.notified = 0
-    """
+def get_all_users(connection):
+    query = "SELECT id, email FROM users"
     with connection.cursor() as cursor:
         cursor.execute(query)
-        results = cursor.fetchall()
-    return results
+        users = cursor.fetchall()
+    return users
 
 # -----------------------------------------------------------------------------
-# 4. Send Email Function
+# 4. Fetch Defective Products with Their IDs
 # -----------------------------------------------------------------------------
-def send_notification_email(to_email):
+def get_defective_products(connection):
+    """
+    Returns a dictionary mapping barcode to defective product id.
+    """
+    query = "SELECT id, barcode FROM defective_products"
+    with connection.cursor() as cursor:
+        cursor.execute(query)
+        rows = cursor.fetchall()
+    # Assuming barcodes are unique. If not, you might need to handle multiple IDs per barcode.
+    defective_products = {row['barcode']: row['id'] for row in rows}
+    return defective_products
+
+# -----------------------------------------------------------------------------
+# 5. Fetch User's Submitted Products
+# -----------------------------------------------------------------------------
+def get_user_submitted_products(connection, user_id):
+    query = "SELECT id, barcode FROM user_submitted_products WHERE user_id = %s"
+    with connection.cursor() as cursor:
+        cursor.execute(query, (user_id,))
+        products = cursor.fetchall()
+    return products
+
+# -----------------------------------------------------------------------------
+# 6. Send Email Function
+# -----------------------------------------------------------------------------
+def send_notification_email(to_email, defective_product_ids):
     subject = "Important: Defective Product Notice"
+
+    # Create list of product references
+    product_links = [
+        PRODUCT_PAGE_URL_TEMPLATE.format(id=product_id)
+        for product_id in defective_product_ids
+    ]
+
+    # Create the email body with product links
     body = (
-        "Dear user,\n\n"
-        "One or more of the products you have submitted have been identified as defective.\n"
-        "For safety and further instructions, please check your account.\n\n"
+        "Dear User,\n\n"
+        "We have identified the following products you submitted as defective:\n\n"
+    )
+    for link in product_links:
+        body += f"- {link}\n"
+
+    body += (
+        "\nPlease check your account for more details and further instructions.\n\n"
         "Regards,\n"
         "The Inspection Team"
     )
-    
+
+    # Create MIME message
     msg = MIMEMultipart()
     msg['From'] = EMAIL_ADDRESS
     msg['To'] = to_email
     msg['Subject'] = subject
     msg.attach(MIMEText(body, 'plain'))
 
-    with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-        server.starttls()
-        server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
-        server.sendmail(EMAIL_ADDRESS, to_email, msg.as_string())
+    # Send the email
+    try:
+        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+            server.starttls()
+            server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+            server.sendmail(EMAIL_ADDRESS, to_email, msg.as_string())
+    except Exception as e:
+        print(f"Failed to send email to {to_email}: {e}")
+        raise  # Re-raise exception to handle it in the main flow if necessary
 
 # -----------------------------------------------------------------------------
-# 5. Mark user as notified
+# 7. Mark User as Notified
 # -----------------------------------------------------------------------------
 def mark_user_notified(connection, user_id):
     update_query = "UPDATE users SET notified = 1 WHERE id = %s"
@@ -80,39 +122,62 @@ def mark_user_notified(connection, user_id):
     connection.commit()
 
 # -----------------------------------------------------------------------------
-# (Optional) Reset all users' notified status to 0
-# -----------------------------------------------------------------------------
-def reset_notified_status(connection):
-    update_query = "UPDATE users SET notified = 0"
-    with connection.cursor() as cursor:
-        cursor.execute(update_query)
-    connection.commit()
-
-# -----------------------------------------------------------------------------
-# 6. Main Flow
+# 8. Main Flow
 # -----------------------------------------------------------------------------
 def main():
-    conn = get_db_connection()
-    
-    users_to_notify = get_users_to_notify(conn)
-    
-    if not users_to_notify:
-        print("No user submitted products found within the defective database")
-        conn.close()
+    try:
+        conn = get_db_connection()
+    except pymysql.MySQLError as e:
+        print(f"Error connecting to the database: {e}")
         return
-    
-    for user_id, email in users_to_notify:
-        try:
-            send_notification_email(email)
-            print(f"Notification sent to {email}")
-            mark_user_notified(conn, user_id)
-        except Exception as e:
-            print(f"Error sending email to {email}: {e}")
-    
-    # Reset user notified status after sending emails
-    # reset_notified_status(conn)
-    
-    conn.close()
+
+    try:
+        users = get_all_users(conn)
+        if not users:
+            print("No users found in the database.")
+            return
+
+        defective_products_mapping = get_defective_products(conn)
+        if not defective_products_mapping:
+            print("No defective products found in the database.")
+            return
+
+        for user in users:
+            user_id = user['id']
+            email = user['email']
+            try:
+                submitted_products = get_user_submitted_products(conn, user_id)
+                if not submitted_products:
+                    print(f"User {email} has no submitted products.")
+                    continue
+
+                # Identify defective products for the user based on barcode mapping
+                defective_product_ids = [
+                    defective_id
+                    for product in submitted_products
+                    if (defective_id := defective_products_mapping.get(product['barcode']))
+                ]
+
+                if defective_product_ids:
+                    # Remove duplicates if a user has multiple submissions mapping to the same defective product
+                    unique_defective_product_ids = list(set(defective_product_ids))
+
+                    # Send notification email with defective product links
+                    send_notification_email(email, unique_defective_product_ids)
+                    # print(f"Notification sent to {email} for products: {unique_defective_product_ids}")
+
+                    # Mark user as notified
+                    #mark_user_notified(conn, user_id)
+                #else:
+                    #print(f"No defective products found for user {email}.")
+
+            except Exception as e:
+                #print(f"Error processing user {email}: {e}")
+                ...
+
+    finally:
+        print("Notifications processed, closing the database connection...")
+        conn.close()
 
 if __name__ == "__main__":
     main()
