@@ -732,3 +732,21 @@ h3 {
 .scanner-title {
     margin-right: 50%;
 }
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+#forgot-password-message {
+    font-size: 14px;
+}

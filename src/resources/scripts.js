@@ -490,3 +490,42 @@ function insertScanToHistory(barcode, product_id, product_link, status) {
         }
     });
 }
+
+function handleForgotPassword() {
+    const emailInput = document.getElementById('email').value;
+    const messageDiv = document.getElementById('forgot-password-message');
+
+    console.log('handleForgotPassword called');
+    console.log('Email input:', emailInput);
+
+    if (!emailInput) {
+        messageDiv.style.display = 'block';
+        messageDiv.style.color = 'red';
+        messageDiv.textContent = 'Please enter your email address.';
+        return;
+    }
+
+    fetch('forgotPassword.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: emailInput })
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                messageDiv.style.display = 'block';
+                messageDiv.style.color = 'green';
+                messageDiv.textContent = 'Reset password link has been sent to your email.';
+            } else {
+                messageDiv.style.display = 'block';
+                messageDiv.style.color = 'red';
+                messageDiv.textContent = 'Email not found. Please try again.';
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            messageDiv.style.display = 'block';
+            messageDiv.style.color = 'red';
+            messageDiv.textContent = 'An error occurred. Please try again later.';
+        });
+}
