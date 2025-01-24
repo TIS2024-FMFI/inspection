@@ -318,7 +318,7 @@ function initScanner() {
                         document.getElementById("camera").innerHTML = `<p>${data.error}</p>`;
                     } else {
                         let status = data.status === "defective" ? 1 : 0;
-                        let product_id = data.data?.[0]?.product_id || null;
+                        let product_id = data.data?.[0]?.id || null;
                         let product_link = `ProductPage.php?id=${product_id}`;  
         
         
