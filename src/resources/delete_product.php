@@ -9,11 +9,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $productId = $input['id'];
 
         try {
+            $stmt = $pdo->prepare("SELECT barcode FROM user_submitted_products WHERE id = :id AND user_id = :user_id");
+            $stmt->execute([
+                ':id' => $productId,
+                ':user_id' => $_SESSION['user_id']
+            ]);
+            $barcode = $stmt->fetchColumn();
+
             $stmt = $pdo->prepare("DELETE FROM user_submitted_products WHERE id = :id AND user_id = :user_id");
             $stmt->execute([
                 ':id' => $productId,
                 ':user_id' => $_SESSION['user_id']
             ]);
+            $stmt = $pdo->prepare("
+            UPDATE product_history
+            SET name = '', product_link = ''
+            WHERE barcode = :barcode AND user_id = :user_id
+            ");
+            $stmt->execute(['barcode' => $barcode, 'user_id' => $_SESSION['user_id']]);
 
             if ($stmt->rowCount() > 0) {
                 echo json_encode(['success' => true]);
@@ -29,4 +42,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
     echo json_encode(['success' => false, 'message' => 'Invalid HTTP method.']);
 }
-?>

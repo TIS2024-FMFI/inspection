@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $product = $stmt->fetch();
 
         if ($product) {
-            $name = $product['product_name'];  // Nastaviť názov produktu, ak je personalizovaný
+            $name = $product['name'];  // Nastaviť názov produktu, ak je personalizovaný
         } 
     }
 
