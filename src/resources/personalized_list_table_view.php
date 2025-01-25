@@ -29,9 +29,6 @@ try {
         return isset($b['defective_id']) - isset($a['defective_id']);
     });
 
-    // $stmt = $pdo->prepare("SELECT * FROM user_submitted_products WHERE user_id = :user_id");
-    // $stmt->execute(['user_id' => $userId]);
-    // $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     die("Database error: " . $e->getMessage());
 }
@@ -39,9 +36,22 @@ try {
 
 <style>
 
+@media (max-width: 768px) {
+    .products-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap; 
+    }
+
+    .products-table th, .products-table td {
+        text-align: left;
+        padding: 8px;
+    }
+}
+
 .product-row.defective {
-    background-color: #ffe6e6; /* Светло-красный фон */
-    color: #b30000; /* Темно-красный текст */
+    background-color: #ffe6e6; 
+    color: #b30000; 
     font-weight: bold;
 }
 

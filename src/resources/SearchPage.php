@@ -38,40 +38,69 @@ if (isset($_GET['search'])) {
                     showError('Invalid input detected. Please avoid using special characters.');
                 });
               </script>";
-    } elseif (!empty($searchQuery)) {
+    } else {
         try {
-            $sql = "SELECT id, product_name, case_url, risk_type, images, production_dates  FROM defective_products WHERE product_name LIKE :search";
+            $baseSql = "SELECT id, product_name, case_url, risk_type, images, production_dates FROM defective_products";
+            $whereClause = !empty($searchQuery) ? " WHERE product_name LIKE :search" : "";
+            $orderBy = $sort == 'name_asc' ? " ORDER BY product_name ASC" : ($sort == 'name_desc' ? " ORDER BY product_name DESC" : "");
 
-            if ($sort == 'name_asc') {
-                $sql .= " ORDER BY product_name ASC";
-            } elseif ($sort == 'name_desc') {
-                $sql .= " ORDER BY product_name DESC";
-            }
+            $countSql = "SELECT COUNT(*) FROM defective_products" . $whereClause;
+            $countStmt = $connect->prepare($countSql);
+            $countParams = !empty($searchQuery) ? ['search' => "%$searchQuery%"] : [];
+            $countStmt->execute($countParams);
+            $totalResults = (int)$countStmt->fetchColumn();
 
+            $offset = ($currentPage - 1) * $resultsPerPage;
+
+            $sql = $baseSql . $whereClause . $orderBy . " LIMIT :limit OFFSET :offset";
             $stmt = $connect->prepare($sql);
-            $stmt->execute(['search' => "%$searchQuery%"]);
-            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        } catch (PDOException $e) {
-            die("Query error: " . $e->getMessage());
-        }
-    } elseif (empty($searchQuery)) {
-        try {
-            $sql = "SELECT id, product_name, case_url, risk_type, images, production_dates FROM defective_products";
-
-            if ($sort == 'name_asc') {
-                $sql .= " ORDER BY product_name ASC";
-            } elseif ($sort == 'name_desc') {
-                $sql .= " ORDER BY product_name DESC";
+            if (!empty($searchQuery)) {
+                $stmt->bindValue(':search', "%$searchQuery%", PDO::PARAM_STR);
             }
-
-            $stmt = $connect->prepare($sql);
-
+            $stmt->bindValue(':limit', $resultsPerPage, PDO::PARAM_INT);
+            $stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
             $stmt->execute();
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            die("Query error: " . $e->getMessage());
+                    die("Query error: " . $e->getMessage());
         }
     }
+    $totalPages = ceil($totalResults / $resultsPerPage);
+
+    // elseif (!empty($searchQuery)) {
+    //     try {
+    //         $sql = "SELECT id, product_name, case_url, risk_type, images, production_dates  FROM defective_products WHERE product_name LIKE :search";
+
+    //         if ($sort == 'name_asc') {
+    //             $sql .= " ORDER BY product_name ASC";
+    //         } elseif ($sort == 'name_desc') {
+    //             $sql .= " ORDER BY product_name DESC";
+    //         }
+
+    //         $stmt = $connect->prepare($sql);
+    //         $stmt->execute(['search' => "%$searchQuery%"]);
+    //         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    //     } catch (PDOException $e) {
+    //         die("Query error: " . $e->getMessage());
+    //     }
+    // } elseif (empty($searchQuery)) {
+    //     try {
+    //         $sql = "SELECT id, product_name, case_url, risk_type, images, production_dates FROM defective_products";
+
+    //         if ($sort == 'name_asc') {
+    //             $sql .= " ORDER BY product_name ASC";
+    //         } elseif ($sort == 'name_desc') {
+    //             $sql .= " ORDER BY product_name DESC";
+    //         }
+
+    //         $stmt = $connect->prepare($sql);
+
+    //         $stmt->execute();
+    //         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    //     } catch (PDOException $e) {
+    //         die("Query error: " . $e->getMessage());
+    //     }
+    // }
 }
 
 ?>
@@ -165,11 +194,10 @@ if (isset($_GET['search'])) {
             $imageSrc = (!empty($product['images'])) ? $product['images'] : 'images/No_Image_Available.jpg';
             // Use HEREDOC for part of the markup.
             echo <<<HTML
-            <div class="card my-2 ms-4" style="width: 20.5rem; height: 32rem; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="card my-2 ms-4" style="width: 20.5rem; height: 26rem; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
                 <img src="{$imageSrc}" class="card-img-top" alt="..." >
                 <div class="card-body">
-                    <h5 class="card-title" style="margin-bottom: 10px;">{$product['product_name']}</h5>
-                    <p class="card-text" style="margin-bottom: 5px;"><strong>Reported date: </strong>{$product['production_dates']}</p>
+                    <h5 class="card-title" style="margin-bottom: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{$product['product_name']}</h5>   
                     <p class="card-text" style="margin-bottom: 5px;"><strong>Risk Type: </strong>{$product['risk_type']}</p>
                     <div class="card-links" style="display: flex; justify-content: space-between; align-items: center;">
     HTML;
@@ -190,6 +218,41 @@ if (isset($_GET['search'])) {
         }
         echo '</div>'; // Close .product-container
         echo '</div>'; // Close .container-fluid
+
+        echo '<nav aria-label="Pagination">';
+        echo '<ul class="pagination justify-content-center">';
+
+        // First page link
+        if ($currentPage > 1) {
+            echo '<li class="page-item"><a class="page-link" href="?' . http_build_query(array_merge($_GET, ['page' => 1])) . '">« First</a></li>';
+        }
+
+        // Determine visible page range
+        $visiblePages = 5; 
+        $startPage = max(1, $currentPage - floor($visiblePages / 2));
+        $endPage = min($totalPages, $startPage + $visiblePages - 1);
+
+        
+        if ($endPage - $startPage + 1 < $visiblePages) {
+            $startPage = max(1, $endPage - $visiblePages + 1);
+        }
+
+        
+        for ($i = $startPage; $i <= $endPage; $i++) {
+            $isActive = ($i == $currentPage) ? ' active' : '';
+            echo '<li class="page-item' . $isActive . '">';
+            echo '<a class="page-link" href="?' . http_build_query(array_merge($_GET, ['page' => $i])) . '">' . $i . '</a>';
+            echo '</li>';
+        }
+
+        // Last page link
+        if ($currentPage < $totalPages) {
+            echo '<li class="page-item"><a class="page-link" href="?' . http_build_query(array_merge($_GET, ['page' => $totalPages])) . '">Last »</a></li>';
+        }
+
+        echo '</ul>';
+        echo '</nav>';
+
     } else if (!empty($searchQuery)) {
         echo "<div class='container mt-4 ms-4'><p>Product not found</p></div>";
     }
@@ -199,6 +262,36 @@ if (isset($_GET['search'])) {
 </main>
 
 <?php include 'login_signup_popup_widget.html'; ?>
+
+<script>
+    let resizeTimeout; // Timer for debounce
+    let lastCardsPerRow = null; 
+
+    function calculateCardsPerRow() {
+        const containerWidth = document.querySelector('.product-container').offsetWidth || window.innerWidth;
+        const cardWidth = 350; 
+        const cardsPerRow = Math.floor(containerWidth / cardWidth);
+
+        
+        if (cardsPerRow !== lastCardsPerRow) {
+            lastCardsPerRow = cardsPerRow;
+
+            
+            const url = new URL(window.location.href);
+            if (url.searchParams.get('cardsPerRow') != cardsPerRow) {
+                url.searchParams.set('cardsPerRow', cardsPerRow);
+                window.location.href = url.toString(); 
+            }
+        }
+    }
+
+    function debounceResize() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(calculateCardsPerRow, 300); 
+    }
+
+    window.addEventListener('resize', debounceResize);
+</script>
 
 <script src="scripts.js"></script>
 </body>

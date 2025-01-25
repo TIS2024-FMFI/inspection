@@ -129,7 +129,7 @@ if (!$product) {
             <?php if (!empty($product['images'])): ?>
                 <hr>
                 <h4 class="mb-3">Images</h4>
-                <img src="<?php echo htmlspecialchars($product['images']); ?>" class="img-fluid" alt="Product Image">
+                <img src="<?php echo htmlspecialchars($product['images']); ?>" class="img-fluid" alt="Product Image" style="width: 300px; height: 300px;">
             <?php endif; ?>
         </div>
     </div>
