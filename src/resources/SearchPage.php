@@ -24,6 +24,12 @@ $searchQuery = '';
 $results = [];
 $sort = '';
 
+$currentPage = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
+$cardsPerRow = isset($_GET['cardsPerRow']) ? max(1, (int)$_GET['cardsPerRow']) : 4;
+$rowsPerPage = floor(16 / $cardsPerRow);
+$resultsPerPage = $cardsPerRow * $rowsPerPage;
+$totalResults = 0;
+
 function hasInvalidCharacters($input) {
     return preg_match('/[<>{};]/', $input);
 }
