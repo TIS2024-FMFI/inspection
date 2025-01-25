@@ -308,19 +308,6 @@ header .logo {
         margin-top: 80px; 
     }
 
-    /* form .form-control {
-        width: 90%;
-    }
-
-    form .btn {
-        align-self: flex-end;
-        width: auto;
-    }
-
-    form select {
-        align-self: flex-start;
-    } */
-
     .card {
         margin: 0 auto;
     }
@@ -349,4 +336,19 @@ header .logo {
     transition: background-color 0.3s, box-shadow 0.3s;
     margin-left: auto;
     flex-shrink: 0;
+}
+
+/* pagination */
+.pagination {
+    flex-wrap: wrap;
+}
+
+.pagination .page-item {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .pagination .page-item:not(.active):nth-child(n+3):nth-last-child(n+3) {
+        display: none; 
+    }
 }
