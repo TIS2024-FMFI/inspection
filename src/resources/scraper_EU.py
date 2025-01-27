@@ -19,8 +19,8 @@ def connect_to_db():
     try:
         return pymysql.connect(
             host=os.environ.get('DB_HOST', 'db'),
-            user=os.environ.get('DB_USER', 'root'),
-            password=os.environ.get('DB_PASSWORD', 'rootpassword'),
+            user=os.environ.get('DB_USER', 'safety_app_user'),
+            password=os.environ.get('DB_PASSWORD', 'safety_app_password'),
             database=os.environ.get('DB_NAME', 'safety_app'),
             cursorclass=pymysql.cursors.DictCursor
         )
@@ -173,6 +173,7 @@ def write_history_data_to_xml(all_data, history_file_path):
         # Write images inside a pictures element
         pictures_el = etree.SubElement(notif_el, "pictures")
         etree.SubElement(pictures_el, "picture").text         = entry["images"]
+        
 
     tree = etree.ElementTree(root)
     tree.write(history_file_path, encoding="utf-8", xml_declaration=True, pretty_print=True)

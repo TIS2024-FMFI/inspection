@@ -124,7 +124,9 @@ if (isset($_GET['search'])) {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <header>
-    <img src="images/logo.png" alt="Logo" class="logo">
+    <a href="welcome.php">
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </a>
     <div class="homepage-container">
         <h2 class="homepage-title">Search</h2>
         <?php if ($isLoggedIn): ?>

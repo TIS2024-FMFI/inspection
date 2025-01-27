@@ -132,10 +132,10 @@ function handleLogin(event) {
     .then(data => {
         if (data.success) {
             const currentPage = window.location.pathname;
-            if (currentPage.includes('index.php')) {
-                window.location.href = 'welcome.php';
-            } else {
+            if (currentPage.includes('welcome.php') || currentPage.includes('SearchPage.php') || currentPage.includes('ProductPage.php')) {
                 window.location.reload();
+            } else {
+                window.location.href = 'welcome.php';
             }
         } else {
             errorMessage.style.paddingBottom = '10px';
@@ -326,49 +326,33 @@ function initScanner() {
                         if (data.status === "defective") {
                             const product = data.data[0]; // Access the first (and presumably only) product
                             const details = `
-                                <div class="product-card">
-                                    <h2>Defective</h2>
-                                    <p><strong>Name:</strong> ${product.product_name}</p>
-                                    <p><strong>Reported date:</strong> ${product.published_on}</p>
-                                    <p><strong>Hazard Causes:</strong> ${product.hazard_causes}</p>
-                                    <p><strong>Barcode: </strong>${product.barcode} </p>
-                                    <button id="see-details">See Details</button>
-                                    <div id="additional-info" style="display: none;">
-                                        <p><strong>Category:</strong> ${product.product_category}</p>
-                                        <p><strong>Description:</strong> ${product.product_description}</p>
-                                        <p><strong>Brand:</strong> ${product.brand}</p>
-                                        <p><strong>Alert Number:</strong> ${product.alert_number}</p>
-                                        <p><strong>Type of alert:</strong> ${product.type_of_alert}</p>
-                                        <p><strong>Type:</strong> ${product.type}</p>
-                                        <p><strong>Risk type:</strong> ${product.risk_type}</p>
-                                        <p><strong>Alert type:</strong> ${product.alert_type}</p>
-                                        <p><strong>Country of origin:</strong> ${product.country_of_origin}</p>
-                                        <p><strong>Alert submitted by:</strong> ${product.alert_submitted_by}</p>
-                                        <p><strong>Notifying country:</strong> ${product.notifying_country}</p>
-                                        <p><strong>Counterfeit:</strong> ${product.counterfeit}</p>
-                                        <p><strong>Hazard type:</strong> ${product.hazard_type}</p>
-                                        <p><strong>Measures operators:</strong> ${product.measures_operators}</p>
-                                        <p><strong>Measures authorities:</strong> ${product.measures_authorities}</p>
-                                        <p><strong>Compulsory measures:</strong> ${product.compulsory_measures}</p>
-                                        <p><strong>Voluntary measures:</strong> ${product.voluntary_measures}</p>
-                                        <p><strong>Found and measures taken in:</strong> ${product.found_and_measures_taken_in}</p>
-                                        <p><strong>Product description:</strong> ${product.product_description}</p>
-                                        <p><strong>Packaging description:</strong> ${product.packaging_description}</p>
-                                        <p><strong>Brand:</strong> ${product.brand}</p>
-                                        <p><strong>Product category:</strong> ${product.product_category}</p>
-                                        <p><strong>Model type number:</strong> ${product.model_type_number}</p>
-                                        <p><strong>OECD portal category:</strong> ${product.oecd_portal_category}</p>
-                                        <p><strong>Risk description:</strong> ${product.risk_description}</p>
-                                        <p><strong>Risk legal provision:</strong> ${product.risk_legal_provision}</p>
-                                        <p><strong>Recall code:</strong> ${product.recall_code}</p>
-                                        <p><strong>Company recall code:</strong> ${product.company_recall_code}</p>
-                                        <p><strong>Company recall page:</strong> ${product.company_recall_page}</p>
-                                        <p><strong>Case URL:</strong> ${product.case_url}</p>
-                                        <p><strong>Batch number:</strong> ${product.batch_number}</p>
-                                        <p><strong>Production dates:</strong> ${product.production_dates}</p>
-                                        <p><strong>Images:</strong> ${product.images}</p>
-                                    </div>
+                            <div class="product-card">
+                                <h2>Defective</h2>
+                                <p><strong>Name:</strong> ${product.product_name}</p>
+                                <p><strong>Barcode: </strong>${product.barcode} </p>
+                                <p><strong>Info:</strong> ${product.product_info}</p>
+                                <button id="see-details">See Details</button>
+                                <div id="additional-info" style="display: none;">
+                                    <p><strong>Alert Number:</strong> ${product.alert_number}</p>
+                                    <p><strong>Case URL:</strong> ${product.case_url}</p>
+                                    <p><strong>Product category:</strong> ${product.product_category}</p>
+                                    <p><strong>Brand:</strong> ${product.brand}</p>
+                                    <p><strong>Model type number:</strong> ${product.model_type_number}</p>
+                                    <p><strong>Batch number:</strong> ${product.batch_number}</p>
+                                    <p><strong>Company recall code:</strong> ${product.company_recall_code}</p>
+                                    <p><strong>Risk type:</strong> ${product.risk_type}</p>
+                                    <p><strong>Risk description:</strong> ${product.risk_info}</p>
+                                    <p><strong>Measures:</strong> ${product.measures}</p>
+                                    <p><strong>Company recall page:</strong> ${product.company_recall_page}</p>
+                                    <p><strong>Description:</strong> ${product.product_description}</p>
+                                    <p><strong>Production dates:</strong> ${product.production_dates}</p>
+                                    <p><strong>Notifying country:</strong> ${product.notifying_country}</p>
+                                    <p><strong>Country of origin:</strong> ${product.country_of_origin}</p>
+                                    <p><strong>Type:</strong> ${product.type}</p>
+                                    <p><strong>Level:</strong> ${product.level}</p>
+                                    <p><strong>Images:</strong> ${product.images}</p>
                                 </div>
+                            </div>
                             `;
                             document.getElementById("camera").innerHTML = details;
         

@@ -12,8 +12,8 @@ from datetime import datetime, timedelta
 
 # Configurations
 DB_HOST = os.getenv('DB_HOST', 'localhost')
-DB_USER = os.getenv('DB_USER', 'root')
-DB_PASSWORD = os.getenv('DB_PASSWORD', '')
+DB_USER = os.getenv('DB_USER', 'safety_app_user')
+DB_PASSWORD = os.getenv('DB_PASSWORD', 'safety_app_password')
 DB_NAME = os.getenv('DB_NAME', 'safety_app')
 
 EMAIL_ADDRESS = 'safety.inspection.team@gmail.com'
@@ -21,7 +21,7 @@ EMAIL_PASSWORD = 'yaap hdkr fmmf wbev'  # **Important**: Use environment variabl
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
-RESET_LINK_TEMPLATE = "http://localhost:9000/reset_password.php?token={token}"
+RESET_LINK_TEMPLATE = "http://194.182.84.121//reset_password.php?token={token}"
 
 # Database connection
 def get_db_connection():

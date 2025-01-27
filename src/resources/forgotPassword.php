@@ -1,10 +1,10 @@
 <?php
 // Path to the Python script
-$pythonPath = '/app/python'; // **Update this path**
+//$pythonPath = '/app/python'; // **Update this path**
 $script = 'forgot_password.py';
 
 // Check if the script exists
-$scriptPath = realpath("$pythonPath/$script");
+$scriptPath = realpath("$script");
 if ($scriptPath === false || !file_exists($scriptPath)) {
     header('Content-Type: application/json');
     echo json_encode(["success" => false, "message" => "Python script not found."]);
@@ -27,7 +27,7 @@ if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
 // Command to execute the Python script using shell_exec
 $escapedEmail = escapeshellarg($email);
-$command = "python3 $scriptPath $escapedEmail 2>&1"; // Redirect stderr to stdout for capturing errors
+$command = "python3 $escapedEmail 2>&1"; // Redirect stderr to stdout for capturing errors
 
 // Execute the command and capture the output
 $output = shell_exec($command);

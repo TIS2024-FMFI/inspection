@@ -33,3 +33,36 @@ Verification of products
     USE safety_app;
     ```
 8. You can now execute SQL commands to modify the database.
+
+
+
+## Setup and Configuration Steps
+1. Server Setup:
+Adjusted files from the GitHub repository and deployed them on the server.
+
+2. User Configuration:
+Created a new sudo user for managing the server securely.
+
+3. Database Setup and credentials:
+Imported the historyData file into the database.
+Created a database user and updated their permissions.
+Updated all necessary usa cases for the user credentials
+
+4. Library Installation:
+Installed necessary libraries using apt and pip.
+
+6. Routing Updates:
+Redirected the index route to the welcome page.
+
+7. Mails:
+Updated the reset password link and the notification links.
+
+8. Logging:
+Added logs to monitor system and application activities.
+
+9. SSL Certificate:
+Set up a secure certificate to enable HTTPS.
+
+10. Created a Google project for the google login
+
+11. Installed neccesary libs (composer)

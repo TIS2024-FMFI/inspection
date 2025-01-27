@@ -11,8 +11,8 @@ def connect_to_db():
     try:
         return pymysql.connect(
             host=os.getenv('DB_HOST', 'localhost'),
-            user=os.getenv('DB_USER', 'root'),
-            password=os.getenv('DB_PASSWORD', ''),
+            user=os.getenv('DB_USER', 'safer_app_user'),
+            password=os.getenv('DB_PASSWORD', 'safety_app_password'),
             database=os.getenv('DB_NAME', 'safety_app'),
             cursorclass=pymysql.cursors.DictCursor
         )
