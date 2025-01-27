@@ -1,7 +1,6 @@
 <?php
-if (basename($_SERVER['PHP_SELF']) === 'welcome.php') {
-    session_start();
-}
+session_start();
+
 
 $isLoggedIn = isset($_SESSION['user_id']);
 $email = isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : 'No email available';
@@ -116,11 +115,11 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
                 <a href="#" onclick="handleForgotPassword(event)">Forgot Password?</a>
             </div>
             <div id="forgot-password-message" style="display:none; margin-top: 10px;"></div>
-            <!--<div class="divider">OR</div>
-            <button class="google-auth-btn">
+            <div class="divider">OR</div>
+            <a href="https://opensciencedata.eu/googlelogin.php" class="google-auth-btn" style="width: auto;">
                 <img src="images/google-icon.png" alt="Google Icon">
-                Continue with Google
-            </button>-->
+                Sign in with Google
+            </a>
         </div>
     </div>
 
@@ -147,11 +146,6 @@ $username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username'
                 </div>
                 <button type="submit" class="auth-button">Create an Account</button>
             </form>
-            <!--<div class="divider">OR</div>
-            <button class="google-auth-btn">
-                <img src="images/google-icon.png" alt="Google Icon">
-                Continue with Google
-            </button>-->
         </div>
     </div>
 

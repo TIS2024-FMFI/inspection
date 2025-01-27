@@ -18,7 +18,7 @@ EMAIL_PASSWORD = 'yaap hdkr fmmf wbev'
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
-PRODUCT_PAGE_URL_TEMPLATE = "http://localhost:9000/ProductPage.php?id={id}"
+PRODUCT_PAGE_URL_TEMPLATE = "http://194.182.84.121/ProductPage.php?id={id}"
 
 # -----------------------------------------------------------------------------
 # 2. Connect to Database (using PyMySQL)

@@ -5,8 +5,8 @@ session_start();
 
 define('DB_HOST', getenv('DB_HOST') !== false ? getenv('DB_HOST') : 'localhost');
 define('DB_NAME', getenv('DB_NAME') !== false ? getenv('DB_NAME') : 'safety_app');
-define('DB_USER', getenv('DB_USER') !== false ? getenv('DB_USER') : 'root');
-define('DB_PASSWORD', getenv('DB_PASSWORD') !== false ? getenv('DB_PASSWORD') : ''); // **Use environment variables in production**
+define('DB_USER', getenv('DB_USER') !== false ? getenv('DB_USER') : 'safety_app_user');
+define('DB_PASSWORD', getenv('DB_PASSWORD') !== false ? getenv('DB_PASSWORD') : 'safety_app_password'); // **Use environment variables in production**
 define('PASSWORD_MIN_LENGTH', 8); // Minimum password length
 
 

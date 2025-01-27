@@ -1,5 +1,5 @@
 <?php
-$pythonPath = '/app/python';
+//$pythonPath = '/app/python';
 $scripts = [
     'scraper_SK.py',
     'scraper_EU.py',
@@ -7,7 +7,7 @@ $scripts = [
 ];
 
 foreach ($scripts as $script) {
-    if (!file_exists("$pythonPath/$script")) {
+    if (!file_exists("$script")) {
         echo "Python script $script not found.";
     exit();
 }
@@ -16,9 +16,9 @@ foreach ($scripts as $script) {
 set_time_limit(600);
 
 $commands = [
-    "python3 $pythonPath/scraper_SK.py",
-    "python3 $pythonPath/scraper_EU.py",
-    "python3 $pythonPath/sendmail.py"
+    "python3 scraper_SK.py",
+    "python3 scraper_EU.py",
+    "python3 sendmail.py"
 ];
 
 $output = '';
