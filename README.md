@@ -1,5 +1,15 @@
-# kontrola
+# Kontrola
 Verification of products
+
+## Site URL
+opensciencedata.eu
+
+# Documentation
+
+- [Testing Scenarios](docs/TestingScenarios.pdf)
+- [Requirements Catalog](docs/requirementsCatalog.pdf)
+- [System Design Inspection](docs/systemDesignInspection.pdf)
+
 ## Setup Instructions
 
 ### Prerequisites
