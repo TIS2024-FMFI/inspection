@@ -1,5 +1,9 @@
-# kontrola
+# Kontrola
 Verification of products
+
+## Site URL
+opensciencedata.eu
+
 ## Setup Instructions
 
 ### Prerequisites
