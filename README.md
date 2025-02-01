@@ -9,6 +9,7 @@ opensciencedata.eu
 - [Testing Scenarios](docs/TestingScenarios.pdf)
 - [Requirements Catalog](docs/requirementsCatalog.pdf)
 - [System Design Inspection](docs/systemDesignInspection.pdf)
+- [Video Link](https://youtu.be/Lqb0A9Grc2g) 
 
 ## Setup Instructions
 

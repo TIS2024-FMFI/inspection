@@ -93,8 +93,10 @@ header .logo {
     }
 
     .sign-in-button {
-        width: 90%;
+        width: 50%;
         text-align: center;
+        align-self: anchor-center;
+        margin: 10px 0px 0px 0px;
     }
 }
 
