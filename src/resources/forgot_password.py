@@ -21,7 +21,7 @@ EMAIL_PASSWORD = 'yaap hdkr fmmf wbev'  # **Important**: Use environment variabl
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
-RESET_LINK_TEMPLATE = "http://194.182.84.121//reset_password.php?token={token}"
+RESET_LINK_TEMPLATE = "http://opensciencedata.eu/reset_password.php?token={token}"
 
 # Database connection
 def get_db_connection():
