@@ -167,5 +167,6 @@ On this page, users can view **all scanned products**.
 ## Scrape Sites
 **Available only for logged-in users with an administrator role.**
 
-- On the homepage, click the **"Scrape Sites"** button.
-- The system will gather information from websites and update the database.
+- Admin users are created only with access to the database and setting a user role to a "2"
+- Now on the homepage, click the **"Scrape Sites"** button.
+- The system will gather information from websites and update the database with newly added products.
